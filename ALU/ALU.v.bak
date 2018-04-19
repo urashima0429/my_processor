@@ -1,0 +1,14 @@
+module ALU (
+	input [15:0] in1, in2, // in1 = Rd, in2 = Rs
+	input [3:0] opcode,
+	output [15:0] out,
+	output S, Z, C, V);
+	
+	case (opcode)
+		0: out = in1 + in2; // add
+		1: out = in1 - in2; // sub
+		2: out = in1 & in2; // and
+		3: out = in1 | in2; // or
+		4: out = in1 ^ in2; // xor
+		5: out = in1 
+	
