@@ -1,0 +1,11 @@
+module phase_counter (
+	input clock, reset,
+	output [2:0] phase);
+	
+	always @(posedge clock or negedge reset) begin
+		if (phase == 3'b100) begin 
+			phase <= 3b000;
+		end else
+			phase <= phase + 1;
+		end
+	end
