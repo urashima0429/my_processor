@@ -1,0 +1,149 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "inst_to_decoder[0]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_to_decoder[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_to_decoder[2]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_to_decoder[3]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_to_decoder[4]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_to_decoder[5]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_to_decoder[6]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_to_decoder[7]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_to_decoder[8]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_to_decoder[9]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_to_decoder[10]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_to_decoder[11]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_to_decoder[12]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_to_decoder[13]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_to_decoder[14]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_to_decoder[15]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_from_memory[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "p2",
+					"strict" : false
+				},
+				{
+					"name" : "inst_from_memory[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_from_memory[2]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_from_memory[3]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_from_memory[4]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_from_memory[5]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_from_memory[6]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_from_memory[7]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_from_memory[8]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_from_memory[9]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_from_memory[10]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_from_memory[11]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_from_memory[12]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_from_memory[13]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_from_memory[14]",
+					"strict" : false
+				},
+				{
+					"name" : "inst_from_memory[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
