@@ -4,7 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "counter_reset",
+					"name" : "register_reset",
 					"strict" : false
 				},
 				{
