@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Thu Apr 19 14:13:49 2018
+Fri Apr 20 09:14:18 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -14,9 +14,10 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +43,16 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 19 14:13:49 2018           ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 20 09:14:18 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; ALU                                             ;
 ; Top-level Entity Name              ; ALU                                             ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 16                                              ;
-;     Total combinational functions  ; 16                                              ;
+; Total logic elements               ; 484                                             ;
+;     Total combinational functions  ; 484                                             ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 48                                              ;
+; Total pins                         ; 85                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -161,45 +162,45 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                           ;
-+----------------------------------+-----------------+------------------------+------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path             ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------------------+---------+
-; ALU.v                            ; yes             ; User Verilog HDL File  ; /export/home/016/a0169654/le3a/ALU/ALU.v ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                             ;
++----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path               ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
+; ALU.v                            ; yes             ; User Verilog HDL File  ; /export/home/016/a0169654/SIMPLE/ALU/ALU.v ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------+---------+
 
 
-+------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary          ;
-+---------------------------------------------+--------+
-; Resource                                    ; Usage  ;
-+---------------------------------------------+--------+
-; Estimated Total logic elements              ; 16     ;
-;                                             ;        ;
-; Total combinational functions               ; 16     ;
-; Logic element usage by number of LUT inputs ;        ;
-;     -- 4 input functions                    ; 0      ;
-;     -- 3 input functions                    ; 15     ;
-;     -- <=2 input functions                  ; 1      ;
-;                                             ;        ;
-; Logic elements by mode                      ;        ;
-;     -- normal mode                          ; 1      ;
-;     -- arithmetic mode                      ; 15     ;
-;                                             ;        ;
-; Total registers                             ; 0      ;
-;     -- Dedicated logic registers            ; 0      ;
-;     -- I/O registers                        ; 0      ;
-;                                             ;        ;
-; I/O pins                                    ; 48     ;
-;                                             ;        ;
-; Embedded Multiplier 9-bit elements          ; 0      ;
-;                                             ;        ;
-; Maximum fan-out node                        ; Add0~0 ;
-; Maximum fan-out                             ; 2      ;
-; Total fan-out                               ; 111    ;
-; Average fan-out                             ; 0.99   ;
-+---------------------------------------------+--------+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 484        ;
+;                                             ;            ;
+; Total combinational functions               ; 484        ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 309        ;
+;     -- 3 input functions                    ; 134        ;
+;     -- <=2 input functions                  ; 41         ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 422        ;
+;     -- arithmetic mode                      ; 62         ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 85         ;
+;                                             ;            ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+;                                             ;            ;
+; Maximum fan-out node                        ; d[1]~input ;
+; Maximum fan-out                             ; 66         ;
+; Total fan-out                               ; 1833       ;
+; Average fan-out                             ; 2.80       ;
++---------------------------------------------+------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -207,7 +208,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |ALU                       ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 48   ; 0            ; |ALU                ; ALU         ; work         ;
+; |ALU                       ; 484 (484)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 85   ; 0            ; |ALU                ; ALU         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -227,20 +228,34 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ALU|ShiftRight1           ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |ALU|ShiftRight1           ;
+; 16:1               ; 14 bits   ; 140 LEs       ; 98 LEs               ; 42 LEs                 ; No         ; |ALU|Mux14                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 48                          ;
-; cycloneiii_lcell_comb ; 16                          ;
-;     arith             ; 15                          ;
-;         3 data inputs ; 15                          ;
-;     normal            ; 1                           ;
-;         2 data inputs ; 1                           ;
+; boundary_port         ; 85                          ;
+; cycloneiii_lcell_comb ; 485                         ;
+;     arith             ; 62                          ;
+;         3 data inputs ; 62                          ;
+;     normal            ; 423                         ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 41                          ;
+;         3 data inputs ; 72                          ;
+;         4 data inputs ; 309                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.50                        ;
-; Average LUT depth     ; 1.93                        ;
+; Max LUT depth         ; 10.00                       ;
+; Average LUT depth     ; 7.32                        ;
 +-----------------------+-----------------------------+
 
 
@@ -249,7 +264,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -259,23 +274,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Thu Apr 19 14:13:40 2018
+    Info: Processing started: Fri Apr 20 09:14:07 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ALU.v
-    Info (12023): Found entity 1: ALU File: /export/home/016/a0169654/le3a/ALU/ALU.v Line: 1
+    Info (12023): Found entity 1: ALU File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(10): object "plus_result" assigned a value but never read File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 10
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(11): object "minus_result" assigned a value but never read File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 11
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LED_OUT[0]" is stuck at GND File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 7
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 64 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 32 input pins
-    Info (21059): Implemented 16 output pins
-    Info (21061): Implemented 16 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1019 megabytes
-    Info: Processing ended: Thu Apr 19 14:13:49 2018
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:22
+Info (21057): Implemented 569 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 56 input pins
+    Info (21059): Implemented 29 output pins
+    Info (21061): Implemented 484 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 1061 megabytes
+    Info: Processing ended: Fri Apr 20 09:14:18 2018
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:24
 
 

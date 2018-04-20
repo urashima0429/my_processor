@@ -1,0 +1,78 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/export/home/016/a0169654/SIMPLE/ALU/simulation/modelsim
+vALU
+Z1 !s110 1524183303
+!i10b 1
+!s100 KV_TJKCOR`dWc:dF9TiPZ2
+IPVNKISfC57WT@ofm:Fe;^0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1524183269
+Z4 8ALU_7_1200mv_100c_slow.vo
+Z5 FALU_7_1200mv_100c_slow.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1524183303.000000
+Z8 !s107 ALU_7_1200mv_100c_slow.vo|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+.|ALU_7_1200mv_100c_slow.vo|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+.
+Z12 tCvgOpt 0
+n@a@l@u
+vALU_vlg_tst
+!s110 1524183313
+!i10b 1
+!s100 9KGnYTn^NPBBaW:AZTGhZ2
+I65k3kMa3MYi1Dd`bI1T[F1
+R2
+R0
+w1524183240
+8/export/home/016/a0169654/SIMPLE/ALU/simulation/modelsim/ALU_test1.vt
+F/export/home/016/a0169654/SIMPLE/ALU/simulation/modelsim/ALU_test1.vt
+L0 28
+R6
+r1
+!s85 0
+31
+!s108 1524183313.000000
+!s107 /export/home/016/a0169654/SIMPLE/ALU/simulation/modelsim/ALU_test1.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/export/home/016/a0169654/SIMPLE/ALU/simulation/modelsim|/export/home/016/a0169654/SIMPLE/ALU/simulation/modelsim/ALU_test1.vt|
+!i113 1
+R10
+!s92 -vlog01compat -work work +incdir+/export/home/016/a0169654/SIMPLE/ALU/simulation/modelsim
+R12
+n@a@l@u_vlg_tst
+vhard_block
+R1
+!i10b 1
+!s100 AfJHbN6>MZeAa=D2XaKad1
+Io;aT^>i2mfVPF?3Mj[Wbd0
+R2
+R0
+R3
+R4
+R5
+L0 10027
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12
