@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Apr 20 14:55:49 2018
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : BR
+Top-level Entity Name : BR
+Family : Cyclone IV E
+Total logic elements : 16
+    Total combinational functions : 0
+    Dedicated logic registers : 16
+Total registers : 16
+Total pins : 35
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

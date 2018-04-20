@@ -1,0 +1,149 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "data_to_ALU[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_ALU[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_ALU[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_ALU[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_ALU[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_ALU[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_ALU[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_ALU[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_ALU[8]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_ALU[9]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_ALU[10]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_ALU[11]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_ALU[12]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_ALU[13]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_ALU[14]",
+					"strict" : false
+				},
+				{
+					"name" : "data_to_ALU[15]",
+					"strict" : false
+				},
+				{
+					"name" : "data_from_regfile[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "p3",
+					"strict" : false
+				},
+				{
+					"name" : "data_from_regfile[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_from_regfile[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_from_regfile[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_from_regfile[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_from_regfile[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_from_regfile[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_from_regfile[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data_from_regfile[8]",
+					"strict" : false
+				},
+				{
+					"name" : "data_from_regfile[9]",
+					"strict" : false
+				},
+				{
+					"name" : "data_from_regfile[10]",
+					"strict" : false
+				},
+				{
+					"name" : "data_from_regfile[11]",
+					"strict" : false
+				},
+				{
+					"name" : "data_from_regfile[12]",
+					"strict" : false
+				},
+				{
+					"name" : "data_from_regfile[13]",
+					"strict" : false
+				},
+				{
+					"name" : "data_from_regfile[14]",
+					"strict" : false
+				},
+				{
+					"name" : "data_from_regfile[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
