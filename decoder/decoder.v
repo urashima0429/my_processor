@@ -1,4 +1,19 @@
 module decoder (
+	input [15:0] in,
+	output [1:0] op1,
+	output [2:0] Rs_Ra_op2, Rd_Rb_cond,
+	output [3:0] op3_dFront, dBack);
+	
+	assign op1 = in[15:14];
+	assign Rs_Ra_op2 = in[13:11];
+	assign Rd_Rb_cond = in[10:8];
+	assign op3_dFront = in[7:4];
+	assign dBack = in[3:0];
+	
+endmodule
+
+/*
+module decoder (
         input [15:0]   in,
         output [1:0]  op1, 
         output [2:0]  op2, 
@@ -82,3 +97,4 @@ module decoder (
 //		end
 endmodule
 
+*/
