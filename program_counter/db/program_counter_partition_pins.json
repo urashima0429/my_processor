@@ -72,6 +72,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "p1",
+					"strict" : false
+				},
+				{
 					"name" : "in[1]",
 					"strict" : false
 				},
