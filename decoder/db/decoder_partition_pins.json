@@ -2,7 +2,136 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "op1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Rs_Ra_op2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Rs_Ra_op2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Rs_Ra_op2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Rd_Rb_cond[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Rd_Rb_cond[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Rd_Rb_cond[2]",
+					"strict" : false
+				},
+				{
+					"name" : "op3_dFront[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op3_dFront[1]",
+					"strict" : false
+				},
+				{
+					"name" : "op3_dFront[2]",
+					"strict" : false
+				},
+				{
+					"name" : "op3_dFront[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dBack[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dBack[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dBack[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dBack[3]",
+					"strict" : false
+				},
+				{
+					"name" : "in[14]",
+					"strict" : false
+				},
+				{
+					"name" : "in[15]",
+					"strict" : false
+				},
+				{
+					"name" : "in[11]",
+					"strict" : false
+				},
+				{
+					"name" : "in[12]",
+					"strict" : false
+				},
+				{
+					"name" : "in[13]",
+					"strict" : false
+				},
+				{
+					"name" : "in[8]",
+					"strict" : false
+				},
+				{
+					"name" : "in[9]",
+					"strict" : false
+				},
+				{
+					"name" : "in[10]",
+					"strict" : false
+				},
+				{
+					"name" : "in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "in[2]",
+					"strict" : false
+				},
+				{
+					"name" : "in[3]",
+					"strict" : false
+				}
+			]
 		}
 	]
 }
