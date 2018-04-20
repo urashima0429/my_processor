@@ -1,0 +1,59 @@
+|test_module_test
+clock => clock.IN2
+reset => reset.IN2
+exec => exec.IN1
+display1[0] << WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+display1[1] << Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+display1[2] << WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+display1[3] << WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+display1[4] << adjustSevenSegment3_8.DB_MAX_OUTPUT_PORT_TYPE
+display1[5] << Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+display1[6] << <VCC>
+display1[7] << adjustSevenSegment3_8.DB_MAX_OUTPUT_PORT_TYPE
+display2[0] << <GND>
+display2[1] << <GND>
+display2[2] << Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+display2[3] << Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+display2[4] << Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+display2[5] << <VCC>
+display2[6] << <VCC>
+display2[7] << Decoder2.DB_MAX_OUTPUT_PORT_TYPE
+display3[0] << <GND>
+display3[1] << <GND>
+display3[2] << Decoder3.DB_MAX_OUTPUT_PORT_TYPE
+display3[3] << Decoder3.DB_MAX_OUTPUT_PORT_TYPE
+display3[4] << Decoder3.DB_MAX_OUTPUT_PORT_TYPE
+display3[5] << <VCC>
+display3[6] << <VCC>
+display3[7] << Decoder3.DB_MAX_OUTPUT_PORT_TYPE
+selecter << <VCC>
+
+
+|test_module_test|phase_counter:phase_counter
+clock => phase[0]~reg0.CLK
+clock => phase[1]~reg0.CLK
+clock => phase[2]~reg0.CLK
+reset => phase[0]~reg0.ACLR
+reset => phase[1]~reg0.ACLR
+reset => phase[2]~reg0.ACLR
+phase[0] <= phase[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+phase[1] <= phase[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+phase[2] <= phase[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|test_module_test|control_unit:control_unit
+clock => ~NO_FANOUT~
+reset => register_reset.DATAIN
+exec => running.LATCH_ENABLE
+phase[0] => Decoder0.IN3
+phase[1] => Decoder0.IN2
+phase[2] => Decoder0.IN1
+phase[3] => Decoder0.IN0
+register_reset <= reset.DB_MAX_OUTPUT_PORT_TYPE
+p1 <= p1.DB_MAX_OUTPUT_PORT_TYPE
+p2 <= p2.DB_MAX_OUTPUT_PORT_TYPE
+p3 <= p3.DB_MAX_OUTPUT_PORT_TYPE
+p4 <= p4.DB_MAX_OUTPUT_PORT_TYPE
+p5 <= p5.DB_MAX_OUTPUT_PORT_TYPE
+
+
