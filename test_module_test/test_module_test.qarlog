@@ -1,0 +1,27 @@
+Quartus Prime Archive log --	/export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.qarlog
+
+Archive:	/export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.qar
+Date:		Thu Apr 26 15:29:39 2018
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Standard Edition
+
+	=========== Files Selected: ===========
+/export/home/016/a0165336/project/SIMPLE/test_module_test/db/test_module_test_tmp_qic_export/qic_export_file_list
+/export/home/016/a0165336/project/SIMPLE/test_module_test/db/test_module_test_tmp_qic_export/test_module_test.cmp.atm
+/export/home/016/a0165336/project/SIMPLE/test_module_test/db/test_module_test_tmp_qic_export/test_module_test.cmp.dpi
+/export/home/016/a0165336/project/SIMPLE/test_module_test/db/test_module_test_tmp_qic_export/test_module_test.cmp.hdbx
+/export/home/016/a0165336/project/SIMPLE/test_module_test/db/test_module_test_tmp_qic_export/test_module_test.cmp.logdb
+/export/home/016/a0165336/project/SIMPLE/test_module_test/db/test_module_test_tmp_qic_export/test_module_test.cmp.map.kpt
+/export/home/016/a0165336/project/SIMPLE/test_module_test/db/test_module_test_tmp_qic_export/test_module_test.cmp.qxp_info
+/export/home/016/a0165336/project/SIMPLE/test_module_test/db/test_module_test_tmp_qic_export/test_module_test.cmp.rcf
+/export/home/016/a0165336/project/SIMPLE/test_module_test/db/test_module_test_tmp_qic_export/test_module_test.cmp.scidsc
+/export/home/016/a0165336/project/SIMPLE/test_module_test/db/test_module_test_tmp_qic_export/test_module_test.map.atm
+/export/home/016/a0165336/project/SIMPLE/test_module_test/db/test_module_test_tmp_qic_export/test_module_test.map.dpi
+/export/home/016/a0165336/project/SIMPLE/test_module_test/db/test_module_test_tmp_qic_export/test_module_test.map.hdbx
+/export/home/016/a0165336/project/SIMPLE/test_module_test/db/test_module_test_tmp_qic_export/test_module_test.map.logdb
+/export/home/016/a0165336/project/SIMPLE/test_module_test/db/test_module_test_tmp_qic_export/test_module_test.map.map.kpt
+/export/home/016/a0165336/project/SIMPLE/test_module_test/db/test_module_test_tmp_qic_export/test_module_test.map.qxp_info
+/export/home/016/a0165336/project/SIMPLE/test_module_test/db/test_module_test_tmp_qic_export/test_module_test.map.scidsc
+	======= Total: 16 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

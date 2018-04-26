@@ -1,0 +1,26 @@
+|data_selecter_controller
+op[0] => ~NO_FANOUT~
+op[1] => ~NO_FANOUT~
+op[2] => ~NO_FANOUT~
+op[3] => ~NO_FANOUT~
+op[4] => Equal1.IN3
+op[5] => Equal1.IN2
+op[6] => Equal1.IN1
+op[7] => Equal1.IN0
+op[8] => ~NO_FANOUT~
+op[9] => ~NO_FANOUT~
+op[10] => ~NO_FANOUT~
+op[11] => Equal3.IN2
+op[12] => Equal3.IN1
+op[13] => Equal3.IN0
+op[14] => Equal0.IN1
+op[14] => Equal2.IN1
+op[15] => Equal0.IN0
+op[15] => Equal2.IN0
+switch1 <= switch1.DB_MAX_OUTPUT_PORT_TYPE
+switch2 <= switch2.DB_MAX_OUTPUT_PORT_TYPE
+switch3 <= switch3.DB_MAX_OUTPUT_PORT_TYPE
+switch4 <= switch4.DB_MAX_OUTPUT_PORT_TYPE
+switch5 <= switch5.DB_MAX_OUTPUT_PORT_TYPE
+
+
