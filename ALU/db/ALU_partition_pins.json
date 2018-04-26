@@ -88,11 +88,27 @@
 					"strict" : false
 				},
 				{
-					"name" : "opcode[3]",
+					"name" : "in2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "in1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[1]",
 					"strict" : false
 				},
 				{
 					"name" : "opcode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[0]",
 					"strict" : false
 				},
 				{
@@ -140,10 +156,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "in2[0]",
-					"strict" : false
-				},
-				{
 					"name" : "in2[15]",
 					"strict" : false
 				},
@@ -173,18 +185,6 @@
 				},
 				{
 					"name" : "in2[8]",
-					"strict" : false
-				},
-				{
-					"name" : "opcode[0]",
-					"strict" : false
-				},
-				{
-					"name" : "opcode[1]",
-					"strict" : false
-				},
-				{
-					"name" : "in1[0]",
 					"strict" : false
 				},
 				{

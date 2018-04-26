@@ -9,9 +9,37 @@ module ALU (
 	wire [16:0] minus_result = {in1[15], in1} - {in2[15], in2};
 	
 	wire [15:0] SLL_result = (in2 << d);
-	wire [15:0] SLR_result = (in2 << d) | (in2 >> 15 - d);
+	wire [15:0] SLR_result = (in2 << d) | (in2 >> 16 - d);
 	wire [15:0] SRL_result = (in2 >> d);
-	wire [15:0] SRR_result = (in2 >>> d);
+	wire [15:0] SRR_result = SRR(in2, d);
+	
+	
+	function [15:0] SRR;
+	input [15:0] a;
+	input [3:0] d;
+	begin
+		if(d[0] == 1'b1) begin
+			SRR = {a[15], a[15:1]};
+		end else begin
+			SRR = a;
+		end
+		if(d[1] == 1'b1) begin
+			SRR = {{2{SRR[15]}}, SRR[15:2]};
+		end else begin
+			SRR = SRR;
+		end
+		if(d[2] == 1'b1) begin
+			SRR = {{4{SRR[15]}}, SRR[15:4]};
+		end else begin
+			SRR = SRR;
+		end
+		if(d[3] == 1'b1)begin
+			SRR = {{8{SRR[15]}}, SRR[15:8]};
+		end else begin
+			SRR = SRR;
+		end
+	end
+	endfunction
 	
 	function [15:0] out_value; // define out value
 	input [15:0] Rd, Rs;
@@ -27,9 +55,9 @@ module ALU (
 			6: out_value = Rs;
 			7: out_value = 16'b0000000000000000; // don't care!!
 			8: out_value = (Rs << d); // SLL
-			9: out_value = (Rs << d) | (Rs >> 15 - d); // SLR
+			9: out_value = (Rs << d) | (Rs >> 16 - d); // SLR
 			10: out_value = (Rs >> d); // SRL
-			11: out_value = (Rs >>> d); // SRR
+			11: out_value = SRR(Rs, d);//(Rs >> d) | {in2[15], 15'b000000000000000}; // SRR
 			12: out_value = 16'b0000000000000000; //don't care?
 			13: out_value = 16'b0000000000000000; // don't care?
 			14: out_value = 16'b0000000000000000; // don't care!!
@@ -79,9 +107,9 @@ module ALU (
 			6: Z_value = (Rd == 16'b0000000000000000);
 			7: Z_value = 1'b0; // don't care!!
 			8: Z_value = ((Rs << d) == 16'b0000000000000000);
-			9: Z_value = (((Rs << d) | (Rs >> 15 - d)) == 16'b0000000000000000);
+			9: Z_value = (((Rs << d) | (Rs >> 16 - d)) == 16'b0000000000000000);
 			10: Z_value = ((Rs >> d) == 16'b0000000000000000);
-			11: Z_value = ((Rs >>> d) == 16'b0000000000000000);
+			11: Z_value = SRR(Rs, d);//(((Rs >> d) | {in2[15], 15'b000000000000000}) == 16'b0000000000000000);
 			12: Z_value = 1'b0;
 			13: Z_value = 1'b0;
 			14: Z_value = 1'b0; // don't care!!
