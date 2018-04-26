@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ALU
-Fri Apr 20 09:14:18 2018
+Thu Apr 26 14:19:27 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -43,16 +43,16 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 20 09:14:18 2018           ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 26 14:19:27 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; ALU                                             ;
 ; Top-level Entity Name              ; ALU                                             ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 484                                             ;
-;     Total combinational functions  ; 484                                             ;
+; Total logic elements               ; 486                                             ;
+;     Total combinational functions  ; 486                                             ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 85                                              ;
+; Total pins                         ; 61                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -176,30 +176,30 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 484        ;
+; Estimated Total logic elements              ; 486        ;
 ;                                             ;            ;
-; Total combinational functions               ; 484        ;
+; Total combinational functions               ; 486        ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 309        ;
-;     -- 3 input functions                    ; 134        ;
-;     -- <=2 input functions                  ; 41         ;
+;     -- 4 input functions                    ; 286        ;
+;     -- 3 input functions                    ; 145        ;
+;     -- <=2 input functions                  ; 55         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 422        ;
+;     -- normal mode                          ; 424        ;
 ;     -- arithmetic mode                      ; 62         ;
 ;                                             ;            ;
 ; Total registers                             ; 0          ;
 ;     -- Dedicated logic registers            ; 0          ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
-; I/O pins                                    ; 85         ;
+; I/O pins                                    ; 61         ;
 ;                                             ;            ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; d[1]~input ;
-; Maximum fan-out                             ; 66         ;
-; Total fan-out                               ; 1833       ;
-; Average fan-out                             ; 2.80       ;
+; Maximum fan-out                             ; 62         ;
+; Total fan-out                               ; 1771       ;
+; Average fan-out                             ; 2.91       ;
 +---------------------------------------------+------------+
 
 
@@ -208,7 +208,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |ALU                       ; 484 (484)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 85   ; 0            ; |ALU                ; ALU         ; work         ;
+; |ALU                       ; 486 (486)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 61   ; 0            ; |ALU                ; ALU         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -233,9 +233,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ALU|ShiftRight1           ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |ALU|ShiftRight1           ;
-; 16:1               ; 14 bits   ; 140 LEs       ; 98 LEs               ; 42 LEs                 ; No         ; |ALU|Mux14                 ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ALU|ShiftLeft0            ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |ALU|ShiftRight1           ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |ALU|ShiftRight0           ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ALU|ShiftLeft0            ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ALU|ShiftRight0           ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |ALU|ShiftRight0           ;
+; 17:1               ; 14 bits   ; 154 LEs       ; 98 LEs               ; 56 LEs                 ; No         ; |ALU|Mux11                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -244,18 +248,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 85                          ;
-; cycloneiii_lcell_comb ; 485                         ;
+; boundary_port         ; 61                          ;
+; cycloneiii_lcell_comb ; 486                         ;
 ;     arith             ; 62                          ;
 ;         3 data inputs ; 62                          ;
-;     normal            ; 423                         ;
-;         0 data inputs ; 1                           ;
-;         2 data inputs ; 41                          ;
-;         3 data inputs ; 72                          ;
-;         4 data inputs ; 309                         ;
+;     normal            ; 424                         ;
+;         2 data inputs ; 55                          ;
+;         3 data inputs ; 83                          ;
+;         4 data inputs ; 286                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.00                       ;
-; Average LUT depth     ; 7.32                        ;
+; Average LUT depth     ; 7.74                        ;
 +-----------------------+-----------------------------+
 
 
@@ -264,7 +267,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -274,28 +277,31 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Fri Apr 20 09:14:07 2018
+    Info: Processing started: Thu Apr 26 14:19:18 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file ALU.v
     Info (12023): Found entity 1: ALU File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 1
 Info (12127): Elaborating entity "ALU" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at ALU.v(10): object "plus_result" assigned a value but never read File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 10
-Warning (10036): Verilog HDL or VHDL warning at ALU.v(11): object "minus_result" assigned a value but never read File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 11
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LED_OUT[0]" is stuck at GND File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 7
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(8): object "plus_result" assigned a value but never read File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 8
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(9): object "minus_result" assigned a value but never read File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 9
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(11): object "SLL_result" assigned a value but never read File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 11
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(12): object "SLR_result" assigned a value but never read File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 12
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(13): object "SRL_result" assigned a value but never read File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 13
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(14): object "SRR_result" assigned a value but never read File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 14
+Warning (10230): Verilog HDL assignment warning at ALU.v(112): truncated value with size 16 to match size of target (1) File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 112
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 569 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 56 input pins
-    Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 484 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1061 megabytes
-    Info: Processing ended: Fri Apr 20 09:14:18 2018
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:24
+Info (21057): Implemented 547 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 40 input pins
+    Info (21059): Implemented 21 output pins
+    Info (21061): Implemented 486 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 1055 megabytes
+    Info: Processing ended: Thu Apr 26 14:19:27 2018
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:22
 
 

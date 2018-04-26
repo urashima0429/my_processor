@@ -84,39 +84,39 @@
 					"strict" : false
 				},
 				{
-					"name" : "LED_OUT[1]",
-					"strict" : false
-				},
-				{
-					"name" : "LED_OUT[2]",
-					"strict" : false
-				},
-				{
-					"name" : "LED_OUT[3]",
-					"strict" : false
-				},
-				{
-					"name" : "LED_OUT[4]",
-					"strict" : false
-				},
-				{
-					"name" : "LED_OUT[5]",
-					"strict" : false
-				},
-				{
-					"name" : "LED_OUT[6]",
-					"strict" : false
-				},
-				{
-					"name" : "LED_OUT[7]",
-					"strict" : false
-				},
-				{
 					"name" : "HLT",
 					"strict" : false
 				},
 				{
 					"name" : "in2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "in1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "in2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "in2[2]",
 					"strict" : false
 				},
 				{
@@ -136,59 +136,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "opcode[0]",
-					"strict" : false
-				},
-				{
-					"name" : "in2[8]",
-					"strict" : false
-				},
-				{
-					"name" : "in2[9]",
-					"strict" : false
-				},
-				{
-					"name" : "in2[10]",
-					"strict" : false
-				},
-				{
-					"name" : "in2[11]",
-					"strict" : false
-				},
-				{
-					"name" : "in2[12]",
-					"strict" : false
-				},
-				{
-					"name" : "in2[13]",
-					"strict" : false
-				},
-				{
-					"name" : "in2[14]",
-					"strict" : false
-				},
-				{
-					"name" : "in2[15]",
-					"strict" : false
-				},
-				{
-					"name" : "in2[1]",
-					"strict" : false
-				},
-				{
-					"name" : "in2[2]",
-					"strict" : false
-				},
-				{
-					"name" : "in2[3]",
-					"strict" : false
-				},
-				{
-					"name" : "in2[4]",
-					"strict" : false
-				},
-				{
-					"name" : "in2[5]",
+					"name" : "in2[7]",
 					"strict" : false
 				},
 				{
@@ -196,31 +144,47 @@
 					"strict" : false
 				},
 				{
-					"name" : "in2[7]",
+					"name" : "in2[5]",
 					"strict" : false
 				},
 				{
-					"name" : "opcode[1]",
+					"name" : "in2[4]",
 					"strict" : false
 				},
 				{
-					"name" : "opcode[3]",
+					"name" : "in2[1]",
 					"strict" : false
 				},
 				{
-					"name" : "in1[0]",
+					"name" : "in2[15]",
 					"strict" : false
 				},
 				{
-					"name" : "opcode[2]",
+					"name" : "in2[14]",
 					"strict" : false
 				},
 				{
-					"name" : "switch_IN[0]",
+					"name" : "in2[13]",
 					"strict" : false
 				},
 				{
-					"name" : "switch_IN[1]",
+					"name" : "in2[12]",
+					"strict" : false
+				},
+				{
+					"name" : "in2[11]",
+					"strict" : false
+				},
+				{
+					"name" : "in2[10]",
+					"strict" : false
+				},
+				{
+					"name" : "in2[9]",
+					"strict" : false
+				},
+				{
+					"name" : "in2[8]",
 					"strict" : false
 				},
 				{
@@ -232,27 +196,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "switch_IN[2]",
-					"strict" : false
-				},
-				{
-					"name" : "switch_IN[3]",
-					"strict" : false
-				},
-				{
 					"name" : "in1[3]",
 					"strict" : false
 				},
 				{
-					"name" : "switch_IN[4]",
-					"strict" : false
-				},
-				{
 					"name" : "in1[4]",
-					"strict" : false
-				},
-				{
-					"name" : "switch_IN[5]",
 					"strict" : false
 				},
 				{
@@ -264,27 +212,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "switch_IN[6]",
-					"strict" : false
-				},
-				{
-					"name" : "switch_IN[7]",
-					"strict" : false
-				},
-				{
 					"name" : "in1[7]",
 					"strict" : false
 				},
 				{
-					"name" : "switch_IN[8]",
-					"strict" : false
-				},
-				{
 					"name" : "in1[8]",
-					"strict" : false
-				},
-				{
-					"name" : "switch_IN[9]",
 					"strict" : false
 				},
 				{
@@ -296,27 +228,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "switch_IN[10]",
-					"strict" : false
-				},
-				{
-					"name" : "switch_IN[11]",
-					"strict" : false
-				},
-				{
 					"name" : "in1[11]",
 					"strict" : false
 				},
 				{
-					"name" : "switch_IN[12]",
-					"strict" : false
-				},
-				{
 					"name" : "in1[12]",
-					"strict" : false
-				},
-				{
-					"name" : "switch_IN[13]",
 					"strict" : false
 				},
 				{
@@ -328,15 +244,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "switch_IN[14]",
-					"strict" : false
-				},
-				{
 					"name" : "in1[15]",
-					"strict" : false
-				},
-				{
-					"name" : "switch_IN[15]",
 					"strict" : false
 				}
 			]

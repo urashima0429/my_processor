@@ -34,11 +34,9 @@ reg [3:0] d;
 reg [15:0] in1;
 reg [15:0] in2;
 reg [3:0] opcode;
-reg [15:0] switch_IN;
 // wires                                               
 wire C;
 wire HLT;
-wire [7:0]  LED_OUT;
 wire S;
 wire V;
 wire Z;
@@ -49,7 +47,6 @@ ALU i1 (
 // port map - connection between master ports and signals/registers   
 	.C(C),
 	.HLT(HLT),
-	.LED_OUT(LED_OUT),
 	.S(S),
 	.V(V),
 	.Z(Z),
@@ -57,18 +54,16 @@ ALU i1 (
 	.in1(in1),
 	.in2(in2),
 	.opcode(opcode),
-	.out(out),
-	.switch_IN(switch_IN)
+	.out(out)
 );
 initial                                                
 begin                                                  
 // code that executes only once                        
 // insert code here --> begin
-in1 <= 16'b0000000001001100;
-in2 <= 16'b0000000001001000;
+in1 <= 16'b0100000001001100;
+in2 <= 16'b1000000001001000;
 opcode <= 4'b0000;
-d <= 4'b0000;
-switch_IN <= 16'b0000000000000001;
+d <= 4'b0010;
                                                        
 // --> end                                             
 $display("Running testbench");                       
