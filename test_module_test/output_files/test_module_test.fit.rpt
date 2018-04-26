@@ -1,5 +1,5 @@
 Fitter report for test_module_test
-Thu Apr 26 13:45:07 2018
+Thu Apr 26 13:50:56 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -64,15 +64,15 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Thu Apr 26 13:45:07 2018           ;
+; Fitter Status                      ; Successful - Thu Apr 26 13:50:56 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; test_module_test                                ;
 ; Top-level Entity Name              ; test_module_test                                ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE30F23I7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 12 / 28,848 ( < 1 % )                           ;
-;     Total combinational functions  ; 12 / 28,848 ( < 1 % )                           ;
+; Total logic elements               ; 16 / 28,848 ( < 1 % )                           ;
+;     Total combinational functions  ; 16 / 28,848 ( < 1 % )                           ;
 ;     Dedicated logic registers      ; 3 / 28,848 ( < 1 % )                            ;
 ; Total registers                    ; 3                                               ;
 ; Total pins                         ; 68 / 329 ( 21 % )                               ;
@@ -167,8 +167,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 163 ) ; 0.00 % ( 0 / 163 )         ; 0.00 % ( 0 / 163 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 163 ) ; 0.00 % ( 0 / 163 )         ; 0.00 % ( 0 / 163 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 167 ) ; 0.00 % ( 0 / 167 )         ; 0.00 % ( 0 / 167 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 167 ) ; 0.00 % ( 0 / 167 )         ; 0.00 % ( 0 / 167 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -191,7 +191,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 153 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 157 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -207,19 +207,19 @@ The pin-out file can be found in /export/home/016/a0165336/project/SIMPLE/test_m
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 12 / 28,848 ( < 1 % ) ;
-;     -- Combinational with no register       ; 9                     ;
+; Total logic elements                        ; 16 / 28,848 ( < 1 % ) ;
+;     -- Combinational with no register       ; 13                    ;
 ;     -- Register only                        ; 0                     ;
 ;     -- Combinational with a register        ; 3                     ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 1                     ;
+;     -- 4 input functions                    ; 5                     ;
 ;     -- 3 input functions                    ; 8                     ;
 ;     -- <=2 input functions                  ; 3                     ;
 ;     -- Register only                        ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 12                    ;
+;     -- normal mode                          ; 16                    ;
 ;     -- arithmetic mode                      ; 0                     ;
 ;                                             ;                       ;
 ; Total registers*                            ; 3 / 30,421 ( < 1 % )  ;
@@ -244,12 +244,12 @@ The pin-out file can be found in /export/home/016/a0165336/project/SIMPLE/test_m
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )         ;
-; Average interconnect usage (total/H/V)      ; 0.0% / 0.1% / 0.0%    ;
-; Peak interconnect usage (total/H/V)         ; 0.2% / 0.3% / 0.2%    ;
-; Maximum fan-out                             ; 10                    ;
-; Highest non-global fan-out                  ; 10                    ;
-; Total fan-out                               ; 135                   ;
-; Average fan-out                             ; 0.83                  ;
+; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.0%    ;
+; Peak interconnect usage (total/H/V)         ; 0.3% / 0.4% / 0.2%    ;
+; Maximum fan-out                             ; 14                    ;
+; Highest non-global fan-out                  ; 14                    ;
+; Total fan-out                               ; 167                   ;
+; Average fan-out                             ; 1.01                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -262,19 +262,19 @@ The pin-out file can be found in /export/home/016/a0165336/project/SIMPLE/test_m
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 12 / 28848 ( < 1 % ) ; 0 / 28848 ( 0 % )              ;
-;     -- Combinational with no register       ; 9                    ; 0                              ;
+; Total logic elements                        ; 16 / 28848 ( < 1 % ) ; 0 / 28848 ( 0 % )              ;
+;     -- Combinational with no register       ; 13                   ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;     -- Combinational with a register        ; 3                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 1                    ; 0                              ;
+;     -- 4 input functions                    ; 5                    ; 0                              ;
 ;     -- 3 input functions                    ; 8                    ; 0                              ;
 ;     -- <=2 input functions                  ; 3                    ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 12                   ; 0                              ;
+;     -- normal mode                          ; 16                   ; 0                              ;
 ;     -- arithmetic mode                      ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Total registers                             ; 3                    ; 0                              ;
@@ -297,8 +297,8 @@ The pin-out file can be found in /export/home/016/a0165336/project/SIMPLE/test_m
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 130                  ; 5                              ;
-;     -- Registered Connections               ; 29                   ; 0                              ;
+;     -- Total Connections                    ; 162                  ; 5                              ;
+;     -- Registered Connections               ; 41                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -1020,8 +1020,8 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node       ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                           ; Entity Name      ; Library Name ;
 +----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------+------------------+--------------+
-; |test_module_test                ; 12 (7)      ; 3 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 68   ; 0            ; 9 (7)        ; 0 (0)             ; 3 (1)            ; |test_module_test                             ; test_module_test ; work         ;
-;    |control_unit:control_unit|   ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |test_module_test|control_unit:control_unit   ; control_unit     ; work         ;
+; |test_module_test                ; 16 (7)      ; 3 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 68   ; 0            ; 13 (7)       ; 0 (0)             ; 3 (1)            ; |test_module_test                             ; test_module_test ; work         ;
+;    |control_unit:control_unit|   ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; |test_module_test|control_unit:control_unit   ; control_unit     ; work         ;
 ;    |phase_counter:phase_counter| ; 3 (3)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; |test_module_test|phase_counter:phase_counter ; phase_counter    ; work         ;
 +----------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-----------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -1115,9 +1115,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - display1[4]~output                   ; 1                 ; 6       ;
 ;      - display1[7]~output                   ; 1                 ; 6       ;
 ; reset                                       ;                   ;         ;
-;      - phase_counter:phase_counter|phase[0] ; 0                 ; 6       ;
-;      - phase_counter:phase_counter|phase[1] ; 0                 ; 6       ;
 ;      - phase_counter:phase_counter|phase[2] ; 0                 ; 6       ;
+;      - phase_counter:phase_counter|phase[1] ; 0                 ; 6       ;
+;      - phase_counter:phase_counter|phase[0] ; 0                 ; 6       ;
 ;      - display2[2]~output                   ; 0                 ; 6       ;
 ;      - display2[3]~output                   ; 0                 ; 6       ;
 ;      - display2[4]~output                   ; 0                 ; 6       ;
@@ -1150,21 +1150,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 22 / 116,715 ( < 1 % ) ;
+; Block interconnects   ; 36 / 116,715 ( < 1 % ) ;
 ; C16 interconnects     ; 8 / 3,886 ( < 1 % )    ;
-; C4 interconnects      ; 14 / 73,752 ( < 1 % )  ;
-; Direct links          ; 4 / 116,715 ( < 1 % )  ;
+; C4 interconnects      ; 28 / 73,752 ( < 1 % )  ;
+; Direct links          ; 3 / 116,715 ( < 1 % )  ;
 ; Global clocks         ; 1 / 20 ( 5 % )         ;
 ; Local interconnects   ; 5 / 39,600 ( < 1 % )   ;
-; R24 interconnects     ; 8 / 3,777 ( < 1 % )    ;
-; R4 interconnects      ; 17 / 99,858 ( < 1 % )  ;
+; R24 interconnects     ; 11 / 3,777 ( < 1 % )   ;
+; R4 interconnects      ; 41 / 99,858 ( < 1 % )  ;
 +-----------------------+------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 12.00) ; Number of LABs  (Total = 1) ;
+; Number of Logic Elements  (Average = 16.00) ; Number of LABs  (Total = 1) ;
 +---------------------------------------------+-----------------------------+
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
@@ -1177,11 +1177,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 9                                           ; 0                           ;
 ; 10                                          ; 0                           ;
 ; 11                                          ; 0                           ;
-; 12                                          ; 1                           ;
+; 12                                          ; 0                           ;
 ; 13                                          ; 0                           ;
 ; 14                                          ; 0                           ;
 ; 15                                          ; 0                           ;
-; 16                                          ; 0                           ;
+; 16                                          ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1198,7 +1198,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 15.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced  (Average = 19.00) ; Number of LABs  (Total = 1) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
@@ -1215,25 +1215,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 12                                           ; 0                           ;
 ; 13                                           ; 0                           ;
 ; 14                                           ; 0                           ;
-; 15                                           ; 1                           ;
+; 15                                           ; 0                           ;
+; 16                                           ; 0                           ;
+; 17                                           ; 0                           ;
+; 18                                           ; 0                           ;
+; 19                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
-+-------------------------------------------------------------------------------+
-; LAB Signals Sourced Out                                                       ;
-+-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 8.00) ; Number of LABs  (Total = 1) ;
-+-------------------------------------------------+-----------------------------+
-; 0                                               ; 0                           ;
-; 1                                               ; 0                           ;
-; 2                                               ; 0                           ;
-; 3                                               ; 0                           ;
-; 4                                               ; 0                           ;
-; 5                                               ; 0                           ;
-; 6                                               ; 0                           ;
-; 7                                               ; 0                           ;
-; 8                                               ; 1                           ;
-+-------------------------------------------------+-----------------------------+
++--------------------------------------------------------------------------------+
+; LAB Signals Sourced Out                                                        ;
++--------------------------------------------------+-----------------------------+
+; Number of Signals Sourced Out  (Average = 12.00) ; Number of LABs  (Total = 1) ;
++--------------------------------------------------+-----------------------------+
+; 0                                                ; 0                           ;
+; 1                                                ; 0                           ;
+; 2                                                ; 0                           ;
+; 3                                                ; 0                           ;
+; 4                                                ; 0                           ;
+; 5                                                ; 0                           ;
+; 6                                                ; 0                           ;
+; 7                                                ; 0                           ;
+; 8                                                ; 0                           ;
+; 9                                                ; 0                           ;
+; 10                                               ; 0                           ;
+; 11                                               ; 0                           ;
+; 12                                               ; 1                           ;
++--------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
@@ -1461,7 +1469,7 @@ Info (176353): Automatically promoted node clock~input (placed in PIN B12 (CLK9,
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1474,15 +1482,15 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1654 megabytes
-    Info: Processing ended: Thu Apr 26 13:45:08 2018
+    Info: Peak virtual memory: 1649 megabytes
+    Info: Processing ended: Thu Apr 26 13:50:57 2018
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:07
 

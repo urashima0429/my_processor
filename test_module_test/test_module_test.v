@@ -101,12 +101,12 @@ module test_module_test(
 	always @* begin
 		display1 = adjustSevenSegment1_8(~exec);
 		display2 = adjustSevenSegment1_8(register_reset);
-		display3 = adjustSevenSegment1_8(p1);
-		display4 = adjustSevenSegment3_8(phaseIn);
-//		display5 = adjustSevenSegment3_8();
-//		display6 = adjustSevenSegment3_8(phaseIn);
-//		display7 = adjustSevenSegment3_8(phaseIn);
-//		display8 = adjustSevenSegment3_8(phaseIn);
+		display3 = adjustSevenSegment3_8(phaseIn);
+		display4 = adjustSevenSegment1_8(p1);
+		display5 = adjustSevenSegment1_8(p2);
+		display6 = adjustSevenSegment1_8(p3);
+		display7 = adjustSevenSegment1_8(p4);
+		display8 = adjustSevenSegment1_8(p5);
 	end
 	
 	initial begin
