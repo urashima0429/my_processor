@@ -1,0 +1,27 @@
+|eight_to_sixteen
+eight[0] => sixteen[0].DATAIN
+eight[1] => sixteen[1].DATAIN
+eight[2] => sixteen[2].DATAIN
+eight[3] => sixteen[3].DATAIN
+eight[4] => sixteen[4].DATAIN
+eight[5] => sixteen[5].DATAIN
+eight[6] => sixteen[6].DATAIN
+eight[7] => sixteen[7].DATAIN
+sixteen[0] <= eight[0].DB_MAX_OUTPUT_PORT_TYPE
+sixteen[1] <= eight[1].DB_MAX_OUTPUT_PORT_TYPE
+sixteen[2] <= eight[2].DB_MAX_OUTPUT_PORT_TYPE
+sixteen[3] <= eight[3].DB_MAX_OUTPUT_PORT_TYPE
+sixteen[4] <= eight[4].DB_MAX_OUTPUT_PORT_TYPE
+sixteen[5] <= eight[5].DB_MAX_OUTPUT_PORT_TYPE
+sixteen[6] <= eight[6].DB_MAX_OUTPUT_PORT_TYPE
+sixteen[7] <= eight[7].DB_MAX_OUTPUT_PORT_TYPE
+sixteen[8] <= <GND>
+sixteen[9] <= <GND>
+sixteen[10] <= <GND>
+sixteen[11] <= <GND>
+sixteen[12] <= <GND>
+sixteen[13] <= <GND>
+sixteen[14] <= <GND>
+sixteen[15] <= <GND>
+
+

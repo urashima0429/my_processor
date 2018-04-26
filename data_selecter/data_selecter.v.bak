@@ -1,0 +1,16 @@
+module data_selecter (
+	input [15:0] data0, data1,
+	input order,
+	output [15:0] out);
+	
+	//wire [15:0] data;
+	
+	always @* begin
+		if(order == 1'b0) begin
+			data <= data0;
+		end else begin
+			data <= data1;
+		end
+	end
+	
+endmodule
