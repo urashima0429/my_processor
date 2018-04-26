@@ -36,10 +36,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "phase[3]",
-					"strict" : false
-				},
-				{
 					"name" : "phase[0]",
 					"strict" : false
 				},

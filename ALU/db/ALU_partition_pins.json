@@ -100,10 +100,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "opcode[2]",
-					"strict" : false
-				},
-				{
 					"name" : "opcode[3]",
 					"strict" : false
 				},
@@ -188,6 +184,54 @@
 					"strict" : false
 				},
 				{
+					"name" : "opcode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "op2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "op2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "op1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Z_in",
+					"strict" : false
+				},
+				{
+					"name" : "cond[2]",
+					"strict" : false
+				},
+				{
+					"name" : "cond[0]",
+					"strict" : false
+				},
+				{
+					"name" : "S_in",
+					"strict" : false
+				},
+				{
+					"name" : "cond[1]",
+					"strict" : false
+				},
+				{
+					"name" : "V_in",
+					"strict" : false
+				},
+				{
 					"name" : "in1[1]",
 					"strict" : false
 				},
@@ -245,6 +289,10 @@
 				},
 				{
 					"name" : "in1[15]",
+					"strict" : false
+				},
+				{
+					"name" : "C_in",
 					"strict" : false
 				}
 			]

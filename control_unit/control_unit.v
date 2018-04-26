@@ -1,6 +1,6 @@
 module control_unit (
 	input clock, reset, exec,
-	input [3:0] phase,
+	input [2:0] phase,
 	output register_reset,
 	output reg p1, p2, p3, p4, p5);
 	
