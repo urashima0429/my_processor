@@ -83,7 +83,7 @@ module test_module_test(
 			assign phaseIn = phasePass;
 			
 			phase_counter phase_counter(clock, reset, phaseOut);
-			control_unit control_unit(clock, reset, exec, phaseIn, register_reset, p1, p2, p3, p4, p5);
+			control_unit control_unit(clock, ~reset, ~exec, phaseIn, register_reset, p1, p2, p3, p4, p5);
 
 	
 	
@@ -99,18 +99,19 @@ module test_module_test(
 	
 	//add parameter to check
 	always @* begin
-		display1 = adjustSevenSegment3_8(phaseIn);
-		display2 = adjustSevenSegment3_8(phaseIn);
+		display1 = adjustSevenSegment1_8(~exec);
+		display2 = adjustSevenSegment1_8(register_reset);
 		display3 = adjustSevenSegment1_8(p1);
-		display4 = adjustSevenSegment1_8(register_reset);
-		display5 = adjustSevenSegment3_8(phaseIn);
-		display6 = adjustSevenSegment3_8(phaseIn);
-		display7 = adjustSevenSegment3_8(phaseIn);
-		display8 = adjustSevenSegment3_8(phaseIn);
+		display4 = adjustSevenSegment3_8(phaseIn);
+//		display5 = adjustSevenSegment3_8();
+//		display6 = adjustSevenSegment3_8(phaseIn);
+//		display7 = adjustSevenSegment3_8(phaseIn);
+//		display8 = adjustSevenSegment3_8(phaseIn);
 	end
 	
 	initial begin
 		selecter <= 1'b1;
 	end
+	
 	
 endmodule

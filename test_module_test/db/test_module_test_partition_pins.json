@@ -4,10 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "display1[1]",
-					"strict" : false
-				},
-				{
 					"name" : "display1[2]",
 					"strict" : false
 				},
@@ -20,19 +16,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "display1[5]",
-					"strict" : false
-				},
-				{
-					"name" : "display1[6]",
-					"strict" : false
-				},
-				{
 					"name" : "display1[7]",
-					"strict" : false
-				},
-				{
-					"name" : "display2[1]",
 					"strict" : false
 				},
 				{
@@ -45,14 +29,6 @@
 				},
 				{
 					"name" : "display2[4]",
-					"strict" : false
-				},
-				{
-					"name" : "display2[5]",
-					"strict" : false
-				},
-				{
-					"name" : "display2[6]",
 					"strict" : false
 				},
 				{
@@ -76,6 +52,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "display4[1]",
+					"strict" : false
+				},
+				{
 					"name" : "display4[2]",
 					"strict" : false
 				},
@@ -88,119 +68,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "display4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "display4[6]",
+					"strict" : false
+				},
+				{
 					"name" : "display4[7]",
 					"strict" : false
 				},
 				{
-					"name" : "display5[1]",
-					"strict" : false
-				},
-				{
-					"name" : "display5[2]",
-					"strict" : false
-				},
-				{
-					"name" : "display5[3]",
-					"strict" : false
-				},
-				{
-					"name" : "display5[4]",
-					"strict" : false
-				},
-				{
-					"name" : "display5[5]",
-					"strict" : false
-				},
-				{
-					"name" : "display5[6]",
-					"strict" : false
-				},
-				{
-					"name" : "display5[7]",
-					"strict" : false
-				},
-				{
-					"name" : "display6[1]",
-					"strict" : false
-				},
-				{
-					"name" : "display6[2]",
-					"strict" : false
-				},
-				{
-					"name" : "display6[3]",
-					"strict" : false
-				},
-				{
-					"name" : "display6[4]",
-					"strict" : false
-				},
-				{
-					"name" : "display6[5]",
-					"strict" : false
-				},
-				{
-					"name" : "display6[6]",
-					"strict" : false
-				},
-				{
-					"name" : "display6[7]",
-					"strict" : false
-				},
-				{
-					"name" : "display7[1]",
-					"strict" : false
-				},
-				{
-					"name" : "display7[2]",
-					"strict" : false
-				},
-				{
-					"name" : "display7[3]",
-					"strict" : false
-				},
-				{
-					"name" : "display7[4]",
-					"strict" : false
-				},
-				{
-					"name" : "display7[5]",
-					"strict" : false
-				},
-				{
-					"name" : "display7[6]",
-					"strict" : false
-				},
-				{
-					"name" : "display7[7]",
-					"strict" : false
-				},
-				{
-					"name" : "display8[1]",
-					"strict" : false
-				},
-				{
-					"name" : "display8[2]",
-					"strict" : false
-				},
-				{
-					"name" : "display8[3]",
-					"strict" : false
-				},
-				{
-					"name" : "display8[4]",
-					"strict" : false
-				},
-				{
-					"name" : "display8[5]",
-					"strict" : false
-				},
-				{
-					"name" : "display8[6]",
-					"strict" : false
-				},
-				{
-					"name" : "display8[7]",
+					"name" : "exec",
 					"strict" : false
 				},
 				{
@@ -209,10 +89,6 @@
 				},
 				{
 					"name" : "clock",
-					"strict" : false
-				},
-				{
-					"name" : "exec",
 					"strict" : false
 				}
 			]

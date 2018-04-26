@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test_module_test
-Fri Apr 20 17:38:40 2018
+Thu Apr 26 13:45:02 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 20 17:38:40 2018           ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 26 13:45:02 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; test_module_test                                ;
 ; Top-level Entity Name              ; test_module_test                                ;
@@ -160,8 +160,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -203,8 +202,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                                      ;
 ; Maximum fan-out node                        ; phase_counter:phase_counter|phase[0] ;
 ; Maximum fan-out                             ; 10                                   ;
-; Total fan-out                               ; 160                                  ;
-; Average fan-out                             ; 1.06                                 ;
+; Total fan-out                               ; 129                                  ;
+; Average fan-out                             ; 0.85                                 ;
 +---------------------------------------------+--------------------------------------+
 
 
@@ -267,16 +266,16 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; boundary_port         ; 68                          ;
 ; cycloneiii_ff         ; 3                           ;
 ;     CLR               ; 3                           ;
-; cycloneiii_lcell_comb ; 22                          ;
-;     normal            ; 22                          ;
+; cycloneiii_lcell_comb ; 18                          ;
+;     normal            ; 18                          ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 9                           ;
+;         1 data inputs ; 5                           ;
 ;         2 data inputs ; 2                           ;
 ;         3 data inputs ; 8                           ;
 ;         4 data inputs ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.55                        ;
+; Average LUT depth     ; 1.36                        ;
 +-----------------------+-----------------------------+
 
 
@@ -295,13 +294,17 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Fri Apr 20 17:38:31 2018
+    Info: Processing started: Thu Apr 26 13:44:52 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test_module_test -c test_module_test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file test_module_test.v
     Info (12023): Found entity 1: test_module_test File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 1
 Info (12127): Elaborating entity "test_module_test" for the top level hierarchy
+Warning (10034): Output port "display5" at test_module_test.v(3) has no driver File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+Warning (10034): Output port "display6" at test_module_test.v(3) has no driver File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+Warning (10034): Output port "display7" at test_module_test.v(3) has no driver File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+Warning (10034): Output port "display8" at test_module_test.v(3) has no driver File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
 Warning (12125): Using design file phase_counter.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: phase_counter File: /export/home/016/a0165336/project/SIMPLE/test_module_test/phase_counter.v Line: 1
 Info (12128): Elaborating entity "phase_counter" for hierarchy "phase_counter:phase_counter" File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 85
@@ -314,19 +317,50 @@ Info (10041): Inferred latch for "running" at control_unit.v(11) File: /export/h
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "display1[0]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display1[1]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display1[5]" is stuck at VCC File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display1[6]" is stuck at VCC File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display2[0]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display2[1]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display2[5]" is stuck at VCC File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display2[6]" is stuck at VCC File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display3[0]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display3[1]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display3[5]" is stuck at VCC File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display3[6]" is stuck at VCC File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display4[0]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
-    Warning (13410): Pin "display4[1]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
-    Warning (13410): Pin "display4[5]" is stuck at VCC File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
-    Warning (13410): Pin "display4[6]" is stuck at VCC File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display5[0]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display5[1]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display5[2]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display5[3]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display5[4]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display5[5]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display5[6]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display5[7]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display6[0]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display6[1]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display6[2]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display6[3]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display6[4]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display6[5]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display6[6]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display6[7]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display7[0]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display7[1]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display7[2]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display7[3]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display7[4]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display7[5]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display7[6]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display7[7]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display8[0]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display8[1]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display8[2]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display8[3]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display8[4]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display8[5]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display8[6]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display8[7]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "selecter" is stuck at VCC File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 4
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -335,10 +369,10 @@ Info (21057): Implemented 80 device resources after synthesis - the final resour
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 65 output pins
     Info (21061): Implemented 12 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
-    Info: Peak virtual memory: 1084 megabytes
-    Info: Processing ended: Fri Apr 20 17:38:40 2018
-    Info: Elapsed time: 00:00:09
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 57 warnings
+    Info: Peak virtual memory: 1069 megabytes
+    Info: Processing ended: Thu Apr 26 13:45:02 2018
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:22
 
 
