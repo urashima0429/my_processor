@@ -1,5 +1,5 @@
 Fitter report for test_module_test
-Thu Apr 26 14:44:18 2018
+Thu Apr 26 14:50:01 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Thu Apr 26 14:44:18 2018           ;
+; Fitter Status                      ; Successful - Thu Apr 26 14:50:01 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; test_module_test                                ;
 ; Top-level Entity Name              ; test_module_test                                ;
@@ -156,8 +156,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
-;     Processors 3-4         ;   0.2%      ;
+;     Processors 2-4         ;   0.2%      ;
 +----------------------------+-------------+
 
 
@@ -244,12 +243,12 @@ The pin-out file can be found in /export/home/016/a0165336/project/SIMPLE/test_m
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )         ;
-; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.2%    ;
-; Peak interconnect usage (total/H/V)         ; 0.4% / 0.5% / 0.6%    ;
+; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%    ;
+; Peak interconnect usage (total/H/V)         ; 0.5% / 0.5% / 0.5%    ;
 ; Maximum fan-out                             ; 10                    ;
 ; Highest non-global fan-out                  ; 10                    ;
-; Total fan-out                               ; 141                   ;
-; Average fan-out                             ; 0.87                  ;
+; Total fan-out                               ; 146                   ;
+; Average fan-out                             ; 0.90                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -296,8 +295,8 @@ The pin-out file can be found in /export/home/016/a0165336/project/SIMPLE/test_m
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 136                  ; 5                              ;
-;     -- Registered Connections               ; 33                   ; 0                              ;
+;     -- Total Connections                    ; 141                  ; 5                              ;
+;     -- Registered Connections               ; 38                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -1118,7 +1117,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - phase_counter:phase_counter|phase[2]   ; 0                 ; 6       ;
 ;      - phase_counter:phase_counter|phase[1]   ; 0                 ; 6       ;
 ;      - phase_counter:phase_counter|phase[0]   ; 0                 ; 6       ;
-;      - program_counter:program_counter|out[0] ; 0                 ; 6       ;
+;      - program_counter:program_counter|out[1] ; 0                 ; 6       ;
 ;      - display2[2]~output                     ; 0                 ; 6       ;
 ;      - display2[3]~output                     ; 0                 ; 6       ;
 ;      - display2[4]~output                     ; 0                 ; 6       ;
@@ -1133,7 +1132,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                         ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 ; clock                        ; PIN_B12            ; 3       ; Clock        ; no     ; --                   ; --               ; --                        ;
-; control_unit:control_unit|p1 ; LCCOMB_X33_Y35_N30 ; 5       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; control_unit:control_unit|p1 ; LCCOMB_X33_Y32_N20 ; 5       ; Clock        ; no     ; --                   ; --               ; --                        ;
 ; reset                        ; PIN_F15            ; 8       ; Async. clear ; no     ; --                   ; --               ; --                        ;
 +------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
@@ -1143,14 +1142,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 27 / 116,715 ( < 1 % ) ;
+; Block interconnects   ; 29 / 116,715 ( < 1 % ) ;
 ; C16 interconnects     ; 24 / 3,886 ( < 1 % )   ;
-; C4 interconnects      ; 47 / 73,752 ( < 1 % )  ;
-; Direct links          ; 4 / 116,715 ( < 1 % )  ;
+; C4 interconnects      ; 38 / 73,752 ( < 1 % )  ;
+; Direct links          ; 3 / 116,715 ( < 1 % )  ;
 ; Global clocks         ; 0 / 20 ( 0 % )         ;
 ; Local interconnects   ; 6 / 39,600 ( < 1 % )   ;
-; R24 interconnects     ; 16 / 3,777 ( < 1 % )   ;
-; R4 interconnects      ; 28 / 99,858 ( < 1 % )  ;
+; R24 interconnects     ; 19 / 3,777 ( < 1 % )   ;
+; R4 interconnects      ; 32 / 99,858 ( < 1 % )  ;
 +-----------------------+------------------------+
 
 
@@ -1469,8 +1468,8 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file /export/home/016/a0165336/project/SIMPLE/test_module_test/output_files/test_module_test.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1654 megabytes
-    Info: Processing ended: Thu Apr 26 14:44:19 2018
+    Info: Peak virtual memory: 1649 megabytes
+    Info: Processing ended: Thu Apr 26 14:50:02 2018
     Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:07
 

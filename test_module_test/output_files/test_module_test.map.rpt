@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test_module_test
-Thu Apr 26 14:44:12 2018
+Thu Apr 26 14:49:55 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -16,11 +16,12 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
   8. User-Specified and Inferred Latches
   9. Registers Removed During Synthesis
  10. General Register Statistics
- 11. Port Connectivity Checks: "program_counter:program_counter"
- 12. Port Connectivity Checks: "control_unit:control_unit"
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+ 11. Port Connectivity Checks: "adder_for_program_counter:adder_for_program_counter"
+ 12. Port Connectivity Checks: "program_counter:program_counter"
+ 13. Port Connectivity Checks: "control_unit:control_unit"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -46,7 +47,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 26 14:44:12 2018           ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 26 14:49:55 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; test_module_test                                ;
 ; Top-level Entity Name              ; test_module_test                                ;
@@ -162,21 +163,21 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                     ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                 ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
-; test_module_test.v               ; yes             ; User Verilog HDL File        ; /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v ;         ;
-; phase_counter.v                  ; yes             ; Auto-Found Verilog HDL File  ; /export/home/016/a0165336/project/SIMPLE/test_module_test/phase_counter.v    ;         ;
-; control_unit.v                   ; yes             ; Auto-Found Verilog HDL File  ; /export/home/016/a0165336/project/SIMPLE/test_module_test/control_unit.v     ;         ;
-; program_counter.v                ; yes             ; Auto-Found Verilog HDL File  ; /export/home/016/a0165336/project/SIMPLE/test_module_test/program_counter.v  ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                              ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                          ; Library ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
+; test_module_test.v               ; yes             ; User Verilog HDL File        ; /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v          ;         ;
+; phase_counter.v                  ; yes             ; Auto-Found Verilog HDL File  ; /export/home/016/a0165336/project/SIMPLE/test_module_test/phase_counter.v             ;         ;
+; control_unit.v                   ; yes             ; Auto-Found Verilog HDL File  ; /export/home/016/a0165336/project/SIMPLE/test_module_test/control_unit.v              ;         ;
+; program_counter.v                ; yes             ; Auto-Found Verilog HDL File  ; /export/home/016/a0165336/project/SIMPLE/test_module_test/program_counter.v           ;         ;
+; adder_for_program_counter.v      ; yes             ; Auto-Found Verilog HDL File  ; /export/home/016/a0165336/project/SIMPLE/test_module_test/adder_for_program_counter.v ;         ;
++----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------------------+---------+
 
 
 +------------------------------------------------------------------------------------+
@@ -206,8 +207,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                                      ;
 ; Maximum fan-out node                        ; phase_counter:phase_counter|phase[1] ;
 ; Maximum fan-out                             ; 10                                   ;
-; Total fan-out                               ; 135                                  ;
-; Average fan-out                             ; 0.89                                 ;
+; Total fan-out                               ; 140                                  ;
+; Average fan-out                             ; 0.92                                 ;
 +---------------------------------------------+--------------------------------------+
 
 
@@ -235,14 +236,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                             ;
-+-------------------------------------------+----------------------------------------------------+
-; Register name                             ; Reason for Removal                                 ;
-+-------------------------------------------+----------------------------------------------------+
-; program_counter:program_counter|out[1..3] ; Merged with program_counter:program_counter|out[0] ;
-; Total Number of Removed Registers = 3     ;                                                    ;
-+-------------------------------------------+----------------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                              ;
++--------------------------------------------+----------------------------------------------------+
+; Register name                              ; Reason for Removal                                 ;
++--------------------------------------------+----------------------------------------------------+
+; program_counter:program_counter|out[0]     ; Stuck at GND due to stuck port data_in             ;
+; program_counter:program_counter|out[4..15] ; Lost fanout                                        ;
+; program_counter:program_counter|out[2,3]   ; Merged with program_counter:program_counter|out[1] ;
+; Total Number of Removed Registers = 15     ;                                                    ;
++--------------------------------------------+----------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -261,13 +264,22 @@ Note: All latches listed above may not be present at the end of synthesis due to
 
 
 +----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "program_counter:program_counter"                                                          ;
+; Port Connectivity Checks: "adder_for_program_counter:adder_for_program_counter"                                      ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port       ; Type   ; Severity ; Details                                                                             ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
-; in         ; Input  ; Info     ; Stuck at VCC                                                                        ;
 ; out[15..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "program_counter:program_counter" ;
++-----------+-------+----------+------------------------------+
+; Port      ; Type  ; Severity ; Details                      ;
++-----------+-------+----------+------------------------------+
+; in[15..1] ; Input ; Info     ; Stuck at VCC                 ;
+; in[0]     ; Input ; Info     ; Stuck at GND                 ;
++-----------+-------+----------+------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -319,28 +331,31 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Thu Apr 26 14:44:03 2018
+    Info: Processing started: Thu Apr 26 14:49:46 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test_module_test -c test_module_test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file test_module_test.v
     Info (12023): Found entity 1: test_module_test File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 1
 Info (12127): Elaborating entity "test_module_test" for the top level hierarchy
-Warning (10034): Output port "display6" at test_module_test.v(3) has no driver File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
 Warning (10034): Output port "display7" at test_module_test.v(3) has no driver File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
 Warning (10034): Output port "display8" at test_module_test.v(3) has no driver File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
 Warning (12125): Using design file phase_counter.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: phase_counter File: /export/home/016/a0165336/project/SIMPLE/test_module_test/phase_counter.v Line: 1
-Info (12128): Elaborating entity "phase_counter" for hierarchy "phase_counter:phase_counter" File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 88
+Info (12128): Elaborating entity "phase_counter" for hierarchy "phase_counter:phase_counter" File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 89
 Warning (10230): Verilog HDL assignment warning at phase_counter.v(15): truncated value with size 32 to match size of target (3) File: /export/home/016/a0165336/project/SIMPLE/test_module_test/phase_counter.v Line: 15
 Warning (12125): Using design file control_unit.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: control_unit File: /export/home/016/a0165336/project/SIMPLE/test_module_test/control_unit.v Line: 1
-Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:control_unit" File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 89
+Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:control_unit" File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 90
 Warning (10240): Verilog HDL Always Construct warning at control_unit.v(11): inferring latch(es) for variable "running", which holds its previous value in one or more paths through the always construct File: /export/home/016/a0165336/project/SIMPLE/test_module_test/control_unit.v Line: 11
 Info (10041): Inferred latch for "running" at control_unit.v(11) File: /export/home/016/a0165336/project/SIMPLE/test_module_test/control_unit.v Line: 11
 Warning (12125): Using design file program_counter.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: program_counter File: /export/home/016/a0165336/project/SIMPLE/test_module_test/program_counter.v Line: 1
-Info (12128): Elaborating entity "program_counter" for hierarchy "program_counter:program_counter" File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 90
+Info (12128): Elaborating entity "program_counter" for hierarchy "program_counter:program_counter" File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 91
+Warning (12125): Using design file adder_for_program_counter.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: adder_for_program_counter File: /export/home/016/a0165336/project/SIMPLE/test_module_test/adder_for_program_counter.v Line: 1
+Info (12128): Elaborating entity "adder_for_program_counter" for hierarchy "adder_for_program_counter:adder_for_program_counter" File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 92
+Warning (10230): Verilog HDL assignment warning at adder_for_program_counter.v(5): truncated value with size 32 to match size of target (16) File: /export/home/016/a0165336/project/SIMPLE/test_module_test/adder_for_program_counter.v Line: 5
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "display1[0]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
@@ -359,15 +374,10 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "display5[0]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display5[2]" is stuck at VCC File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display5[3]" is stuck at VCC File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
+    Warning (13410): Pin "display5[4]" is stuck at VCC File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display5[7]" is stuck at VCC File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display6[0]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
-    Warning (13410): Pin "display6[1]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
-    Warning (13410): Pin "display6[2]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
-    Warning (13410): Pin "display6[3]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display6[4]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
-    Warning (13410): Pin "display6[5]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
-    Warning (13410): Pin "display6[6]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
-    Warning (13410): Pin "display6[7]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display7[0]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display7[1]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "display7[2]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
@@ -386,16 +396,17 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "display8[7]" is stuck at GND File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 3
     Warning (13410): Pin "selecter" is stuck at VCC File: /export/home/016/a0165336/project/SIMPLE/test_module_test/test_module_test.v Line: 4
 Info (286030): Timing-Driven Synthesis is running
+Info (17049): 12 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 81 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 65 output pins
     Info (21061): Implemented 13 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 53 warnings
-    Info: Peak virtual memory: 1084 megabytes
-    Info: Processing ended: Thu Apr 26 14:44:12 2018
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 49 warnings
+    Info: Peak virtual memory: 1068 megabytes
+    Info: Processing ended: Thu Apr 26 14:49:55 2018
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Total CPU time (on all processors): 00:00:23
 
 

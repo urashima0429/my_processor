@@ -78,16 +78,18 @@ module test_module_test(
 	*/
 			wire [15:0] test;
 			wire [15:0] out;
+			wire [15:0] out2;
 			wire [2:0] phaseIn, phasePass, phaseOut;
 			wire register_reset, p1, p2, p3, p4, p5;
 			
 			assign phasePass = phaseOut;
 			assign phaseIn = phasePass;
-			assign test = 16'b1111111111111111;
+			assign test = 16'b1111111111111110;
 			
 			phase_counter phase_counter(clock, reset, phaseOut);
 			control_unit control_unit(clock, ~reset, ~exec, phaseIn, register_reset, p1, p2, p3, p4, p5);
 			program_counter program_counter(p1, register_reset, test, out);
+			adder_for_program_counter adder_for_program_counter(out, out2);
 
 	
 	
@@ -108,7 +110,7 @@ module test_module_test(
 		display3 = adjustSevenSegment3_8(phaseIn);
 		display4 = adjustSevenSegment1_8(p1);
 		display5 = adjustSevenSegment4_8(out);
-//		display6 = adjustSevenSegment1_8(p3);
+		display6 = adjustSevenSegment4_8(out2);
 //		display7 = adjustSevenSegment1_8(p4);
 //		display8 = adjustSevenSegment1_8(p5);
 	end

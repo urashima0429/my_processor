@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for test_module_test
-Thu Apr 26 14:44:23 2018
+Thu Apr 26 14:50:06 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -103,9 +103,9 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.3%      ;
-;     Processor 3            ;   0.2%      ;
-;     Processor 4            ;   0.2%      ;
+;     Processor 2            ;   0.5%      ;
+;     Processor 3            ;   0.5%      ;
+;     Processor 4            ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -124,7 +124,7 @@ refer to the applicable agreement for further details.
 +------------+-----------------+------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
 +------------+-----------------+------------+---------------------------------------------------------------+
-; 624.22 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 623.44 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
 +------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -140,7 +140,7 @@ HTML report is unavailable in plain text report export.
 +-------+--------+---------------------+
 ; Clock ; Slack  ; End Point TNS       ;
 +-------+--------+---------------------+
-; clock ; -0.602 ; -0.846              ;
+; clock ; -0.604 ; -1.068              ;
 +-------+--------+---------------------+
 
 
@@ -180,12 +180,12 @@ No paths to report.
 +--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
-; -0.602 ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 1.000        ; -0.051     ; 1.569      ;
-; -0.430 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 1.000        ; -0.051     ; 1.397      ;
-; -0.269 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 1.000        ; -0.051     ; 1.236      ;
-; -0.209 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.051     ; 1.176      ;
-; -0.039 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.051     ; 1.006      ;
-; -0.035 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 1.000        ; -0.051     ; 1.002      ;
+; -0.604 ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 1.000        ; -0.052     ; 1.570      ;
+; -0.442 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 1.000        ; -0.052     ; 1.408      ;
+; -0.272 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 1.000        ; -0.052     ; 1.238      ;
+; -0.245 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 1.000        ; -0.052     ; 1.211      ;
+; -0.219 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.052     ; 1.185      ;
+; 0.119  ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.052     ; 0.847      ;
 ; 0.203  ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 1.000        ; -0.043     ; 0.772      ;
 ; 0.203  ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.043     ; 0.772      ;
 +--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
@@ -198,12 +198,12 @@ No paths to report.
 +-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
 ; 0.445 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 0.000        ; 0.043      ; 0.674      ;
 ; 0.445 ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.043      ; 0.674      ;
-; 0.667 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 0.000        ; 0.051      ; 0.904      ;
-; 0.670 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.051      ; 0.907      ;
-; 0.711 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.051      ; 0.948      ;
-; 0.870 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.051      ; 1.107      ;
-; 0.995 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.051      ; 1.232      ;
-; 1.119 ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.051      ; 1.356      ;
+; 0.487 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.052      ; 0.725      ;
+; 0.716 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.052      ; 0.954      ;
+; 0.717 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 0.000        ; 0.052      ; 0.955      ;
+; 0.869 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.052      ; 1.107      ;
+; 0.993 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.052      ; 1.231      ;
+; 1.117 ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.052      ; 1.355      ;
 +-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -228,7 +228,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+---------------------+
 ; Clock ; Slack  ; End Point TNS       ;
 +-------+--------+---------------------+
-; clock ; -0.379 ; -0.408              ;
+; clock ; -0.379 ; -0.477              ;
 +-------+--------+---------------------+
 
 
@@ -269,11 +269,11 @@ No paths to report.
 ; Slack  ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
 ; -0.379 ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 1.000        ; -0.045     ; 1.354      ;
-; -0.238 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 1.000        ; -0.045     ; 1.213      ;
-; -0.103 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 1.000        ; -0.045     ; 1.078      ;
-; -0.029 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.045     ; 1.004      ;
-; 0.101  ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.045     ; 0.874      ;
-; 0.105  ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 1.000        ; -0.045     ; 0.870      ;
+; -0.244 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 1.000        ; -0.045     ; 1.219      ;
+; -0.101 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 1.000        ; -0.045     ; 1.076      ;
+; -0.060 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 1.000        ; -0.045     ; 1.035      ;
+; -0.038 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.045     ; 1.013      ;
+; 0.237  ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.045     ; 0.738      ;
 ; 0.320  ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.038     ; 0.662      ;
 ; 0.320  ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 1.000        ; -0.038     ; 0.662      ;
 +--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
@@ -286,12 +286,12 @@ No paths to report.
 +-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
 ; 0.368 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 0.000        ; 0.038      ; 0.574      ;
 ; 0.368 ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.038      ; 0.574      ;
-; 0.593 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 0.000        ; 0.045      ; 0.806      ;
-; 0.597 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.045      ; 0.810      ;
-; 0.627 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.045      ; 0.840      ;
-; 0.760 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.045      ; 0.973      ;
-; 0.879 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.045      ; 1.092      ;
-; 0.984 ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.045      ; 1.197      ;
+; 0.426 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.045      ; 0.639      ;
+; 0.633 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.045      ; 0.846      ;
+; 0.633 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 0.000        ; 0.045      ; 0.846      ;
+; 0.761 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.045      ; 0.974      ;
+; 0.880 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.045      ; 1.093      ;
+; 0.983 ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.045      ; 1.196      ;
 +-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -306,7 +306,7 @@ No synchronizer chains to report.
 +-------+-------+----------------------+
 ; Clock ; Slack ; End Point TNS        ;
 +-------+-------+----------------------+
-; clock ; 0.273 ; 0.000                ;
+; clock ; 0.275 ; 0.000                ;
 +-------+-------+----------------------+
 
 
@@ -336,8 +336,8 @@ No paths to report.
 +-------+--------+-----------------------------------+
 ; Clock ; Slack  ; End Point TNS                     ;
 +-------+--------+-----------------------------------+
-; clock ; -3.000 ; -6.021                            ;
-; exec  ; -3.000 ; -4.184                            ;
+; clock ; -3.000 ; -6.000                            ;
+; exec  ; -3.000 ; -4.211                            ;
 +-------+--------+-----------------------------------+
 
 
@@ -346,12 +346,12 @@ No paths to report.
 +-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.273 ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 1.000        ; -0.025     ; 0.710      ;
-; 0.357 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 1.000        ; -0.025     ; 0.626      ;
+; 0.275 ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 1.000        ; -0.025     ; 0.708      ;
+; 0.353 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 1.000        ; -0.025     ; 0.630      ;
 ; 0.433 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 1.000        ; -0.025     ; 0.550      ;
-; 0.447 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.025     ; 0.536      ;
-; 0.521 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.025     ; 0.462      ;
-; 0.524 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 1.000        ; -0.025     ; 0.459      ;
+; 0.433 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 1.000        ; -0.025     ; 0.550      ;
+; 0.443 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.025     ; 0.540      ;
+; 0.602 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.025     ; 0.381      ;
 ; 0.642 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 1.000        ; -0.021     ; 0.345      ;
 ; 0.642 ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.021     ; 0.345      ;
 +-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
@@ -364,11 +364,11 @@ No paths to report.
 +-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
 ; 0.193 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 0.000        ; 0.021      ; 0.296      ;
 ; 0.193 ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.021      ; 0.296      ;
-; 0.283 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 0.000        ; 0.025      ; 0.390      ;
-; 0.286 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.025      ; 0.393      ;
-; 0.309 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.025      ; 0.416      ;
-; 0.386 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.025      ; 0.493      ;
-; 0.431 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.025      ; 0.538      ;
+; 0.212 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.025      ; 0.319      ;
+; 0.310 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.025      ; 0.417      ;
+; 0.311 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 0.000        ; 0.025      ; 0.418      ;
+; 0.385 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.025      ; 0.492      ;
+; 0.433 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.025      ; 0.540      ;
 ; 0.490 ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[0] ; clock        ; clock       ; 0.000        ; 0.025      ; 0.597      ;
 +-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
 
@@ -384,11 +384,11 @@ No synchronizer chains to report.
 +------------------+--------+-------+----------+---------+---------------------+
 ; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -0.602 ; 0.193 ; N/A      ; N/A     ; -3.000              ;
-;  clock           ; -0.602 ; 0.193 ; N/A      ; N/A     ; -3.000              ;
+; Worst-case Slack ; -0.604 ; 0.193 ; N/A      ; N/A     ; -3.000              ;
+;  clock           ; -0.604 ; 0.193 ; N/A      ; N/A     ; -3.000              ;
 ;  exec            ; N/A    ; N/A   ; N/A      ; N/A     ; -3.000              ;
-; Design-wide TNS  ; -0.846 ; 0.0   ; 0.0      ; 0.0     ; -11.14              ;
-;  clock           ; -0.846 ; 0.000 ; N/A      ; N/A     ; -6.855              ;
+; Design-wide TNS  ; -1.068 ; 0.0   ; 0.0      ; 0.0     ; -11.14              ;
+;  clock           ; -1.068 ; 0.000 ; N/A      ; N/A     ; -6.855              ;
 ;  exec            ; N/A    ; N/A   ; N/A      ; N/A     ; -4.285              ;
 +------------------+--------+-------+----------+---------+---------------------+
 
@@ -748,8 +748,8 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 2     ; 2    ;
 ; Unconstrained Input Port Paths  ; 16    ; 16   ;
-; Unconstrained Output Ports      ; 23    ; 23   ;
-; Unconstrained Output Port Paths ; 49    ; 49   ;
+; Unconstrained Output Ports      ; 28    ; 28   ;
+; Unconstrained Output Port Paths ; 54    ; 54   ;
 +---------------------------------+-------+------+
 
 
@@ -798,9 +798,14 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; display4[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display4[7] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display5[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; display5[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display5[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display5[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display6[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display6[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display6[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display6[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display6[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display6[7] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
@@ -839,9 +844,14 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; display4[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display4[7] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display5[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; display5[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display5[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display5[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display6[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display6[2] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display6[3] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display6[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display6[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; display6[7] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
@@ -851,7 +861,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Thu Apr 26 14:44:21 2018
+    Info: Processing started: Thu Apr 26 14:50:04 2018
 Info: Command: quartus_sta test_module_test -c test_module_test
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -874,10 +884,10 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 100C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.602
+Info (332146): Worst-case setup slack is -0.604
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.602              -0.846 clock 
+    Info (332119):    -0.604              -1.068 clock 
 Info (332146): Worst-case hold slack is 0.445
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -900,7 +910,7 @@ Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case setup slack is -0.379
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.379              -0.408 clock 
+    Info (332119):    -0.379              -0.477 clock 
 Info (332146): Worst-case hold slack is 0.368
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -916,10 +926,10 @@ Info: Analyzing Fast 1200mV -40C Model
 Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
     Info (332098): Cell: control_unit|running~0  from: datad  to: combout
 Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
-Info (332146): Worst-case setup slack is 0.273
+Info (332146): Worst-case setup slack is 0.275
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.273               0.000 clock 
+    Info (332119):     0.275               0.000 clock 
 Info (332146): Worst-case hold slack is 0.193
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -931,13 +941,13 @@ Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000              -6.021 clock 
-    Info (332119):    -3.000              -4.184 exec 
+    Info (332119):    -3.000              -6.000 clock 
+    Info (332119):    -3.000              -4.211 exec 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 938 megabytes
-    Info: Processing ended: Thu Apr 26 14:44:23 2018
+    Info: Peak virtual memory: 935 megabytes
+    Info: Processing ended: Thu Apr 26 14:50:06 2018
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
