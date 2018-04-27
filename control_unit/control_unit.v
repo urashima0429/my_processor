@@ -19,17 +19,9 @@ module control_unit (
 		//start and stop running on exec pushed	
 		if (exec == 1'b1) begin 
 			running <= ~running;
-<<<<<<< HEAD
-		
-		
 		
 		//end else if(halt == 1'b1) begin
 			//running <= ~running;
-=======
-			
-//		end else if(halt == 1'b1) begin
-//			running <= ~running;
->>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 		
 		//stop running on reset pushed			
 		end else if (reset == 1'b1) begin 
@@ -39,7 +31,6 @@ module control_unit (
 	end
 	
 	//activate phases on running
-<<<<<<< HEAD
 	always @* begin
 		if (running == 1'b1) begin 
 			case (phase)
@@ -107,7 +98,5 @@ module control_unit (
 			p5 <= 1'b1;
 		end
 	end	
-=======
->>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 	
 endmodule
