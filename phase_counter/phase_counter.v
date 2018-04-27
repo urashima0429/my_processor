@@ -12,7 +12,7 @@ module phase_counter (
 			phase <= 3'b000;
 		
 		end else begin
-			phase <= phase + 16'b0000000000000001;
+			phase <= phase + 3'd1;
 		
 		end
 

@@ -14,100 +14,20 @@ module control_unit (
 	assign p4 = clock & (phase == 3'b011) & running;
 	assign p5 = clock & (phase == 3'b100) & running;
 
-	always @(posedge exec or posedge reset) begin
+	always @(posedge clock) begin
 		
 		//start and stop running on exec pushed	
 		if (exec == 1'b1) begin 
 			running <= ~running;
-<<<<<<< HEAD
-		
-		
-		
-		//end else if(halt == 1'b1) begin
-			//running <= ~running;
-=======
-			
-//		end else if(halt == 1'b1) begin
-//			running <= ~running;
->>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
-		
+
 		//stop running on reset pushed			
 		end else if (reset == 1'b1) begin 
 			running <= 0;
 			
 		end
+		
 	end
 	
-	//activate phases on running
-<<<<<<< HEAD
-	always @* begin
-		if (running == 1'b1) begin 
-			case (phase)
-			 3'b000: 
-			 begin
-				p1 <= 1'b1;
-				p2 <= 1'b0;
-				p3 <= 1'b0;
-				p4 <= 1'b0;
-				p5 <= 1'b0;
-			 end
-			 
-			 3'b001:
-			 begin
-				p1 <= 1'b0;
-				p2 <= 1'b1;
-				p3 <= 1'b0;
-				p4 <= 1'b0;
-				p5 <= 1'b0;
-			 end
-			 
-			 3'b010:
-			 begin
-				p1 <= 1'b0;
-				p2 <= 1'b0;
-				p3 <= 1'b1;
-				p4 <= 1'b0;
-				p5 <= 1'b0;
-			 end
-			 
-			 3'b011:
-			 begin
-				p1 <= 1'b0;
-				p2 <= 1'b0;
-				p3 <= 1'b0;
-				p4 <= 1'b1;
-				p5 <= 1'b0;
-			 end
-			 
-			 3'b100:
-			 begin
-				p1 <= 1'b0;
-				p2 <= 1'b0;
-				p3 <= 1'b0;
-				p4 <= 1'b0;
-				p5 <= 1'b1;
-			end
-			
-			default:
-			begin
-				p1 <= 1'b0;
-				p2 <= 1'b0;
-				p3 <= 1'b0;
-				p4 <= 1'b0;
-				p5 <= 1'b0;
-			end
-			
-			endcase
-			
-		end else begin
-			p1 <= 1'b1;
-			p2 <= 1'b1;
-			p3 <= 1'b1;
-			p4 <= 1'b1;
-			p5 <= 1'b1;
-		end
-	end	
-=======
->>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
+
 	
 endmodule

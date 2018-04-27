@@ -1,5 +1,5 @@
 Fitter report for processor_p1
-Fri Apr 27 17:30:00 2018
+Fri Apr 27 20:44:56 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -66,15 +66,15 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Apr 27 17:30:00 2018           ;
+; Fitter Status                      ; Successful - Fri Apr 27 20:44:56 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; processor_p1                                    ;
 ; Top-level Entity Name              ; processor_p1                                    ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE30F23I7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 54 / 28,848 ( < 1 % )                           ;
-;     Total combinational functions  ; 54 / 28,848 ( < 1 % )                           ;
+; Total logic elements               ; 55 / 28,848 ( < 1 % )                           ;
+;     Total combinational functions  ; 55 / 28,848 ( < 1 % )                           ;
 ;     Dedicated logic registers      ; 20 / 28,848 ( < 1 % )                           ;
 ; Total registers                    ; 20                                              ;
 ; Total pins                         ; 42 / 329 ( 13 % )                               ;
@@ -91,6 +91,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                     ; Setting                               ; Default Value                         ;
 +----------------------------------------------------------------------------+---------------------------------------+---------------------------------------+
 ; Device                                                                     ; EP4CE30F23I7                          ;                                       ;
+; Maximum processors allowed for parallel compilation                        ; 4                                     ;                                       ;
 ; Nominal Core Supply Voltage                                                ; 1.2V                                  ;                                       ;
 ; Minimum Core Junction Temperature                                          ; -40                                   ;                                       ;
 ; Maximum Core Junction Temperature                                          ; 100                                   ;                                       ;
@@ -169,8 +170,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]      ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+--------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                    ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 170 ) ; 0.00 % ( 0 / 170 )         ; 0.00 % ( 0 / 170 )       ;
-;     -- Achieved     ; 0.00 % ( 0 / 170 ) ; 0.00 % ( 0 / 170 )         ; 0.00 % ( 0 / 170 )       ;
+;     -- Requested    ; 0.00 % ( 0 / 171 ) ; 0.00 % ( 0 / 171 )         ; 0.00 % ( 0 / 171 )       ;
+;     -- Achieved     ; 0.00 % ( 0 / 171 ) ; 0.00 % ( 0 / 171 )         ; 0.00 % ( 0 / 171 )       ;
 ;                     ;                    ;                            ;                          ;
 ; Routing (by net)    ;                    ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )   ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -193,7 +194,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 160 )    ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 161 )    ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -201,7 +202,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /export/home/016/a0169654/SIMPLE/processor_p1/output_files/processor_p1.pin.
+The pin-out file can be found in /export/home/016/a0165336/project/SIMPLE/processor_p1/output_files/processor_p1.pin.
 
 
 +---------------------------------------------------------------------+
@@ -209,19 +210,19 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/processor_p1/o
 +---------------------------------------------+-----------------------+
 ; Resource                                    ; Usage                 ;
 +---------------------------------------------+-----------------------+
-; Total logic elements                        ; 54 / 28,848 ( < 1 % ) ;
-;     -- Combinational with no register       ; 34                    ;
+; Total logic elements                        ; 55 / 28,848 ( < 1 % ) ;
+;     -- Combinational with no register       ; 35                    ;
 ;     -- Register only                        ; 0                     ;
 ;     -- Combinational with a register        ; 20                    ;
 ;                                             ;                       ;
 ; Logic element usage by number of LUT inputs ;                       ;
-;     -- 4 input functions                    ; 34                    ;
-;     -- 3 input functions                    ; 3                     ;
+;     -- 4 input functions                    ; 28                    ;
+;     -- 3 input functions                    ; 10                    ;
 ;     -- <=2 input functions                  ; 17                    ;
 ;     -- Register only                        ; 0                     ;
 ;                                             ;                       ;
 ; Logic elements by mode                      ;                       ;
-;     -- normal mode                          ; 39                    ;
+;     -- normal mode                          ; 40                    ;
 ;     -- arithmetic mode                      ; 15                    ;
 ;                                             ;                       ;
 ; Total registers*                            ; 20 / 30,421 ( < 1 % ) ;
@@ -246,12 +247,12 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/processor_p1/o
 ; ASMI blocks                                 ; 0 / 1 ( 0 % )         ;
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )         ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )         ;
-; Average interconnect usage (total/H/V)      ; 0.1% / 0.1% / 0.1%    ;
-; Peak interconnect usage (total/H/V)         ; 0.9% / 0.9% / 0.9%    ;
+; Average interconnect usage (total/H/V)      ; 0.1% / 0.2% / 0.1%    ;
+; Peak interconnect usage (total/H/V)         ; 0.7% / 0.8% / 0.5%    ;
 ; Maximum fan-out                             ; 20                    ;
 ; Highest non-global fan-out                  ; 20                    ;
-; Total fan-out                               ; 320                   ;
-; Average fan-out                             ; 1.89                  ;
+; Total fan-out                               ; 316                   ;
+; Average fan-out                             ; 1.86                  ;
 +---------------------------------------------+-----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -264,19 +265,19 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/processor_p1/o
 +---------------------------------------------+----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                  ; Low                            ;
 ;                                             ;                      ;                                ;
-; Total logic elements                        ; 54 / 28848 ( < 1 % ) ; 0 / 28848 ( 0 % )              ;
-;     -- Combinational with no register       ; 34                   ; 0                              ;
+; Total logic elements                        ; 55 / 28848 ( < 1 % ) ; 0 / 28848 ( 0 % )              ;
+;     -- Combinational with no register       ; 35                   ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;     -- Combinational with a register        ; 20                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic element usage by number of LUT inputs ;                      ;                                ;
-;     -- 4 input functions                    ; 34                   ; 0                              ;
-;     -- 3 input functions                    ; 3                    ; 0                              ;
+;     -- 4 input functions                    ; 28                   ; 0                              ;
+;     -- 3 input functions                    ; 10                   ; 0                              ;
 ;     -- <=2 input functions                  ; 17                   ; 0                              ;
 ;     -- Register only                        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Logic elements by mode                      ;                      ;                                ;
-;     -- normal mode                          ; 39                   ; 0                              ;
+;     -- normal mode                          ; 40                   ; 0                              ;
 ;     -- arithmetic mode                      ; 15                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Total registers                             ; 20                   ; 0                              ;
@@ -299,8 +300,8 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/processor_p1/o
 ;     -- Registered Output Connections        ; 0                    ; 0                              ;
 ;                                             ;                      ;                                ;
 ; Internal Connections                        ;                      ;                                ;
-;     -- Total Connections                    ; 315                  ; 5                              ;
-;     -- Registered Connections               ; 40                   ; 0                              ;
+;     -- Total Connections                    ; 311                  ; 5                              ;
+;     -- Registered Connections               ; 39                   ; 0                              ;
 ;                                             ;                      ;                                ;
 ; External Connections                        ;                      ;                                ;
 ;     -- Top                                  ; 0                    ; 0                              ;
@@ -332,8 +333,8 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/processor_p1/o
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name  ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; clock ; B12   ; 7        ; 34           ; 43           ; 7            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; exec  ; E15   ; 7        ; 54           ; 43           ; 21           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; clock ; B12   ; 7        ; 34           ; 43           ; 7            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; exec  ; E15   ; 7        ; 54           ; 43           ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; reset ; F15   ; 7        ; 63           ; 43           ; 0            ; 20                    ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 +-------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
@@ -976,10 +977,10 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +-------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------+---------------------------+--------------+
 ; Compilation Hierarchy Node          ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                          ; Entity Name               ; Library Name ;
 +-------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------+---------------------------+--------------+
-; |processor_p1                       ; 54 (0)      ; 20 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 42   ; 0            ; 34 (0)       ; 0 (0)             ; 20 (0)           ; |processor_p1                                ; processor_p1              ; work         ;
+; |processor_p1                       ; 55 (0)      ; 20 (0)                    ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 42   ; 0            ; 35 (0)       ; 0 (0)             ; 20 (0)           ; |processor_p1                                ; processor_p1              ; work         ;
 ;    |LED_simple:inst11|              ; 28 (28)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 28 (28)      ; 0 (0)             ; 0 (0)            ; |processor_p1|LED_simple:inst11              ; LED_simple                ; work         ;
 ;    |adder_for_program_counter:inst| ; 16 (16)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (16)          ; |processor_p1|adder_for_program_counter:inst ; adder_for_program_counter ; work         ;
-;    |control_unit:inst15|            ; 7 (7)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (6)        ; 0 (0)             ; 1 (1)            ; |processor_p1|control_unit:inst15            ; control_unit              ; work         ;
+;    |control_unit:inst15|            ; 8 (8)       ; 1 (1)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 1 (1)            ; |processor_p1|control_unit:inst15            ; control_unit              ; work         ;
 ;    |phase_counter:inst10|           ; 3 (3)       ; 3 (3)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; |processor_p1|phase_counter:inst10           ; phase_counter             ; work         ;
 ;    |program_counter:inst12|         ; 16 (16)     ; 16 (16)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 16 (16)          ; |processor_p1|program_counter:inst12         ; program_counter           ; work         ;
 +-------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------+---------------------------+--------------+
@@ -1031,55 +1032,52 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; PC_check[1]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; PC_check[0]  ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; clock        ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
-; reset        ; Input    ; (0) 0 ps      ; (0) 0 ps      ; --                    ; --  ; --   ;
-; exec         ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
+; reset        ; Input    ; --            ; (0) 0 ps      ; --                    ; --  ; --   ;
+; exec         ; Input    ; (0) 0 ps      ; --            ; --                    ; --  ; --   ;
 +--------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+----------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                             ;
-+----------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                          ; Pad To Core Index ; Setting ;
-+----------------------------------------------+-------------------+---------+
-; clock                                        ;                   ;         ;
-; reset                                        ;                   ;         ;
-;      - phase_counter:inst10|phase[0]         ; 1                 ; 0       ;
-;      - phase_counter:inst10|phase[1]         ; 1                 ; 0       ;
-;      - phase_counter:inst10|phase[2]         ; 1                 ; 0       ;
-;      - program_counter:inst12|out[0]         ; 1                 ; 0       ;
-;      - program_counter:inst12|out[1]         ; 1                 ; 0       ;
-;      - program_counter:inst12|out[2]         ; 1                 ; 0       ;
-;      - program_counter:inst12|out[3]         ; 1                 ; 0       ;
-;      - program_counter:inst12|out[4]         ; 1                 ; 0       ;
-;      - program_counter:inst12|out[5]         ; 1                 ; 0       ;
-;      - program_counter:inst12|out[6]         ; 1                 ; 0       ;
-;      - program_counter:inst12|out[7]         ; 1                 ; 0       ;
-;      - program_counter:inst12|out[8]         ; 1                 ; 0       ;
-;      - program_counter:inst12|out[9]         ; 1                 ; 0       ;
-;      - program_counter:inst12|out[10]        ; 1                 ; 0       ;
-;      - program_counter:inst12|out[11]        ; 1                 ; 0       ;
-;      - program_counter:inst12|out[12]        ; 1                 ; 0       ;
-;      - program_counter:inst12|out[13]        ; 1                 ; 0       ;
-;      - program_counter:inst12|out[14]        ; 1                 ; 0       ;
-;      - program_counter:inst12|out[15]        ; 1                 ; 0       ;
-;      - control_unit:inst15|running~_emulated ; 0                 ; 0       ;
-; exec                                         ;                   ;         ;
-;      - control_unit:inst15|running~_emulated ; 1                 ; 0       ;
-;      - control_unit:inst15|running~2         ; 1                 ; 0       ;
-;      - control_unit:inst15|running~1         ; 1                 ; 0       ;
-+----------------------------------------------+-------------------+---------+
++---------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                      ;
++---------------------------------------+-------------------+---------+
+; Source Pin / Fanout                   ; Pad To Core Index ; Setting ;
++---------------------------------------+-------------------+---------+
+; clock                                 ;                   ;         ;
+; reset                                 ;                   ;         ;
+;      - phase_counter:inst10|phase[0]  ; 1                 ; 0       ;
+;      - phase_counter:inst10|phase[1]  ; 1                 ; 0       ;
+;      - phase_counter:inst10|phase[2]  ; 1                 ; 0       ;
+;      - program_counter:inst12|out[0]  ; 1                 ; 0       ;
+;      - program_counter:inst12|out[1]  ; 1                 ; 0       ;
+;      - program_counter:inst12|out[2]  ; 1                 ; 0       ;
+;      - program_counter:inst12|out[3]  ; 1                 ; 0       ;
+;      - program_counter:inst12|out[4]  ; 1                 ; 0       ;
+;      - program_counter:inst12|out[5]  ; 1                 ; 0       ;
+;      - program_counter:inst12|out[6]  ; 1                 ; 0       ;
+;      - program_counter:inst12|out[7]  ; 1                 ; 0       ;
+;      - program_counter:inst12|out[8]  ; 1                 ; 0       ;
+;      - program_counter:inst12|out[9]  ; 1                 ; 0       ;
+;      - program_counter:inst12|out[10] ; 1                 ; 0       ;
+;      - program_counter:inst12|out[11] ; 1                 ; 0       ;
+;      - program_counter:inst12|out[12] ; 1                 ; 0       ;
+;      - program_counter:inst12|out[13] ; 1                 ; 0       ;
+;      - program_counter:inst12|out[14] ; 1                 ; 0       ;
+;      - program_counter:inst12|out[15] ; 1                 ; 0       ;
+;      - control_unit:inst15|running~0  ; 1                 ; 0       ;
+; exec                                  ;                   ;         ;
+;      - control_unit:inst15|running~0  ; 0                 ; 0       ;
++---------------------------------------+-------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                   ;
-+------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; Name                   ; Location           ; Fan-Out ; Usage                      ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
-; clock                  ; PIN_B12            ; 4       ; Clock                      ; no     ; --                   ; --               ; --                        ;
-; control_unit:inst15|p1 ; LCCOMB_X55_Y42_N22 ; 16      ; Clock                      ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; exec                   ; PIN_E15            ; 3       ; Async. clear, Latch enable ; no     ; --                   ; --               ; --                        ;
-; reset                  ; PIN_F15            ; 20      ; Async. clear, Clock        ; no     ; --                   ; --               ; --                        ;
-+------------------------+--------------------+---------+----------------------------+--------+----------------------+------------------+---------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                     ;
++------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                   ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; clock                  ; PIN_B12            ; 7       ; Clock        ; no     ; --                   ; --               ; --                        ;
+; control_unit:inst15|p1 ; LCCOMB_X62_Y42_N22 ; 16      ; Clock        ; yes    ; Global Clock         ; GCLK10           ; --                        ;
+; reset                  ; PIN_F15            ; 20      ; Async. clear ; no     ; --                   ; --               ; --                        ;
++------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1087,7 +1085,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 ; Name                   ; Location           ; Fan-Out ; Fan-Out Using Intentional Clock Skew ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
-; control_unit:inst15|p1 ; LCCOMB_X55_Y42_N22 ; 16      ; 0                                    ; Global Clock         ; GCLK10           ; --                        ;
+; control_unit:inst15|p1 ; LCCOMB_X62_Y42_N22 ; 16      ; 0                                    ; Global Clock         ; GCLK10           ; --                        ;
 +------------------------+--------------------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
@@ -1096,21 +1094,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 63 / 116,715 ( < 1 % ) ;
-; C16 interconnects     ; 8 / 3,886 ( < 1 % )    ;
-; C4 interconnects      ; 61 / 73,752 ( < 1 % )  ;
-; Direct links          ; 2 / 116,715 ( < 1 % )  ;
+; Block interconnects   ; 60 / 116,715 ( < 1 % ) ;
+; C16 interconnects     ; 7 / 3,886 ( < 1 % )    ;
+; C4 interconnects      ; 53 / 73,752 ( < 1 % )  ;
+; Direct links          ; 4 / 116,715 ( < 1 % )  ;
 ; Global clocks         ; 1 / 20 ( 5 % )         ;
-; Local interconnects   ; 21 / 39,600 ( < 1 % )  ;
-; R24 interconnects     ; 15 / 3,777 ( < 1 % )   ;
-; R4 interconnects      ; 84 / 99,858 ( < 1 % )  ;
+; Local interconnects   ; 22 / 39,600 ( < 1 % )  ;
+; R24 interconnects     ; 20 / 3,777 ( < 1 % )   ;
+; R4 interconnects      ; 82 / 99,858 ( < 1 % )  ;
 +-----------------------+------------------------+
 
 
 +--------------------------------------------------------------------------+
 ; LAB Logic Elements                                                       ;
 +--------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 9.00) ; Number of LABs  (Total = 6) ;
+; Number of Logic Elements  (Average = 9.17) ; Number of LABs  (Total = 6) ;
 +--------------------------------------------+-----------------------------+
 ; 1                                          ; 0                           ;
 ; 2                                          ; 0                           ;
@@ -1121,8 +1119,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 7                                          ; 4                           ;
 ; 8                                          ; 0                           ;
 ; 9                                          ; 0                           ;
-; 10                                         ; 1                           ;
-; 11                                         ; 0                           ;
+; 10                                         ; 0                           ;
+; 11                                         ; 1                           ;
 ; 12                                         ; 0                           ;
 ; 13                                         ; 0                           ;
 ; 14                                         ; 0                           ;
@@ -1136,16 +1134,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------+-----------------------------+
 ; LAB-wide Signals  (Average = 0.67) ; Number of LABs  (Total = 6) ;
 +------------------------------------+-----------------------------+
-; 1 Async. clear                     ; 1                           ;
+; 1 Async. clear                     ; 2                           ;
 ; 1 Clock                            ; 2                           ;
-; 2 Async. clears                    ; 1                           ;
 +------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 12.33) ; Number of LABs  (Total = 6) ;
+; Number of Signals Sourced  (Average = 12.50) ; Number of LABs  (Total = 6) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
@@ -1161,8 +1158,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 11                                           ; 0                           ;
 ; 12                                           ; 0                           ;
 ; 13                                           ; 0                           ;
-; 14                                           ; 1                           ;
-; 15                                           ; 0                           ;
+; 14                                           ; 0                           ;
+; 15                                           ; 1                           ;
 ; 16                                           ; 0                           ;
 ; 17                                           ; 0                           ;
 ; 18                                           ; 0                           ;
@@ -1368,33 +1365,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------+----------------------+-------------------+
 ; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
 +-----------------+----------------------+-------------------+
-; I/O             ; exec                 ; 3.8               ;
-; I/O             ; reset                ; 2.1               ;
-; I/O             ; clock                ; 1.6               ;
+; I/O             ; clock                ; 12.5              ;
 +-----------------+----------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the TimeQuest Timing Analyzer.
 
 
-+---------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                     ;
-+---------------------------------------+---------------------------------------+-------------------+
-; Source Register                       ; Destination Register                  ; Delay Added in ns ;
-+---------------------------------------+---------------------------------------+-------------------+
-; reset                                 ; program_counter:inst12|out[0]         ; 3.830             ;
-; exec                                  ; control_unit:inst15|running~_emulated ; 2.135             ;
-; control_unit:inst15|running~1         ; control_unit:inst15|running~1         ; 0.689             ;
-; control_unit:inst15|running~_emulated ; control_unit:inst15|running~1         ; 0.689             ;
-; phase_counter:inst10|phase[0]         ; phase_counter:inst10|phase[2]         ; 0.039             ;
-+---------------------------------------+---------------------------------------+-------------------+
-Note: This table only shows the top 5 path(s) that have the largest delay added for hold.
++-----------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                     ;
++-------------------------------+-------------------------------+-------------------+
+; Source Register               ; Destination Register          ; Delay Added in ns ;
++-------------------------------+-------------------------------+-------------------+
+; reset                         ; program_counter:inst12|out[0] ; 4.557             ;
+; exec                          ; control_unit:inst15|running   ; 2.328             ;
+; phase_counter:inst10|phase[1] ; phase_counter:inst10|phase[2] ; 0.055             ;
++-------------------------------+-------------------------------+-------------------+
+Note: This table only shows the top 3 path(s) that have the largest delay added for hold.
 
 
 +-----------------+
 ; Fitter Messages ;
 +-----------------+
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20032): Parallel compilation is enabled and will use up to 4 processors
 Info (119006): Selected device EP4CE30F23I7 for design "processor_p1"
 Info (21077): Low junction temperature is -40 degrees C
 Info (21077): High junction temperature is 100 degrees C
@@ -1422,25 +1414,22 @@ Info (169124): Fitter converted 5 user pins into dedicated programming pins
     Info (169125): Pin ~ALTERA_DATA0~ is reserved at location K1
     Info (169125): Pin ~ALTERA_nCEO~ is reserved at location K22
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Warning (335093): TimeQuest Timing Analyzer is analyzing 1 combinational loops as latches. For more details, run the Check Timing command in the TimeQuest Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
-Critical Warning (332012): Synopsys Design Constraints File file not found: 'processor_p1.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
-Info (332144): No user constrained base clocks found in the design
-Warning (332125): Found combinational loop of 2 nodes File: /export/home/016/a0169654/SIMPLE/control_unit/control_unit.v Line: 8
-    Warning (332126): Node "inst15|running~2|combout"
-    Warning (332126): Node "inst15|running~2|datad"
-Info (332097): The following timing edges are non-unate.  TimeQuest will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): Cell: inst15|running~2  from: datac  to: combout
-Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
-Info (176353): Automatically promoted node control_unit:inst15|p1  File: /export/home/016/a0169654/SIMPLE/control_unit/control_unit.v Line: 6
+Info (332104): Reading SDC File: 'processor_p1.sdc'
+Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info (332111): Found 3 clocks
+    Info (332111):   Period   Clock Name
+    Info (332111): ======== ============
+    Info (332111):   50.000        clock
+    Info (332111):    1.000         exec
+    Info (332111):    1.000        reset
+Info (176353): Automatically promoted node control_unit:inst15|p1  File: /export/home/016/a0165336/project/SIMPLE/control_unit/control_unit.v Line: 6
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
     Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
         Info (176357): Destination node phase1~output
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1452,17 +1441,17 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X45_Y0 to location X55_Y10
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (11888): Total time spent on timing analysis during the Fitter is 0.09 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 1652 megabytes
-    Info: Processing ended: Fri Apr 27 17:30:01 2018
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:08
+Info: Quartus Prime Fitter was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 1669 megabytes
+    Info: Processing ended: Fri Apr 27 20:44:57 2018
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:07
 
 

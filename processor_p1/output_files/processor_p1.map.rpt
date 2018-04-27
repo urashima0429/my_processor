@@ -1,5 +1,5 @@
 Analysis & Synthesis report for processor_p1
-Fri Apr 27 17:29:54 2018
+Fri Apr 27 20:44:50 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -14,9 +14,10 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Inverted Register Statistics
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -42,13 +43,13 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 27 17:29:54 2018           ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 27 20:44:50 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; processor_p1                                    ;
 ; Top-level Entity Name              ; processor_p1                                    ;
 ; Family                             ; Cyclone IV E                                    ;
-; Total logic elements               ; 54                                              ;
-;     Total combinational functions  ; 54                                              ;
+; Total logic elements               ; 55                                              ;
+;     Total combinational functions  ; 55                                              ;
 ;     Dedicated logic registers      ; 20                                              ;
 ; Total registers                    ; 20                                              ;
 ; Total pins                         ; 42                                              ;
@@ -67,6 +68,7 @@ refer to the applicable agreement for further details.
 ; Device                                                                     ; EP4CE30F23I7       ;                    ;
 ; Top-level entity name                                                      ; processor_p1       ; processor_p1       ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
+; Maximum processors allowed for parallel compilation                        ; 4                  ;                    ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
@@ -163,18 +165,18 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                             ;
-+----------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path                         ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                           ; Library ;
-+----------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
-; ../phase_counter/phase_counter.v                         ; yes             ; User Verilog HDL File              ; /export/home/016/a0169654/SIMPLE/phase_counter/phase_counter.v                         ;         ;
-; ../program_counter/program_counter.v                     ; yes             ; User Verilog HDL File              ; /export/home/016/a0169654/SIMPLE/program_counter/program_counter.v                     ;         ;
-; ../LED_simple/LED_simple.v                               ; yes             ; User Verilog HDL File              ; /export/home/016/a0169654/SIMPLE/LED_simple/LED_simple.v                               ;         ;
-; ../control_unit/control_unit.v                           ; yes             ; User Verilog HDL File              ; /export/home/016/a0169654/SIMPLE/control_unit/control_unit.v                           ;         ;
-; ../adder_for_program_counter/adder_for_program_counter.v ; yes             ; User Verilog HDL File              ; /export/home/016/a0169654/SIMPLE/adder_for_program_counter/adder_for_program_counter.v ;         ;
-; ../processor/processor_p1.bdf                            ; yes             ; User Block Diagram/Schematic File  ; /export/home/016/a0169654/SIMPLE/processor/processor_p1.bdf                            ;         ;
-+----------------------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                     ;
++----------------------------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                         ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                   ; Library ;
++----------------------------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------+---------+
+; processor_p1.bdf                                         ; yes             ; User Block Diagram/Schematic File  ; /export/home/016/a0165336/project/SIMPLE/processor_p1/processor_p1.bdf                         ;         ;
+; ../phase_counter/phase_counter.v                         ; yes             ; User Verilog HDL File              ; /export/home/016/a0165336/project/SIMPLE/phase_counter/phase_counter.v                         ;         ;
+; ../program_counter/program_counter.v                     ; yes             ; User Verilog HDL File              ; /export/home/016/a0165336/project/SIMPLE/program_counter/program_counter.v                     ;         ;
+; ../LED_simple/LED_simple.v                               ; yes             ; User Verilog HDL File              ; /export/home/016/a0165336/project/SIMPLE/LED_simple/LED_simple.v                               ;         ;
+; ../control_unit/control_unit.v                           ; yes             ; User Verilog HDL File              ; /export/home/016/a0165336/project/SIMPLE/control_unit/control_unit.v                           ;         ;
+; ../adder_for_program_counter/adder_for_program_counter.v ; yes             ; User Verilog HDL File              ; /export/home/016/a0165336/project/SIMPLE/adder_for_program_counter/adder_for_program_counter.v ;         ;
++----------------------------------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -182,16 +184,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 54          ;
+; Estimated Total logic elements              ; 55          ;
 ;                                             ;             ;
-; Total combinational functions               ; 54          ;
+; Total combinational functions               ; 55          ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 34          ;
-;     -- 3 input functions                    ; 3           ;
+;     -- 4 input functions                    ; 28          ;
+;     -- 3 input functions                    ; 10          ;
 ;     -- <=2 input functions                  ; 17          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 39          ;
+;     -- normal mode                          ; 40          ;
 ;     -- arithmetic mode                      ; 15          ;
 ;                                             ;             ;
 ; Total registers                             ; 20          ;
@@ -204,8 +206,8 @@ refer to the applicable agreement for further details.
 ;                                             ;             ;
 ; Maximum fan-out node                        ; reset~input ;
 ; Maximum fan-out                             ; 20          ;
-; Total fan-out                               ; 314         ;
-; Average fan-out                             ; 1.99        ;
+; Total fan-out                               ; 310         ;
+; Average fan-out                             ; 1.95        ;
 +---------------------------------------------+-------------+
 
 
@@ -214,10 +216,10 @@ refer to the applicable agreement for further details.
 +-------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+---------------------------+--------------+
 ; Compilation Hierarchy Node          ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                          ; Entity Name               ; Library Name ;
 +-------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+---------------------------+--------------+
-; |processor_p1                       ; 54 (0)              ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 42   ; 0            ; |processor_p1                                ; processor_p1              ; work         ;
+; |processor_p1                       ; 55 (0)              ; 20 (0)                    ; 0           ; 0            ; 0       ; 0         ; 42   ; 0            ; |processor_p1                                ; processor_p1              ; work         ;
 ;    |LED_simple:inst11|              ; 28 (28)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_p1|LED_simple:inst11              ; LED_simple                ; work         ;
 ;    |adder_for_program_counter:inst| ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_p1|adder_for_program_counter:inst ; adder_for_program_counter ; work         ;
-;    |control_unit:inst15|            ; 7 (7)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_p1|control_unit:inst15            ; control_unit              ; work         ;
+;    |control_unit:inst15|            ; 8 (8)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_p1|control_unit:inst15            ; control_unit              ; work         ;
 ;    |phase_counter:inst10|           ; 3 (3)               ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_p1|phase_counter:inst10           ; phase_counter             ; work         ;
 ;    |program_counter:inst12|         ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor_p1|program_counter:inst12         ; program_counter           ; work         ;
 +-------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------+---------------------------+--------------+
@@ -232,11 +234,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total registers                              ; 20    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 20    ;
+; Number of registers using Asynchronous Clear ; 19    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; control_unit:inst15|running            ; 3       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -246,19 +258,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; boundary_port         ; 42                          ;
 ; cycloneiii_ff         ; 20                          ;
-;     CLR               ; 20                          ;
-; cycloneiii_lcell_comb ; 80                          ;
+;     CLR               ; 19                          ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 81                          ;
 ;     arith             ; 15                          ;
 ;         2 data inputs ; 15                          ;
-;     normal            ; 65                          ;
+;     normal            ; 66                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 25                          ;
 ;         2 data inputs ; 1                           ;
-;         3 data inputs ; 3                           ;
-;         4 data inputs ; 34                          ;
+;         3 data inputs ; 10                          ;
+;         4 data inputs ; 28                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.50                        ;
-; Average LUT depth     ; 3.36                        ;
+; Average LUT depth     ; 3.50                        ;
 +-----------------------+-----------------------------+
 
 
@@ -277,33 +290,29 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Fri Apr 27 17:29:45 2018
+    Info: Processing started: Fri Apr 27 20:44:41 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor_p1 -c processor_p1
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0169654/SIMPLE/phase_counter/phase_counter.v
-    Info (12023): Found entity 1: phase_counter File: /export/home/016/a0169654/SIMPLE/phase_counter/phase_counter.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0169654/SIMPLE/program_counter/program_counter.v
-    Info (12023): Found entity 1: program_counter File: /export/home/016/a0169654/SIMPLE/program_counter/program_counter.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0169654/SIMPLE/LED_simple/LED_simple.v
-    Info (12023): Found entity 1: LED_simple File: /export/home/016/a0169654/SIMPLE/LED_simple/LED_simple.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0169654/SIMPLE/data_selecter/data_selecter.v
-    Info (12023): Found entity 1: data_selecter File: /export/home/016/a0169654/SIMPLE/data_selecter/data_selecter.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0169654/SIMPLE/control_unit/control_unit.v
-    Info (12023): Found entity 1: control_unit File: /export/home/016/a0169654/SIMPLE/control_unit/control_unit.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0169654/SIMPLE/adder_for_program_counter/adder_for_program_counter.v
-    Info (12023): Found entity 1: adder_for_program_counter File: /export/home/016/a0169654/SIMPLE/adder_for_program_counter/adder_for_program_counter.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0169654/SIMPLE/processor/processor_p1.bdf
+Info (20032): Parallel compilation is enabled and will use up to 4 processors
+Info (12021): Found 1 design units, including 1 entities, in source file processor_p1.bdf
     Info (12023): Found entity 1: processor_p1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/phase_counter/phase_counter.v
+    Info (12023): Found entity 1: phase_counter File: /export/home/016/a0165336/project/SIMPLE/phase_counter/phase_counter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/program_counter/program_counter.v
+    Info (12023): Found entity 1: program_counter File: /export/home/016/a0165336/project/SIMPLE/program_counter/program_counter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/LED_simple/LED_simple.v
+    Info (12023): Found entity 1: LED_simple File: /export/home/016/a0165336/project/SIMPLE/LED_simple/LED_simple.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/data_selecter/data_selecter.v
+    Info (12023): Found entity 1: data_selecter File: /export/home/016/a0165336/project/SIMPLE/data_selecter/data_selecter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/control_unit/control_unit.v
+    Info (12023): Found entity 1: control_unit File: /export/home/016/a0165336/project/SIMPLE/control_unit/control_unit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/adder_for_program_counter/adder_for_program_counter.v
+    Info (12023): Found entity 1: adder_for_program_counter File: /export/home/016/a0165336/project/SIMPLE/adder_for_program_counter/adder_for_program_counter.v Line: 1
 Info (12127): Elaborating entity "processor_p1" for the top level hierarchy
 Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:inst15"
 Info (12128): Elaborating entity "phase_counter" for hierarchy "phase_counter:inst10"
-Warning (10230): Verilog HDL assignment warning at phase_counter.v(15): truncated value with size 16 to match size of target (3) File: /export/home/016/a0169654/SIMPLE/phase_counter/phase_counter.v Line: 15
 Info (12128): Elaborating entity "LED_simple" for hierarchy "LED_simple:inst11"
 Info (12128): Elaborating entity "adder_for_program_counter" for hierarchy "adder_for_program_counter:inst"
 Info (12128): Elaborating entity "program_counter" for hierarchy "program_counter:inst12"
-Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "control_unit:inst15|running" is converted into an equivalent circuit using register "control_unit:inst15|running~_emulated" and latch "control_unit:inst15|running~1" File: /export/home/016/a0169654/SIMPLE/control_unit/control_unit.v Line: 8
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "selecter" is stuck at VCC
     Warning (13410): Pin "PC_check[24]" is stuck at GND
@@ -317,10 +326,10 @@ Info (21057): Implemented 113 device resources after synthesis - the final resou
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 39 output pins
     Info (21061): Implemented 71 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 1092 megabytes
-    Info: Processing ended: Fri Apr 27 17:29:54 2018
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 1081 megabytes
+    Info: Processing ended: Fri Apr 27 20:44:50 2018
     Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Total CPU time (on all processors): 00:00:23
 
 

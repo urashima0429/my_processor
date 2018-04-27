@@ -48,13 +48,30 @@ PC_check[31] <= LED_simple:inst11.out[31]
 
 
 |processor_p1|control_unit:inst15
-clock => ~NO_FANOUT~
-reset => running.CLK
+clock => p1.IN1
+clock => p2.IN1
+clock => p3.IN1
+clock => p4.IN1
+clock => p5.IN1
+clock => running.CLK
+reset => running.OUTPUTSELECT
 reset => register_reset.DATAIN
-exec => running.ALOAD
-phase[0] => Decoder0.IN2
-phase[1] => Decoder0.IN1
-phase[2] => Decoder0.IN0
+exec => running.OUTPUTSELECT
+phase[0] => Equal0.IN2
+phase[0] => Equal1.IN0
+phase[0] => Equal2.IN2
+phase[0] => Equal3.IN1
+phase[0] => Equal4.IN2
+phase[1] => Equal0.IN1
+phase[1] => Equal1.IN2
+phase[1] => Equal2.IN0
+phase[1] => Equal3.IN0
+phase[1] => Equal4.IN1
+phase[2] => Equal0.IN0
+phase[2] => Equal1.IN1
+phase[2] => Equal2.IN1
+phase[2] => Equal3.IN2
+phase[2] => Equal4.IN0
 halt => ~NO_FANOUT~
 register_reset <= reset.DB_MAX_OUTPUT_PORT_TYPE
 p1 <= p1.DB_MAX_OUTPUT_PORT_TYPE

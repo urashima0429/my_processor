@@ -2,184 +2,88 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 100C Model Setup 'exec'
-Slack : -3.015
-TNS   : -21.059
-
 Type  : Slow 1200mV 100C Model Setup 'clock'
-Slack : -0.205
-TNS   : -0.368
-
-Type  : Slow 1200mV 100C Model Setup 'reset'
-Slack : 0.254
-TNS   : 0.000
-
-Type  : Slow 1200mV 100C Model Hold 'reset'
-Slack : 0.306
-TNS   : 0.000
+Slack : -1.747
+TNS   : -1.747
 
 Type  : Slow 1200mV 100C Model Hold 'clock'
-Slack : 0.445
+Slack : 0.263
 TNS   : 0.000
-
-Type  : Slow 1200mV 100C Model Hold 'exec'
-Slack : 0.644
-TNS   : 0.000
-
-Type  : Slow 1200mV 100C Model Recovery 'reset'
-Slack : -1.593
-TNS   : -1.593
-
-Type  : Slow 1200mV 100C Model Recovery 'exec'
-Slack : -0.346
-TNS   : -5.536
 
 Type  : Slow 1200mV 100C Model Recovery 'clock'
-Slack : -0.332
-TNS   : -0.996
-
-Type  : Slow 1200mV 100C Model Removal 'exec'
-Slack : 0.052
-TNS   : 0.000
+Slack : -1.421
+TNS   : -15.319
 
 Type  : Slow 1200mV 100C Model Removal 'clock'
-Slack : 0.271
-TNS   : 0.000
-
-Type  : Slow 1200mV 100C Model Removal 'reset'
-Slack : 1.362
+Slack : 0.365
 TNS   : 0.000
 
 Type  : Slow 1200mV 100C Model Minimum Pulse Width 'exec'
 Slack : -3.000
-TNS   : -23.560
-
-Type  : Slow 1200mV 100C Model Minimum Pulse Width 'clock'
-Slack : -3.000
-TNS   : -6.855
+TNS   : -3.000
 
 Type  : Slow 1200mV 100C Model Minimum Pulse Width 'reset'
 Slack : -3.000
-TNS   : -4.285
+TNS   : -3.000
 
-Type  : Slow 1200mV -40C Model Setup 'exec'
-Slack : -2.693
-TNS   : -15.726
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'clock'
+Slack : 24.677
+TNS   : 0.000
 
 Type  : Slow 1200mV -40C Model Setup 'clock'
-Slack : -0.028
-TNS   : -0.028
-
-Type  : Slow 1200mV -40C Model Setup 'reset'
-Slack : 0.370
-TNS   : 0.000
-
-Type  : Slow 1200mV -40C Model Hold 'reset'
-Slack : 0.188
-TNS   : 0.000
+Slack : -1.359
+TNS   : -1.359
 
 Type  : Slow 1200mV -40C Model Hold 'clock'
 Slack : 0.368
 TNS   : 0.000
 
-Type  : Slow 1200mV -40C Model Hold 'exec'
-Slack : 0.568
-TNS   : 0.000
-
-Type  : Slow 1200mV -40C Model Recovery 'reset'
-Slack : -1.161
-TNS   : -1.161
-
-Type  : Slow 1200mV -40C Model Recovery 'exec'
-Slack : -0.534
-TNS   : -8.544
-
 Type  : Slow 1200mV -40C Model Recovery 'clock'
-Slack : -0.168
-TNS   : -0.504
-
-Type  : Slow 1200mV -40C Model Removal 'exec'
-Slack : -0.057
-TNS   : -0.912
+Slack : -1.000
+TNS   : -9.368
 
 Type  : Slow 1200mV -40C Model Removal 'clock'
-Slack : 0.367
-TNS   : 0.000
-
-Type  : Slow 1200mV -40C Model Removal 'reset'
-Slack : 1.228
+Slack : 0.595
 TNS   : 0.000
 
 Type  : Slow 1200mV -40C Model Minimum Pulse Width 'exec'
 Slack : -3.000
-TNS   : -23.560
-
-Type  : Slow 1200mV -40C Model Minimum Pulse Width 'clock'
-Slack : -3.000
-TNS   : -6.855
+TNS   : -3.000
 
 Type  : Slow 1200mV -40C Model Minimum Pulse Width 'reset'
 Slack : -3.000
-TNS   : -4.285
+TNS   : -3.000
 
-Type  : Fast 1200mV -40C Model Setup 'exec'
-Slack : -0.784
-TNS   : -1.728
-
-Type  : Fast 1200mV -40C Model Setup 'reset'
-Slack : 0.038
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'clock'
+Slack : 24.581
 TNS   : 0.000
 
 Type  : Fast 1200mV -40C Model Setup 'clock'
-Slack : 0.447
-TNS   : 0.000
+Slack : -1.001
+TNS   : -1.001
 
 Type  : Fast 1200mV -40C Model Hold 'clock'
-Slack : 0.193
-TNS   : 0.000
-
-Type  : Fast 1200mV -40C Model Hold 'exec'
-Slack : 0.274
-TNS   : 0.000
-
-Type  : Fast 1200mV -40C Model Hold 'reset'
-Slack : 0.709
-TNS   : 0.000
-
-Type  : Fast 1200mV -40C Model Recovery 'reset'
-Slack : -0.994
-TNS   : -0.994
+Slack : -0.016
+TNS   : -0.016
 
 Type  : Fast 1200mV -40C Model Recovery 'clock'
-Slack : -0.258
-TNS   : -0.774
-
-Type  : Fast 1200mV -40C Model Recovery 'exec'
-Slack : 0.246
-TNS   : 0.000
+Slack : -0.726
+TNS   : -13.548
 
 Type  : Fast 1200mV -40C Model Removal 'clock'
-Slack : 0.002
-TNS   : 0.000
-
-Type  : Fast 1200mV -40C Model Removal 'exec'
-Slack : 0.092
-TNS   : 0.000
-
-Type  : Fast 1200mV -40C Model Removal 'reset'
-Slack : 0.650
+Slack : 0.083
 TNS   : 0.000
 
 Type  : Fast 1200mV -40C Model Minimum Pulse Width 'exec'
 Slack : -3.000
-TNS   : -20.280
-
-Type  : Fast 1200mV -40C Model Minimum Pulse Width 'clock'
-Slack : -3.000
-TNS   : -6.000
+TNS   : -3.000
 
 Type  : Fast 1200mV -40C Model Minimum Pulse Width 'reset'
 Slack : -3.000
-TNS   : -4.105
+TNS   : -3.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'clock'
+Slack : 24.429
+TNS   : 0.000
 
 ------------------------------------------------------------
