@@ -8,38 +8,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "S",
-					"strict" : false
-				},
-				{
-					"name" : "Z",
-					"strict" : false
-				},
-				{
-					"name" : "C",
-					"strict" : false
-				},
-				{
-					"name" : "V",
-					"strict" : false
-				},
-				{
-					"name" : "S_out",
-					"strict" : false
-				},
-				{
-					"name" : "Z_out",
-					"strict" : false
-				},
-				{
-					"name" : "C_out",
-					"strict" : false
-				},
-				{
-					"name" : "V_out",
-					"strict" : false
-				},
-				{
 					"name" : "ALU_out[15]",
 					"strict" : false
 				},
@@ -220,15 +188,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "dFront_op3[2]",
-					"strict" : false
-				},
-				{
-					"name" : "dFront_op3[0]",
-					"strict" : false
-				},
-				{
 					"name" : "dFront_op3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dFront_op3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "d_or_data",
 					"strict" : false
 				},
 				{
@@ -240,11 +208,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "dFront_op3[3]",
+					"name" : "dFront_op3[0]",
 					"strict" : false
 				},
 				{
-					"name" : "d_or_data",
+					"name" : "dFront_op3[2]",
 					"strict" : false
 				},
 				{
@@ -324,14 +292,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "op1[1]",
-					"strict" : false
-				},
-				{
-					"name" : "op1[0]",
-					"strict" : false
-				},
-				{
 					"name" : "op2[2]",
 					"strict" : false
 				},
@@ -341,6 +301,14 @@
 				},
 				{
 					"name" : "op2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op1[1]",
 					"strict" : false
 				},
 				{
@@ -356,7 +324,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "data2[15]",
+					"name" : "data1[15]",
 					"strict" : false
 				},
 				{
@@ -368,7 +336,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "data1[15]",
+					"name" : "data2[15]",
 					"strict" : false
 				},
 				{
@@ -489,10 +457,6 @@
 				},
 				{
 					"name" : "data1[0]",
-					"strict" : false
-				},
-				{
-					"name" : "p4",
 					"strict" : false
 				}
 			]

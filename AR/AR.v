@@ -7,7 +7,7 @@ module AR (
 	input [15:0] data_from_regfile,
 	output reg [15:0] data_to_ALU);
 	
-	always @(posedge clock or posedge reset) begin
+	always @(posedge clock) begin
 		if (reset == 1'b1) begin
 			data_to_ALU <= 16'b0000000000000000;
 		end else if (p3 == 1'b1) begin
