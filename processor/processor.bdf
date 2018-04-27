@@ -1244,7 +1244,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1816 48 2032 160)
+	(rect 1808 48 2024 160)
 	(text "write_address" (rect 5 0 72 10)(font "Arial" ))
 	(text "inst23" (rect 8 96 39 108)(font "Intel Clear" ))
 	(port
@@ -2074,11 +2074,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2048 80)
-	(pt 2048 432)
-	(bus)
-)
-(connector
 	(pt 1632 -40)
 	(pt 2416 -40)
 )
@@ -2351,11 +2346,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1816 80)
-	(pt 1680 80)
-	(bus)
-)
-(connector
 	(pt 1632 520)
 	(pt 1680 520)
 	(bus)
@@ -2391,11 +2381,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1816 112)
-	(pt 1712 112)
-	(bus)
-)
-(connector
 	(pt 1696 528)
 	(pt 1712 528)
 	(bus)
@@ -2411,21 +2396,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1712 112)
-	(pt 1712 528)
-	(bus)
-)
-(connector
-	(pt 1712 528)
-	(pt 1712 856)
-	(bus)
-)
-(connector
-	(pt 1816 96)
-	(pt 1728 96)
-	(bus)
-)
-(connector
 	(pt 1696 544)
 	(pt 1728 544)
 	(bus)
@@ -2438,16 +2408,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1728 544)
 	(pt 1792 544)
-	(bus)
-)
-(connector
-	(pt 1728 96)
-	(pt 1728 544)
-	(bus)
-)
-(connector
-	(pt 1728 544)
-	(pt 1728 872)
 	(bus)
 )
 (connector
@@ -2491,16 +2451,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1680 -192)
-	(pt 1680 80)
-	(bus)
-)
-(connector
-	(pt 1680 80)
-	(pt 1680 520)
-	(bus)
-)
-(connector
 	(pt 1632 -56)
 	(pt 1648 -56)
 )
@@ -2527,19 +2477,6 @@ refer to the applicable agreement for further details.
 	(pt 3888 224)
 )
 (connector
-	(pt 2048 80)
-	(pt 2032 80)
-	(bus)
-)
-(connector
-	(pt 2032 96)
-	(pt 2040 96)
-)
-(connector
-	(pt 2040 96)
-	(pt 2040 424)
-)
-(connector
 	(pt 2040 424)
 	(pt 1776 424)
 )
@@ -2552,8 +2489,62 @@ refer to the applicable agreement for further details.
 	(pt 1792 512)
 )
 (connector
+	(pt 2048 432)
+	(pt 2048 80)
+	(bus)
+)
+(connector
+	(pt 1680 80)
+	(pt 1808 80)
+	(bus)
+)
+(connector
+	(pt 1712 112)
+	(pt 1808 112)
+	(bus)
+)
+(connector
+	(pt 1728 96)
+	(pt 1808 96)
+	(bus)
+)
+(connector
+	(pt 2040 424)
+	(pt 2040 96)
+)
+(connector
 	(pt 1664 128)
-	(pt 1816 128)
+	(pt 1808 128)
+	(bus)
+)
+(connector
+	(pt 1680 -192)
+	(pt 1680 80)
+	(bus)
+)
+(connector
+	(pt 1680 80)
+	(pt 1680 520)
+	(bus)
+)
+(connector
+	(pt 1712 112)
+	(pt 1712 528)
+	(bus)
+)
+(connector
+	(pt 1712 528)
+	(pt 1712 856)
+	(bus)
+)
+(connector
+	(pt 1728 96)
+	(pt 1728 544)
+	(bus)
+)
+(connector
+	(pt 1728 544)
+	(pt 1728 872)
 	(bus)
 )
 (connector
@@ -2565,6 +2556,15 @@ refer to the applicable agreement for further details.
 	(pt 1664 128)
 	(pt 1664 280)
 	(bus)
+)
+(connector
+	(pt 2024 80)
+	(pt 2048 80)
+	(bus)
+)
+(connector
+	(pt 2024 96)
+	(pt 2040 96)
 )
 (junction (pt 456 128))
 (junction (pt 472 104))

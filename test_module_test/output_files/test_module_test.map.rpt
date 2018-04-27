@@ -1,5 +1,5 @@
 Analysis & Synthesis report for test_module_test
-Thu Apr 26 14:49:55 2018
+Fri Apr 27 16:54:58 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -47,7 +47,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 26 14:49:55 2018           ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 27 16:54:58 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; test_module_test                                ;
 ; Top-level Entity Name              ; test_module_test                                ;
@@ -331,7 +331,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Thu Apr 26 14:49:46 2018
+    Info: Processing started: Fri Apr 27 16:54:48 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off test_module_test -c test_module_test
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -404,9 +404,9 @@ Info (21057): Implemented 81 device resources after synthesis - the final resour
     Info (21059): Implemented 65 output pins
     Info (21061): Implemented 13 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 49 warnings
-    Info: Peak virtual memory: 1068 megabytes
-    Info: Processing ended: Thu Apr 26 14:49:55 2018
-    Info: Elapsed time: 00:00:09
+    Info: Peak virtual memory: 1067 megabytes
+    Info: Processing ended: Fri Apr 27 16:54:58 2018
+    Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:23
 
 
