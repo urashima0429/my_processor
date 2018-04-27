@@ -36,6 +36,38 @@
 					"strict" : false
 				},
 				{
+					"name" : "sixteen[8]",
+					"strict" : false
+				},
+				{
+					"name" : "sixteen[9]",
+					"strict" : false
+				},
+				{
+					"name" : "sixteen[10]",
+					"strict" : false
+				},
+				{
+					"name" : "sixteen[11]",
+					"strict" : false
+				},
+				{
+					"name" : "sixteen[12]",
+					"strict" : false
+				},
+				{
+					"name" : "sixteen[13]",
+					"strict" : false
+				},
+				{
+					"name" : "sixteen[14]",
+					"strict" : false
+				},
+				{
+					"name" : "sixteen[15]",
+					"strict" : false
+				},
+				{
 					"name" : "dBack[0]",
 					"strict" : false
 				},

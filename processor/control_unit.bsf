@@ -52,6 +52,13 @@ refer to the applicable agreement for further details.
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
+		(pt 0 96)
+		(input)
+		(text "halt" (rect 0 0 12 12)(font "Arial" ))
+		(text "halt" (rect 21 91 33 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
 		(pt 200 32)
 		(output)
 		(text "register_reset" (rect 0 0 55 12)(font "Arial" ))

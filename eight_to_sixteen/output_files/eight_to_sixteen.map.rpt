@@ -1,5 +1,5 @@
 Analysis & Synthesis report for eight_to_sixteen
-Fri Apr 27 09:05:00 2018
+Fri Apr 27 13:35:03 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 27 09:05:00 2018           ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 27 13:35:03 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; eight_to_sixteen                                ;
 ; Top-level Entity Name              ; eight_to_sixteen                                ;
@@ -170,35 +170,35 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------+----------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                     ;
-+---------------------------------------------+-------------------+
-; Resource                                    ; Usage             ;
-+---------------------------------------------+-------------------+
-;                                             ;                   ;
-; Total combinational functions               ; 0                 ;
-; Logic element usage by number of LUT inputs ;                   ;
-;     -- 4 input functions                    ; 0                 ;
-;     -- 3 input functions                    ; 0                 ;
-;     -- <=2 input functions                  ; 0                 ;
-;                                             ;                   ;
-; Logic elements by mode                      ;                   ;
-;     -- normal mode                          ; 0                 ;
-;     -- arithmetic mode                      ; 0                 ;
-;                                             ;                   ;
-; Total registers                             ; 0                 ;
-;     -- Dedicated logic registers            ; 0                 ;
-;     -- I/O registers                        ; 0                 ;
-;                                             ;                   ;
-; I/O pins                                    ; 24                ;
-;                                             ;                   ;
-; Embedded Multiplier 9-bit elements          ; 0                 ;
-;                                             ;                   ;
-; Maximum fan-out node                        ; sixteen[0]~output ;
-; Maximum fan-out                             ; 1                 ;
-; Total fan-out                               ; 32                ;
-; Average fan-out                             ; 0.67              ;
-+---------------------------------------------+-------------------+
++---------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                   ;
++---------------------------------------------+-----------------+
+; Resource                                    ; Usage           ;
++---------------------------------------------+-----------------+
+;                                             ;                 ;
+; Total combinational functions               ; 0               ;
+; Logic element usage by number of LUT inputs ;                 ;
+;     -- 4 input functions                    ; 0               ;
+;     -- 3 input functions                    ; 0               ;
+;     -- <=2 input functions                  ; 0               ;
+;                                             ;                 ;
+; Logic elements by mode                      ;                 ;
+;     -- normal mode                          ; 0               ;
+;     -- arithmetic mode                      ; 0               ;
+;                                             ;                 ;
+; Total registers                             ; 0               ;
+;     -- Dedicated logic registers            ; 0               ;
+;     -- I/O registers                        ; 0               ;
+;                                             ;                 ;
+; I/O pins                                    ; 24              ;
+;                                             ;                 ;
+; Embedded Multiplier 9-bit elements          ; 0               ;
+;                                             ;                 ;
+; Maximum fan-out node                        ; dFront[3]~input ;
+; Maximum fan-out                             ; 9               ;
+; Total fan-out                               ; 40              ;
+; Average fan-out                             ; 0.83            ;
++---------------------------------------------+-----------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -228,17 +228,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 24                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
-;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
-+-----------------------+-----------------------------+
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 24                              ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
 
 
 +-------------------------------+
@@ -256,30 +253,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Fri Apr 27 09:04:51 2018
+    Info: Processing started: Fri Apr 27 13:34:54 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off eight_to_sixteen -c eight_to_sixteen
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file eight_to_sixteen.v
     Info (12023): Found entity 1: eight_to_sixteen File: /export/home/016/a0169654/SIMPLE/eight_to_sixteen/eight_to_sixteen.v Line: 1
 Info (12127): Elaborating entity "eight_to_sixteen" for the top level hierarchy
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "sixteen[8]" is stuck at GND File: /export/home/016/a0169654/SIMPLE/eight_to_sixteen/eight_to_sixteen.v Line: 3
-    Warning (13410): Pin "sixteen[9]" is stuck at GND File: /export/home/016/a0169654/SIMPLE/eight_to_sixteen/eight_to_sixteen.v Line: 3
-    Warning (13410): Pin "sixteen[10]" is stuck at GND File: /export/home/016/a0169654/SIMPLE/eight_to_sixteen/eight_to_sixteen.v Line: 3
-    Warning (13410): Pin "sixteen[11]" is stuck at GND File: /export/home/016/a0169654/SIMPLE/eight_to_sixteen/eight_to_sixteen.v Line: 3
-    Warning (13410): Pin "sixteen[12]" is stuck at GND File: /export/home/016/a0169654/SIMPLE/eight_to_sixteen/eight_to_sixteen.v Line: 3
-    Warning (13410): Pin "sixteen[13]" is stuck at GND File: /export/home/016/a0169654/SIMPLE/eight_to_sixteen/eight_to_sixteen.v Line: 3
-    Warning (13410): Pin "sixteen[14]" is stuck at GND File: /export/home/016/a0169654/SIMPLE/eight_to_sixteen/eight_to_sixteen.v Line: 3
-    Warning (13410): Pin "sixteen[15]" is stuck at GND File: /export/home/016/a0169654/SIMPLE/eight_to_sixteen/eight_to_sixteen.v Line: 3
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 24 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 8 input pins
     Info (21059): Implemented 16 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 1020 megabytes
-    Info: Processing ended: Fri Apr 27 09:05:00 2018
+    Info: Processing ended: Fri Apr 27 13:35:03 2018
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:21
 

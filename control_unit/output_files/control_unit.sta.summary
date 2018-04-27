@@ -2,4 +2,100 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 100C Model Setup 'reset'
+Slack : -2.441
+TNS   : -2.441
+
+Type  : Slow 1200mV 100C Model Setup 'exec'
+Slack : -2.374
+TNS   : -2.374
+
+Type  : Slow 1200mV 100C Model Hold 'reset'
+Slack : 0.765
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'exec'
+Slack : 1.176
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Recovery 'reset'
+Slack : -0.969
+TNS   : -0.969
+
+Type  : Slow 1200mV 100C Model Removal 'reset'
+Slack : 1.101
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'reset'
+Slack : -3.000
+TNS   : -4.285
+
+Type  : Slow 1200mV 100C Model Minimum Pulse Width 'exec'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV -40C Model Setup 'reset'
+Slack : -2.116
+TNS   : -2.116
+
+Type  : Slow 1200mV -40C Model Setup 'exec'
+Slack : -2.009
+TNS   : -2.009
+
+Type  : Slow 1200mV -40C Model Hold 'reset'
+Slack : 0.601
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'exec'
+Slack : 0.987
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Recovery 'reset'
+Slack : -0.912
+TNS   : -0.912
+
+Type  : Slow 1200mV -40C Model Removal 'reset'
+Slack : 0.914
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'reset'
+Slack : -3.000
+TNS   : -4.285
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'exec'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV -40C Model Setup 'reset'
+Slack : -0.714
+TNS   : -0.714
+
+Type  : Fast 1200mV -40C Model Setup 'exec'
+Slack : -0.623
+TNS   : -0.623
+
+Type  : Fast 1200mV -40C Model Hold 'reset'
+Slack : 0.258
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'exec'
+Slack : 0.528
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Recovery 'reset'
+Slack : 0.195
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Removal 'reset'
+Slack : 0.534
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'reset'
+Slack : -3.000
+TNS   : -4.111
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'exec'
+Slack : -3.000
+TNS   : -3.000
+
 ------------------------------------------------------------
