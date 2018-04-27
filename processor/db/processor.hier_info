@@ -1,24 +1,25 @@
 |processor
 selecter <= LED:inst21.selecter
-clock => control_unit:inst3.clock
+clock => control_unit:inst2.clock
 clock => SZCV:inst17.clock
 clock => instruction_register:inst6.clock
 clock => memory_RAM:inst7.clock
 clock => DR:inst16.clock
 clock => MDR:inst19.clock
 clock => BR:inst11.clock
-clock => phase_counter:inst2.clock
+clock => phase_counter:inst25.clock
 clock => AR:inst10.clock
-reset => control_unit:inst3.reset
+clock => clock_out.DATAIN
+reset => control_unit:inst2.reset
 reset => SZCV:inst17.reset
 reset => instruction_register:inst6.reset
 reset => DR:inst16.reset
-reset => program_counter:inst4.reset
+reset => program_counter:inst5.reset
 reset => MDR:inst19.reset
 reset => BR:inst11.reset
-reset => phase_counter:inst2.reset
+reset => phase_counter:inst25.reset
 reset => AR:inst10.reset
-exec => control_unit:inst3.exec
+exec => control_unit:inst2.exec
 in[0] => data_selecter:inst20.data1[0]
 in[1] => data_selecter:inst20.data1[1]
 in[2] => data_selecter:inst20.data1[2]
@@ -35,6 +36,12 @@ in[12] => data_selecter:inst20.data1[12]
 in[13] => data_selecter:inst20.data1[13]
 in[14] => data_selecter:inst20.data1[14]
 in[15] => data_selecter:inst20.data1[15]
+clock_out <= clock.DB_MAX_OUTPUT_PORT_TYPE
+phase1 <= control_unit:inst2.p1
+phase2 <= control_unit:inst2.p2
+phase3 <= control_unit:inst2.p3
+phase5 <= control_unit:inst2.p5
+phase4 <= control_unit:inst2.p4
 LED[0] <= LED:inst21.out[0]
 LED[1] <= LED:inst21.out[1]
 LED[2] <= LED:inst21.out[2]
@@ -67,6 +74,38 @@ LED[28] <= LED:inst21.out[28]
 LED[29] <= LED:inst21.out[29]
 LED[30] <= LED:inst21.out[30]
 LED[31] <= LED:inst21.out[31]
+PC_check[0] <= LED_simple:inst26.out[0]
+PC_check[1] <= LED_simple:inst26.out[1]
+PC_check[2] <= LED_simple:inst26.out[2]
+PC_check[3] <= LED_simple:inst26.out[3]
+PC_check[4] <= LED_simple:inst26.out[4]
+PC_check[5] <= LED_simple:inst26.out[5]
+PC_check[6] <= LED_simple:inst26.out[6]
+PC_check[7] <= LED_simple:inst26.out[7]
+PC_check[8] <= LED_simple:inst26.out[8]
+PC_check[9] <= LED_simple:inst26.out[9]
+PC_check[10] <= LED_simple:inst26.out[10]
+PC_check[11] <= LED_simple:inst26.out[11]
+PC_check[12] <= LED_simple:inst26.out[12]
+PC_check[13] <= LED_simple:inst26.out[13]
+PC_check[14] <= LED_simple:inst26.out[14]
+PC_check[15] <= LED_simple:inst26.out[15]
+PC_check[16] <= LED_simple:inst26.out[16]
+PC_check[17] <= LED_simple:inst26.out[17]
+PC_check[18] <= LED_simple:inst26.out[18]
+PC_check[19] <= LED_simple:inst26.out[19]
+PC_check[20] <= LED_simple:inst26.out[20]
+PC_check[21] <= LED_simple:inst26.out[21]
+PC_check[22] <= LED_simple:inst26.out[22]
+PC_check[23] <= LED_simple:inst26.out[23]
+PC_check[24] <= LED_simple:inst26.out[24]
+PC_check[25] <= LED_simple:inst26.out[25]
+PC_check[26] <= LED_simple:inst26.out[26]
+PC_check[27] <= LED_simple:inst26.out[27]
+PC_check[28] <= LED_simple:inst26.out[28]
+PC_check[29] <= LED_simple:inst26.out[29]
+PC_check[30] <= LED_simple:inst26.out[30]
+PC_check[31] <= LED_simple:inst26.out[31]
 
 
 |processor|LED:inst21
@@ -210,15 +249,15 @@ data_to_ALU[14] <= data_to_ALU[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 data_to_ALU[15] <= data_to_ALU[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|control_unit:inst3
+|processor|control_unit:inst2
 clock => ~NO_FANOUT~
-reset => register_reset.DATAIN
 reset => running.CLK
+reset => register_reset.DATAIN
 exec => running.ALOAD
 phase[0] => Decoder0.IN2
 phase[1] => Decoder0.IN1
 phase[2] => Decoder0.IN0
-halt => running.ENA
+halt => ~NO_FANOUT~
 register_reset <= reset.DB_MAX_OUTPUT_PORT_TYPE
 p1 <= p1.DB_MAX_OUTPUT_PORT_TYPE
 p2 <= p2.DB_MAX_OUTPUT_PORT_TYPE
@@ -2287,7 +2326,7 @@ data_to_memory[14] <= data_to_memory[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 data_to_memory[15] <= data_to_memory[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|program_counter:inst4
+|processor|program_counter:inst5
 p1 => out[0]~reg0.CLK
 p1 => out[1]~reg0.CLK
 p1 => out[2]~reg0.CLK
@@ -2421,7 +2460,7 @@ out[14] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[15] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|adder_for_program_counter:inst5
+|processor|adder_for_program_counter:inst3
 in[0] => Add0.IN32
 in[1] => Add0.IN31
 in[2] => Add0.IN30
@@ -3012,7 +3051,7 @@ sixteen[14] <= dFront[3].DB_MAX_OUTPUT_PORT_TYPE
 sixteen[15] <= dFront[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|processor|phase_counter:inst2
+|processor|phase_counter:inst25
 clock => phase[0]~reg0.CLK
 clock => phase[1]~reg0.CLK
 clock => phase[2]~reg0.CLK
@@ -3022,5 +3061,57 @@ reset => phase[2]~reg0.ACLR
 phase[0] <= phase[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 phase[1] <= phase[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 phase[2] <= phase[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|processor|LED_simple:inst26
+in[0] => Decoder3.IN3
+in[1] => Decoder3.IN2
+in[2] => Decoder3.IN1
+in[3] => Decoder3.IN0
+in[4] => Decoder2.IN3
+in[5] => Decoder2.IN2
+in[6] => Decoder2.IN1
+in[7] => Decoder2.IN0
+in[8] => Decoder1.IN3
+in[9] => Decoder1.IN2
+in[10] => Decoder1.IN1
+in[11] => Decoder1.IN0
+in[12] => Decoder0.IN3
+in[13] => Decoder0.IN2
+in[14] => Decoder0.IN1
+in[15] => Decoder0.IN0
+out[0] <= <GND>
+out[1] <= WideOr27.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= WideOr26.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= WideOr25.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= WideOr24.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= WideOr23.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= WideOr22.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= WideOr21.DB_MAX_OUTPUT_PORT_TYPE
+out[8] <= <GND>
+out[9] <= WideOr20.DB_MAX_OUTPUT_PORT_TYPE
+out[10] <= WideOr19.DB_MAX_OUTPUT_PORT_TYPE
+out[11] <= WideOr18.DB_MAX_OUTPUT_PORT_TYPE
+out[12] <= WideOr17.DB_MAX_OUTPUT_PORT_TYPE
+out[13] <= WideOr16.DB_MAX_OUTPUT_PORT_TYPE
+out[14] <= WideOr15.DB_MAX_OUTPUT_PORT_TYPE
+out[15] <= WideOr14.DB_MAX_OUTPUT_PORT_TYPE
+out[16] <= <GND>
+out[17] <= WideOr13.DB_MAX_OUTPUT_PORT_TYPE
+out[18] <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
+out[19] <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+out[20] <= WideOr10.DB_MAX_OUTPUT_PORT_TYPE
+out[21] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+out[22] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+out[23] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+out[24] <= <GND>
+out[25] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+out[26] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+out[27] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+out[28] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[29] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[30] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[31] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+selecter <= <VCC>
 
 

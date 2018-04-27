@@ -4,6 +4,30 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "clock_out",
+					"strict" : false
+				},
+				{
+					"name" : "phase1",
+					"strict" : false
+				},
+				{
+					"name" : "phase2",
+					"strict" : false
+				},
+				{
+					"name" : "phase3",
+					"strict" : false
+				},
+				{
+					"name" : "phase5",
+					"strict" : false
+				},
+				{
+					"name" : "phase4",
+					"strict" : false
+				},
+				{
 					"name" : "LED[31]",
 					"strict" : false
 				},
@@ -113,6 +137,118 @@
 				},
 				{
 					"name" : "LED[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[31]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[30]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[29]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[28]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[27]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[26]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[25]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[23]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[22]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[21]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[20]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[19]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[18]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[17]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[15]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[14]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[13]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[12]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[11]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[10]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[9]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PC_check[1]",
 					"strict" : false
 				},
 				{

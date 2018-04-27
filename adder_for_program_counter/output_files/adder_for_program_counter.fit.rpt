@@ -1,5 +1,5 @@
 Fitter report for adder_for_program_counter
-Fri Apr 20 11:23:38 2018
+Fri Apr 27 15:57:27 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -62,7 +62,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Apr 20 11:23:38 2018           ;
+; Fitter Status                      ; Successful - Fri Apr 27 15:57:27 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; adder_for_program_counter                       ;
 ; Top-level Entity Name              ; adder_for_program_counter                       ;
@@ -154,7 +154,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.2%      ;
+;     Processors 2-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -196,7 +196,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /export/home/016/a0165336/project/SIMPLE/adder_for_program_counter/output_files/adder_for_program_counter.pin.
+The pin-out file can be found in /export/home/016/a0169654/SIMPLE/adder_for_program_counter/output_files/adder_for_program_counter.pin.
 
 
 +---------------------------------------------------------------------+
@@ -1360,7 +1360,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  36 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  43 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  43 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1374,16 +1374,16 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.01 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.02 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Info (144001): Generated suppressed messages file /export/home/016/a0165336/project/SIMPLE/adder_for_program_counter/output_files/adder_for_program_counter.fit.smsg
+Info (144001): Generated suppressed messages file /export/home/016/a0169654/SIMPLE/adder_for_program_counter/output_files/adder_for_program_counter.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1651 megabytes
-    Info: Processing ended: Fri Apr 20 11:23:38 2018
+    Info: Peak virtual memory: 1647 megabytes
+    Info: Processing ended: Fri Apr 27 15:57:28 2018
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:06
 
@@ -1391,6 +1391,6 @@ Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in /export/home/016/a0165336/project/SIMPLE/adder_for_program_counter/output_files/adder_for_program_counter.fit.smsg.
+The suppressed messages can be found in /export/home/016/a0169654/SIMPLE/adder_for_program_counter/output_files/adder_for_program_counter.fit.smsg.
 
 
