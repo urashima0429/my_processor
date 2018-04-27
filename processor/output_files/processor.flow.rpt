@@ -1,9 +1,5 @@
 Flow report for processor
-<<<<<<< HEAD
-Fri Apr 27 17:27:26 2018
-=======
 Fri Apr 27 19:32:48 2018
->>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -44,30 +40,18 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-<<<<<<< HEAD
-; Flow Status                        ; Successful - Fri Apr 27 17:27:26 2018           ;
-=======
 ; Flow Status                        ; Successful - Fri Apr 27 19:32:48 2018           ;
->>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; processor                                       ;
 ; Top-level Entity Name              ; processor                                       ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE30F23I7                                    ;
 ; Timing Models                      ; Final                                           ;
-<<<<<<< HEAD
-; Total logic elements               ; 951 / 28,848 ( 3 % )                            ;
-;     Total combinational functions  ; 920 / 28,848 ( 3 % )                            ;
-;     Dedicated logic registers      ; 224 / 28,848 ( < 1 % )                          ;
-; Total registers                    ; 224                                             ;
-; Total pins                         ; 90 / 329 ( 27 % )                               ;
-=======
 ; Total logic elements               ; 934 / 28,848 ( 3 % )                            ;
 ;     Total combinational functions  ; 892 / 28,848 ( 3 % )                            ;
 ;     Dedicated logic registers      ; 240 / 28,848 ( < 1 % )                          ;
 ; Total registers                    ; 240                                             ;
 ; Total pins                         ; 52 / 329 ( 16 % )                               ;
->>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 65,536 / 608,256 ( 11 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                                 ;
@@ -80,11 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-<<<<<<< HEAD
-; Start date & time ; 04/27/2018 17:26:45 ;
-=======
 ; Start date & time ; 04/27/2018 19:32:06 ;
->>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 ; Main task         ; Compilation         ;
 ; Revision Name     ; processor           ;
 +-------------------+---------------------+
@@ -95,11 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-<<<<<<< HEAD
-; COMPILER_SIGNATURE_ID               ; 158445889771549.152481760502405        ; --            ; --          ; --             ;
-=======
 ; COMPILER_SIGNATURE_ID               ; 158445889738200.152482512615695        ; --            ; --          ; --             ;
->>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --            ; --          ; eda_simulation ;
@@ -120,21 +96,12 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-<<<<<<< HEAD
-; Analysis & Synthesis      ; 00:00:22     ; 1.0                     ; 1097 MB             ; 00:00:48                           ;
-; Fitter                    ; 00:00:08     ; 1.1                     ; 1674 MB             ; 00:00:10                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 901 MB              ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.1                     ; 953 MB              ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 1154 MB             ; 00:00:03                           ;
-; Total                     ; 00:00:38     ; --                      ; --                  ; 00:01:05                           ;
-=======
 ; Analysis & Synthesis      ; 00:00:24     ; 1.0                     ; 1107 MB             ; 00:00:54                           ;
 ; Fitter                    ; 00:00:07     ; 1.0                     ; 1669 MB             ; 00:00:08                           ;
 ; Assembler                 ; 00:00:03     ; 1.0                     ; 901 MB              ; 00:00:02                           ;
 ; TimeQuest Timing Analyzer ; 00:00:03     ; 1.1                     ; 955 MB              ; 00:00:02                           ;
 ; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 1151 MB             ; 00:00:02                           ;
 ; Total                     ; 00:00:40     ; --                      ; --                  ; 00:01:08                           ;
->>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -55,6 +55,28 @@ set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_RO
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VERILOG_FILE ../eight_to_sixteen/eight_to_sixteen.v
+set_global_assignment -name VERILOG_FILE ../write_address/write_address.v
+set_global_assignment -name VERILOG_FILE ../data_selecter/data_selecter.v
+set_global_assignment -name VERILOG_FILE ../sixteen_to_twelve/sixteen_to_twelve.v
+set_global_assignment -name VERILOG_FILE ../data_selecter_controller/data_selecter_controller.v
+set_global_assignment -name VERILOG_FILE ../LED/LED.v
+set_global_assignment -name VERILOG_FILE ../SZCV/SZCV.v
+set_global_assignment -name VERILOG_FILE ../regfile/regfile.v
+set_global_assignment -name VERILOG_FILE ../program_counter/program_counter.v
+set_global_assignment -name VERILOG_FILE ../phase_counter/phase_counter.v
+set_global_assignment -name VERILOG_FILE ../MDR/MDR.v
+set_global_assignment -name VERILOG_FILE ../main_memory/memory_RAM.v
+set_global_assignment -name VERILOG_FILE ../instruction_register/instruction_register.v
+set_global_assignment -name VERILOG_FILE ../DR/DR.v
+set_global_assignment -name VERILOG_FILE ../decoder/decoder.v
+set_global_assignment -name VERILOG_FILE ../control_unit/control_unit.v
+set_global_assignment -name VERILOG_FILE ../BR/BR.v
+set_global_assignment -name VERILOG_FILE ../AR/AR.v
+set_global_assignment -name VERILOG_FILE ../ALU/ALU.v
+set_global_assignment -name VERILOG_FILE ../adder_for_program_counter/adder_for_program_counter.v
+set_global_assignment -name VERILOG_FILE processor.v
+set_global_assignment -name BDF_FILE processor.bdf
 set_location_assignment PIN_B12 -to clock
 set_location_assignment PIN_E15 -to exec
 set_location_assignment PIN_F13 -to in[15]
@@ -108,69 +130,4 @@ set_location_assignment PIN_AA9 -to LED[2]
 set_location_assignment PIN_U10 -to LED[1]
 set_location_assignment PIN_T9 -to LED[0]
 
-set_location_assignment PIN_A8 -to clock_out
-set_location_assignment PIN_B8 -to phase1
-set_location_assignment PIN_C8 -to phase2
-set_location_assignment PIN_F8 -to phase3
-set_location_assignment PIN_A9 -to phase4
-set_location_assignment PIN_B9 -to phase5
-
-set_location_assignment PIN_V13 -to PC_check[31]
-set_location_assignment PIN_V12 -to PC_check[30]
-set_location_assignment PIN_U13 -to PC_check[29]
-set_location_assignment PIN_V11 -to PC_check[28]
-set_location_assignment PIN_U12 -to PC_check[27]
-set_location_assignment PIN_U11 -to PC_check[26]
-set_location_assignment PIN_T12 -to PC_check[25]
-set_location_assignment PIN_Y10 -to PC_check[24]
-set_location_assignment PIN_V14 -to PC_check[23]
-set_location_assignment PIN_R14 -to PC_check[22]
-set_location_assignment PIN_U14 -to PC_check[21]
-set_location_assignment PIN_Y13 -to PC_check[20]
-set_location_assignment PIN_AB13 -to PC_check[19]
-set_location_assignment PIN_W13 -to PC_check[18]
-set_location_assignment PIN_AA13 -to PC_check[17]
-set_location_assignment PIN_T13 -to PC_check[16]
-
-
-set_location_assignment PIN_W15 -to PC_check[15]
-set_location_assignment PIN_T15 -to PC_check[14]
-set_location_assignment PIN_V15 -to PC_check[13]
-set_location_assignment PIN_AA14 -to PC_check[12]
-set_location_assignment PIN_R15 -to PC_check[11]
-set_location_assignment PIN_W14 -to PC_check[10]
-set_location_assignment PIN_AB14 -to PC_check[9]
-set_location_assignment PIN_T14 -to PC_check[8]
-set_location_assignment PIN_AB16 -to PC_check[7]
-set_location_assignment PIN_U16 -to PC_check[6]
-set_location_assignment PIN_AA16 -to PC_check[5]
-set_location_assignment PIN_AB15 -to PC_check[4]
-set_location_assignment PIN_T16 -to PC_check[3]
-set_location_assignment PIN_AA15 -to PC_check[2]
-set_location_assignment PIN_R16 -to PC_check[1]
-set_location_assignment PIN_U15 -to PC_check[0]
-set_location_assignment PIN_AA17 -to selecter2
-set_global_assignment -name VERILOG_FILE ../LED_simple/LED_simple.v
-set_global_assignment -name VERILOG_FILE ../eight_to_sixteen/eight_to_sixteen.v
-set_global_assignment -name VERILOG_FILE ../write_address/write_address.v
-set_global_assignment -name VERILOG_FILE ../data_selecter/data_selecter.v
-set_global_assignment -name VERILOG_FILE ../sixteen_to_twelve/sixteen_to_twelve.v
-set_global_assignment -name VERILOG_FILE ../data_selecter_controller/data_selecter_controller.v
-set_global_assignment -name VERILOG_FILE ../LED/LED.v
-set_global_assignment -name VERILOG_FILE ../SZCV/SZCV.v
-set_global_assignment -name VERILOG_FILE ../regfile/regfile.v
-set_global_assignment -name VERILOG_FILE ../program_counter/program_counter.v
-set_global_assignment -name VERILOG_FILE ../phase_counter/phase_counter.v
-set_global_assignment -name VERILOG_FILE ../MDR/MDR.v
-set_global_assignment -name VERILOG_FILE ../main_memory/memory_RAM.v
-set_global_assignment -name VERILOG_FILE ../instruction_register/instruction_register.v
-set_global_assignment -name VERILOG_FILE ../DR/DR.v
-set_global_assignment -name VERILOG_FILE ../decoder/decoder.v
-set_global_assignment -name VERILOG_FILE ../control_unit/control_unit.v
-set_global_assignment -name VERILOG_FILE ../BR/BR.v
-set_global_assignment -name VERILOG_FILE ../AR/AR.v
-set_global_assignment -name VERILOG_FILE ../ALU/ALU.v
-set_global_assignment -name VERILOG_FILE ../adder_for_program_counter/adder_for_program_counter.v
-set_global_assignment -name VERILOG_FILE processor.v
-set_global_assignment -name BDF_FILE processor.bdf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
