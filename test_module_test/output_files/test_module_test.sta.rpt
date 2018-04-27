@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for test_module_test
-Thu Apr 26 14:50:06 2018
+Fri Apr 27 16:55:09 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -104,8 +104,8 @@ refer to the applicable agreement for further details.
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.5%      ;
-;     Processor 3            ;   0.5%      ;
-;     Processor 4            ;   0.4%      ;
+;     Processor 3            ;   0.4%      ;
+;     Processor 4            ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -274,8 +274,8 @@ No paths to report.
 ; -0.060 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 1.000        ; -0.045     ; 1.035      ;
 ; -0.038 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.045     ; 1.013      ;
 ; 0.237  ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.045     ; 0.738      ;
-; 0.320  ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.038     ; 0.662      ;
 ; 0.320  ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 1.000        ; -0.038     ; 0.662      ;
+; 0.320  ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 1.000        ; -0.038     ; 0.662      ;
 +--------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -284,8 +284,8 @@ No paths to report.
 +-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                            ; To Node                              ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+--------------------------------------+--------------------------------------+--------------+-------------+--------------+------------+------------+
-; 0.368 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 0.000        ; 0.038      ; 0.574      ;
 ; 0.368 ; phase_counter:phase_counter|phase[2] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.038      ; 0.574      ;
+; 0.368 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 0.000        ; 0.038      ; 0.574      ;
 ; 0.426 ; phase_counter:phase_counter|phase[1] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.045      ; 0.639      ;
 ; 0.633 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[2] ; clock        ; clock       ; 0.000        ; 0.045      ; 0.846      ;
 ; 0.633 ; phase_counter:phase_counter|phase[0] ; phase_counter:phase_counter|phase[1] ; clock        ; clock       ; 0.000        ; 0.045      ; 0.846      ;
@@ -861,7 +861,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Thu Apr 26 14:50:04 2018
+    Info: Processing started: Fri Apr 27 16:55:07 2018
 Info: Command: quartus_sta test_module_test -c test_module_test
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -946,8 +946,8 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 935 megabytes
-    Info: Processing ended: Thu Apr 26 14:50:06 2018
+    Info: Peak virtual memory: 932 megabytes
+    Info: Processing ended: Fri Apr 27 16:55:09 2018
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

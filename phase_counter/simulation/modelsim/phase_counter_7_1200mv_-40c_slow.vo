@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition"
 
-// DATE "04/20/2018 11:57:23"
+// DATE "04/27/2018 19:25:37"
 
 // 
 // Device: Altera EP4CE30F23I7 Package FBGA484
@@ -183,7 +183,7 @@ defparam \reset~inputclkctrl .ena_register_mode = "none";
 
 // Location: FF_X1_Y10_N7
 dffeas \phase[1]~reg0 (
-	.clk(\clock~inputclkctrl_outclk ),
+	.clk(!\clock~inputclkctrl_outclk ),
 	.d(\phase[1]~1_combout ),
 	.asdata(vcc),
 	.clrn(\reset~inputclkctrl_outclk ),
@@ -219,7 +219,7 @@ defparam \phase~2 .sum_lutc_input = "datac";
 
 // Location: FF_X1_Y10_N25
 dffeas \phase[2]~reg0 (
-	.clk(\clock~inputclkctrl_outclk ),
+	.clk(!\clock~inputclkctrl_outclk ),
 	.d(\phase~2_combout ),
 	.asdata(vcc),
 	.clrn(\reset~inputclkctrl_outclk ),
@@ -255,7 +255,7 @@ defparam \phase~0 .sum_lutc_input = "datac";
 
 // Location: FF_X1_Y10_N29
 dffeas \phase[0]~reg0 (
-	.clk(\clock~inputclkctrl_outclk ),
+	.clk(!\clock~inputclkctrl_outclk ),
 	.d(\phase~0_combout ),
 	.asdata(vcc),
 	.clrn(\reset~inputclkctrl_outclk ),

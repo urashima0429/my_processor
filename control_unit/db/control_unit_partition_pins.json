@@ -32,6 +32,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
 					"name" : "phase[2]",
 					"strict" : false
 				},
@@ -45,10 +49,6 @@
 				},
 				{
 					"name" : "exec",
-					"strict" : false
-				},
-				{
-					"name" : "halt",
 					"strict" : false
 				}
 			]

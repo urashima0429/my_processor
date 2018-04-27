@@ -249,6 +249,7 @@ data_to_ALU[14] <= data_to_ALU[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 data_to_ALU[15] <= data_to_ALU[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
 |processor|control_unit:inst2
 clock => ~NO_FANOUT~
 reset => running.CLK
@@ -257,6 +258,32 @@ exec => running.ALOAD
 phase[0] => Decoder0.IN2
 phase[1] => Decoder0.IN1
 phase[2] => Decoder0.IN0
+=======
+|processor|control_unit:inst3
+clock => p1.IN1
+clock => p2.IN1
+clock => p3.IN1
+clock => p4.IN1
+clock => p5.IN1
+reset => running.CLK
+reset => register_reset.DATAIN
+exec => running.ALOAD
+phase[0] => Equal0.IN2
+phase[0] => Equal1.IN0
+phase[0] => Equal2.IN2
+phase[0] => Equal3.IN1
+phase[0] => Equal4.IN2
+phase[1] => Equal0.IN1
+phase[1] => Equal1.IN2
+phase[1] => Equal2.IN0
+phase[1] => Equal3.IN0
+phase[1] => Equal4.IN1
+phase[2] => Equal0.IN0
+phase[2] => Equal1.IN1
+phase[2] => Equal2.IN1
+phase[2] => Equal3.IN2
+phase[2] => Equal4.IN0
+>>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 halt => ~NO_FANOUT~
 register_reset <= reset.DB_MAX_OUTPUT_PORT_TYPE
 p1 <= p1.DB_MAX_OUTPUT_PORT_TYPE

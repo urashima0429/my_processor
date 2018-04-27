@@ -1,5 +1,9 @@
 Analysis & Synthesis report for processor
+<<<<<<< HEAD
 Fri Apr 27 17:27:07 2018
+=======
+Fri Apr 27 19:32:31 2018
+>>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -51,16 +55,28 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
+<<<<<<< HEAD
 ; Analysis & Synthesis Status        ; Successful - Fri Apr 27 17:27:07 2018           ;
+=======
+; Analysis & Synthesis Status        ; Successful - Fri Apr 27 19:32:31 2018           ;
+>>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; processor                                       ;
 ; Top-level Entity Name              ; processor                                       ;
 ; Family                             ; Cyclone IV E                                    ;
+<<<<<<< HEAD
 ; Total logic elements               ; 968                                             ;
 ;     Total combinational functions  ; 920                                             ;
 ;     Dedicated logic registers      ; 224                                             ;
 ; Total registers                    ; 224                                             ;
 ; Total pins                         ; 90                                              ;
+=======
+; Total logic elements               ; 956                                             ;
+;     Total combinational functions  ; 892                                             ;
+;     Dedicated logic registers      ; 240                                             ;
+; Total registers                    ; 240                                             ;
+; Total pins                         ; 52                                              ;
+>>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 65,536                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -173,6 +189,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
+<<<<<<< HEAD
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                            ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------------------+-------------+
@@ -224,6 +241,58 @@ refer to the applicable agreement for further details.
 ; db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; /export/home/016/a0169654/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
 ; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                 ;             ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------------------------+-------------+
+=======
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                    ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                          ; Library     ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+-------------+
+; ../eight_to_sixteen/eight_to_sixteen.v                             ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/eight_to_sixteen/eight_to_sixteen.v                                          ;             ;
+; ../write_address/write_address.v                                   ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/write_address/write_address.v                                                ;             ;
+; ../data_selecter/data_selecter.v                                   ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/data_selecter/data_selecter.v                                                ;             ;
+; ../sixteen_to_twelve/sixteen_to_twelve.v                           ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/sixteen_to_twelve/sixteen_to_twelve.v                                        ;             ;
+; ../data_selecter_controller/data_selecter_controller.v             ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/data_selecter_controller.v                          ;             ;
+; ../LED/LED.v                                                       ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/LED/LED.v                                                                    ;             ;
+; ../SZCV/SZCV.v                                                     ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/SZCV/SZCV.v                                                                  ;             ;
+; ../regfile/regfile.v                                               ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v                                                            ;             ;
+; ../program_counter/program_counter.v                               ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/program_counter/program_counter.v                                            ;             ;
+; ../phase_counter/phase_counter.v                                   ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/phase_counter/phase_counter.v                                                ;             ;
+; ../MDR/MDR.v                                                       ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/MDR/MDR.v                                                                    ;             ;
+; ../main_memory/memory_RAM.v                                        ; yes             ; User Wizard-Generated File                   ; /export/home/016/a0165336/project/SIMPLE/main_memory/memory_RAM.v                                                     ;             ;
+; ../instruction_register/instruction_register.v                     ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/instruction_register/instruction_register.v                                  ;             ;
+; ../DR/DR.v                                                         ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/DR/DR.v                                                                      ;             ;
+; ../decoder/decoder.v                                               ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/decoder/decoder.v                                                            ;             ;
+; ../control_unit/control_unit.v                                     ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/control_unit/control_unit.v                                                  ;             ;
+; ../BR/BR.v                                                         ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/BR/BR.v                                                                      ;             ;
+; ../AR/AR.v                                                         ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/AR/AR.v                                                                      ;             ;
+; ../ALU/ALU.v                                                       ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/ALU/ALU.v                                                                    ;             ;
+; ../adder_for_program_counter/adder_for_program_counter.v           ; yes             ; User Verilog HDL File                        ; /export/home/016/a0165336/project/SIMPLE/adder_for_program_counter/adder_for_program_counter.v                        ;             ;
+; processor.bdf                                                      ; yes             ; User Block Diagram/Schematic File            ; /export/home/016/a0165336/project/SIMPLE/processor/processor.bdf                                                      ;             ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/altsyncram.tdf                                           ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                    ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/lpm_mux.inc                                              ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/lpm_decode.inc                                           ;             ;
+; aglobal171.inc                                                     ; yes             ; Megafunction                                 ; /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/aglobal171.inc                                           ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/a_rdenreg.inc                                            ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                 ; /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/altrom.inc                                               ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                 ; /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/altram.inc                                               ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                 ; /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/altdpram.inc                                             ;             ;
+; db/altsyncram_hai1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; /export/home/016/a0165336/project/SIMPLE/processor/db/altsyncram_hai1.tdf                                             ;             ;
+; db/altsyncram_fk82.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; /export/home/016/a0165336/project/SIMPLE/processor/db/altsyncram_fk82.tdf                                             ;             ;
+; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                       ; /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                      ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                            ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                        ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                           ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/sld_hub.vhd                                              ; altera_sld  ;
+; db/ip/sldcbc818cf/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; /export/home/016/a0165336/project/SIMPLE/processor/db/ip/sldcbc818cf/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; /export/home/016/a0165336/project/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; /export/home/016/a0165336/project/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; /export/home/016/a0165336/project/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; /export/home/016/a0165336/project/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; /export/home/016/a0165336/project/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                         ;             ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+-------------+
+>>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 
 
 +------------------------------------------------------------------------+
@@ -231,6 +300,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
+<<<<<<< HEAD
 ; Estimated Total logic elements              ; 968                      ;
 ;                                             ;                          ;
 ; Total combinational functions               ; 920                      ;
@@ -241,6 +311,18 @@ refer to the applicable agreement for further details.
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
 ;     -- normal mode                          ; 820                      ;
+=======
+; Estimated Total logic elements              ; 956                      ;
+;                                             ;                          ;
+; Total combinational functions               ; 892                      ;
+; Logic element usage by number of LUT inputs ;                          ;
+;     -- 4 input functions                    ; 549                      ;
+;     -- 3 input functions                    ; 213                      ;
+;     -- <=2 input functions                  ; 130                      ;
+;                                             ;                          ;
+; Logic elements by mode                      ;                          ;
+;     -- normal mode                          ; 792                      ;
+>>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 ;     -- arithmetic mode                      ; 100                      ;
 ;                                             ;                          ;
 ; Total registers                             ; 224                      ;
@@ -254,8 +336,13 @@ refer to the applicable agreement for further details.
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 177                      ;
+<<<<<<< HEAD
 ; Total fan-out                               ; 4649                     ;
 ; Average fan-out                             ; 3.45                     ;
+=======
+; Total fan-out                               ; 4522                     ;
+; Average fan-out                             ; 3.59                     ;
+>>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 +---------------------------------------------+--------------------------+
 
 
@@ -264,16 +351,27 @@ refer to the applicable agreement for further details.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                   ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
+<<<<<<< HEAD
 ; |processor                                                                                                                              ; 920 (1)             ; 224 (0)                   ; 65536       ; 0            ; 0       ; 0         ; 90   ; 0            ; |processor                                                                                                                                                                                                                                                                                                                                            ; processor                         ; work         ;
 ;    |ALU:inst15|                                                                                                                         ; 484 (484)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|ALU:inst15                                                                                                                                                                                                                                                                                                                                 ; ALU                               ; work         ;
+=======
+; |processor                                                                                                                              ; 892 (1)             ; 240 (0)                   ; 65536       ; 0            ; 0       ; 0         ; 52   ; 0            ; |processor                                                                                                                                                                                                                                                                                                                                            ; processor                         ; work         ;
+;    |ALU:inst15|                                                                                                                         ; 490 (490)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|ALU:inst15                                                                                                                                                                                                                                                                                                                                 ; ALU                               ; work         ;
+>>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 ;    |AR:inst10|                                                                                                                          ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|AR:inst10                                                                                                                                                                                                                                                                                                                                  ; AR                                ; work         ;
 ;    |DR:inst16|                                                                                                                          ; 13 (13)             ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|DR:inst16                                                                                                                                                                                                                                                                                                                                  ; DR                                ; work         ;
 ;    |LED:inst21|                                                                                                                         ; 57 (57)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|LED:inst21                                                                                                                                                                                                                                                                                                                                 ; LED                               ; work         ;
 ;    |LED_simple:inst26|                                                                                                                  ; 28 (28)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|LED_simple:inst26                                                                                                                                                                                                                                                                                                                          ; LED_simple                        ; work         ;
 ;    |MDR:inst19|                                                                                                                         ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|MDR:inst19                                                                                                                                                                                                                                                                                                                                 ; MDR                               ; work         ;
+<<<<<<< HEAD
 ;    |SZCV:inst17|                                                                                                                        ; 20 (20)             ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|SZCV:inst17                                                                                                                                                                                                                                                                                                                                ; SZCV                              ; work         ;
 ;    |adder_for_program_counter:inst3|                                                                                                    ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|adder_for_program_counter:inst3                                                                                                                                                                                                                                                                                                            ; adder_for_program_counter         ; work         ;
 ;    |control_unit:inst2|                                                                                                                 ; 7 (7)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|control_unit:inst2                                                                                                                                                                                                                                                                                                                         ; control_unit                      ; work         ;
+=======
+;    |SZCV:inst17|                                                                                                                        ; 14 (14)             ; 3 (3)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|SZCV:inst17                                                                                                                                                                                                                                                                                                                                ; SZCV                              ; work         ;
+;    |adder_for_program_counter:inst5|                                                                                                    ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|adder_for_program_counter:inst5                                                                                                                                                                                                                                                                                                            ; adder_for_program_counter         ; work         ;
+;    |control_unit:inst3|                                                                                                                 ; 8 (8)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|control_unit:inst3                                                                                                                                                                                                                                                                                                                         ; control_unit                      ; work         ;
+>>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 ;    |data_selecter:inst12|                                                                                                               ; 17 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|data_selecter:inst12                                                                                                                                                                                                                                                                                                                       ; data_selecter                     ; work         ;
 ;    |data_selecter:inst13|                                                                                                               ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|data_selecter:inst13                                                                                                                                                                                                                                                                                                                       ; data_selecter                     ; work         ;
 ;    |data_selecter:inst18|                                                                                                               ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |processor|data_selecter:inst18                                                                                                                                                                                                                                                                                                                       ; data_selecter                     ; work         ;
@@ -380,6 +478,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+<<<<<<< HEAD
 ; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |processor|memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[2]                                        ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |processor|memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[5]                                                   ;
 ; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |processor|memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[9]                                                   ;
@@ -388,6 +487,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 18:1               ; 2 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |processor|memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|WORD_SR[1]      ;
 ; 21:1               ; 14 bits   ; 196 LEs       ; 112 LEs              ; 84 LEs                 ; Yes        ; |processor|DR:inst16|data_to_memory[10]                                                                                                                                                    ;
 ; 3:1                ; 28 bits   ; 56 LEs        ; 28 LEs               ; 28 LEs                 ; No         ; |processor|LED:inst21|out[15]                                                                                                                                                              ;
+=======
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |processor|memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[4]                                        ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |processor|memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[4]                                                   ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |processor|memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[5]                                                   ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |processor|memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|word_counter[0] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |processor|memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|WORD_SR[3]      ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; Yes        ; |processor|memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|WORD_SR[1]      ;
+; 21:1               ; 14 bits   ; 196 LEs       ; 112 LEs              ; 84 LEs                 ; Yes        ; |processor|DR:inst16|data_to_memory[6]                                                                                                                                                     ;
+; 3:1                ; 28 bits   ; 56 LEs        ; 28 LEs               ; 28 LEs                 ; No         ; |processor|LED:inst21|out[30]                                                                                                                                                              ;
+>>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |processor|ALU:inst15|ShiftLeft0                                                                                                                                                           ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |processor|ALU:inst15|ShiftRight1                                                                                                                                                          ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |processor|ALU:inst15|ShiftRight0                                                                                                                                                          ;
@@ -509,6 +618,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA CLR           ; 69                          ;
 ;     ENA CLR SCLR      ; 1                           ;
 ;     ENA CLR SLD       ; 14                          ;
+<<<<<<< HEAD
 ; cycloneiii_lcell_comb ; 823                         ;
 ;     arith             ; 92                          ;
 ;         2 data inputs ; 30                          ;
@@ -523,6 +633,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;                       ;                             ;
 ; Max LUT depth         ; 13.00                       ;
 ; Average LUT depth     ; 7.06                        ;
+=======
+; cycloneiii_lcell_comb ; 771                         ;
+;     arith             ; 92                          ;
+;         2 data inputs ; 30                          ;
+;         3 data inputs ; 62                          ;
+;     normal            ; 679                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 3                           ;
+;         2 data inputs ; 60                          ;
+;         3 data inputs ; 118                         ;
+;         4 data inputs ; 496                         ;
+; cycloneiii_ram_block  ; 16                          ;
+;                       ;                             ;
+; Max LUT depth         ; 12.00                       ;
+; Average LUT depth     ; 7.30                        ;
+>>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 +-----------------------+-----------------------------+
 
 
@@ -541,6 +667,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+<<<<<<< HEAD
     Info: Processing started: Fri Apr 27 17:26:44 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -587,31 +714,77 @@ Info (12021): Found 1 design units, including 1 entities, in source file /export
     Info (12023): Found entity 1: ALU File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0169654/SIMPLE/adder_for_program_counter/adder_for_program_counter.v
     Info (12023): Found entity 1: adder_for_program_counter File: /export/home/016/a0169654/SIMPLE/adder_for_program_counter/adder_for_program_counter.v Line: 1
+=======
+    Info: Processing started: Fri Apr 27 19:32:06 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off processor -c processor
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/eight_to_sixteen/eight_to_sixteen.v
+    Info (12023): Found entity 1: eight_to_sixteen File: /export/home/016/a0165336/project/SIMPLE/eight_to_sixteen/eight_to_sixteen.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/write_address/write_address.v
+    Info (12023): Found entity 1: write_address File: /export/home/016/a0165336/project/SIMPLE/write_address/write_address.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/data_selecter/data_selecter.v
+    Info (12023): Found entity 1: data_selecter File: /export/home/016/a0165336/project/SIMPLE/data_selecter/data_selecter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/sixteen_to_twelve/sixteen_to_twelve.v
+    Info (12023): Found entity 1: sixteen_to_twelve File: /export/home/016/a0165336/project/SIMPLE/sixteen_to_twelve/sixteen_to_twelve.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/data_selecter_controller.v
+    Info (12023): Found entity 1: data_selecter_controller File: /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/LED/LED.v
+    Info (12023): Found entity 1: LED File: /export/home/016/a0165336/project/SIMPLE/LED/LED.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/SZCV/SZCV.v
+    Info (12023): Found entity 1: SZCV File: /export/home/016/a0165336/project/SIMPLE/SZCV/SZCV.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v
+    Info (12023): Found entity 1: regfile File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/program_counter/program_counter.v
+    Info (12023): Found entity 1: program_counter File: /export/home/016/a0165336/project/SIMPLE/program_counter/program_counter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/phase_counter/phase_counter.v
+    Info (12023): Found entity 1: phase_counter File: /export/home/016/a0165336/project/SIMPLE/phase_counter/phase_counter.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/MDR/MDR.v
+    Info (12023): Found entity 1: MDR File: /export/home/016/a0165336/project/SIMPLE/MDR/MDR.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/main_memory/memory_RAM.v
+    Info (12023): Found entity 1: memory_RAM File: /export/home/016/a0165336/project/SIMPLE/main_memory/memory_RAM.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/instruction_register/instruction_register.v
+    Info (12023): Found entity 1: instruction_register File: /export/home/016/a0165336/project/SIMPLE/instruction_register/instruction_register.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/DR/DR.v
+    Info (12023): Found entity 1: DR File: /export/home/016/a0165336/project/SIMPLE/DR/DR.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/decoder/decoder.v
+    Info (12023): Found entity 1: decoder File: /export/home/016/a0165336/project/SIMPLE/decoder/decoder.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/control_unit/control_unit.v
+    Info (12023): Found entity 1: control_unit File: /export/home/016/a0165336/project/SIMPLE/control_unit/control_unit.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/BR/BR.v
+    Info (12023): Found entity 1: BR File: /export/home/016/a0165336/project/SIMPLE/BR/BR.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/AR/AR.v
+    Info (12023): Found entity 1: AR File: /export/home/016/a0165336/project/SIMPLE/AR/AR.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/ALU/ALU.v
+    Info (12023): Found entity 1: ALU File: /export/home/016/a0165336/project/SIMPLE/ALU/ALU.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /export/home/016/a0165336/project/SIMPLE/adder_for_program_counter/adder_for_program_counter.v
+    Info (12023): Found entity 1: adder_for_program_counter File: /export/home/016/a0165336/project/SIMPLE/adder_for_program_counter/adder_for_program_counter.v Line: 1
+>>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 Warning (12019): Can't analyze file -- file processor.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file processor.bdf
     Info (12023): Found entity 1: processor
 Info (12127): Elaborating entity "processor" for the top level hierarchy
 Info (12128): Elaborating entity "LED" for hierarchy "LED:inst21"
-Warning (10776): Verilog HDL warning at LED.v(8): variable decode4_8 in static task or function decode4_8 may have unintended latch behavior File: /export/home/016/a0169654/SIMPLE/LED/LED.v Line: 8
-Warning (10241): Verilog HDL Function Declaration warning at LED.v(8): function "decode4_8" may return a Don't Care value because its output register may not be assigned a value in every possible path through the function File: /export/home/016/a0169654/SIMPLE/LED/LED.v Line: 8
-Warning (10030): Net "decode4_8" at LED.v(8) has no driver or initial value, using a default initial value '0' File: /export/home/016/a0169654/SIMPLE/LED/LED.v Line: 8
+Warning (10776): Verilog HDL warning at LED.v(8): variable decode4_8 in static task or function decode4_8 may have unintended latch behavior File: /export/home/016/a0165336/project/SIMPLE/LED/LED.v Line: 8
+Warning (10241): Verilog HDL Function Declaration warning at LED.v(8): function "decode4_8" may return a Don't Care value because its output register may not be assigned a value in every possible path through the function File: /export/home/016/a0165336/project/SIMPLE/LED/LED.v Line: 8
+Warning (10030): Net "decode4_8" at LED.v(8) has no driver or initial value, using a default initial value '0' File: /export/home/016/a0165336/project/SIMPLE/LED/LED.v Line: 8
 Info (12128): Elaborating entity "AR" for hierarchy "AR:inst10"
 Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:inst2"
 Info (12128): Elaborating entity "ALU" for hierarchy "ALU:inst15"
-Warning (10036): Verilog HDL or VHDL warning at ALU.v(11): object "plus_result" assigned a value but never read File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 11
-Warning (10036): Verilog HDL or VHDL warning at ALU.v(12): object "minus_result" assigned a value but never read File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 12
-Warning (10036): Verilog HDL or VHDL warning at ALU.v(14): object "SLL_result" assigned a value but never read File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 14
-Warning (10036): Verilog HDL or VHDL warning at ALU.v(15): object "SLR_result" assigned a value but never read File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 15
-Warning (10036): Verilog HDL or VHDL warning at ALU.v(16): object "SRL_result" assigned a value but never read File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 16
-Warning (10036): Verilog HDL or VHDL warning at ALU.v(17): object "SRR_result" assigned a value but never read File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 17
-Warning (10230): Verilog HDL assignment warning at ALU.v(115): truncated value with size 16 to match size of target (1) File: /export/home/016/a0169654/SIMPLE/ALU/ALU.v Line: 115
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(11): object "plus_result" assigned a value but never read File: /export/home/016/a0165336/project/SIMPLE/ALU/ALU.v Line: 11
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(12): object "minus_result" assigned a value but never read File: /export/home/016/a0165336/project/SIMPLE/ALU/ALU.v Line: 12
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(14): object "SLL_result" assigned a value but never read File: /export/home/016/a0165336/project/SIMPLE/ALU/ALU.v Line: 14
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(15): object "SLR_result" assigned a value but never read File: /export/home/016/a0165336/project/SIMPLE/ALU/ALU.v Line: 15
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(16): object "SRL_result" assigned a value but never read File: /export/home/016/a0165336/project/SIMPLE/ALU/ALU.v Line: 16
+Warning (10036): Verilog HDL or VHDL warning at ALU.v(17): object "SRR_result" assigned a value but never read File: /export/home/016/a0165336/project/SIMPLE/ALU/ALU.v Line: 17
+Warning (10230): Verilog HDL assignment warning at ALU.v(115): truncated value with size 16 to match size of target (1) File: /export/home/016/a0165336/project/SIMPLE/ALU/ALU.v Line: 115
 Info (12128): Elaborating entity "SZCV" for hierarchy "SZCV:inst17"
 Info (12128): Elaborating entity "decoder" for hierarchy "decoder:inst8"
 Info (12128): Elaborating entity "instruction_register" for hierarchy "instruction_register:inst6"
 Info (12128): Elaborating entity "memory_RAM" for hierarchy "memory_RAM:inst7"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "memory_RAM:inst7|altsyncram:altsyncram_component" File: /export/home/016/a0169654/SIMPLE/main_memory/memory_RAM.v Line: 85
-Info (12130): Elaborated megafunction instantiation "memory_RAM:inst7|altsyncram:altsyncram_component" File: /export/home/016/a0169654/SIMPLE/main_memory/memory_RAM.v Line: 85
-Info (12133): Instantiated megafunction "memory_RAM:inst7|altsyncram:altsyncram_component" with the following parameter: File: /export/home/016/a0169654/SIMPLE/main_memory/memory_RAM.v Line: 85
+Info (12128): Elaborating entity "altsyncram" for hierarchy "memory_RAM:inst7|altsyncram:altsyncram_component" File: /export/home/016/a0165336/project/SIMPLE/main_memory/memory_RAM.v Line: 85
+Info (12130): Elaborated megafunction instantiation "memory_RAM:inst7|altsyncram:altsyncram_component" File: /export/home/016/a0165336/project/SIMPLE/main_memory/memory_RAM.v Line: 85
+Info (12133): Instantiated megafunction "memory_RAM:inst7|altsyncram:altsyncram_component" with the following parameter: File: /export/home/016/a0165336/project/SIMPLE/main_memory/memory_RAM.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
@@ -627,14 +800,14 @@ Info (12133): Instantiated megafunction "memory_RAM:inst7|altsyncram:altsyncram_
     Info (12134): Parameter "width_a" = "16"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_hai1.tdf
-    Info (12023): Found entity 1: altsyncram_hai1 File: /export/home/016/a0169654/SIMPLE/processor/db/altsyncram_hai1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_hai1 File: /export/home/016/a0165336/project/SIMPLE/processor/db/altsyncram_hai1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_hai1" for hierarchy "memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated" File: /home/quartus/intelFPGA/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_fk82.tdf
-    Info (12023): Found entity 1: altsyncram_fk82 File: /export/home/016/a0169654/SIMPLE/processor/db/altsyncram_fk82.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_fk82" for hierarchy "memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|altsyncram_fk82:altsyncram1" File: /export/home/016/a0169654/SIMPLE/processor/db/altsyncram_hai1.tdf Line: 36
-Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: /export/home/016/a0169654/SIMPLE/processor/db/altsyncram_hai1.tdf Line: 37
-Info (12130): Elaborated megafunction instantiation "memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: /export/home/016/a0169654/SIMPLE/processor/db/altsyncram_hai1.tdf Line: 37
-Info (12133): Instantiated megafunction "memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: /export/home/016/a0169654/SIMPLE/processor/db/altsyncram_hai1.tdf Line: 37
+    Info (12023): Found entity 1: altsyncram_fk82 File: /export/home/016/a0165336/project/SIMPLE/processor/db/altsyncram_fk82.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_fk82" for hierarchy "memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|altsyncram_fk82:altsyncram1" File: /export/home/016/a0165336/project/SIMPLE/processor/db/altsyncram_hai1.tdf Line: 36
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: /export/home/016/a0165336/project/SIMPLE/processor/db/altsyncram_hai1.tdf Line: 37
+Info (12130): Elaborated megafunction instantiation "memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: /export/home/016/a0165336/project/SIMPLE/processor/db/altsyncram_hai1.tdf Line: 37
+Info (12133): Instantiated megafunction "memory_RAM:inst7|altsyncram:altsyncram_component|altsyncram_hai1:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: /export/home/016/a0165336/project/SIMPLE/processor/db/altsyncram_hai1.tdf Line: 37
     Info (12134): Parameter "CVALUE" = "0000000000000000"
     Info (12134): Parameter "IS_DATA_IN_RAM" = "1"
     Info (12134): Parameter "IS_READABLE" = "1"
@@ -650,18 +823,31 @@ Info (12128): Elaborating entity "data_selecter_controller" for hierarchy "data_
 Info (12128): Elaborating entity "sixteen_to_twelve" for hierarchy "sixteen_to_twelve:inst22"
 Info (12128): Elaborating entity "data_selecter" for hierarchy "data_selecter:inst24"
 Info (12128): Elaborating entity "DR" for hierarchy "DR:inst16"
+<<<<<<< HEAD
 Info (12128): Elaborating entity "program_counter" for hierarchy "program_counter:inst5"
 Info (12128): Elaborating entity "adder_for_program_counter" for hierarchy "adder_for_program_counter:inst3"
+=======
+Info (12128): Elaborating entity "program_counter" for hierarchy "program_counter:inst4"
+Info (12128): Elaborating entity "adder_for_program_counter" for hierarchy "adder_for_program_counter:inst5"
+Warning (10230): Verilog HDL assignment warning at adder_for_program_counter.v(5): truncated value with size 32 to match size of target (16) File: /export/home/016/a0165336/project/SIMPLE/adder_for_program_counter/adder_for_program_counter.v Line: 5
+>>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 Info (12128): Elaborating entity "MDR" for hierarchy "MDR:inst19"
 Info (12128): Elaborating entity "regfile" for hierarchy "regfile:inst9"
 Info (12128): Elaborating entity "write_address" for hierarchy "write_address:inst23"
 Info (12128): Elaborating entity "BR" for hierarchy "BR:inst11"
 Info (12128): Elaborating entity "eight_to_sixteen" for hierarchy "eight_to_sixteen:inst14"
+<<<<<<< HEAD
 Info (12128): Elaborating entity "phase_counter" for hierarchy "phase_counter:inst25"
 Warning (10230): Verilog HDL assignment warning at phase_counter.v(15): truncated value with size 16 to match size of target (3) File: /export/home/016/a0169654/SIMPLE/phase_counter/phase_counter.v Line: 15
 Info (12128): Elaborating entity "LED_simple" for hierarchy "LED_simple:inst26"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
 Info (11172): 2018.04.27.17:26:58 Progress: Loading sldcbc818cf/alt_sld_fab_wrapper_hw.tcl
+=======
+Info (12128): Elaborating entity "phase_counter" for hierarchy "phase_counter:inst2"
+Warning (10230): Verilog HDL assignment warning at phase_counter.v(15): truncated value with size 32 to match size of target (3) File: /export/home/016/a0165336/project/SIMPLE/phase_counter/phase_counter.v Line: 15
+Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
+Info (11172): 2018.04.27.19:32:22 Progress: Loading sldcbc818cf/alt_sld_fab_wrapper_hw.tcl
+>>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -672,148 +858,152 @@ Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldcbc818cf/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: /export/home/016/a0169654/SIMPLE/processor/db/ip/sldcbc818cf/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: /export/home/016/a0165336/project/SIMPLE/processor/db/ip/sldcbc818cf/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: /export/home/016/a0169654/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: /export/home/016/a0165336/project/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: /export/home/016/a0169654/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: /export/home/016/a0165336/project/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: /export/home/016/a0169654/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: /export/home/016/a0165336/project/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: /export/home/016/a0169654/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: /export/home/016/a0169654/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: /export/home/016/a0165336/project/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: /export/home/016/a0165336/project/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: /export/home/016/a0169654/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
-Warning (14026): LATCH primitive "regfile:inst9|r~0" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~1" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~2" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~3" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~4" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~5" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~6" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~7" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~8" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~9" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~10" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~11" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~12" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~13" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~14" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~15" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~16" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~17" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~18" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~19" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~20" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~21" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~22" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~23" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~24" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~25" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~26" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~27" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~28" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~29" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~30" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~31" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~32" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~33" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~34" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~35" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~36" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~37" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~38" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~39" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~40" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~41" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~42" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~43" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~44" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~45" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~46" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~47" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~48" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~49" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~50" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~51" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~52" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~53" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~54" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~55" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~56" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~57" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~58" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~59" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~60" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~61" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~62" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~63" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~64" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~65" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~66" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~67" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~68" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~69" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~70" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~71" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~72" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~73" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~74" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~75" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~76" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~77" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~78" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~79" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~80" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~81" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~82" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~83" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~84" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~85" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~86" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~87" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~88" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~89" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~90" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~91" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~92" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~93" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~94" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~95" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~96" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~97" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~98" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~99" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~100" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~101" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~102" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~103" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~104" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~105" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~106" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~107" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~108" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~109" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~110" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~111" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~112" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~113" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~114" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~115" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~116" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~117" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~118" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~119" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~120" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~121" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~122" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~123" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~124" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~125" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~126" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
-Warning (14026): LATCH primitive "regfile:inst9|r~127" is permanently enabled File: /export/home/016/a0169654/SIMPLE/regfile/regfile.v Line: 7
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: /export/home/016/a0165336/project/SIMPLE/processor/db/ip/sldcbc818cf/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+Warning (14026): LATCH primitive "regfile:inst9|r~0" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~1" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~2" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~3" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~4" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~5" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~6" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~7" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~8" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~9" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~10" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~11" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~12" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~13" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~14" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~15" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~16" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~17" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~18" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~19" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~20" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~21" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~22" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~23" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~24" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~25" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~26" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~27" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~28" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~29" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~30" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~31" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~32" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~33" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~34" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~35" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~36" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~37" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~38" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~39" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~40" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~41" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~42" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~43" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~44" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~45" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~46" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~47" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~48" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~49" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~50" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~51" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~52" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~53" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~54" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~55" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~56" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~57" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~58" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~59" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~60" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~61" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~62" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~63" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~64" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~65" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~66" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~67" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~68" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~69" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~70" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~71" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~72" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~73" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~74" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~75" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~76" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~77" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~78" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~79" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~80" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~81" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~82" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~83" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~84" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~85" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~86" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~87" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~88" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~89" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~90" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~91" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~92" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~93" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~94" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~95" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~96" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~97" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~98" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~99" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~100" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~101" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~102" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~103" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~104" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~105" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~106" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~107" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~108" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~109" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~110" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~111" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~112" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~113" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~114" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~115" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~116" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~117" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~118" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~119" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~120" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~121" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~122" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~123" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~124" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~125" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~126" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
+Warning (14026): LATCH primitive "regfile:inst9|r~127" is permanently enabled File: /export/home/016/a0165336/project/SIMPLE/regfile/regfile.v Line: 7
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+<<<<<<< HEAD
     Warning (13310): Register "control_unit:inst2|running" is converted into an equivalent circuit using register "control_unit:inst2|running~_emulated" and latch "control_unit:inst2|running~1" File: /export/home/016/a0169654/SIMPLE/control_unit/control_unit.v Line: 8
+=======
+    Warning (13310): Register "control_unit:inst3|running" is converted into an equivalent circuit using register "control_unit:inst3|running~_emulated" and latch "control_unit:inst3|running~1" File: /export/home/016/a0165336/project/SIMPLE/control_unit/control_unit.v Line: 8
+>>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "selecter" is stuck at VCC
     Warning (13410): Pin "LED[24]" is stuck at GND
@@ -827,6 +1017,7 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+<<<<<<< HEAD
 Info (21057): Implemented 1100 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 22 input pins
     Info (21059): Implemented 72 output pins
@@ -837,5 +1028,17 @@ Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 153 warnings
     Info: Processing ended: Fri Apr 27 17:27:08 2018
     Info: Elapsed time: 00:00:24
     Info: Total CPU time (on all processors): 00:00:49
+=======
+Info (21057): Implemented 1050 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 22 input pins
+    Info (21059): Implemented 34 output pins
+    Info (21061): Implemented 977 logic cells
+    Info (21064): Implemented 16 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 150 warnings
+    Info: Peak virtual memory: 1153 megabytes
+    Info: Processing ended: Fri Apr 27 19:32:31 2018
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:55
+>>>>>>> 5a63039d83e6aca798e91337c1f6d81887976a67
 
 

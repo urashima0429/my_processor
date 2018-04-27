@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for phase_counter
-Fri Apr 20 11:57:22 2018
+Fri Apr 27 19:25:35 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -121,7 +121,7 @@ refer to the applicable agreement for further details.
 +------------+-----------------+------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
 +------------+-----------------+------------+---------------------------------------------------------------+
-; 820.34 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 821.02 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
 +------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -137,7 +137,7 @@ HTML report is unavailable in plain text report export.
 +-------+--------+---------------------+
 ; Clock ; Slack  ; End Point TNS       ;
 +-------+--------+---------------------+
-; clock ; -0.219 ; -0.413              ;
+; clock ; -0.218 ; -0.411              ;
 +-------+--------+---------------------+
 
 
@@ -146,7 +146,7 @@ HTML report is unavailable in plain text report export.
 +-------+-------+---------------------+
 ; Clock ; Slack ; End Point TNS       ;
 +-------+-------+---------------------+
-; clock ; 0.415 ; 0.000               ;
+; clock ; 0.416 ; 0.000               ;
 +-------+-------+---------------------+
 
 
@@ -176,14 +176,14 @@ No paths to report.
 +--------+---------------+---------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node     ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+---------------+---------------+--------------+-------------+--------------+------------+------------+
-; -0.219 ; phase[0]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.073     ; 1.144      ;
-; -0.194 ; phase[1]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.073     ; 1.119      ;
-; 0.082  ; phase[1]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.073     ; 0.843      ;
-; 0.085  ; phase[0]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 1.000        ; -0.073     ; 0.840      ;
-; 0.101  ; phase[2]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.073     ; 0.824      ;
-; 0.153  ; phase[2]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.073     ; 0.772      ;
-; 0.153  ; phase[0]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.073     ; 0.772      ;
-; 0.153  ; phase[1]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 1.000        ; -0.073     ; 0.772      ;
+; -0.218 ; phase[0]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.072     ; 1.144      ;
+; -0.193 ; phase[1]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.072     ; 1.119      ;
+; 0.083  ; phase[1]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.072     ; 0.843      ;
+; 0.086  ; phase[0]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 1.000        ; -0.072     ; 0.840      ;
+; 0.102  ; phase[2]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.072     ; 0.824      ;
+; 0.154  ; phase[2]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.072     ; 0.772      ;
+; 0.154  ; phase[0]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.072     ; 0.772      ;
+; 0.154  ; phase[1]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 1.000        ; -0.072     ; 0.772      ;
 +--------+---------------+---------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -192,14 +192,14 @@ No paths to report.
 +-------+---------------+---------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node     ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------+---------------+--------------+-------------+--------------+------------+------------+
-; 0.415 ; phase[2]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.073      ; 0.674      ;
-; 0.415 ; phase[1]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 0.000        ; 0.073      ; 0.674      ;
-; 0.419 ; phase[0]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.073      ; 0.678      ;
-; 0.453 ; phase[2]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.073      ; 0.712      ;
-; 0.462 ; phase[0]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 0.000        ; 0.073      ; 0.721      ;
-; 0.465 ; phase[1]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.073      ; 0.724      ;
-; 0.679 ; phase[0]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.073      ; 0.938      ;
-; 0.682 ; phase[1]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.073      ; 0.941      ;
+; 0.416 ; phase[2]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.072      ; 0.674      ;
+; 0.416 ; phase[1]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 0.000        ; 0.072      ; 0.674      ;
+; 0.420 ; phase[0]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.072      ; 0.678      ;
+; 0.454 ; phase[2]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.072      ; 0.712      ;
+; 0.463 ; phase[0]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 0.000        ; 0.072      ; 0.721      ;
+; 0.466 ; phase[1]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.072      ; 0.724      ;
+; 0.680 ; phase[0]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.072      ; 0.938      ;
+; 0.683 ; phase[1]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.072      ; 0.941      ;
 +-------+---------------+---------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -214,7 +214,7 @@ No synchronizer chains to report.
 +------------+-----------------+------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
 +------------+-----------------+------------+---------------------------------------------------------------+
-; 964.32 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 967.12 MHz ; 250.0 MHz       ; clock      ; limit due to minimum period restriction (max I/O toggle rate) ;
 +------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -224,7 +224,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+---------------------+
 ; Clock ; Slack  ; End Point TNS       ;
 +-------+--------+---------------------+
-; clock ; -0.037 ; -0.052              ;
+; clock ; -0.034 ; -0.046              ;
 +-------+--------+---------------------+
 
 
@@ -233,7 +233,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+-------+---------------------+
 ; Clock ; Slack ; End Point TNS       ;
 +-------+-------+---------------------+
-; clock ; 0.343 ; 0.000               ;
+; clock ; 0.346 ; 0.000               ;
 +-------+-------+---------------------+
 
 
@@ -263,14 +263,14 @@ No paths to report.
 +--------+---------------+---------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node     ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+---------------+---------------+--------------+-------------+--------------+------------+------------+
-; -0.037 ; phase[0]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.063     ; 0.974      ;
-; -0.015 ; phase[1]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.063     ; 0.952      ;
-; 0.202  ; phase[1]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.063     ; 0.735      ;
-; 0.204  ; phase[0]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 1.000        ; -0.063     ; 0.733      ;
-; 0.218  ; phase[2]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.063     ; 0.719      ;
-; 0.275  ; phase[2]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.063     ; 0.662      ;
-; 0.275  ; phase[0]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.063     ; 0.662      ;
-; 0.275  ; phase[1]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 1.000        ; -0.063     ; 0.662      ;
+; -0.034 ; phase[0]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.060     ; 0.974      ;
+; -0.012 ; phase[1]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.060     ; 0.952      ;
+; 0.205  ; phase[1]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.060     ; 0.735      ;
+; 0.207  ; phase[0]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 1.000        ; -0.060     ; 0.733      ;
+; 0.221  ; phase[2]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.060     ; 0.719      ;
+; 0.278  ; phase[2]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.060     ; 0.662      ;
+; 0.278  ; phase[0]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.060     ; 0.662      ;
+; 0.278  ; phase[1]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 1.000        ; -0.060     ; 0.662      ;
 +--------+---------------+---------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -279,14 +279,14 @@ No paths to report.
 +-------+---------------+---------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node     ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------+---------------+--------------+-------------+--------------+------------+------------+
-; 0.343 ; phase[2]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.063      ; 0.574      ;
-; 0.343 ; phase[1]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 0.000        ; 0.063      ; 0.574      ;
-; 0.357 ; phase[0]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.063      ; 0.588      ;
-; 0.396 ; phase[2]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.063      ; 0.627      ;
-; 0.405 ; phase[0]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 0.000        ; 0.063      ; 0.636      ;
-; 0.407 ; phase[1]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.063      ; 0.638      ;
-; 0.602 ; phase[1]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.063      ; 0.833      ;
-; 0.602 ; phase[0]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.063      ; 0.833      ;
+; 0.346 ; phase[2]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.060      ; 0.574      ;
+; 0.346 ; phase[1]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 0.000        ; 0.060      ; 0.574      ;
+; 0.360 ; phase[0]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.060      ; 0.588      ;
+; 0.399 ; phase[2]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.060      ; 0.627      ;
+; 0.408 ; phase[0]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 0.000        ; 0.060      ; 0.636      ;
+; 0.410 ; phase[1]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.060      ; 0.638      ;
+; 0.605 ; phase[1]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.060      ; 0.833      ;
+; 0.605 ; phase[0]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.060      ; 0.833      ;
 +-------+---------------+---------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -301,7 +301,7 @@ No synchronizer chains to report.
 +-------+-------+----------------------+
 ; Clock ; Slack ; End Point TNS        ;
 +-------+-------+----------------------+
-; clock ; 0.431 ; 0.000                ;
+; clock ; 0.432 ; 0.000                ;
 +-------+-------+----------------------+
 
 
@@ -310,7 +310,7 @@ No synchronizer chains to report.
 +-------+-------+---------------------+
 ; Clock ; Slack ; End Point TNS       ;
 +-------+-------+---------------------+
-; clock ; 0.178 ; 0.000               ;
+; clock ; 0.179 ; 0.000               ;
 +-------+-------+---------------------+
 
 
@@ -331,7 +331,7 @@ No paths to report.
 +-------+--------+-----------------------------------+
 ; Clock ; Slack  ; End Point TNS                     ;
 +-------+--------+-----------------------------------+
-; clock ; -3.000 ; -6.153                            ;
+; clock ; -3.000 ; -6.258                            ;
 +-------+--------+-----------------------------------+
 
 
@@ -340,14 +340,14 @@ No paths to report.
 +-------+---------------+---------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node     ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------+---------------+--------------+-------------+--------------+------------+------------+
-; 0.431 ; phase[0]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.036     ; 0.521      ;
-; 0.443 ; phase[1]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.036     ; 0.509      ;
-; 0.571 ; phase[1]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.036     ; 0.381      ;
-; 0.572 ; phase[0]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 1.000        ; -0.036     ; 0.380      ;
-; 0.587 ; phase[2]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.036     ; 0.365      ;
-; 0.607 ; phase[2]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.036     ; 0.345      ;
-; 0.607 ; phase[0]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.036     ; 0.345      ;
-; 0.607 ; phase[1]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 1.000        ; -0.036     ; 0.345      ;
+; 0.432 ; phase[0]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.035     ; 0.521      ;
+; 0.444 ; phase[1]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.035     ; 0.509      ;
+; 0.572 ; phase[1]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.035     ; 0.381      ;
+; 0.573 ; phase[0]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 1.000        ; -0.035     ; 0.380      ;
+; 0.588 ; phase[2]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.035     ; 0.365      ;
+; 0.608 ; phase[2]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 1.000        ; -0.035     ; 0.345      ;
+; 0.608 ; phase[0]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 1.000        ; -0.035     ; 0.345      ;
+; 0.608 ; phase[1]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 1.000        ; -0.035     ; 0.345      ;
 +-------+---------------+---------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -356,14 +356,14 @@ No paths to report.
 +-------+---------------+---------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node     ; To Node       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------+---------------+--------------+-------------+--------------+------------+------------+
-; 0.178 ; phase[2]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.036      ; 0.296      ;
-; 0.178 ; phase[1]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 0.000        ; 0.036      ; 0.296      ;
-; 0.182 ; phase[0]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.036      ; 0.300      ;
-; 0.198 ; phase[2]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.036      ; 0.316      ;
-; 0.200 ; phase[0]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 0.000        ; 0.036      ; 0.318      ;
-; 0.201 ; phase[1]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.036      ; 0.319      ;
-; 0.290 ; phase[0]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.036      ; 0.408      ;
-; 0.293 ; phase[1]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.036      ; 0.411      ;
+; 0.179 ; phase[2]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.035      ; 0.296      ;
+; 0.179 ; phase[1]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 0.000        ; 0.035      ; 0.296      ;
+; 0.183 ; phase[0]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.035      ; 0.300      ;
+; 0.199 ; phase[2]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.035      ; 0.316      ;
+; 0.201 ; phase[0]~reg0 ; phase[1]~reg0 ; clock        ; clock       ; 0.000        ; 0.035      ; 0.318      ;
+; 0.202 ; phase[1]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.035      ; 0.319      ;
+; 0.291 ; phase[0]~reg0 ; phase[2]~reg0 ; clock        ; clock       ; 0.000        ; 0.035      ; 0.408      ;
+; 0.294 ; phase[1]~reg0 ; phase[0]~reg0 ; clock        ; clock       ; 0.000        ; 0.035      ; 0.411      ;
 +-------+---------------+---------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -378,10 +378,10 @@ No synchronizer chains to report.
 +------------------+--------+-------+----------+---------+---------------------+
 ; Clock            ; Setup  ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+--------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -0.219 ; 0.178 ; N/A      ; N/A     ; -3.000              ;
-;  clock           ; -0.219 ; 0.178 ; N/A      ; N/A     ; -3.000              ;
-; Design-wide TNS  ; -0.413 ; 0.0   ; 0.0      ; 0.0     ; -6.855              ;
-;  clock           ; -0.413 ; 0.000 ; N/A      ; N/A     ; -6.855              ;
+; Worst-case Slack ; -0.218 ; 0.179 ; N/A      ; N/A     ; -3.000              ;
+;  clock           ; -0.218 ; 0.179 ; N/A      ; N/A     ; -3.000              ;
+; Design-wide TNS  ; -0.411 ; 0.0   ; 0.0      ; 0.0     ; -6.855              ;
+;  clock           ; -0.411 ; 0.000 ; N/A      ; N/A     ; -6.855              ;
 +------------------+--------+-------+----------+---------+---------------------+
 
 
@@ -455,7 +455,7 @@ No synchronizer chains to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clock      ; clock    ; 8        ; 0        ; 0        ; 0        ;
+; clock      ; clock    ; 0        ; 0        ; 0        ; 8        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -465,7 +465,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; clock      ; clock    ; 8        ; 0        ; 0        ; 0        ;
+; clock      ; clock    ; 0        ; 0        ; 0        ; 8        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -551,7 +551,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Fri Apr 20 11:57:20 2018
+    Info: Processing started: Fri Apr 27 19:25:33 2018
 Info: Command: quartus_sta phase_counter -c phase_counter
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -568,14 +568,14 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 100C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.219
+Info (332146): Worst-case setup slack is -0.218
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.219              -0.413 clock 
-Info (332146): Worst-case hold slack is 0.415
+    Info (332119):    -0.218              -0.411 clock 
+Info (332146): Worst-case hold slack is 0.416
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.415               0.000 clock 
+    Info (332119):     0.416               0.000 clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -588,14 +588,14 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -0.037
+Info (332146): Worst-case setup slack is -0.034
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.037              -0.052 clock 
-Info (332146): Worst-case hold slack is 0.343
+    Info (332119):    -0.034              -0.046 clock 
+Info (332146): Worst-case hold slack is 0.346
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.343               0.000 clock 
+    Info (332119):     0.346               0.000 clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -3.000
@@ -604,14 +604,14 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):    -3.000              -6.855 clock 
 Info: Analyzing Fast 1200mV -40C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
-Info (332146): Worst-case setup slack is 0.431
+Info (332146): Worst-case setup slack is 0.432
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.431               0.000 clock 
-Info (332146): Worst-case hold slack is 0.178
+    Info (332119):     0.432               0.000 clock 
+Info (332146): Worst-case hold slack is 0.179
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.178               0.000 clock 
+    Info (332119):     0.179               0.000 clock 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Critical Warning (332148): Timing requirements not met
@@ -619,12 +619,12 @@ Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000              -6.153 clock 
+    Info (332119):    -3.000              -6.258 clock 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
     Info: Peak virtual memory: 932 megabytes
-    Info: Processing ended: Fri Apr 20 11:57:22 2018
+    Info: Processing ended: Fri Apr 27 19:25:35 2018
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
