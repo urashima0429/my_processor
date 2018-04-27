@@ -1,15 +1,15 @@
-Fitter Status : Successful - Thu Apr 26 16:34:05 2018
+Fitter Status : Successful - Fri Apr 27 11:39:19 2018
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 Revision Name : control_unit
 Top-level Entity Name : control_unit
 Family : Cyclone IV E
 Device : EP4CE30F23I7
 Timing Models : Final
-Total logic elements : 6 / 28,848 ( < 1 % )
-    Total combinational functions : 6 / 28,848 ( < 1 % )
-    Dedicated logic registers : 0 / 28,848 ( 0 % )
-Total registers : 0
-Total pins : 12 / 329 ( 4 % )
+Total logic elements : 8 / 28,848 ( < 1 % )
+    Total combinational functions : 8 / 28,848 ( < 1 % )
+    Dedicated logic registers : 1 / 28,848 ( < 1 % )
+Total registers : 1
+Total pins : 13 / 329 ( 4 % )
 Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )

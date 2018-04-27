@@ -46,6 +46,10 @@
 				{
 					"name" : "exec",
 					"strict" : false
+				},
+				{
+					"name" : "halt",
+					"strict" : false
 				}
 			]
 		}

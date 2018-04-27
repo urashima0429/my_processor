@@ -1,5 +1,5 @@
 Fitter report for write_address
-Fri Apr 27 10:28:25 2018
+Fri Apr 27 13:25:15 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -62,18 +62,18 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Fri Apr 27 10:28:25 2018           ;
+; Fitter Status                      ; Successful - Fri Apr 27 13:25:15 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; write_address                                   ;
 ; Top-level Entity Name              ; write_address                                   ;
 ; Family                             ; Cyclone IV E                                    ;
 ; Device                             ; EP4CE30F23I7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 3 / 28,848 ( < 1 % )                            ;
-;     Total combinational functions  ; 3 / 28,848 ( < 1 % )                            ;
+; Total logic elements               ; 6 / 28,848 ( < 1 % )                            ;
+;     Total combinational functions  ; 6 / 28,848 ( < 1 % )                            ;
 ;     Dedicated logic registers      ; 0 / 28,848 ( 0 % )                              ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 11 / 329 ( 3 % )                                ;
+; Total pins                         ; 16 / 329 ( 5 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 608,256 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                                 ;
@@ -164,8 +164,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 36 ) ; 0.00 % ( 0 / 36 )          ; 0.00 % ( 0 / 36 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 36 ) ; 0.00 % ( 0 / 36 )          ; 0.00 % ( 0 / 36 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 49 ) ; 0.00 % ( 0 / 49 )          ; 0.00 % ( 0 / 49 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 49 ) ; 0.00 % ( 0 / 49 )          ; 0.00 % ( 0 / 49 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -188,7 +188,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 26 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 39 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -204,28 +204,28 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/write_address/
 +---------------------------------------------+----------------------+
 ; Resource                                    ; Usage                ;
 +---------------------------------------------+----------------------+
-; Total logic elements                        ; 3 / 28,848 ( < 1 % ) ;
-;     -- Combinational with no register       ; 3                    ;
+; Total logic elements                        ; 6 / 28,848 ( < 1 % ) ;
+;     -- Combinational with no register       ; 6                    ;
 ;     -- Register only                        ; 0                    ;
 ;     -- Combinational with a register        ; 0                    ;
 ;                                             ;                      ;
 ; Logic element usage by number of LUT inputs ;                      ;
-;     -- 4 input functions                    ; 3                    ;
+;     -- 4 input functions                    ; 6                    ;
 ;     -- 3 input functions                    ; 0                    ;
 ;     -- <=2 input functions                  ; 0                    ;
 ;     -- Register only                        ; 0                    ;
 ;                                             ;                      ;
 ; Logic elements by mode                      ;                      ;
-;     -- normal mode                          ; 3                    ;
+;     -- normal mode                          ; 6                    ;
 ;     -- arithmetic mode                      ; 0                    ;
 ;                                             ;                      ;
 ; Total registers*                            ; 0 / 30,421 ( 0 % )   ;
 ;     -- Dedicated logic registers            ; 0 / 28,848 ( 0 % )   ;
 ;     -- I/O registers                        ; 0 / 1,573 ( 0 % )    ;
 ;                                             ;                      ;
-; Total LABs:  partially or completely used   ; 1 / 1,803 ( < 1 % )  ;
+; Total LABs:  partially or completely used   ; 2 / 1,803 ( < 1 % )  ;
 ; Virtual pins                                ; 0                    ;
-; I/O pins                                    ; 11 / 329 ( 3 % )     ;
+; I/O pins                                    ; 16 / 329 ( 5 % )     ;
 ;     -- Clock pins                           ; 0 / 7 ( 0 % )        ;
 ;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )        ;
 ;                                             ;                      ;
@@ -242,11 +242,11 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/write_address/
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )        ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )        ;
 ; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%   ;
-; Peak interconnect usage (total/H/V)         ; 0.1% / 0.0% / 0.2%   ;
-; Maximum fan-out                             ; 3                    ;
-; Highest non-global fan-out                  ; 3                    ;
-; Total fan-out                               ; 31                   ;
-; Average fan-out                             ; 0.89                 ;
+; Peak interconnect usage (total/H/V)         ; 0.1% / 0.0% / 0.3%   ;
+; Maximum fan-out                             ; 5                    ;
+; Highest non-global fan-out                  ; 5                    ;
+; Total fan-out                               ; 49                   ;
+; Average fan-out                             ; 1.02                 ;
 +---------------------------------------------+----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -259,29 +259,29 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/write_address/
 +---------------------------------------------+---------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                 ; Low                            ;
 ;                                             ;                     ;                                ;
-; Total logic elements                        ; 3 / 28848 ( < 1 % ) ; 0 / 28848 ( 0 % )              ;
-;     -- Combinational with no register       ; 3                   ; 0                              ;
+; Total logic elements                        ; 6 / 28848 ( < 1 % ) ; 0 / 28848 ( 0 % )              ;
+;     -- Combinational with no register       ; 6                   ; 0                              ;
 ;     -- Register only                        ; 0                   ; 0                              ;
 ;     -- Combinational with a register        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic element usage by number of LUT inputs ;                     ;                                ;
-;     -- 4 input functions                    ; 3                   ; 0                              ;
+;     -- 4 input functions                    ; 6                   ; 0                              ;
 ;     -- 3 input functions                    ; 0                   ; 0                              ;
 ;     -- <=2 input functions                  ; 0                   ; 0                              ;
 ;     -- Register only                        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Logic elements by mode                      ;                     ;                                ;
-;     -- normal mode                          ; 3                   ; 0                              ;
+;     -- normal mode                          ; 6                   ; 0                              ;
 ;     -- arithmetic mode                      ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Total registers                             ; 0                   ; 0                              ;
 ;     -- Dedicated logic registers            ; 0 / 28848 ( 0 % )   ; 0 / 28848 ( 0 % )              ;
 ;     -- I/O registers                        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
-; Total LABs:  partially or completely used   ; 1 / 1803 ( < 1 % )  ; 0 / 1803 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 2 / 1803 ( < 1 % )  ; 0 / 1803 ( 0 % )               ;
 ;                                             ;                     ;                                ;
 ; Virtual pins                                ; 0                   ; 0                              ;
-; I/O pins                                    ; 11                  ; 0                              ;
+; I/O pins                                    ; 16                  ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 132 ( 0 % )     ; 0 / 132 ( 0 % )                ;
 ; Total memory bits                           ; 0                   ; 0                              ;
 ; Total RAM block bits                        ; 0                   ; 0                              ;
@@ -293,7 +293,7 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/write_address/
 ;     -- Registered Output Connections        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Internal Connections                        ;                     ;                                ;
-;     -- Total Connections                    ; 26                  ; 5                              ;
+;     -- Total Connections                    ; 44                  ; 5                              ;
 ;     -- Registered Connections               ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; External Connections                        ;                     ;                                ;
@@ -301,8 +301,8 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/write_address/
 ;     -- hard_block:auto_generated_inst       ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Partition Interface                         ;                     ;                                ;
-;     -- Input Ports                          ; 8                   ; 0                              ;
-;     -- Output Ports                         ; 3                   ; 0                              ;
+;     -- Input Ports                          ; 12                  ; 0                              ;
+;     -- Output Ports                         ; 4                   ; 0                              ;
 ;     -- Bidir Ports                          ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Registered Ports                            ;                     ;                                ;
@@ -321,20 +321,24 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/write_address/
 +---------------------------------------------+---------------------+--------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Input Pins                                                                                                                                                                                                                                                                                ;
-+----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; Name     ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
-+----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; Ra[0]    ; T3    ; 2        ; 0            ; 7            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Ra[1]    ; V3    ; 2        ; 0            ; 5            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Ra[2]    ; AA1   ; 2        ; 0            ; 6            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Rd_Rb[0] ; V4    ; 2        ; 0            ; 5            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Rd_Rb[1] ; W1    ; 2        ; 0            ; 10           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; Rd_Rb[2] ; N7    ; 2        ; 0            ; 7            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; op1[0]   ; P7    ; 2        ; 0            ; 7            ; 14           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-; op1[1]   ; P6    ; 2        ; 0            ; 5            ; 14           ; 3                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
-+----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                                                                                                                                                                 ;
++-----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
+; Name      ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
++-----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
+; Ra_op2[0] ; P7    ; 2        ; 0            ; 7            ; 14           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Ra_op2[1] ; T4    ; 2        ; 0            ; 4            ; 14           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Ra_op2[2] ; AA1   ; 2        ; 0            ; 6            ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Rd_Rb[0]  ; Y1    ; 2        ; 0            ; 9            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Rd_Rb[1]  ; N8    ; 2        ; 0            ; 11           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; Rd_Rb[2]  ; W1    ; 2        ; 0            ; 10           ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; op1[0]    ; N7    ; 2        ; 0            ; 7            ; 7            ; 5                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; op1[1]    ; T3    ; 2        ; 0            ; 7            ; 0            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; op3[0]    ; R5    ; 2        ; 0            ; 4            ; 21           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; op3[1]    ; V4    ; 2        ; 0            ; 5            ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; op3[2]    ; V3    ; 2        ; 0            ; 5            ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
+; op3[3]    ; P6    ; 2        ; 0            ; 5            ; 14           ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ; no        ;
++-----------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -342,9 +346,10 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/write_address/
 +--------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 ; Name         ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Output Register ; Output Enable Register ; Power Up High ; Slew Rate ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination                       ; Termination Control Block ; Output Buffer Pre-emphasis ; Voltage Output Differential ; Location assigned by ; Output Enable Source ; Output Enable Group ;
 +--------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
-; write_add[0] ; Y2    ; 2        ; 0            ; 10           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; write_add[1] ; Y1    ; 2        ; 0            ; 9            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
-; write_add[2] ; V2    ; 2        ; 0            ; 13           ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; writeOrder   ; W2    ; 2        ; 0            ; 10           ; 7            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; write_add[0] ; R6    ; 2        ; 0            ; 3            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; write_add[1] ; Y2    ; 2        ; 0            ; 10           ; 21           ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
+; write_add[2] ; T5    ; 2        ; 0            ; 4            ; 0            ; no              ; no                     ; no            ; 2         ; no              ; no         ; no            ; no       ; Off          ; 2.5 V        ; Default          ; Series 50 Ohm without Calibration ; --                        ; no                         ; no                          ; Fitter               ; -                    ; -                   ;
 +--------------+-------+----------+--------------+--------------+--------------+-----------------+------------------------+---------------+-----------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-----------------------------------+---------------------------+----------------------------+-----------------------------+----------------------+----------------------+---------------------+
 
 
@@ -375,7 +380,7 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/write_address/
 ; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
 +----------+------------------+---------------+--------------+
 ; 1        ; 4 / 35 ( 11 % )  ; 2.5V          ; --           ;
-; 2        ; 11 / 45 ( 24 % ) ; 2.5V          ; --           ;
+; 2        ; 16 / 45 ( 36 % ) ; 2.5V          ; --           ;
 ; 3        ; 0 / 42 ( 0 % )   ; 2.5V          ; --           ;
 ; 4        ; 0 / 43 ( 0 % )   ; 2.5V          ; --           ;
 ; 5        ; 0 / 41 ( 0 % )   ; 2.5V          ; --           ;
@@ -412,7 +417,7 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/write_address/
 ; A20      ; 430        ; 7        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; A21      ;            ; 7        ; VCCIO7                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; A22      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
-; AA1      ; 125        ; 2        ; Ra[2]                                                     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; AA1      ; 125        ; 2        ; Ra_op2[2]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AA2      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AA3      ; 154        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; AA4      ; 158        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -704,8 +709,8 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/write_address/
 ; N4       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; N5       ; 87         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; N6       ; 104        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; N7       ; 122        ; 2        ; Rd_Rb[2]                                                  ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; N8       ; 107        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; N7       ; 122        ; 2        ; op1[0]                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; N8       ; 107        ; 2        ; Rd_Rb[1]                                                  ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; N9       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; N10      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; N11      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -725,8 +730,8 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/write_address/
 ; P3       ; 89         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P4       ; 88         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; P5       ; 103        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; P6       ; 131        ; 2        ; op1[1]                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; P7       ; 123        ; 2        ; op1[0]                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P6       ; 131        ; 2        ; op3[3]                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; P7       ; 123        ; 2        ; Ra_op2[0]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; P8       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; P9       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; P10      ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
@@ -746,8 +751,8 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/write_address/
 ; R2       ; 85         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R3       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; R4       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
-; R5       ; 135        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; R6       ; 136        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; R5       ; 135        ; 2        ; op3[0]                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; R6       ; 136        ; 2        ; write_add[0]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; R7       ; 137        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; R8       ;            ;          ; VCCINT                                                    ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; R9       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -766,9 +771,9 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/write_address/
 ; R22      ; 315        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; T1       ; 69         ; 2        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
 ; T2       ; 68         ; 2        ; GND+                                                      ;        ;              ;         ; Row I/O    ;                 ; --       ; --           ;
-; T3       ; 121        ; 2        ; Ra[0]                                                     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; T4       ; 134        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; T5       ; 133        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; T3       ; 121        ; 2        ; op1[1]                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T4       ; 134        ; 2        ; Ra_op2[1]                                                 ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; T5       ; 133        ; 2        ; write_add[2]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; T6       ;            ; --       ; VCCA1                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; T7       ; 138        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; T8       ; 166        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -809,9 +814,9 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/write_address/
 ; U21      ; 308        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; U22      ; 307        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; V1       ; 98         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; V2       ; 97         ; 2        ; write_add[2]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; V3       ; 130        ; 2        ; Ra[1]                                                     ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; V4       ; 129        ; 2        ; Rd_Rb[0]                                                  ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; V2       ; 97         ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; V3       ; 130        ; 2        ; op3[2]                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; V4       ; 129        ; 2        ; op3[1]                                                    ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; V5       ; 142        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; V6       ; 141        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; V7       ; 157        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -830,8 +835,8 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/write_address/
 ; V20      ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; V21      ; 304        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; V22      ; 303        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; W1       ; 111        ; 2        ; Rd_Rb[1]                                                  ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; W2       ; 110        ; 2        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
+; W1       ; 111        ; 2        ; Rd_Rb[2]                                                  ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; W2       ; 110        ; 2        ; writeOrder                                                ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; W3       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; W4       ;            ; 2        ; VCCIO2                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; W5       ;            ; 3        ; VCCIO3                                                    ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
@@ -852,8 +857,8 @@ The pin-out file can be found in /export/home/016/a0169654/SIMPLE/write_address/
 ; W20      ; 280        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; W21      ; 293        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; W22      ; 292        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; Y1       ; 113        ; 2        ; write_add[1]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
-; Y2       ; 112        ; 2        ; write_add[0]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; Y1       ; 113        ; 2        ; Rd_Rb[0]                                                  ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; Y2       ; 112        ; 2        ; write_add[1]                                              ; output ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; Y3       ; 148        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; Y4       ; 147        ; 3        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; --       ; --           ;
 ; Y5       ;            ;          ; GND                                                       ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -886,25 +891,35 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ; write_add[0] ; Incomplete set of assignments ;
 ; write_add[1] ; Incomplete set of assignments ;
 ; write_add[2] ; Incomplete set of assignments ;
+; writeOrder   ; Incomplete set of assignments ;
 ; Rd_Rb[0]     ; Incomplete set of assignments ;
-; Ra[0]        ; Incomplete set of assignments ;
+; Ra_op2[0]    ; Incomplete set of assignments ;
 ; op1[0]       ; Incomplete set of assignments ;
 ; op1[1]       ; Incomplete set of assignments ;
 ; Rd_Rb[1]     ; Incomplete set of assignments ;
-; Ra[1]        ; Incomplete set of assignments ;
+; Ra_op2[1]    ; Incomplete set of assignments ;
 ; Rd_Rb[2]     ; Incomplete set of assignments ;
-; Ra[2]        ; Incomplete set of assignments ;
+; Ra_op2[2]    ; Incomplete set of assignments ;
+; op3[0]       ; Incomplete set of assignments ;
+; op3[1]       ; Incomplete set of assignments ;
+; op3[2]       ; Incomplete set of assignments ;
+; op3[3]       ; Incomplete set of assignments ;
 ; write_add[0] ; Missing location assignment   ;
 ; write_add[1] ; Missing location assignment   ;
 ; write_add[2] ; Missing location assignment   ;
+; writeOrder   ; Missing location assignment   ;
 ; Rd_Rb[0]     ; Missing location assignment   ;
-; Ra[0]        ; Missing location assignment   ;
+; Ra_op2[0]    ; Missing location assignment   ;
 ; op1[0]       ; Missing location assignment   ;
 ; op1[1]       ; Missing location assignment   ;
 ; Rd_Rb[1]     ; Missing location assignment   ;
-; Ra[1]        ; Missing location assignment   ;
+; Ra_op2[1]    ; Missing location assignment   ;
 ; Rd_Rb[2]     ; Missing location assignment   ;
-; Ra[2]        ; Missing location assignment   ;
+; Ra_op2[2]    ; Missing location assignment   ;
+; op3[0]       ; Missing location assignment   ;
+; op3[1]       ; Missing location assignment   ;
+; op3[2]       ; Missing location assignment   ;
+; op3[3]       ; Missing location assignment   ;
 +--------------+-------------------------------+
 
 
@@ -913,7 +928,7 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name ; Entity Name   ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+---------------+--------------+
-; |write_address             ; 3 (3)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 11   ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; |write_address      ; write_address ; work         ;
+; |write_address             ; 6 (6)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 16   ; 0            ; 6 (6)        ; 0 (0)             ; 0 (0)            ; |write_address      ; write_address ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+---------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -926,14 +941,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; write_add[0] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; write_add[1] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; write_add[2] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; Rd_Rb[0]     ; Input    ; (6) 1209 ps   ; --            ; --                    ; --  ; --   ;
-; Ra[0]        ; Input    ; (6) 1209 ps   ; --            ; --                    ; --  ; --   ;
-; op1[0]       ; Input    ; (6) 1209 ps   ; --            ; --                    ; --  ; --   ;
-; op1[1]       ; Input    ; --            ; (6) 1209 ps   ; --                    ; --  ; --   ;
-; Rd_Rb[1]     ; Input    ; (6) 1209 ps   ; --            ; --                    ; --  ; --   ;
-; Ra[1]        ; Input    ; --            ; (6) 1209 ps   ; --                    ; --  ; --   ;
+; writeOrder   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
+; Rd_Rb[0]     ; Input    ; --            ; (6) 1209 ps   ; --                    ; --  ; --   ;
+; Ra_op2[0]    ; Input    ; (6) 1209 ps   ; --            ; --                    ; --  ; --   ;
+; op1[0]       ; Input    ; --            ; (6) 1209 ps   ; --                    ; --  ; --   ;
+; op1[1]       ; Input    ; (6) 1209 ps   ; (6) 1209 ps   ; --                    ; --  ; --   ;
+; Rd_Rb[1]     ; Input    ; --            ; (6) 1209 ps   ; --                    ; --  ; --   ;
+; Ra_op2[1]    ; Input    ; --            ; (6) 1209 ps   ; --                    ; --  ; --   ;
 ; Rd_Rb[2]     ; Input    ; --            ; (6) 1209 ps   ; --                    ; --  ; --   ;
-; Ra[2]        ; Input    ; (6) 1209 ps   ; --            ; --                    ; --  ; --   ;
+; Ra_op2[2]    ; Input    ; (6) 1209 ps   ; --            ; --                    ; --  ; --   ;
+; op3[0]       ; Input    ; --            ; (6) 1209 ps   ; --                    ; --  ; --   ;
+; op3[1]       ; Input    ; (6) 1209 ps   ; --            ; --                    ; --  ; --   ;
+; op3[2]       ; Input    ; --            ; (6) 1209 ps   ; --                    ; --  ; --   ;
+; op3[3]       ; Input    ; (6) 1209 ps   ; --            ; --                    ; --  ; --   ;
 +--------------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -943,25 +963,39 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout ; Pad To Core Index ; Setting ;
 +---------------------+-------------------+---------+
 ; Rd_Rb[0]            ;                   ;         ;
+;      - write_add~0  ; 1                 ; 6       ;
+; Ra_op2[0]           ;                   ;         ;
 ;      - write_add~0  ; 0                 ; 6       ;
-; Ra[0]               ;                   ;         ;
-;      - write_add~0  ; 0                 ; 6       ;
+;      - writeOrder~0 ; 0                 ; 6       ;
 ; op1[0]              ;                   ;         ;
-;      - write_add~0  ; 0                 ; 6       ;
-;      - write_add~1  ; 0                 ; 6       ;
-;      - write_add~2  ; 0                 ; 6       ;
-; op1[1]              ;                   ;         ;
 ;      - write_add~0  ; 1                 ; 6       ;
 ;      - write_add~1  ; 1                 ; 6       ;
 ;      - write_add~2  ; 1                 ; 6       ;
-; Rd_Rb[1]            ;                   ;         ;
+;      - writeOrder~0 ; 1                 ; 6       ;
+;      - writeOrder~1 ; 1                 ; 6       ;
+; op1[1]              ;                   ;         ;
+;      - write_add~0  ; 1                 ; 6       ;
 ;      - write_add~1  ; 0                 ; 6       ;
-; Ra[1]               ;                   ;         ;
+;      - write_add~2  ; 0                 ; 6       ;
+;      - writeOrder~1 ; 0                 ; 6       ;
+; Rd_Rb[1]            ;                   ;         ;
 ;      - write_add~1  ; 1                 ; 6       ;
+; Ra_op2[1]           ;                   ;         ;
+;      - write_add~1  ; 1                 ; 6       ;
+;      - writeOrder~0 ; 1                 ; 6       ;
 ; Rd_Rb[2]            ;                   ;         ;
 ;      - write_add~2  ; 1                 ; 6       ;
-; Ra[2]               ;                   ;         ;
+; Ra_op2[2]           ;                   ;         ;
 ;      - write_add~2  ; 0                 ; 6       ;
+;      - writeOrder~0 ; 0                 ; 6       ;
+; op3[0]              ;                   ;         ;
+;      - WideOr0~0    ; 1                 ; 6       ;
+; op3[1]              ;                   ;         ;
+;      - WideOr0~0    ; 0                 ; 6       ;
+; op3[2]              ;                   ;         ;
+;      - WideOr0~0    ; 1                 ; 6       ;
+; op3[3]              ;                   ;         ;
+;      - WideOr0~0    ; 0                 ; 6       ;
 +---------------------+-------------------+---------+
 
 
@@ -970,12 +1004,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 11 / 116,715 ( < 1 % ) ;
+; Block interconnects   ; 18 / 116,715 ( < 1 % ) ;
 ; C16 interconnects     ; 0 / 3,886 ( 0 % )      ;
-; C4 interconnects      ; 9 / 73,752 ( < 1 % )   ;
+; C4 interconnects      ; 11 / 73,752 ( < 1 % )  ;
 ; Direct links          ; 0 / 116,715 ( 0 % )    ;
 ; Global clocks         ; 0 / 20 ( 0 % )         ;
-; Local interconnects   ; 0 / 39,600 ( 0 % )     ;
+; Local interconnects   ; 1 / 39,600 ( < 1 % )   ;
 ; R24 interconnects     ; 0 / 3,777 ( 0 % )      ;
 ; R4 interconnects      ; 0 / 99,858 ( 0 % )     ;
 +-----------------------+------------------------+
@@ -984,13 +1018,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------+
 ; LAB Logic Elements                                                       ;
 +--------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 3.00) ; Number of LABs  (Total = 1) ;
+; Number of Logic Elements  (Average = 3.00) ; Number of LABs  (Total = 2) ;
 +--------------------------------------------+-----------------------------+
-; 1                                          ; 0                           ;
+; 1                                          ; 1                           ;
 ; 2                                          ; 0                           ;
-; 3                                          ; 1                           ;
+; 3                                          ; 0                           ;
 ; 4                                          ; 0                           ;
-; 5                                          ; 0                           ;
+; 5                                          ; 1                           ;
 ; 6                                          ; 0                           ;
 ; 7                                          ; 0                           ;
 ; 8                                          ; 0                           ;
@@ -1008,41 +1042,45 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 3.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced  (Average = 3.00) ; Number of LABs  (Total = 2) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
-; 1                                           ; 0                           ;
+; 1                                           ; 1                           ;
 ; 2                                           ; 0                           ;
-; 3                                           ; 1                           ;
+; 3                                           ; 0                           ;
+; 4                                           ; 0                           ;
+; 5                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 3.00) ; Number of LABs  (Total = 1) ;
+; Number of Signals Sourced Out  (Average = 2.50) ; Number of LABs  (Total = 2) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
-; 1                                               ; 0                           ;
+; 1                                               ; 1                           ;
 ; 2                                               ; 0                           ;
-; 3                                               ; 1                           ;
+; 3                                               ; 0                           ;
+; 4                                               ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 8.00) ; Number of LABs  (Total = 1) ;
+; Number of Distinct Inputs  (Average = 6.50) ; Number of LABs  (Total = 2) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
-; 4                                           ; 0                           ;
+; 4                                           ; 1                           ;
 ; 5                                           ; 0                           ;
 ; 6                                           ; 0                           ;
 ; 7                                           ; 0                           ;
-; 8                                           ; 1                           ;
+; 8                                           ; 0                           ;
+; 9                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -1103,21 +1141,26 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000002    ; IO_000003    ; IO_000001    ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007    ; IO_000008    ; IO_000022    ; IO_000021    ; IO_000046    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000047    ; IO_000020    ; IO_000019    ; IO_000018    ; IO_000015    ; IO_000014    ; IO_000013    ; IO_000012    ; IO_000011    ; IO_000010 ; IO_000009 ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
-; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 11        ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 3            ; 0            ; 0            ; 0            ; 0            ; 8            ; 3            ; 0            ; 8            ; 0            ; 0            ; 3            ; 0            ; 11        ; 11        ; 11        ; 0            ; 0            ;
+; Total Pass         ; 0            ; 0            ; 0            ; 0            ; 0            ; 16        ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 4            ; 0            ; 0            ; 0            ; 0            ; 12           ; 4            ; 0            ; 12           ; 0            ; 0            ; 4            ; 0            ; 16        ; 16        ; 16        ; 0            ; 0            ;
 ; Total Unchecked    ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 11           ; 11           ; 11           ; 11           ; 11           ; 0         ; 11           ; 11           ; 11           ; 11           ; 11           ; 11           ; 8            ; 11           ; 11           ; 11           ; 11           ; 3            ; 8            ; 11           ; 3            ; 11           ; 11           ; 8            ; 11           ; 0         ; 0         ; 0         ; 11           ; 11           ;
+; Total Inapplicable ; 16           ; 16           ; 16           ; 16           ; 16           ; 0         ; 16           ; 16           ; 16           ; 16           ; 16           ; 16           ; 12           ; 16           ; 16           ; 16           ; 16           ; 4            ; 12           ; 16           ; 4            ; 16           ; 16           ; 12           ; 16           ; 0         ; 0         ; 0         ; 16           ; 16           ;
 ; Total Fail         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0         ; 0         ; 0            ; 0            ;
 ; write_add[0]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; write_add[1]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; write_add[2]       ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; writeOrder         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; Rd_Rb[0]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; Ra[0]              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; Ra_op2[0]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; op1[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; op1[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; Rd_Rb[1]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; Ra[1]              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; Ra_op2[1]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 ; Rd_Rb[2]           ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
-; Ra[2]              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; Ra_op2[2]          ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; op3[0]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; op3[1]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; op3[2]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
+; op3[3]             ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+-----------+-----------+--------------+--------------+
 
 
@@ -1189,7 +1232,7 @@ Info (169124): Fitter converted 5 user pins into dedicated programming pins
     Info (169125): Pin ~ALTERA_DATA0~ is reserved at location K1
     Info (169125): Pin ~ALTERA_nCEO~ is reserved at location K22
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Critical Warning (169085): No exact pin location assignment(s) for 11 pins of 11 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
+Critical Warning (169085): No exact pin location assignment(s) for 16 pins of 16 total pins. For the list of pins please refer to the I/O Assignment Warnings table in the fitter report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'write_address.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -1201,7 +1244,7 @@ Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
 Info (176214): Statistics of I/O pins that need to be placed that use the same VCCIO and VREF, before I/O pin placement
-    Info (176211): Number of I/O pins in group: 11 (unused VREF, 2.5V VCCIO, 8 input, 3 output, 0 bidirectional)
+    Info (176211): Number of I/O pins in group: 16 (unused VREF, 2.5V VCCIO, 12 input, 4 output, 0 bidirectional)
         Info (176212): I/O standards used: 2.5 V.
 Info (176215): I/O bank details before I/O pin placement
     Info (176214): Statistics of I/O banks
@@ -1235,8 +1278,8 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file /export/home/016/a0169654/SIMPLE/write_address/output_files/write_address.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1650 megabytes
-    Info: Processing ended: Fri Apr 27 10:28:26 2018
+    Info: Peak virtual memory: 1644 megabytes
+    Info: Processing ended: Fri Apr 27 13:25:16 2018
     Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:05
 

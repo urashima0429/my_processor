@@ -1,6 +1,7 @@
 module control_unit (
 	input clock, reset, exec,
 	input [2:0] phase,
+	input halt,
 	output register_reset,
 	output reg p1, p2, p3, p4, p5);
 	
@@ -12,6 +13,8 @@ module control_unit (
 		
 		//start and stop running on exec pushed	
 		if (exec == 1'b1) begin 
+			running <= ~running;
+		end else if(halt == 1'b1) begin
 			running <= ~running;
 		
 		//stop running on reset pushed			

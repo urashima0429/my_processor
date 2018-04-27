@@ -29,7 +29,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "eight_to_sixteen")
-  (DATE "04/27/2018 09:05:12")
+  (DATE "04/27/2018 13:35:14")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition")
@@ -41,14 +41,54 @@
     (INSTANCE sixteen\[0\]\~output)
     (DELAY
       (ABSOLUTE
-        (PORT i (2511:2511:2511) (2604:2604:2604))
-        (IOPATH i o (2423:2423:2423) (2376:2376:2376))
+        (PORT i (2513:2513:2513) (2606:2606:2606))
+        (IOPATH i o (3550:3550:3550) (3555:3555:3555))
       )
     )
   )
   (CELL
     (CELLTYPE "cycloneive_io_obuf")
     (INSTANCE sixteen\[1\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2592:2592:2592) (2685:2685:2685))
+        (IOPATH i o (2443:2443:2443) (2396:2396:2396))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE sixteen\[2\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2558:2558:2558) (2656:2656:2656))
+        (IOPATH i o (2433:2433:2433) (2386:2386:2386))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE sixteen\[3\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2572:2572:2572) (2668:2668:2668))
+        (IOPATH i o (2463:2463:2463) (2416:2416:2416))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE sixteen\[4\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2527:2527:2527) (2618:2618:2618))
+        (IOPATH i o (2473:2473:2473) (2426:2426:2426))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE sixteen\[5\]\~output)
     (DELAY
       (ABSOLUTE
         (PORT i (2550:2550:2550) (2656:2656:2656))
@@ -58,51 +98,11 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_obuf")
-    (INSTANCE sixteen\[2\]\~output)
-    (DELAY
-      (ABSOLUTE
-        (PORT i (2508:2508:2508) (2599:2599:2599))
-        (IOPATH i o (3550:3550:3550) (3555:3555:3555))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneive_io_obuf")
-    (INSTANCE sixteen\[3\]\~output)
-    (DELAY
-      (ABSOLUTE
-        (PORT i (2521:2521:2521) (2612:2612:2612))
-        (IOPATH i o (2423:2423:2423) (2376:2376:2376))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneive_io_obuf")
-    (INSTANCE sixteen\[4\]\~output)
-    (DELAY
-      (ABSOLUTE
-        (PORT i (2538:2538:2538) (2623:2623:2623))
-        (IOPATH i o (2443:2443:2443) (2396:2396:2396))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneive_io_obuf")
-    (INSTANCE sixteen\[5\]\~output)
-    (DELAY
-      (ABSOLUTE
-        (PORT i (2517:2517:2517) (2610:2610:2610))
-        (IOPATH i o (2463:2463:2463) (2416:2416:2416))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "cycloneive_io_obuf")
     (INSTANCE sixteen\[6\]\~output)
     (DELAY
       (ABSOLUTE
-        (PORT i (2568:2568:2568) (2668:2668:2668))
-        (IOPATH i o (3540:3540:3540) (3545:3545:3545))
+        (PORT i (2510:2510:2510) (2607:2607:2607))
+        (IOPATH i o (2463:2463:2463) (2416:2416:2416))
       )
     )
   )
@@ -111,8 +111,88 @@
     (INSTANCE sixteen\[7\]\~output)
     (DELAY
       (ABSOLUTE
-        (PORT i (2586:2586:2586) (2657:2657:2657))
+        (PORT i (2925:2925:2925) (3035:3035:3035))
         (IOPATH i o (2592:2592:2592) (2534:2534:2534))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE sixteen\[8\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2925:2925:2925) (3035:3035:3035))
+        (IOPATH i o (2572:2572:2572) (2514:2514:2514))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE sixteen\[9\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2579:2579:2579) (2654:2654:2654))
+        (IOPATH i o (2582:2582:2582) (2524:2524:2524))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE sixteen\[10\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2579:2579:2579) (2654:2654:2654))
+        (IOPATH i o (2562:2562:2562) (2504:2504:2504))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE sixteen\[11\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2619:2619:2619) (2741:2741:2741))
+        (IOPATH i o (3594:3594:3594) (3627:3627:3627))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE sixteen\[12\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2579:2579:2579) (2654:2654:2654))
+        (IOPATH i o (2562:2562:2562) (2504:2504:2504))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE sixteen\[13\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2619:2619:2619) (2741:2741:2741))
+        (IOPATH i o (2582:2582:2582) (2524:2524:2524))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE sixteen\[14\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2925:2925:2925) (3035:3035:3035))
+        (IOPATH i o (2582:2582:2582) (2524:2524:2524))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE sixteen\[15\]\~output)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (2619:2619:2619) (2741:2741:2741))
+        (IOPATH i o (2582:2582:2582) (2524:2524:2524))
       )
     )
   )
@@ -121,7 +201,7 @@
     (INSTANCE dBack\[0\]\~input)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (648:648:648) (725:725:725))
+        (IOPATH i o (618:618:618) (695:695:695))
       )
     )
   )
@@ -130,7 +210,7 @@
     (INSTANCE dBack\[1\]\~input)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (648:648:648) (725:725:725))
+        (IOPATH i o (658:658:658) (735:735:735))
       )
     )
   )
@@ -148,7 +228,7 @@
     (INSTANCE dBack\[3\]\~input)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (628:628:628) (705:705:705))
+        (IOPATH i o (668:668:668) (745:745:745))
       )
     )
   )
@@ -157,7 +237,7 @@
     (INSTANCE dFront\[0\]\~input)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (618:618:618) (695:695:695))
+        (IOPATH i o (628:628:628) (705:705:705))
       )
     )
   )
@@ -166,7 +246,7 @@
     (INSTANCE dFront\[1\]\~input)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (618:618:618) (695:695:695))
+        (IOPATH i o (608:608:608) (685:685:685))
       )
     )
   )
@@ -184,7 +264,7 @@
     (INSTANCE dFront\[3\]\~input)
     (DELAY
       (ABSOLUTE
-        (IOPATH i o (620:620:620) (697:697:697))
+        (IOPATH i o (640:640:640) (717:717:717))
       )
     )
   )
