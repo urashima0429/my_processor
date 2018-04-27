@@ -3,7 +3,7 @@ module phase_counter (
 	output reg [2:0] phase);
 	
 	
-	always @(posedge clock or negedge reset) begin
+	always @(negedge clock or negedge reset) begin
 
 		if (reset == 1'b0) begin
 			phase <= 3'b000;

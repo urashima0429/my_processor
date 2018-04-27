@@ -211,14 +211,30 @@ data_to_ALU[15] <= data_to_ALU[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |processor|control_unit:inst3
-clock => ~NO_FANOUT~
-reset => register_reset.DATAIN
+clock => p1.IN1
+clock => p2.IN1
+clock => p3.IN1
+clock => p4.IN1
+clock => p5.IN1
 reset => running.CLK
+reset => register_reset.DATAIN
 exec => running.ALOAD
-phase[0] => Decoder0.IN2
-phase[1] => Decoder0.IN1
-phase[2] => Decoder0.IN0
-halt => running.ENA
+phase[0] => Equal0.IN2
+phase[0] => Equal1.IN0
+phase[0] => Equal2.IN2
+phase[0] => Equal3.IN1
+phase[0] => Equal4.IN2
+phase[1] => Equal0.IN1
+phase[1] => Equal1.IN2
+phase[1] => Equal2.IN0
+phase[1] => Equal3.IN0
+phase[1] => Equal4.IN1
+phase[2] => Equal0.IN0
+phase[2] => Equal1.IN1
+phase[2] => Equal2.IN1
+phase[2] => Equal3.IN2
+phase[2] => Equal4.IN0
+halt => ~NO_FANOUT~
 register_reset <= reset.DB_MAX_OUTPUT_PORT_TYPE
 p1 <= p1.DB_MAX_OUTPUT_PORT_TYPE
 p2 <= p2.DB_MAX_OUTPUT_PORT_TYPE

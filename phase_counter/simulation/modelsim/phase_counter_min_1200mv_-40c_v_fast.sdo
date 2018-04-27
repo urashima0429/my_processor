@@ -29,7 +29,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "phase_counter")
-  (DATE "04/20/2018 11:57:23")
+  (DATE "04/27/2018 19:25:37")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition")
@@ -118,7 +118,7 @@
     (INSTANCE phase\[1\]\~reg0)
     (DELAY
       (ABSOLUTE
-        (PORT clk (909:909:909) (917:917:917))
+        (PORT clk (919:919:919) (907:907:907))
         (PORT d (36:36:36) (48:48:48))
         (PORT clrn (907:907:907) (892:892:892))
         (IOPATH (posedge clk) q (103:103:103) (103:103:103))
@@ -147,7 +147,7 @@
     (INSTANCE phase\[2\]\~reg0)
     (DELAY
       (ABSOLUTE
-        (PORT clk (909:909:909) (917:917:917))
+        (PORT clk (919:919:919) (907:907:907))
         (PORT d (36:36:36) (48:48:48))
         (PORT clrn (907:907:907) (892:892:892))
         (IOPATH (posedge clk) q (103:103:103) (103:103:103))
@@ -176,7 +176,7 @@
     (INSTANCE phase\[0\]\~reg0)
     (DELAY
       (ABSOLUTE
-        (PORT clk (909:909:909) (917:917:917))
+        (PORT clk (919:919:919) (907:907:907))
         (PORT d (36:36:36) (48:48:48))
         (PORT clrn (907:907:907) (892:892:892))
         (IOPATH (posedge clk) q (103:103:103) (103:103:103))
