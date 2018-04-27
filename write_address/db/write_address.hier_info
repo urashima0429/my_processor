@@ -1,0 +1,14 @@
+|write_address
+op1[0] => Decoder0.IN1
+op1[1] => Decoder0.IN0
+Rd_Rb[0] => write_add.DATAA
+Rd_Rb[1] => write_add.DATAA
+Rd_Rb[2] => write_add.DATAA
+Ra[0] => write_add.DATAB
+Ra[1] => write_add.DATAB
+Ra[2] => write_add.DATAB
+write_add[0] <= write_add.DB_MAX_OUTPUT_PORT_TYPE
+write_add[1] <= write_add.DB_MAX_OUTPUT_PORT_TYPE
+write_add[2] <= write_add.DB_MAX_OUTPUT_PORT_TYPE
+
+

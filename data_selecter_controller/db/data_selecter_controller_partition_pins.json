@@ -24,23 +24,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "switch6",
+					"strict" : false
+				},
+				{
 					"name" : "op[15]",
 					"strict" : false
 				},
 				{
 					"name" : "op[14]",
-					"strict" : false
-				},
-				{
-					"name" : "op[11]",
-					"strict" : false
-				},
-				{
-					"name" : "op[12]",
-					"strict" : false
-				},
-				{
-					"name" : "op[13]",
 					"strict" : false
 				},
 				{

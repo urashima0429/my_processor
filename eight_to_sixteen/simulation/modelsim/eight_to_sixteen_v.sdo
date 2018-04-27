@@ -29,7 +29,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "eight_to_sixteen")
-  (DATE "04/26/2018 16:09:04")
+  (DATE "04/27/2018 09:05:12")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition")
@@ -118,7 +118,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE eight\[0\]\~input)
+    (INSTANCE dBack\[0\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (790:790:790))
@@ -127,7 +127,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE eight\[1\]\~input)
+    (INSTANCE dBack\[1\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (790:790:790))
@@ -136,7 +136,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE eight\[2\]\~input)
+    (INSTANCE dBack\[2\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (642:642:642) (750:750:750))
@@ -145,7 +145,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE eight\[3\]\~input)
+    (INSTANCE dBack\[3\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (662:662:662) (770:770:770))
@@ -154,7 +154,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE eight\[4\]\~input)
+    (INSTANCE dFront\[0\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (652:652:652) (760:760:760))
@@ -163,7 +163,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE eight\[5\]\~input)
+    (INSTANCE dFront\[1\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (652:652:652) (760:760:760))
@@ -172,7 +172,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE eight\[6\]\~input)
+    (INSTANCE dFront\[2\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (682:682:682) (790:790:790))
@@ -181,7 +181,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE eight\[7\]\~input)
+    (INSTANCE dFront\[3\]\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (652:652:652) (762:762:762))

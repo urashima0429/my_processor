@@ -1,5 +1,5 @@
 EDA Netlist Writer report for data_selecter_controller
-Thu Apr 26 17:38:35 2018
+Fri Apr 27 10:15:34 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Apr 26 17:38:35 2018 ;
+; EDA Netlist Writer Status ; Successful - Fri Apr 27 10:15:34 2018 ;
 ; Revision Name             ; data_selecter_controller              ;
 ; Top-level Entity Name     ; data_selecter_controller              ;
 ; Family                    ; Cyclone IV E                          ;
@@ -66,20 +66,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                                                ;
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                                           ;
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/simulation/modelsim/data_selecter_controller_7_1200mv_100c_slow.vo      ;
-; /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/simulation/modelsim/data_selecter_controller_7_1200mv_-40c_slow.vo      ;
-; /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/simulation/modelsim/data_selecter_controller_min_1200mv_-40c_fast.vo    ;
-; /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/simulation/modelsim/data_selecter_controller.vo                         ;
-; /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/simulation/modelsim/data_selecter_controller_7_1200mv_100c_v_slow.sdo   ;
-; /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/simulation/modelsim/data_selecter_controller_7_1200mv_-40c_v_slow.sdo   ;
-; /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/simulation/modelsim/data_selecter_controller_min_1200mv_-40c_v_fast.sdo ;
-; /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/simulation/modelsim/data_selecter_controller_v.sdo                      ;
-+-------------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                        ;
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                   ;
++-----------------------------------------------------------------------------------------------------------------------------------+
+; /export/home/016/a0169654/SIMPLE/data_selecter_controller/simulation/modelsim/data_selecter_controller_7_1200mv_100c_slow.vo      ;
+; /export/home/016/a0169654/SIMPLE/data_selecter_controller/simulation/modelsim/data_selecter_controller_7_1200mv_-40c_slow.vo      ;
+; /export/home/016/a0169654/SIMPLE/data_selecter_controller/simulation/modelsim/data_selecter_controller_min_1200mv_-40c_fast.vo    ;
+; /export/home/016/a0169654/SIMPLE/data_selecter_controller/simulation/modelsim/data_selecter_controller.vo                         ;
+; /export/home/016/a0169654/SIMPLE/data_selecter_controller/simulation/modelsim/data_selecter_controller_7_1200mv_100c_v_slow.sdo   ;
+; /export/home/016/a0169654/SIMPLE/data_selecter_controller/simulation/modelsim/data_selecter_controller_7_1200mv_-40c_v_slow.sdo   ;
+; /export/home/016/a0169654/SIMPLE/data_selecter_controller/simulation/modelsim/data_selecter_controller_min_1200mv_-40c_v_fast.sdo ;
+; /export/home/016/a0169654/SIMPLE/data_selecter_controller/simulation/modelsim/data_selecter_controller_v.sdo                      ;
++-----------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,21 +88,21 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Thu Apr 26 17:38:34 2018
+    Info: Processing started: Fri Apr 27 10:15:34 2018
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off data_selecter_controller -c data_selecter_controller
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file data_selecter_controller_7_1200mv_100c_slow.vo in folder "/export/home/016/a0165336/project/SIMPLE/data_selecter_controller/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file data_selecter_controller_7_1200mv_-40c_slow.vo in folder "/export/home/016/a0165336/project/SIMPLE/data_selecter_controller/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file data_selecter_controller_min_1200mv_-40c_fast.vo in folder "/export/home/016/a0165336/project/SIMPLE/data_selecter_controller/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file data_selecter_controller.vo in folder "/export/home/016/a0165336/project/SIMPLE/data_selecter_controller/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file data_selecter_controller_7_1200mv_100c_v_slow.sdo in folder "/export/home/016/a0165336/project/SIMPLE/data_selecter_controller/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file data_selecter_controller_7_1200mv_-40c_v_slow.sdo in folder "/export/home/016/a0165336/project/SIMPLE/data_selecter_controller/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file data_selecter_controller_min_1200mv_-40c_v_fast.sdo in folder "/export/home/016/a0165336/project/SIMPLE/data_selecter_controller/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file data_selecter_controller_v.sdo in folder "/export/home/016/a0165336/project/SIMPLE/data_selecter_controller/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file data_selecter_controller_7_1200mv_100c_slow.vo in folder "/export/home/016/a0169654/SIMPLE/data_selecter_controller/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file data_selecter_controller_7_1200mv_-40c_slow.vo in folder "/export/home/016/a0169654/SIMPLE/data_selecter_controller/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file data_selecter_controller_min_1200mv_-40c_fast.vo in folder "/export/home/016/a0169654/SIMPLE/data_selecter_controller/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file data_selecter_controller.vo in folder "/export/home/016/a0169654/SIMPLE/data_selecter_controller/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file data_selecter_controller_7_1200mv_100c_v_slow.sdo in folder "/export/home/016/a0169654/SIMPLE/data_selecter_controller/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file data_selecter_controller_7_1200mv_-40c_v_slow.sdo in folder "/export/home/016/a0169654/SIMPLE/data_selecter_controller/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file data_selecter_controller_min_1200mv_-40c_v_fast.sdo in folder "/export/home/016/a0169654/SIMPLE/data_selecter_controller/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file data_selecter_controller_v.sdo in folder "/export/home/016/a0169654/SIMPLE/data_selecter_controller/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1133 megabytes
-    Info: Processing ended: Thu Apr 26 17:38:35 2018
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 1134 megabytes
+    Info: Processing ended: Fri Apr 27 10:15:34 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
 
 

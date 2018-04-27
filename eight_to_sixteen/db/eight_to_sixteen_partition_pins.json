@@ -36,35 +36,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "eight[0]",
+					"name" : "dBack[0]",
 					"strict" : false
 				},
 				{
-					"name" : "eight[1]",
+					"name" : "dBack[1]",
 					"strict" : false
 				},
 				{
-					"name" : "eight[2]",
+					"name" : "dBack[2]",
 					"strict" : false
 				},
 				{
-					"name" : "eight[3]",
+					"name" : "dBack[3]",
 					"strict" : false
 				},
 				{
-					"name" : "eight[4]",
+					"name" : "dFront[0]",
 					"strict" : false
 				},
 				{
-					"name" : "eight[5]",
+					"name" : "dFront[1]",
 					"strict" : false
 				},
 				{
-					"name" : "eight[6]",
+					"name" : "dFront[2]",
 					"strict" : false
 				},
 				{
-					"name" : "eight[7]",
+					"name" : "dFront[3]",
 					"strict" : false
 				}
 			]

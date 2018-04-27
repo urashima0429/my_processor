@@ -1,5 +1,5 @@
 Analysis & Synthesis report for data_selecter_controller
-Thu Apr 26 17:38:23 2018
+Fri Apr 27 10:15:24 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 26 17:38:23 2018           ;
+; Analysis & Synthesis Status        ; Successful - Fri Apr 27 10:15:24 2018           ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Standard Edition ;
 ; Revision Name                      ; data_selecter_controller                        ;
 ; Top-level Entity Name              ; data_selecter_controller                        ;
@@ -51,7 +51,7 @@ refer to the applicable agreement for further details.
 ;     Total combinational functions  ; 4                                               ;
 ;     Dedicated logic registers      ; 0                                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 21                                              ;
+; Total pins                         ; 22                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -161,13 +161,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                               ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                 ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------+---------+
-; data_selecter_controller.v       ; yes             ; User Verilog HDL File  ; /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/data_selecter_controller.v ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                       ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                         ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------+---------+
+; data_selecter_controller.v       ; yes             ; User Verilog HDL File  ; /export/home/016/a0169654/SIMPLE/data_selecter_controller/data_selecter_controller.v ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -179,9 +179,9 @@ refer to the applicable agreement for further details.
 ;                                             ;          ;
 ; Total combinational functions               ; 4        ;
 ; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 2        ;
+;     -- 4 input functions                    ; 1        ;
 ;     -- 3 input functions                    ; 1        ;
-;     -- <=2 input functions                  ; 1        ;
+;     -- <=2 input functions                  ; 2        ;
 ;                                             ;          ;
 ; Logic elements by mode                      ;          ;
 ;     -- normal mode                          ; 4        ;
@@ -191,14 +191,14 @@ refer to the applicable agreement for further details.
 ;     -- Dedicated logic registers            ; 0        ;
 ;     -- I/O registers                        ; 0        ;
 ;                                             ;          ;
-; I/O pins                                    ; 21       ;
+; I/O pins                                    ; 22       ;
 ;                                             ;          ;
 ; Embedded Multiplier 9-bit elements          ; 0        ;
 ;                                             ;          ;
 ; Maximum fan-out node                        ; Equal2~0 ;
 ; Maximum fan-out                             ; 4        ;
 ; Total fan-out                               ; 39       ;
-; Average fan-out                             ; 0.85     ;
+; Average fan-out                             ; 0.81     ;
 +---------------------------------------------+----------+
 
 
@@ -207,7 +207,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+--------------------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name       ; Entity Name              ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+--------------------------+--------------+
-; |data_selecter_controller  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |data_selecter_controller ; data_selecter_controller ; work         ;
+; |data_selecter_controller  ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |data_selecter_controller ; data_selecter_controller ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+--------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -232,15 +232,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 21                          ;
+; boundary_port         ; 22                          ;
 ; cycloneiii_lcell_comb ; 4                           ;
 ;     normal            ; 4                           ;
-;         2 data inputs ; 1                           ;
+;         2 data inputs ; 2                           ;
 ;         3 data inputs ; 1                           ;
-;         4 data inputs ; 2                           ;
+;         4 data inputs ; 1                           ;
 ;                       ;                             ;
 ; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.77                        ;
+; Average LUT depth     ; 1.60                        ;
 +-----------------------+-----------------------------+
 
 
@@ -259,32 +259,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Thu Apr 26 17:38:13 2018
+    Info: Processing started: Fri Apr 27 10:15:15 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off data_selecter_controller -c data_selecter_controller
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file data_selecter_controller.v
-    Info (12023): Found entity 1: data_selecter_controller File: /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 1
+    Info (12023): Found entity 1: data_selecter_controller File: /export/home/016/a0169654/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 1
 Info (12127): Elaborating entity "data_selecter_controller" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 7 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "op[0]" File: /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
-    Warning (15610): No output dependent on input pin "op[1]" File: /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
-    Warning (15610): No output dependent on input pin "op[2]" File: /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
-    Warning (15610): No output dependent on input pin "op[3]" File: /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
-    Warning (15610): No output dependent on input pin "op[8]" File: /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
-    Warning (15610): No output dependent on input pin "op[9]" File: /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
-    Warning (15610): No output dependent on input pin "op[10]" File: /export/home/016/a0165336/project/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
-Info (21057): Implemented 25 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 10 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "op[0]" File: /export/home/016/a0169654/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
+    Warning (15610): No output dependent on input pin "op[1]" File: /export/home/016/a0169654/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
+    Warning (15610): No output dependent on input pin "op[2]" File: /export/home/016/a0169654/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
+    Warning (15610): No output dependent on input pin "op[3]" File: /export/home/016/a0169654/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
+    Warning (15610): No output dependent on input pin "op[8]" File: /export/home/016/a0169654/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
+    Warning (15610): No output dependent on input pin "op[9]" File: /export/home/016/a0169654/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
+    Warning (15610): No output dependent on input pin "op[10]" File: /export/home/016/a0169654/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
+    Warning (15610): No output dependent on input pin "op[11]" File: /export/home/016/a0169654/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
+    Warning (15610): No output dependent on input pin "op[12]" File: /export/home/016/a0169654/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
+    Warning (15610): No output dependent on input pin "op[13]" File: /export/home/016/a0169654/SIMPLE/data_selecter_controller/data_selecter_controller.v Line: 2
+Info (21057): Implemented 26 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 16 input pins
-    Info (21059): Implemented 5 output pins
+    Info (21059): Implemented 6 output pins
     Info (21061): Implemented 4 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 1053 megabytes
-    Info: Processing ended: Thu Apr 26 17:38:23 2018
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:23
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
+    Info: Peak virtual memory: 1049 megabytes
+    Info: Processing ended: Fri Apr 27 10:15:24 2018
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:21
 
 

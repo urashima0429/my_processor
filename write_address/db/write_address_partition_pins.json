@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "write_add[0]",
+					"strict" : false
+				},
+				{
+					"name" : "write_add[1]",
+					"strict" : false
+				},
+				{
+					"name" : "write_add[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Rd_Rb[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Ra[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "op1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Rd_Rb[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Ra[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Rd_Rb[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Ra[2]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

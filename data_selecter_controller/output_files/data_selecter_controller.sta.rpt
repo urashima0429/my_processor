@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for data_selecter_controller
-Thu Apr 26 17:38:33 2018
+Fri Apr 27 10:15:33 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -251,6 +251,7 @@ No synchronizer chains to report.
 ; switch3       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; switch4       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; switch5       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; switch6       ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; ~ALTERA_DCLK~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; ~ALTERA_nCEO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 +---------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
@@ -268,11 +269,11 @@ No synchronizer chains to report.
 ; op[8]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; op[9]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; op[10]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; op[15]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; op[14]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; op[11]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; op[12]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; op[13]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; op[15]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; op[14]                  ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; op[6]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; op[7]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; op[4]                   ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -293,6 +294,7 @@ No synchronizer chains to report.
 ; switch3       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.46e-09 V                   ; 2.37 V              ; -0.0241 V           ; 0.127 V                              ; 0.073 V                              ; 6.7e-10 s                   ; 6.3e-10 s                   ; No                         ; Yes                        ; 2.32 V                      ; 1.46e-09 V                  ; 2.37 V             ; -0.0241 V          ; 0.127 V                             ; 0.073 V                             ; 6.7e-10 s                  ; 6.3e-10 s                  ; No                        ; Yes                       ;
 ; switch4       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.46e-09 V                   ; 2.37 V              ; -0.0241 V           ; 0.127 V                              ; 0.073 V                              ; 6.7e-10 s                   ; 6.3e-10 s                   ; No                         ; Yes                        ; 2.32 V                      ; 1.46e-09 V                  ; 2.37 V             ; -0.0241 V          ; 0.127 V                             ; 0.073 V                             ; 6.7e-10 s                  ; 6.3e-10 s                  ; No                        ; Yes                       ;
 ; switch5       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.46e-09 V                   ; 2.37 V              ; -0.0241 V           ; 0.127 V                              ; 0.073 V                              ; 6.7e-10 s                   ; 6.3e-10 s                   ; No                         ; Yes                        ; 2.32 V                      ; 1.46e-09 V                  ; 2.37 V             ; -0.0241 V          ; 0.127 V                             ; 0.073 V                             ; 6.7e-10 s                  ; 6.3e-10 s                  ; No                        ; Yes                       ;
+; switch6       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.46e-09 V                   ; 2.37 V              ; -0.0241 V           ; 0.127 V                              ; 0.073 V                              ; 6.7e-10 s                   ; 6.3e-10 s                   ; No                         ; Yes                        ; 2.32 V                      ; 1.46e-09 V                  ; 2.37 V             ; -0.0241 V          ; 0.127 V                             ; 0.073 V                             ; 6.7e-10 s                  ; 6.3e-10 s                  ; No                        ; Yes                       ;
 ; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-09 V                   ; 2.39 V              ; -0.0374 V           ; 0.127 V                              ; 0.051 V                              ; 4.57e-10 s                  ; 3.66e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.16e-09 V                  ; 2.39 V             ; -0.0374 V          ; 0.127 V                             ; 0.051 V                             ; 4.57e-10 s                 ; 3.66e-10 s                 ; No                        ; Yes                       ;
 ; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.76e-09 V                   ; 2.38 V              ; -0.00636 V          ; 0.233 V                              ; 0.017 V                              ; 5.26e-10 s                  ; 7.33e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.76e-09 V                  ; 2.38 V             ; -0.00636 V         ; 0.233 V                             ; 0.017 V                             ; 5.26e-10 s                 ; 7.33e-10 s                 ; No                        ; Yes                       ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
@@ -308,6 +310,7 @@ No synchronizer chains to report.
 ; switch3       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.79e-07 V                   ; 2.34 V              ; -0.00706 V          ; 0.07 V                               ; 0.022 V                              ; 8.91e-10 s                  ; 8.65e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.79e-07 V                  ; 2.34 V             ; -0.00706 V         ; 0.07 V                              ; 0.022 V                             ; 8.91e-10 s                 ; 8.65e-10 s                 ; Yes                       ; Yes                       ;
 ; switch4       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.79e-07 V                   ; 2.34 V              ; -0.00706 V          ; 0.07 V                               ; 0.022 V                              ; 8.91e-10 s                  ; 8.65e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.79e-07 V                  ; 2.34 V             ; -0.00706 V         ; 0.07 V                              ; 0.022 V                             ; 8.91e-10 s                 ; 8.65e-10 s                 ; Yes                       ; Yes                       ;
 ; switch5       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.79e-07 V                   ; 2.34 V              ; -0.00706 V          ; 0.07 V                               ; 0.022 V                              ; 8.91e-10 s                  ; 8.65e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.79e-07 V                  ; 2.34 V             ; -0.00706 V         ; 0.07 V                              ; 0.022 V                             ; 8.91e-10 s                 ; 8.65e-10 s                 ; Yes                       ; Yes                       ;
+; switch6       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 9.79e-07 V                   ; 2.34 V              ; -0.00706 V          ; 0.07 V                               ; 0.022 V                              ; 8.91e-10 s                  ; 8.65e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 9.79e-07 V                  ; 2.34 V             ; -0.00706 V         ; 0.07 V                              ; 0.022 V                             ; 8.91e-10 s                 ; 8.65e-10 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 7.67e-07 V                   ; 2.34 V              ; -0.00744 V          ; 0.095 V                              ; 0.013 V                              ; 6.35e-10 s                  ; 5.33e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 7.67e-07 V                  ; 2.34 V             ; -0.00744 V         ; 0.095 V                             ; 0.013 V                             ; 6.35e-10 s                 ; 5.33e-10 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.27e-06 V                   ; 2.34 V              ; -0.00327 V          ; 0.11 V                               ; 0.03 V                               ; 8.38e-10 s                  ; 1.07e-09 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.27e-06 V                  ; 2.34 V             ; -0.00327 V         ; 0.11 V                              ; 0.03 V                              ; 8.38e-10 s                 ; 1.07e-09 s                 ; Yes                       ; Yes                       ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
@@ -323,6 +326,7 @@ No synchronizer chains to report.
 ; switch3       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.43e-09 V                   ; 2.73 V              ; -0.043 V            ; 0.216 V                              ; 0.135 V                              ; 4.76e-10 s                  ; 4.78e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.43e-09 V                  ; 2.73 V             ; -0.043 V           ; 0.216 V                             ; 0.135 V                             ; 4.76e-10 s                 ; 4.78e-10 s                 ; No                        ; Yes                       ;
 ; switch4       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.43e-09 V                   ; 2.73 V              ; -0.043 V            ; 0.216 V                              ; 0.135 V                              ; 4.76e-10 s                  ; 4.78e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.43e-09 V                  ; 2.73 V             ; -0.043 V           ; 0.216 V                             ; 0.135 V                             ; 4.76e-10 s                 ; 4.78e-10 s                 ; No                        ; Yes                       ;
 ; switch5       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.43e-09 V                   ; 2.73 V              ; -0.043 V            ; 0.216 V                              ; 0.135 V                              ; 4.76e-10 s                  ; 4.78e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.43e-09 V                  ; 2.73 V             ; -0.043 V           ; 0.216 V                             ; 0.135 V                             ; 4.76e-10 s                 ; 4.78e-10 s                 ; No                        ; Yes                       ;
+; switch6       ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2.43e-09 V                   ; 2.73 V              ; -0.043 V            ; 0.216 V                              ; 0.135 V                              ; 4.76e-10 s                  ; 4.78e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 2.43e-09 V                  ; 2.73 V             ; -0.043 V           ; 0.216 V                             ; 0.135 V                             ; 4.76e-10 s                 ; 4.78e-10 s                 ; No                        ; Yes                       ;
 ; ~ALTERA_DCLK~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 2e-09 V                      ; 2.74 V              ; -0.103 V            ; 0.233 V                              ; 0.159 V                              ; 2.85e-10 s                  ; 2.77e-10 s                  ; Yes                        ; Yes                        ; 2.62 V                      ; 2e-09 V                     ; 2.74 V             ; -0.103 V           ; 0.233 V                             ; 0.159 V                             ; 2.85e-10 s                 ; 2.77e-10 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_nCEO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 3.09e-09 V                   ; 2.72 V              ; -0.0273 V           ; 0.18 V                               ; 0.08 V                               ; 4.67e-10 s                  ; 6.1e-10 s                   ; No                         ; Yes                        ; 2.62 V                      ; 3.09e-09 V                  ; 2.72 V             ; -0.0273 V          ; 0.18 V                              ; 0.08 V                              ; 4.67e-10 s                 ; 6.1e-10 s                  ; No                        ; Yes                       ;
 +---------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
@@ -353,10 +357,10 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 9     ; 9    ;
-; Unconstrained Input Port Paths  ; 17    ; 17   ;
-; Unconstrained Output Ports      ; 5     ; 5    ;
-; Unconstrained Output Port Paths ; 17    ; 17   ;
+; Unconstrained Input Ports       ; 6     ; 6    ;
+; Unconstrained Input Port Paths  ; 16    ; 16   ;
+; Unconstrained Output Ports      ; 6     ; 6    ;
+; Unconstrained Output Port Paths ; 16    ; 16   ;
 +---------------------------------+-------+------+
 
 
@@ -369,9 +373,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; op[5]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; op[6]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; op[7]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; op[11]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; op[12]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; op[13]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; op[14]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; op[15]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
@@ -387,6 +388,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; switch3     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; switch4     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; switch5     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch6     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
@@ -399,9 +401,6 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; op[5]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; op[6]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; op[7]      ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; op[11]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; op[12]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; op[13]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; op[14]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; op[15]     ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
@@ -417,6 +416,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; switch3     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; switch4     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; switch5     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; switch6     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +-------------+---------------------------------------------------------------------------------------+
 
 
@@ -426,7 +426,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Thu Apr 26 17:38:31 2018
+    Info: Processing started: Fri Apr 27 10:15:31 2018
 Info: Command: quartus_sta data_selecter_controller -c data_selecter_controller
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -474,8 +474,8 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 934 megabytes
-    Info: Processing ended: Thu Apr 26 17:38:33 2018
+    Info: Peak virtual memory: 937 megabytes
+    Info: Processing ended: Fri Apr 27 10:15:33 2018
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for eight_to_sixteen
-Thu Apr 26 16:09:03 2018
+Fri Apr 27 09:05:11 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -90,12 +90,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.2%      ;
+;     Processors 2-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -272,14 +272,14 @@ No synchronizer chains to report.
 +-------------------------+--------------+-----------------+-----------------+
 ; Pin                     ; I/O Standard ; 10-90 Rise Time ; 90-10 Fall Time ;
 +-------------------------+--------------+-----------------+-----------------+
-; eight[0]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; eight[1]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; eight[2]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; eight[3]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; eight[4]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; eight[5]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; eight[6]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
-; eight[7]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; dBack[0]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; dBack[1]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; dBack[2]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; dBack[3]                ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; dFront[0]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; dFront[1]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; dFront[2]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
+; dFront[3]               ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_ASDO_DATA1~     ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_FLASH_nCE_nCSO~ ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
 ; ~ALTERA_DATA0~          ; 2.5 V        ; 2000 ps         ; 2000 ps         ;
@@ -401,14 +401,14 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
-; eight[0]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; eight[1]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; eight[2]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; eight[3]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; eight[4]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; eight[5]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; eight[6]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; eight[7]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dBack[0]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dBack[1]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dBack[2]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dBack[3]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dFront[0]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dFront[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dFront[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dFront[3]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
@@ -433,14 +433,14 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +------------+--------------------------------------------------------------------------------------+
 ; Input Port ; Comment                                                                              ;
 +------------+--------------------------------------------------------------------------------------+
-; eight[0]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; eight[1]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; eight[2]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; eight[3]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; eight[4]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; eight[5]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; eight[6]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
-; eight[7]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dBack[0]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dBack[1]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dBack[2]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dBack[3]   ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dFront[0]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dFront[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dFront[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; dFront[3]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +------------+--------------------------------------------------------------------------------------+
 
 
@@ -466,7 +466,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Thu Apr 26 16:09:01 2018
+    Info: Processing started: Fri Apr 27 09:05:09 2018
 Info: Command: quartus_sta eight_to_sixteen -c eight_to_sixteen
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -514,8 +514,8 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 933 megabytes
-    Info: Processing ended: Thu Apr 26 16:09:03 2018
+    Info: Peak virtual memory: 935 megabytes
+    Info: Processing ended: Fri Apr 27 09:05:11 2018
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
