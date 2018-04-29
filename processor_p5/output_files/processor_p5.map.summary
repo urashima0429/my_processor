@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Sun Apr 29 17:26:17 2018
+Analysis & Synthesis Status : Successful - Sun Apr 29 19:19:03 2018
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 Revision Name : processor_p5
 Top-level Entity Name : processor_p5
 Family : Cyclone IV E
-Total logic elements : 824
-    Total combinational functions : 792
-    Dedicated logic registers : 192
-Total registers : 192
+Total logic elements : 285
+    Total combinational functions : 253
+    Dedicated logic registers : 157
+Total registers : 157
 Total pins : 91
 Total virtual pins : 0
 Total memory bits : 65,536
