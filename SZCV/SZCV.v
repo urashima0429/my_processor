@@ -1,10 +1,10 @@
 module SZCV (
-	input p4, reset, clock,
+	input p4, reset,
 	input S_in, Z_in, C_in, V_in,
 	output reg S_out, Z_out, C_out, V_out);
 	
-	always @(posedge clock or posedge reset) begin
-		if (reset == 1'b1) begin
+	always @(posedge p4 or negedge reset) begin
+		if (reset == 1'b0) begin
 			S_out <= 1'b0;
 			Z_out <= 1'b0;
 			C_out <= 1'b0;

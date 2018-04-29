@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for processor_p1
-Fri Apr 27 20:45:02 2018
+Sun Apr 29 12:53:41 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -112,9 +112,9 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.1%      ;
+;     Processor 2            ;   1.2%      ;
 ;     Processor 3            ;   0.4%      ;
-;     Processor 4            ;   0.3%      ;
+;     Processor 4            ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -123,7 +123,7 @@ refer to the applicable agreement for further details.
 +------------------+--------+--------------------------+
 ; SDC File Path    ; Status ; Read at                  ;
 +------------------+--------+--------------------------+
-; processor_p1.sdc ; OK     ; Fri Apr 27 20:45:00 2018 ;
+; processor_p1.sdc ; OK     ; Sun Apr 29 12:53:40 2018 ;
 +------------------+--------+--------------------------+
 
 
@@ -1662,7 +1662,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Fri Apr 27 20:44:59 2018
+    Info: Processing started: Sun Apr 29 12:53:39 2018
 Info: Command: quartus_sta processor_p1 -c processor_p1
 Info: qsta_default_script.tcl version: #3
 Info (20032): Parallel compilation is enabled and will use up to 4 processors
@@ -1750,9 +1750,9 @@ Info (332146): Worst-case minimum pulse width slack is -3.000
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 934 megabytes
-    Info: Processing ended: Fri Apr 27 20:45:02 2018
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 936 megabytes
+    Info: Processing ended: Sun Apr 29 12:53:41 2018
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

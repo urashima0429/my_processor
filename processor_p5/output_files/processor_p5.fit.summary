@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Apr 29 17:26:24 2018
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+Revision Name : processor_p5
+Top-level Entity Name : processor_p5
+Family : Cyclone IV E
+Device : EP4CE30F23I7
+Timing Models : Final
+Total logic elements : 821 / 28,848 ( 3 % )
+    Total combinational functions : 792 / 28,848 ( 3 % )
+    Dedicated logic registers : 192 / 28,848 ( < 1 % )
+Total registers : 192
+Total pins : 91 / 329 ( 28 % )
+Total virtual pins : 0
+Total memory bits : 65,536 / 608,256 ( 11 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

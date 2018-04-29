@@ -235,7 +235,7 @@ module ALU (
 						V = V_in;
 						HLT = 1'b0;
 					end else begin
-						out = 0;
+						out = in1;
 						S = S_in;
 						Z = Z_in;
 						C = C_in;
@@ -251,7 +251,7 @@ module ALU (
 						V = V_in;
 						HLT = 1'b0;
 					end else begin
-						out = 0;
+						out = in1;
 						S = S_in;
 						Z = Z_in;
 						C = C_in;
@@ -267,7 +267,7 @@ module ALU (
 						V = V_in;
 						HLT = 1'b0;
 					end else begin
-						out = 0;
+						out = in1;
 						S = S_in;
 						Z = Z_in;
 						C = C_in;
@@ -283,7 +283,7 @@ module ALU (
 						V = V_in;
 						HLT = 1'b0;
 					end else begin
-						out = 0;
+						out = in1;
 						S = S_in;
 						Z = Z_in;
 						C = C_in;
@@ -292,7 +292,7 @@ module ALU (
 					end
 				end
 			end else begin
-				out = in2;
+				out = in1;
 				S = S_in;
 				Z = Z_in;
 				C = C_in;
