@@ -2,11 +2,12 @@ module write_address(
 	input [1:0] op1,
 	input [2:0] Rd_Rb, Ra_op2,
 	input [3:0] op3,
+	input clock,
 	//input [2:0] phase,
 	output reg [2:0] write_add,
 	output reg writeOrder);
 	
-	always @* begin
+	always @(posedge clock) begin // always @* begin
 		case (op1)
 			0: write_add <= Ra_op2;
 			1: write_add <= Rd_Rb; // don't care

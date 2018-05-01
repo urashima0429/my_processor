@@ -12,7 +12,7 @@ module data_selecter_controller(
 				switch2 <= 0;
 				switch3 <= 0;
 				switch4 <= 1;
-				switch5 <= 0;
+				switch5 <= 1;
 				switch6 <= 0;
 			end else begin
 				switch1 <= 0;
@@ -25,12 +25,12 @@ module data_selecter_controller(
 			
 		end else if (op[15:14] == 2'b10) begin
 			//conditional branch
-			if (op[13:11] == 3'b000) begin //if (op[13:11] == 3'b111) begin
-				switch1 <= 0;//1
-				switch2 <= 1;
+			if (op[13:11] == 3'b000) begin 
+				switch1 <= 0;
+				switch2 <= 0; // don't care?
 				switch3 <= 1;
 				switch4 <= 0;
-				switch5 <= 1;
+				switch5 <= 0;
 				switch6 <= 0;
 			//Immediate load unconditional branch
 			end else begin
@@ -38,7 +38,7 @@ module data_selecter_controller(
 				switch2 <= 1;
 				switch3 <= 1;
 				switch4 <= 0;
-				switch5 <= 1;
+				switch5 <= 0;
 				switch6 <= 0;
 			end
 		
@@ -46,15 +46,15 @@ module data_selecter_controller(
 		end else if (op[15:14] == 2'b00) begin	
 			switch1 <= 0;
 			switch2 <= 0;
-			switch3 <= 0;
+			switch3 <= 1;
 			switch4 <= 0;
-			switch5 <= 0;
+			switch5 <= 1;
 			switch6 <= 0;
 			
 		end else if (op[15:14] == 2'b01) begin	
 			switch1 <= 0;
 			switch2 <= 0;
-			switch3 <= 0;
+			switch3 <= 1;
 			switch4 <= 0;
 			switch5 <= 0;
 			switch6 <= 1;
