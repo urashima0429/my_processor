@@ -25,8 +25,8 @@ module data_selecter_controller(
 			
 		end else if (op[15:14] == 2'b10) begin
 			//conditional branch
-			if (op[13:11] == 3'b111) begin
-				switch1 <= 1;
+			if (op[13:11] == 3'b000) begin //if (op[13:11] == 3'b111) begin
+				switch1 <= 0;//1
 				switch2 <= 1;
 				switch3 <= 1;
 				switch4 <= 0;

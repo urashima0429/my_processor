@@ -292,7 +292,7 @@ module ALU (
 					end
 				end
 			end else begin
-				out = in1;
+				out = in2;//in1
 				S = S_in;
 				Z = Z_in;
 				C = C_in;
