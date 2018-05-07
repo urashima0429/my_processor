@@ -24,6 +24,8 @@ module control_unit (
 		end else if (reset == 1'b1) begin 
 			running <= 0;
 			
+		end else if (halt == 1'b1) begin
+			running <= ~running;
 		end
 		
 	end
