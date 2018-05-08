@@ -92,14 +92,14 @@ VCCIO7                       : A21       : power  :                   : 2.5V    
 GND                          : A22       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AA1       :        :                   :         : 2         :                
 GND                          : AA2       : gnd    :                   :         :           :                
-memory[24]                   : AA3       : output : 2.5 V             :         : 3         : Y              
-memory[26]                   : AA4       : output : 2.5 V             :         : 3         : Y              
-memory[27]                   : AA5       : output : 2.5 V             :         : 3         : Y              
+LED[24]                      : AA3       : output : 2.5 V             :         : 3         : Y              
+LED[26]                      : AA4       : output : 2.5 V             :         : 3         : Y              
+LED[27]                      : AA5       : output : 2.5 V             :         : 3         : Y              
 VCCIO3                       : AA6       : power  :                   : 2.5V    : 3         :                
-memory[22]                   : AA7       : output : 2.5 V             :         : 3         : Y              
-memory[11]                   : AA8       : output : 2.5 V             :         : 3         : Y              
-memory[2]                    : AA9       : output : 2.5 V             :         : 3         : Y              
-memory[5]                    : AA10      : output : 2.5 V             :         : 3         : Y              
+LED[22]                      : AA7       : output : 2.5 V             :         : 3         : Y              
+LED[11]                      : AA8       : output : 2.5 V             :         : 3         : Y              
+LED[2]                       : AA9       : output : 2.5 V             :         : 3         : Y              
+LED[5]                       : AA10      : output : 2.5 V             :         : 3         : Y              
 GND+                         : AA11      :        :                   :         : 3         :                
 GND+                         : AA12      :        :                   :         : 4         :                
 PC_check[17]                 : AA13      : output : 2.5 V             :         : 4         : Y              
@@ -115,13 +115,13 @@ GND                          : AA22      : gnd    :                   :         
 GND                          : AB1       : gnd    :                   :         :           :                
 VCCIO3                       : AB2       : power  :                   : 2.5V    : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB3       :        :                   :         : 3         :                
-memory[28]                   : AB4       : output : 2.5 V             :         : 3         : Y              
-memory[30]                   : AB5       : output : 2.5 V             :         : 3         : Y              
+LED[28]                      : AB4       : output : 2.5 V             :         : 3         : Y              
+LED[30]                      : AB5       : output : 2.5 V             :         : 3         : Y              
 GND                          : AB6       : gnd    :                   :         :           :                
-memory[8]                    : AB7       : output : 2.5 V             :         : 3         : Y              
-memory[14]                   : AB8       : output : 2.5 V             :         : 3         : Y              
-memory[4]                    : AB9       : output : 2.5 V             :         : 3         : Y              
-memory[7]                    : AB10      : output : 2.5 V             :         : 3         : Y              
+LED[8]                       : AB7       : output : 2.5 V             :         : 3         : Y              
+LED[14]                      : AB8       : output : 2.5 V             :         : 3         : Y              
+LED[4]                       : AB9       : output : 2.5 V             :         : 3         : Y              
+LED[7]                       : AB10      : output : 2.5 V             :         : 3         : Y              
 GND+                         : AB11      :        :                   :         : 3         :                
 GND+                         : AB12      :        :                   :         : 4         :                
 PC_check[19]                 : AB13      : output : 2.5 V             :         : 4         : Y              
@@ -449,8 +449,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : T4        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : T5        :        :                   :         : 2         :                
 VCCA1                        : T6        : power  :                   : 2.5V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T7        :        :                   :         : 2         :                
-memory[21]                   : T8        : output : 2.5 V             :         : 3         : Y              
-memory[0]                    : T9        : output : 2.5 V             :         : 3         : Y              
+LED[21]                      : T8        : output : 2.5 V             :         : 3         : Y              
+LED[0]                       : T9        : output : 2.5 V             :         : 3         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : T10       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : T11       :        :                   :         : 3         :                
 PC_check[25]                 : T12       : output : 2.5 V             :         : 4         : Y              
@@ -470,10 +470,10 @@ GND                          : U3        : gnd    :                   :         
 VCCIO2                       : U4        : power  :                   : 2.5V    : 2         :                
 GNDA1                        : U5        : gnd    :                   :         :           :                
 VCCD_PLL1                    : U6        : power  :                   : 1.2V    :           :                
-memory[18]                   : U7        : output : 2.5 V             :         : 3         : Y              
-memory[23]                   : U8        : output : 2.5 V             :         : 3         : Y              
-memory[13]                   : U9        : output : 2.5 V             :         : 3         : Y              
-memory[1]                    : U10       : output : 2.5 V             :         : 3         : Y              
+LED[18]                      : U7        : output : 2.5 V             :         : 3         : Y              
+LED[23]                      : U8        : output : 2.5 V             :         : 3         : Y              
+LED[13]                      : U9        : output : 2.5 V             :         : 3         : Y              
+LED[1]                       : U10       : output : 2.5 V             :         : 3         : Y              
 PC_check[26]                 : U11       : output : 2.5 V             :         : 3         : Y              
 PC_check[27]                 : U12       : output : 2.5 V             :         : 4         : Y              
 PC_check[29]                 : U13       : output : 2.5 V             :         : 4         : Y              
@@ -490,12 +490,12 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : V1        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : V2        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V3        :        :                   :         : 2         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : V4        :        :                   :         : 2         :                
-memory[25]                   : V5        : output : 2.5 V             :         : 3         : Y              
-memory[16]                   : V6        : output : 2.5 V             :         : 3         : Y              
-memory[20]                   : V7        : output : 2.5 V             :         : 3         : Y              
-memory[10]                   : V8        : output : 2.5 V             :         : 3         : Y              
-memory[15]                   : V9        : output : 2.5 V             :         : 3         : Y              
-memory[3]                    : V10       : output : 2.5 V             :         : 3         : Y              
+LED[25]                      : V5        : output : 2.5 V             :         : 3         : Y              
+LED[16]                      : V6        : output : 2.5 V             :         : 3         : Y              
+LED[20]                      : V7        : output : 2.5 V             :         : 3         : Y              
+LED[10]                      : V8        : output : 2.5 V             :         : 3         : Y              
+LED[15]                      : V9        : output : 2.5 V             :         : 3         : Y              
+LED[3]                       : V10       : output : 2.5 V             :         : 3         : Y              
 PC_check[28]                 : V11       : output : 2.5 V             :         : 3         : Y              
 PC_check[30]                 : V12       : output : 2.5 V             :         : 4         : Y              
 PC_check[31]                 : V13       : output : 2.5 V             :         : 4         : Y              
@@ -513,11 +513,11 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : W2        :        :                   :      
 GND                          : W3        : gnd    :                   :         :           :                
 VCCIO2                       : W4        : power  :                   : 2.5V    : 2         :                
 VCCIO3                       : W5        : power  :                   : 2.5V    : 3         :                
-memory[29]                   : W6        : output : 2.5 V             :         : 3         : Y              
-memory[17]                   : W7        : output : 2.5 V             :         : 3         : Y              
-memory[12]                   : W8        : output : 2.5 V             :         : 3         : Y              
+LED[29]                      : W6        : output : 2.5 V             :         : 3         : Y              
+LED[17]                      : W7        : output : 2.5 V             :         : 3         : Y              
+LED[12]                      : W8        : output : 2.5 V             :         : 3         : Y              
 VCCIO3                       : W9        : power  :                   : 2.5V    : 3         :                
-memory[6]                    : W10       : output : 2.5 V             :         : 3         : Y              
+LED[6]                       : W10       : output : 2.5 V             :         : 3         : Y              
 VCCIO3                       : W11       : power  :                   : 2.5V    : 3         :                
 VCCIO4                       : W12       : power  :                   : 2.5V    : 4         :                
 PC_check[18]                 : W13       : output : 2.5 V             :         : 4         : Y              
@@ -535,9 +535,9 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : Y2        :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y3        :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y4        :        :                   :         : 3         :                
 GND                          : Y5        : gnd    :                   :         :           :                
-memory[31]                   : Y6        : output : 2.5 V             :         : 3         : Y              
-memory[19]                   : Y7        : output : 2.5 V             :         : 3         : Y              
-memory[9]                    : Y8        : output : 2.5 V             :         : 3         : Y              
+LED[31]                      : Y6        : output : 2.5 V             :         : 3         : Y              
+LED[19]                      : Y7        : output : 2.5 V             :         : 3         : Y              
+LED[9]                       : Y8        : output : 2.5 V             :         : 3         : Y              
 GND                          : Y9        : gnd    :                   :         :           :                
 PC_check[24]                 : Y10       : output : 2.5 V             :         : 3         : Y              
 GND                          : Y11       : gnd    :                   :         :           :                

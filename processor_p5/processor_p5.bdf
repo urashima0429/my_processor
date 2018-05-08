@@ -229,9 +229,9 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 4304 216 4480 232)
+	(rect 4312 216 4488 232)
 	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
-	(text "memory[31..0]" (rect 90 0 158 10)(font "Arial" ))
+	(text "LED[31..0]" (rect 90 0 140 10)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -2688,11 +2688,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 4200 224)
-	(pt 4304 224)
-	(bus)
-)
-(connector
 	(pt 2648 712)
 	(pt 2648 552)
 	(bus)
@@ -2792,6 +2787,11 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 984 416)
 	(pt 1040 416)
+)
+(connector
+	(pt 4200 224)
+	(pt 4312 224)
+	(bus)
 )
 (junction (pt 752 312))
 (junction (pt 776 312))

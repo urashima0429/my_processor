@@ -19,7 +19,7 @@
 ## PROGRAM "Quartus Prime"
 ## VERSION "Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition"
 
-## DATE    "Mon May  7 18:03:46 2018"
+## DATE    "Tue May  8 20:13:58 2018"
 
 ##
 ## DEVICE  "EP4CE30F23I7"
@@ -39,7 +39,7 @@ set_time_format -unit ns -decimal_places 3
 #**************************************************************
 
 create_clock -name {altera_reserved_tck} -period 100.000 -waveform { 0.000 50.000 } [get_ports {altera_reserved_tck}]
-create_clock -name {clock} -period 10.000 -waveform { 0.000 5.000 } [get_ports {clock}]
+create_clock -name {clock} -period 20.000 -waveform { 0.000 10.000 } [get_ports {clock}]
 
 
 #**************************************************************
@@ -76,6 +76,11 @@ create_clock -name {clock} -period 10.000 -waveform { 0.000 5.000 } [get_ports {
 # Set Clock Groups
 #**************************************************************
 
+set_clock_groups -asynchronous -group [get_clocks {altera_reserved_tck}] 
+set_clock_groups -asynchronous -group [get_clocks {altera_reserved_tck}] 
+set_clock_groups -asynchronous -group [get_clocks {altera_reserved_tck}] 
+set_clock_groups -asynchronous -group [get_clocks {altera_reserved_tck}] 
+set_clock_groups -asynchronous -group [get_clocks {altera_reserved_tck}] 
 set_clock_groups -asynchronous -group [get_clocks {altera_reserved_tck}] 
 
 
