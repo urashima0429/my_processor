@@ -1,11 +1,11 @@
-Fitter Status : Successful - Mon May  7 18:46:48 2018
+Fitter Status : Successful - Tue May  8 17:49:31 2018
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 Revision Name : processor_p5
 Top-level Entity Name : processor_p5
 Family : Cyclone IV E
 Device : EP4CE30F23I7
 Timing Models : Final
-Total logic elements : 1,367 / 28,848 ( 5 % )
+Total logic elements : 1,374 / 28,848 ( 5 % )
     Total combinational functions : 1,233 / 28,848 ( 4 % )
     Dedicated logic registers : 449 / 28,848 ( 2 % )
 Total registers : 449

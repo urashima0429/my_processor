@@ -7,6 +7,7 @@ module control_unit (
 	
 	reg running = 1'b1;
 
+
 	assign register_reset = reset;
 	assign p1 = clock & (phase == 3'b000) & running;
 	assign p2 = clock & (phase == 3'b001) & running;
@@ -15,19 +16,19 @@ module control_unit (
 	assign p5 = clock & (phase == 3'b100) & running;
 
 	always @(posedge clock) begin
+	
 		
 		//start and stop running on exec pushed	
-		if (exec == 1'b1) begin 
+		if (exec == 1'b0) begin 
 			running <= ~running;
 
 		//stop running on reset pushed			
-		end else if (reset == 1'b1) begin 
+		end else if (reset == 1'b0) begin
 			running <= 0;
 			
 		end else if (halt == 1'b1) begin
 			running <= ~running;
-		end
-		
+		end 
 	end
 	
 
