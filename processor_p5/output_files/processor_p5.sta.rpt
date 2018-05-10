@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for processor_p5
-Tue May  8 20:15:02 2018
+Thu May 10 16:19:31 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
 
 
@@ -113,14 +113,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.51        ;
+; Average used               ; 1.57        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  18.2%      ;
-;     Processor 3            ;  16.8%      ;
-;     Processor 4            ;  16.4%      ;
+;     Processor 2            ;  20.4%      ;
+;     Processor 3            ;  18.6%      ;
+;     Processor 4            ;  18.1%      ;
 +----------------------------+-------------+
 
 
@@ -129,7 +129,7 @@ refer to the applicable agreement for further details.
 +------------------+--------+--------------------------+
 ; SDC File Path    ; Status ; Read at                  ;
 +------------------+--------+--------------------------+
-; processor_p5.sdc ; OK     ; Tue May  8 20:14:59 2018 ;
+; processor_p5.sdc ; OK     ; Thu May 10 16:19:29 2018 ;
 +------------------+--------+--------------------------+
 
 
@@ -464,16 +464,16 @@ HTML report is unavailable in plain text report export.
 ; 0.340 ; regfile:inst37|r~113          ; BR:inst19|data_to_ALU[1]       ; clock        ; clock       ; 0.000        ; 2.229      ; 2.755      ;
 ; 0.348 ; regfile:inst37|r~123          ; AR:inst18|data_to_ALU[11]      ; clock        ; clock       ; 0.000        ; 2.229      ; 2.763      ;
 ; 0.350 ; regfile:inst37|r~7            ; BR:inst19|data_to_ALU[7]       ; clock        ; clock       ; 0.000        ; 2.226      ; 2.762      ;
-; 0.359 ; regfile:inst37|r~94           ; AR:inst18|data_to_ALU[14]      ; clock        ; clock       ; 0.000        ; 2.239      ; 2.784      ;
 ; 0.359 ; input_clock:inst10|out[10]    ; MDR:inst33|data_to_regfile[10] ; clock        ; clock       ; 0.000        ; 1.957      ; 2.502      ;
+; 0.359 ; regfile:inst37|r~94           ; AR:inst18|data_to_ALU[14]      ; clock        ; clock       ; 0.000        ; 2.239      ; 2.784      ;
 ; 0.360 ; regfile:inst37|r~123          ; BR:inst19|data_to_ALU[11]      ; clock        ; clock       ; 0.000        ; 2.229      ; 2.775      ;
 ; 0.360 ; regfile:inst37|r~43           ; BR:inst19|data_to_ALU[11]      ; clock        ; clock       ; 0.000        ; 2.222      ; 2.768      ;
 ; 0.362 ; regfile:inst37|r~103          ; AR:inst18|data_to_ALU[7]       ; clock        ; clock       ; 0.000        ; 2.233      ; 2.781      ;
 ; 0.362 ; regfile:inst37|r~19           ; AR:inst18|data_to_ALU[3]       ; clock        ; clock       ; 0.000        ; 2.225      ; 2.773      ;
 ; 0.363 ; regfile:inst37|r~90           ; AR:inst18|data_to_ALU[10]      ; clock        ; clock       ; 0.000        ; 2.229      ; 2.778      ;
 ; 0.370 ; input_clock:inst10|out[11]    ; MDR:inst33|data_to_regfile[11] ; clock        ; clock       ; 0.000        ; 1.957      ; 2.513      ;
-; 0.373 ; regfile:inst37|r~86           ; BR:inst19|data_to_ALU[6]       ; clock        ; clock       ; 0.000        ; 2.229      ; 2.788      ;
 ; 0.373 ; input_clock:inst10|out[5]     ; MDR:inst33|data_to_regfile[5]  ; clock        ; clock       ; 0.000        ; 1.957      ; 2.516      ;
+; 0.373 ; regfile:inst37|r~86           ; BR:inst19|data_to_ALU[6]       ; clock        ; clock       ; 0.000        ; 2.229      ; 2.788      ;
 ; 0.375 ; regfile:inst37|r~53           ; BR:inst19|data_to_ALU[5]       ; clock        ; clock       ; 0.000        ; 2.225      ; 2.786      ;
 ; 0.378 ; regfile:inst37|r~71           ; BR:inst19|data_to_ALU[7]       ; clock        ; clock       ; 0.000        ; 2.226      ; 2.790      ;
 ; 0.379 ; regfile:inst37|r~41           ; BR:inst19|data_to_ALU[9]       ; clock        ; clock       ; 0.000        ; 2.222      ; 2.787      ;
@@ -484,8 +484,8 @@ HTML report is unavailable in plain text report export.
 ; 0.389 ; regfile:inst37|r~45           ; BR:inst19|data_to_ALU[13]      ; clock        ; clock       ; 0.000        ; 2.224      ; 2.799      ;
 ; 0.389 ; regfile:inst37|r~63           ; AR:inst18|data_to_ALU[15]      ; clock        ; clock       ; 0.000        ; 2.231      ; 2.806      ;
 ; 0.392 ; regfile:inst37|r~23           ; AR:inst18|data_to_ALU[7]       ; clock        ; clock       ; 0.000        ; 2.233      ; 2.811      ;
-; 0.396 ; regfile:inst37|r~67           ; BR:inst19|data_to_ALU[3]       ; clock        ; clock       ; 0.000        ; 2.226      ; 2.808      ;
 ; 0.396 ; regfile:inst37|r~76           ; BR:inst19|data_to_ALU[12]      ; clock        ; clock       ; 0.000        ; 2.216      ; 2.798      ;
+; 0.396 ; regfile:inst37|r~67           ; BR:inst19|data_to_ALU[3]       ; clock        ; clock       ; 0.000        ; 2.226      ; 2.808      ;
 ; 0.398 ; regfile:inst37|r~80           ; AR:inst18|data_to_ALU[0]       ; clock        ; clock       ; 0.000        ; 2.233      ; 2.817      ;
 ; 0.399 ; regfile:inst37|r~105          ; AR:inst18|data_to_ALU[9]       ; clock        ; clock       ; 0.000        ; 2.216      ; 2.801      ;
 ; 0.400 ; input_clock:inst10|out[14]    ; MDR:inst33|data_to_regfile[14] ; clock        ; clock       ; 0.000        ; 1.974      ; 2.560      ;
@@ -1882,8 +1882,8 @@ Worst Case Available Settling Time: 344.422 ns
 ; 0.095  ; input_clock:inst10|out[9]  ; MDR:inst33|data_to_regfile[9]  ; clock        ; clock       ; 0.000        ; 0.909      ; 1.086      ;
 ; 0.097  ; input_clock:inst10|out[11] ; MDR:inst33|data_to_regfile[11] ; clock        ; clock       ; 0.000        ; 0.909      ; 1.088      ;
 ; 0.099  ; input_clock:inst10|out[5]  ; MDR:inst33|data_to_regfile[5]  ; clock        ; clock       ; 0.000        ; 0.909      ; 1.090      ;
-; 0.104  ; regfile:inst37|r~44        ; BR:inst19|data_to_ALU[12]      ; clock        ; clock       ; 0.000        ; 1.016      ; 1.202      ;
 ; 0.104  ; input_clock:inst10|out[10] ; MDR:inst33|data_to_regfile[10] ; clock        ; clock       ; 0.000        ; 0.909      ; 1.095      ;
+; 0.104  ; regfile:inst37|r~44        ; BR:inst19|data_to_ALU[12]      ; clock        ; clock       ; 0.000        ; 1.016      ; 1.202      ;
 ; 0.106  ; regfile:inst37|r~28        ; AR:inst18|data_to_ALU[12]      ; clock        ; clock       ; 0.000        ; 1.017      ; 1.205      ;
 ; 0.107  ; regfile:inst37|r~38        ; AR:inst18|data_to_ALU[6]       ; clock        ; clock       ; 0.000        ; 1.016      ; 1.205      ;
 ; 0.107  ; regfile:inst37|r~123       ; AR:inst18|data_to_ALU[11]      ; clock        ; clock       ; 0.000        ; 1.014      ; 1.203      ;
@@ -1933,8 +1933,8 @@ Worst Case Available Settling Time: 344.422 ns
 ; 0.165  ; regfile:inst37|r~93        ; AR:inst18|data_to_ALU[13]      ; clock        ; clock       ; 0.000        ; 1.024      ; 1.271      ;
 ; 0.166  ; regfile:inst37|r~38        ; BR:inst19|data_to_ALU[6]       ; clock        ; clock       ; 0.000        ; 1.010      ; 1.258      ;
 ; 0.166  ; regfile:inst37|r~63        ; AR:inst18|data_to_ALU[15]      ; clock        ; clock       ; 0.000        ; 1.016      ; 1.264      ;
-; 0.167  ; regfile:inst37|r~100       ; AR:inst18|data_to_ALU[4]       ; clock        ; clock       ; 0.000        ; 1.014      ; 1.263      ;
 ; 0.167  ; regfile:inst37|r~76        ; BR:inst19|data_to_ALU[12]      ; clock        ; clock       ; 0.000        ; 1.005      ; 1.254      ;
+; 0.167  ; regfile:inst37|r~100       ; AR:inst18|data_to_ALU[4]       ; clock        ; clock       ; 0.000        ; 1.014      ; 1.263      ;
 ; 0.169  ; regfile:inst37|r~86        ; BR:inst19|data_to_ALU[6]       ; clock        ; clock       ; 0.000        ; 1.014      ; 1.265      ;
 ; 0.169  ; regfile:inst37|r~55        ; AR:inst18|data_to_ALU[7]       ; clock        ; clock       ; 0.000        ; 1.016      ; 1.267      ;
 ; 0.170  ; regfile:inst37|r~79        ; BR:inst19|data_to_ALU[15]      ; clock        ; clock       ; 0.000        ; 1.012      ; 1.264      ;
@@ -2957,7 +2957,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
-    Info: Processing started: Tue May  8 20:14:59 2018
+    Info: Processing started: Thu May 10 16:19:28 2018
 Info: Command: quartus_sta processor_p5 -c processor_p5
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -3086,8 +3086,8 @@ Info (332114): Report Metastability: Found 1 synchronizer chains.
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 959 megabytes
-    Info: Processing ended: Tue May  8 20:15:02 2018
+    Info: Peak virtual memory: 963 megabytes
+    Info: Processing ended: Thu May 10 16:19:31 2018
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
