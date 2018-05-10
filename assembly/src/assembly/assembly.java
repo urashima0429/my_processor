@@ -20,7 +20,8 @@ public class assembly {
 	
 	private static String dir = "/export/home/016/a0165336/project/SIMPLE/assembly/src/";
 	private static String targetFile = "test.simple";
-	private static String resultFile = "test.exe";
+	private static String resultFile = "test.mif";
+
 	
 	
 	private static Path path = FileSystems.getDefault().getPath(dir, targetFile);
@@ -84,9 +85,18 @@ public class assembly {
 			 //read
 			 List<String> lines = Files.lines(path, StandardCharsets.UTF_8).collect(Collectors.toList());
 			 
+			 result.add("WIDTH=16;");
+			 result.add("DEPTH=4096;");
+			 result.add("");
+			 result.add("ADDRESS_RADIX=UNS;");
+			 result.add("DATA_RADIX=BIN;");
+			 result.add("");
+			 result.add("CONTENT BEGIN");
+			 
+			 int counter = 0;
 			 
 			 for(String s : lines) {
-//				 System.out.println(s);
+				 System.out.println(counter);
 				 String[] tmp = s.split(" ", 0);
 				
 				 switch (tmp[0]) {
@@ -105,26 +115,26 @@ public class assembly {
 				 case "XOR":
 				 case "CMP":
 				 case "MOV":
-					 result.add("11" + reg.get(tmp[2]) + reg.get(tmp[1]) + op3.get(tmp[0]) + defaultD);
+					 result.add("        " + counter + "     :   " + "11" + reg.get(tmp[2]) + reg.get(tmp[1]) + op3.get(tmp[0]) + defaultD + ";");
 					 break;
 				
 				 case "SLL":
 				 case "SLR":
 				 case "SRL":
 				 case "SRA":
-					 result.add("11" + defaultReg + reg.get(tmp[1]) + op3.get(tmp[0]) + tmp[2]);
+					result.add("        " + counter + "     :   " + "11" + defaultReg + reg.get(tmp[1]) + op3.get(tmp[0]) + tmp[2] + ";");
 					 break;
 					 
 				 case "IN" :
-					 result.add("11" + defaultReg + reg.get(tmp[1]) +op3.get(tmp[0]) + defaultD );
+					 result.add("        " + counter + "     :   " + "11" + defaultReg + reg.get(tmp[1]) +op3.get(tmp[0]) + defaultD  + ";");
 					 break;
 					 
 				 case "OUT" :
-					 result.add("11" + reg.get(tmp[1]) + defaultReg +op3.get(tmp[0]) + defaultD );
+					 result.add("        " + counter + "     :   " + "11" + reg.get(tmp[1]) + defaultReg +op3.get(tmp[0]) + defaultD  + ";");
 					 break;
 					 
 				 case "HLT" :
-					 result.add("11" + defaultReg + defaultReg + op3.get(tmp[0]) + defaultD );
+					 result.add("        " + counter + "     :   " + "11" + defaultReg + defaultReg + op3.get(tmp[0]) + defaultD + ";");
 					 break;
 					 
 					 
@@ -133,7 +143,7 @@ public class assembly {
 				 ********************************/
 					 
 				 case "LD":
-					 result.add("00" + reg.get(tmp[1]) + reg.get(tmp[2]) + tmp[3]);
+					 result.add("        " + counter + "     :   " + "00" + reg.get(tmp[1]) + reg.get(tmp[2]) + tmp[3] + ";");
 					 break;
 				
 				/********************************
@@ -141,7 +151,7 @@ public class assembly {
 				 ********************************/
 				
 				 case "ST":
-					 result.add("01" + reg.get(tmp[1]) + reg.get(tmp[2]) + tmp[3]);
+					 result.add("        " + counter + "     :   " + "01" + reg.get(tmp[1]) + reg.get(tmp[2]) + tmp[3] + ";");
 					 break;
 				
 				/********************************
@@ -150,21 +160,23 @@ public class assembly {
 						 
 				 case "LI":
 				 case "B":
-					 result.add("10" + op2.get(tmp[0]) + reg.get(tmp[1]) + tmp[2]);
+					 result.add("        " + counter + "     :   " + "10" + op2.get(tmp[0]) + reg.get(tmp[1]) + tmp[2] + ";");
 					 break;
 					
 				 case "BE":
 				 case "BLT":
 				 case "BLE":
 				 case "BNE":
-					 result.add("10" + op2.get(tmp[0]) + cond.get(tmp[0]) + tmp[1]);
+					 result.add("        " + counter + "     :   " + "10" + op2.get(tmp[0]) + cond.get(tmp[0]) + tmp[1] + ";");
 					 break;
 					 
 				 default:
 					 System.out.println("error:" + tmp[0]);
 				 }
-				 
+				 counter = counter + 1;
 			 }
+			 result.add("        [" + counter + "..4095]  :   0000000000000000;");
+			 result.add("END;");
 			 
 			 //create
 			 if (!Files.exists(Paths.get(dir, resultFile))) {
