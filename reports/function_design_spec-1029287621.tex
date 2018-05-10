@@ -51,33 +51,130 @@
 \maketitle
 \clearpage
 
-\begin{figure}[htbp]
-  \begin{center}
-    \includegraphics[width=60mm]{figures/Sample.png}
-    \caption{コンポーネント分割図}
-  \end{center}
-\end{figure}
+\section{コンポーネントの分割について}
 
+以下のように大まかに分割している（担当）
+\begin{itemize}
+\item 制御回路(宮城)
+\item PC周辺（宮城）
+\item レジスタ・ファイル周辺（原口）
+\item 演算器 (AU, LU, シフタ)（原口） 
+\item バス・インターフェイス（原口）
+\end{itemize}
 
-\section{コンポーネント１}
+以下に制御回路とPC周辺の機能設計仕様書を示す。
+
+\section{制御回路}
 	\subsection{外部仕様}
         \subsubsection{特徴}
+        	SIMPLEアーキテクチャで用いたものと同じく、プロセッサー全体の制御を行う。入力exec, reset信号を受け取り、各レジスタに的確な信号を送ることで、フェーズの管理、実行、停止、初期化を行うユニット。
+            
         \subsubsection{構造}
+        	ユーザーからのexec,reset入力に対して、フェーズ信号出力の停止・再開、レジスタの初期化などを行う。また、関数呼び出し時など、ユーザー入力だけでなく自身からのreset入力にたいしてもレジスタの初期化を行う。
+            \begin{itemize}
+            \item 入力:clock(1bit), exec(1bit), reset(1bit)
+            \item 出力:register\_clock(1bit), register\_reset(1bit)
+            \end{itemize}
+
         \subsubsection{動作}
+        	内部変数running が正の時
+            \begin{itemize}
+        		\item clockの立ち上がりに同期してregister\_clockを立ち上げる
+            	\item execの立ち上がりに同期して内部変数runningを負にする
+                \item resetの立ち上がりに同期してregister\_reset信号を立ち上げる
+            \end{itemize}
+            
+            内部変数running が負の時
+            \begin{itemize}
+            	\item execの立ち上がりに同期して内部変数runningを正にする
+                \item resetの立ち上がりに同期してregister\_reset信号を立ち上げる
+            \end{itemize}
 
     \subsection{内部仕様}
         \subsubsection{特徴}
+			SIMPLEアーキテクチャで用いたものと同じく、プロセッサー全体の制御を行う。入力exec, reset信号を受け取り、各レジスタに的確な信号を送ることで、フェーズの管理、実行、停止、初期化を行うユニット。パイプライン化するため、フェーズの管理が必要なくなり、より簡潔となっている。
+            
         \subsubsection{構造}
+        	単一ユニットで作成するため、ブロック図は省略
+            
         \subsubsection{動作}
+        	パイプライン化するため、任意のフェーズにおいて、以下の同一の動作をする。\\
+            内部変数running が正の時
+            \begin{itemize}
+        		\item clockの立ち上がりに同期してregister\_clockを立ち上げる
+            	\item execの立ち上がりに同期して内部変数runningを負にする
+                \item resetの立ち上がりに同期してregister\_reset信号を立ち上げる
+            \end{itemize}
+            
+            内部変数running が負の時
+            \begin{itemize}
+            	\item execの立ち上がりに同期して内部変数runningを正にする
+                \item resetの立ち上がりに同期してregister\_reset信号を立ち上げる
+            \end{itemize}
+
+\section{PC周辺}
+	\subsection{外部仕様}
+        \subsubsection{特徴}
+        	SIMPLEアーキテクチャで用いたものと同じく、実行中の命令のメモリアドレスを保持する。
+            
+            clock入力に同期してPCを更新する。その際、\\
+            \begin{itemize}
+            \item 分岐命令の際は、該当のアドレスへ更新する。
+            \item 関数呼び出しの際は、現在のアドレスをレジスタに格納してから、該当のアドレスへ更新する。
+            \item 関数戻りの際は、指定レジスタのアドレスへ更新する。
+			\item それら以外の際は、PC + 1へ更新する。
+            \end{itemize}
         
-\section{コンポーネント１}
-	\subsection{外部仕様}
-        \subsubsection{特徴}
         \subsubsection{構造}
-        \subsubsection{動作}    
-    
+        
+            入力
+            \begin{itemize}
+            \item clock(1bit)
+            \item reset(1bit)
+            \item data0(16bit)(=adder通過後のPC+1の値)
+            \item data1(16bit)(=MDRからの戻り値)
+            \item order1(1bit)(=switcherからの分岐命令時の値)
+            \item order2(1bit)(=switcherから関数呼び出し時の値)
+            \item order3(1bit)(=switcherから関数戻り時の値)
+            \end{itemize}
+            
+            出力
+            \begin{itemize}
+            \item out(PC)(16bit)
+            \item out(adder)(16bit)
+            \end{itemize}
+            
+        \subsubsection{動作}
+        clock入力に同期してPCのメモリアドレスを更新する。
+        \begin{itemize}
+        \item order1が正の時 PC = data1
+		\item order2が正の時 Rd = PC + 1 , PC = data1
+        \item order3が正の時 PC = Rd
+        \item それ以外の時    PC = PC + 1
+    	\end{itemize}
+        
     \subsection{内部仕様}
+
         \subsubsection{特徴}
+        SIMPLEアーキテクチャで用いたものと同じく、実行中の命令のメモリアドレスを保持する。                
+            clock入力に同期してPCを更新する。その際、\\
+            \begin{itemize}
+            \item 分岐命令の際は、該当のアドレスへ更新する。
+            \item 関数呼び出しの際は、現在のアドレスをレジスタに格納してから、該当のアドレスへ更新する。
+            \item 関数戻りの際は、指定レジスタのアドレスへ更新する。
+			\item それら以外の際は、PC + 1へ更新する。
+            \end{itemize}
+        
         \subsubsection{構造}
+        
+        
         \subsubsection{動作}    
+        clock入力に同期してPCのメモリアドレスを更新する。
+        \begin{itemize}
+        \item order1が正の時 PC = data1
+		\item order2が正の時 Rd = PC + 1 , PC = data1
+        \item order3が正の時 PC = Rd
+        \item それ以外の時    PC = PC + 1
+    	\end{itemize}
+        
 \end{document}
