@@ -113,7 +113,6 @@ clock => p3.IN1
 clock => p4.IN1
 clock => p5.IN1
 clock => running.CLK
-reset => running.OUTPUTSELECT
 reset => register_reset.DATAIN
 exec => running.OUTPUTSELECT
 phase[0] => Equal0.IN2

@@ -23,8 +23,8 @@ module control_unit (
 			running <= ~running;
 
 		//stop running on reset pushed			
-		end else if (reset == 1'b0) begin
-			running <= 0;
+		//end else if (reset == 1'b0) begin
+			//running <= 0;
 			
 		end else if (halt == 1'b1) begin
 			running <= ~running;
