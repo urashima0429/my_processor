@@ -1,0 +1,47 @@
+Quartus Prime Archive log --	/export/home/016/a0165336/project/SIMPLE/processor_p5/processor_p5_tmp_archive.qarlog
+
+Archive:	/export/home/016/a0165336/project/SIMPLE/processor_p5/processor_p5_tmp_archive.qar
+Date:		Fri May 11 14:52:53 2018
+Quartus Prime		17.1.0 Build 590 10/25/2017 SJ Standard Edition
+
+	=========== Files Selected: ===========
+/export/home/016/a0165336/project/SIMPLE/ALU/ALU.v
+/export/home/016/a0165336/project/SIMPLE/AR/AR.v
+/export/home/016/a0165336/project/SIMPLE/BR/BR.v
+/export/home/016/a0165336/project/SIMPLE/DR/DR.v
+/export/home/016/a0165336/project/SIMPLE/LED/LED.v
+/export/home/016/a0165336/project/SIMPLE/LED_simple/LED_simple.v
+/export/home/016/a0165336/project/SIMPLE/MDR/MDR.v
+/export/home/016/a0165336/project/SIMPLE/SZCV/SZCV.v
+/export/home/016/a0165336/project/SIMPLE/adder_for_program_counter/adder_for_program_counter.v
+/export/home/016/a0165336/project/SIMPLE/addr_select/addr_select.v
+/export/home/016/a0165336/project/SIMPLE/adjust_seven_segment/adjust_seven_segment.v
+/export/home/016/a0165336/project/SIMPLE/control_unit/control_unit.v
+/export/home/016/a0165336/project/SIMPLE/data_selecter/data_selecter.v
+/export/home/016/a0165336/project/SIMPLE/data_selecter_controller/data_selecter_controller.v
+/export/home/016/a0165336/project/SIMPLE/decoder/decoder.v
+/export/home/016/a0165336/project/SIMPLE/eight_to_sixteen/eight_to_sixteen.v
+/export/home/016/a0165336/project/SIMPLE/instruction_register/instruction_register.v
+/export/home/016/a0165336/project/SIMPLE/main_memory/memory_RAM.v
+/export/home/016/a0165336/project/SIMPLE/phase_counter/phase_counter.v
+/export/home/016/a0165336/project/SIMPLE/processor_p5/output_files/processor_p5.mif
+/export/home/016/a0165336/project/SIMPLE/processor_p5/output_files/processor_p5.v
+/export/home/016/a0165336/project/SIMPLE/processor_p5/processor_p5.bdf
+/export/home/016/a0165336/project/SIMPLE/processor_p5/processor_p5.qpf
+/export/home/016/a0165336/project/SIMPLE/processor_p5/processor_p5.qsf
+/export/home/016/a0165336/project/SIMPLE/processor_p5/processor_p5.sdc
+/export/home/016/a0165336/project/SIMPLE/program_counter/program_counter.v
+/export/home/016/a0165336/project/SIMPLE/regfile/regfile.v
+/export/home/016/a0165336/project/SIMPLE/sixteen_to_twelve/sixteen_to_twelve.v
+/export/home/016/a0165336/project/SIMPLE/write_address/write_address.v
+/home/quartus/intelFPGA/17.1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 30 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Fri May 11 14:52:55 2018
+Source archive file:	/export/home/016/a0165336/project/SIMPLE/processor_p5/processor_p5_tmp_archive.qar
+Archive was extracted into	/export/home/016/a0165336/project/SIMPLE/processor_final2/
+		 - successfully.
