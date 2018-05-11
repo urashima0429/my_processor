@@ -238,6 +238,20 @@ module ALU (
 				C = C_in;
 				V = V_in;
 				HLT = 1'b0;
+			end else if(op2 == 3'b101) begin
+				out = in1;
+				S = S_in;
+				Z = Z_in;
+				C = C_in;
+				V = V_in;
+				HLT = 1'b0;
+			end else if (op2 == 3'b110) begin
+				out = in1 + in2;
+				S = S_in;
+				Z = Z_in;
+				C = C_in;
+				V = V_in;
+				HLT = 1'b0;
 			end else if(op2 == 3'b111) begin
 				if(cond == 3'b000) begin
 					if(Z_in == 1'b1) begin
