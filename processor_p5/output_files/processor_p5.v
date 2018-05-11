@@ -3,7 +3,7 @@ module input_clock(
 	input clock,
 	output reg [15:0] out);
 	
-	always @(posedge clock) begin
+	always @(negedge clock) begin
 		out <= in;
 	end
 	

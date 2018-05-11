@@ -85,7 +85,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 4064 712 4232 728)
+	(rect 4024 712 4192 728)
 	(text "INPUT" (rect 125 0 154 9)(font "Arial" (font_size 6)))
 	(text "in[15..0]" (rect 5 0 42 10)(font "Arial" ))
 	(pt 168 8)
@@ -1344,7 +1344,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 2336 432 2552 576)
+	(rect 2344 440 2560 584)
 	(text "write_address" (rect 5 0 72 10)(font "Arial" ))
 	(text "inst44" (rect 8 128 39 140)(font "Intel Clear" ))
 	(port
@@ -1426,7 +1426,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 4248 688 4416 768)
+	(rect 4256 688 4424 768)
 	(text "input_clock" (rect 5 0 59 10)(font "Arial" ))
 	(text "inst10" (rect 8 64 39 76)(font "Intel Clear" ))
 	(port
@@ -1824,10 +1824,6 @@ refer to the applicable agreement for further details.
 	(pt 4008 528)
 )
 (connector
-	(pt 4008 528)
-	(pt 4008 824)
-)
-(connector
 	(pt 3984 544)
 	(pt 3984 840)
 )
@@ -2106,16 +2102,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2552 464)
-	(pt 2584 464)
-	(bus)
-)
-(connector
-	(pt 2584 464)
-	(pt 2584 608)
-	(bus)
-)
-(connector
 	(pt 2584 608)
 	(pt 2352 608)
 	(bus)
@@ -2131,85 +2117,12 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2552 480)
-	(pt 2568 480)
-)
-(connector
-	(pt 2568 480)
-	(pt 2568 632)
-)
-(connector
 	(pt 2568 632)
 	(pt 2368 632)
 )
 (connector
-	(pt 2192 464)
-	(pt 2336 464)
-	(bus)
-)
-(connector
-	(pt 2192 240)
-	(pt 2192 464)
-	(bus)
-)
-(connector
-	(pt 2192 464)
-	(pt 2192 680)
-	(bus)
-)
-(connector
 	(pt 2216 336)
 	(pt 2216 744)
-	(bus)
-)
-(connector
-	(pt 2336 480)
-	(pt 2280 480)
-	(bus)
-)
-(connector
-	(pt 2280 480)
-	(pt 2280 712)
-	(bus)
-)
-(connector
-	(pt 2152 712)
-	(pt 2280 712)
-	(bus)
-)
-(connector
-	(pt 2280 712)
-	(pt 2392 712)
-	(bus)
-)
-(connector
-	(pt 2336 496)
-	(pt 2304 496)
-	(bus)
-)
-(connector
-	(pt 2304 696)
-	(pt 2304 496)
-	(bus)
-)
-(connector
-	(pt 2160 696)
-	(pt 2304 696)
-	(bus)
-)
-(connector
-	(pt 2304 696)
-	(pt 2392 696)
-	(bus)
-)
-(connector
-	(pt 2232 512)
-	(pt 2336 512)
-	(bus)
-)
-(connector
-	(pt 2232 512)
-	(pt 2232 728)
 	(bus)
 )
 (connector
@@ -2282,11 +2195,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 2232 256)
 	(pt 2232 320)
-	(bus)
-)
-(connector
-	(pt 2232 320)
-	(pt 2232 512)
 	(bus)
 )
 (connector
@@ -2492,10 +2400,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2336 528)
-	(pt 2320 528)
-)
-(connector
 	(pt 1368 960)
 	(pt 1408 960)
 )
@@ -2551,28 +2455,6 @@ refer to the applicable agreement for further details.
 	(pt 4520 840)
 	(pt 4424 840)
 	(bus)
-)
-(connector
-	(pt 4424 840)
-	(pt 4424 720)
-	(bus)
-)
-(connector
-	(pt 4248 720)
-	(pt 4232 720)
-	(bus)
-)
-(connector
-	(pt 4248 736)
-	(pt 4128 736)
-)
-(connector
-	(pt 4128 736)
-	(pt 4128 1496)
-)
-(connector
-	(pt 4128 1496)
-	(pt 4208 1496)
 )
 (connector
 	(pt 3176 104)
@@ -2648,31 +2530,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1456 1496)
-	(pt 2320 1496)
-)
-(connector
-	(pt 2320 1496)
-	(pt 4128 1496)
-)
-(connector
-	(pt 2392 680)
-	(pt 2320 680)
-)
-(connector
-	(pt 2320 528)
-	(pt 2320 680)
-)
-(connector
-	(pt 2320 680)
-	(pt 2320 1496)
-)
-(connector
-	(pt 4416 720)
-	(pt 4424 720)
-	(bus)
-)
-(connector
 	(pt 4712 816)
 	(pt 4792 816)
 	(bus)
@@ -2715,14 +2572,6 @@ refer to the applicable agreement for further details.
 	(pt 1008 352)
 )
 (connector
-	(pt 1248 368)
-	(pt 1240 368)
-)
-(connector
-	(pt 1264 384)
-	(pt 1240 384)
-)
-(connector
 	(pt 1264 160)
 	(pt 1264 384)
 )
@@ -2748,24 +2597,12 @@ refer to the applicable agreement for further details.
 	(pt 1280 400)
 )
 (connector
-	(pt 1280 400)
-	(pt 2728 400)
-)
-(connector
 	(pt 1240 416)
 	(pt 1304 416)
 )
 (connector
-	(pt 1304 416)
-	(pt 4008 416)
-)
-(connector
 	(pt 1240 432)
 	(pt 1320 432)
-)
-(connector
-	(pt 1320 432)
-	(pt 4768 432)
 )
 (connector
 	(pt 1008 352)
@@ -2792,6 +2629,168 @@ refer to the applicable agreement for further details.
 	(pt 4200 224)
 	(pt 4312 224)
 	(bus)
+)
+(connector
+	(pt 1320 432)
+	(pt 4768 432)
+)
+(connector
+	(pt 1304 416)
+	(pt 4008 416)
+)
+(connector
+	(pt 1280 400)
+	(pt 2728 400)
+)
+(connector
+	(pt 1240 384)
+	(pt 1264 384)
+)
+(connector
+	(pt 1240 368)
+	(pt 1248 368)
+)
+(connector
+	(pt 2584 472)
+	(pt 2560 472)
+	(bus)
+)
+(connector
+	(pt 2584 608)
+	(pt 2584 472)
+	(bus)
+)
+(connector
+	(pt 2568 488)
+	(pt 2560 488)
+)
+(connector
+	(pt 2568 632)
+	(pt 2568 488)
+)
+(connector
+	(pt 2280 712)
+	(pt 2280 488)
+	(bus)
+)
+(connector
+	(pt 2304 696)
+	(pt 2304 504)
+	(bus)
+)
+(connector
+	(pt 2312 680)
+	(pt 2312 536)
+)
+(connector
+	(pt 2192 240)
+	(pt 2192 472)
+	(bus)
+)
+(connector
+	(pt 2192 472)
+	(pt 2192 680)
+	(bus)
+)
+(connector
+	(pt 2152 712)
+	(pt 2280 712)
+	(bus)
+)
+(connector
+	(pt 2280 712)
+	(pt 2392 712)
+	(bus)
+)
+(connector
+	(pt 2160 696)
+	(pt 2304 696)
+	(bus)
+)
+(connector
+	(pt 2304 696)
+	(pt 2392 696)
+	(bus)
+)
+(connector
+	(pt 2232 320)
+	(pt 2232 520)
+	(bus)
+)
+(connector
+	(pt 2232 520)
+	(pt 2232 728)
+	(bus)
+)
+(connector
+	(pt 2192 472)
+	(pt 2344 472)
+	(bus)
+)
+(connector
+	(pt 2280 488)
+	(pt 2344 488)
+	(bus)
+)
+(connector
+	(pt 2304 504)
+	(pt 2344 504)
+	(bus)
+)
+(connector
+	(pt 2232 520)
+	(pt 2344 520)
+	(bus)
+)
+(connector
+	(pt 2312 536)
+	(pt 2344 536)
+)
+(connector
+	(pt 2360 680)
+	(pt 2360 1496)
+)
+(connector
+	(pt 2312 680)
+	(pt 2360 680)
+)
+(connector
+	(pt 2360 680)
+	(pt 2392 680)
+)
+(connector
+	(pt 1456 1496)
+	(pt 2360 1496)
+)
+(connector
+	(pt 4008 528)
+	(pt 4008 824)
+)
+(connector
+	(pt 4424 840)
+	(pt 4424 720)
+	(bus)
+)
+(connector
+	(pt 4120 1496)
+	(pt 4120 736)
+)
+(connector
+	(pt 2360 1496)
+	(pt 4120 1496)
+)
+(connector
+	(pt 4120 1496)
+	(pt 4208 1496)
+)
+(connector
+	(pt 4192 720)
+	(pt 4256 720)
+	(bus)
+)
+(connector
+	(pt 4120 736)
+	(pt 4256 736)
 )
 (junction (pt 752 312))
 (junction (pt 776 312))
@@ -2821,13 +2820,13 @@ refer to the applicable agreement for further details.
 (junction (pt 2232 320))
 (junction (pt 3064 512))
 (junction (pt 2256 -256))
-(junction (pt 2192 464))
 (junction (pt 2280 712))
 (junction (pt 2304 696))
-(junction (pt 2232 512))
 (junction (pt 1112 616))
 (junction (pt 1456 1080))
 (junction (pt 3960 568))
-(junction (pt 4128 1496))
-(junction (pt 2320 1496))
-(junction (pt 2320 680))
+(junction (pt 2192 472))
+(junction (pt 2232 520))
+(junction (pt 2360 680))
+(junction (pt 2360 1496))
+(junction (pt 4120 1496))

@@ -7,7 +7,7 @@ module write_address(
 	output reg [2:0] write_add,
 	output reg writeOrder);
 	
-	always @(posedge clock) begin // always @* begin
+	always @(negedge clock) begin//@(posedge clock) begin // always @* begin
 		case (op1)
 			0: write_add <= Ra_op2;
 			1: write_add <= Rd_Rb; // don't care
