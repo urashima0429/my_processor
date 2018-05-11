@@ -75,6 +75,10 @@ module write_address(
 		end else if(op1 == 2'b10) begin
 			if(Ra_op2 == 3'b000) begin
 				writeOrder <= 1'b1;
+			end else if (Ra_op2 == 3'b001) begin
+				writeOrder <= 1'b1;
+			end else if (Ra_op2 == 3'b010) begin
+				writeOrder <= 1'b1;
 			end else begin
 				writeOrder <= 1'b0;
 			end

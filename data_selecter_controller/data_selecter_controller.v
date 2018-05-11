@@ -32,6 +32,20 @@ module data_selecter_controller(
 				switch4 <= 0;
 				switch5 <= 0;
 				switch6 <= 0;
+			end else if (op[13:11] == 3'b001) begin
+				switch1 <= 0;
+				switch2 <= 0; 
+				switch3 <= 1;
+				switch4 <= 0;
+				switch5 <= 0;
+				switch6 <= 0;
+			end else if(op[13:11] == 3'b010) begin
+				switch1 <= 0;
+				switch2 <= 0; 
+				switch3 <= 1;
+				switch4 <= 0;
+				switch5 <= 0;
+				switch6 <= 0;
 			//Immediate load unconditional branch
 			end else begin
 				switch1 <= 1;
