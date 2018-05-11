@@ -7,7 +7,7 @@ module MDR (
 		if (reset == 1'b0) begin
 			data_to_regfile <= 16'b0000000000000000;
 		end else if (p5 == 1'b1) begin
-			data_to_regfile <= data_from_memory;
+			data_to_regfile <= data_from_memory;//coment
 		end
 	end
 	

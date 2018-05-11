@@ -1426,35 +1426,6 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 4352 1128 4520 1208)
-	(text "input_clock" (rect 5 0 59 10)(font "Arial" ))
-	(text "inst10" (rect 8 64 39 76)(font "Intel Clear" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "in[15..0]" (rect 0 0 37 10)(font "Arial" ))
-		(text "in[15..0]" (rect 21 27 58 37)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "clock" (rect 0 0 25 10)(font "Arial" ))
-		(text "clock" (rect 21 43 46 53)(font "Arial" ))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 168 32)
-		(output)
-		(text "out[15..0]" (rect 0 0 44 10)(font "Arial" ))
-		(text "out[15..0]" (rect 110 27 154 37)(font "Arial" ))
-		(line (pt 168 32)(pt 152 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 152 64))
-	)
-)
-(symbol
 	(rect 1144 760 1344 904)
 	(text "control_unit" (rect 5 0 61 10)(font "Arial" ))
 	(text "inst15" (rect 8 128 39 140)(font "Intel Clear" ))
@@ -2317,19 +2288,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 4352 1160)
-	(pt 4336 1160)
-	(bus)
-)
-(connector
-	(pt 4352 1176)
-	(pt 4232 1176)
-)
-(connector
-	(pt 4232 1176)
-	(pt 4232 1936)
-)
-(connector
 	(pt 3280 544)
 	(pt 2200 544)
 )
@@ -2395,11 +2353,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 2496 1120)
 	(pt 2424 1120)
-)
-(connector
-	(pt 4520 1160)
-	(pt 4528 1160)
-	(bus)
 )
 (connector
 	(pt 4816 1256)
@@ -2693,22 +2646,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 4232 1936)
-	(pt 4312 1936)
-)
-(connector
-	(pt 1560 1936)
-	(pt 2424 1936)
-)
-(connector
-	(pt 2424 968)
-	(pt 2424 1120)
-)
-(connector
-	(pt 2424 1120)
-	(pt 2424 1936)
-)
-(connector
 	(pt 1424 992)
 	(pt 1440 992)
 	(bus)
@@ -2747,10 +2684,6 @@ refer to the applicable agreement for further details.
 	(pt 1424 872)
 )
 (connector
-	(pt 1424 872)
-	(pt 4872 872)
-)
-(connector
 	(pt 4064 1000)
 	(pt 4064 1008)
 	(bus)
@@ -2780,13 +2713,34 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 2424 1936)
-	(pt 4232 1936)
-)
-(connector
 	(pt 4064 1008)
 	(pt 4064 2000)
 	(bus)
+)
+(connector
+	(pt 4336 1160)
+	(pt 4528 1160)
+	(bus)
+)
+(connector
+	(pt 1424 872)
+	(pt 4872 872)
+)
+(connector
+	(pt 1560 1936)
+	(pt 2424 1936)
+)
+(connector
+	(pt 2424 1936)
+	(pt 4312 1936)
+)
+(connector
+	(pt 2424 968)
+	(pt 2424 1120)
+)
+(connector
+	(pt 2424 1120)
+	(pt 2424 1936)
 )
 (junction (pt 856 752))
 (junction (pt 2832 952))
@@ -2816,13 +2770,12 @@ refer to the applicable agreement for further details.
 (junction (pt 1216 992))
 (junction (pt 1560 1520))
 (junction (pt 2336 760))
-(junction (pt 4232 1936))
 (junction (pt 1920 1120))
-(junction (pt 2424 1120))
-(junction (pt 2424 1936))
 (junction (pt 1440 992))
 (junction (pt 1352 808))
 (junction (pt 1384 840))
 (junction (pt 1408 856))
 (junction (pt 1424 872))
 (junction (pt 4064 1008))
+(junction (pt 2424 1936))
+(junction (pt 2424 1120))
