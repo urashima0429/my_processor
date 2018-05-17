@@ -4,8 +4,9 @@ module write_address(
 	input [3:0] op3,
 	input clock,
 	//input [2:0] phase,
-	output reg [2:0] write_add,
-	output reg writeOrder);
+	output reg [2:0] write_add
+	//output reg writeOrder
+	);
 	
 	always @(negedge clock) begin//@(posedge clock) begin // always @* begin
 		case (op1)
@@ -17,7 +18,7 @@ module write_address(
 		endcase
 		
 		
-		
+		/*
 		if(op1 == 2'b11) begin
 			case (op3)
 				0: writeOrder <= 1'b1;
@@ -54,7 +55,7 @@ module write_address(
 			end
 		end else begin
 			writeOrder <= 1'b1;
-		end
+		end*/
 		
 	end
 		

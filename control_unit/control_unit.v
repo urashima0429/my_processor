@@ -3,6 +3,7 @@ module control_unit (
 	input [2:0] phase,
 	input halt,
 	output register_reset,
+	output controlled_clock,
 	output p1, p2, p3, p4, p5);
 	
 	reg running = 1'b1;
@@ -14,6 +15,8 @@ module control_unit (
 	assign p3 = clock & (phase == 3'b010) & running;
 	assign p4 = clock & (phase == 3'b011) & running;
 	assign p5 = clock & (phase == 3'b100) & running;
+	
+	assign controlled_clock = clock & running;
 
 	always @(posedge clock) begin
 	

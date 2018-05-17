@@ -1,4 +1,4 @@
-module pc_regi (
+module pc_regi_pos (
 	input clock, 
 	input reset, 
 	input [15:0] in,
@@ -7,7 +7,7 @@ module pc_regi (
 	always @(posedge clock or negedge reset) begin
 		if (reset == 1'b0) begin
 			out <= 16'b0000000000000000;
-		end else if (clock == 1'b0) begin
+		end else if (clock == 1'b1) begin
 			out <= in;
 		end
 	end
