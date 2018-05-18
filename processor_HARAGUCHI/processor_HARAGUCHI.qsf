@@ -53,28 +53,6 @@ set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VERILOG_FILE ../LED_simple/LED_simple.v
-set_global_assignment -name VERILOG_FILE ../write_address/write_address.v
-set_global_assignment -name VERILOG_FILE ../SZCV/SZCV.v
-set_global_assignment -name VERILOG_FILE ../sixteen_to_twelve/sixteen_to_twelve.v
-set_global_assignment -name VERILOG_FILE ../regfile/regfile.v
-set_global_assignment -name VERILOG_FILE ../program_counter/program_counter.v
-set_global_assignment -name VERILOG_FILE ../phase_counter/phase_counter.v
-set_global_assignment -name VERILOG_FILE ../MDR/MDR.v
-set_global_assignment -name VERILOG_FILE ../main_memory/memory_RAM.v
-set_global_assignment -name VERILOG_FILE ../LED/LED.v
-set_global_assignment -name VERILOG_FILE ../instruction_register/instruction_register.v
-set_global_assignment -name VERILOG_FILE ../eight_to_sixteen/eight_to_sixteen.v
-set_global_assignment -name VERILOG_FILE ../DR/DR.v
-set_global_assignment -name VERILOG_FILE ../decoder/decoder.v
-set_global_assignment -name VERILOG_FILE ../data_selecter_controller/data_selecter_controller.v
-set_global_assignment -name VERILOG_FILE ../data_selecter/data_selecter.v
-set_global_assignment -name VERILOG_FILE ../control_unit/control_unit.v
-set_global_assignment -name VERILOG_FILE ../BR/BR.v
-set_global_assignment -name VERILOG_FILE ../AR/AR.v
-set_global_assignment -name VERILOG_FILE ../ALU/ALU.v
-set_global_assignment -name VERILOG_FILE ../adder_for_program_counter/adder_for_program_counter.v
-set_global_assignment -name BDF_FILE processor_HARAGUCHI.bdf
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 
@@ -174,6 +152,29 @@ set_location_assignment PIN_V10 -to LED[3]
 set_location_assignment PIN_AA9 -to LED[2]
 set_location_assignment PIN_U10 -to LED[1]
 set_location_assignment PIN_T9 -to LED[0]
+set_global_assignment -name VERILOG_FILE ../fowarding_unit/fowarding_unit.v
+set_global_assignment -name VERILOG_FILE ../LED_simple/LED_simple.v
+set_global_assignment -name VERILOG_FILE ../write_address/write_address.v
+set_global_assignment -name VERILOG_FILE ../SZCV/SZCV.v
+set_global_assignment -name VERILOG_FILE ../sixteen_to_twelve/sixteen_to_twelve.v
+set_global_assignment -name VERILOG_FILE ../regfile/regfile.v
+set_global_assignment -name VERILOG_FILE ../program_counter/program_counter.v
+set_global_assignment -name VERILOG_FILE ../phase_counter/phase_counter.v
+set_global_assignment -name VERILOG_FILE ../MDR/MDR.v
+set_global_assignment -name VERILOG_FILE ../main_memory/memory_RAM.v
+set_global_assignment -name VERILOG_FILE ../LED/LED.v
+set_global_assignment -name VERILOG_FILE ../instruction_register/instruction_register.v
+set_global_assignment -name VERILOG_FILE ../eight_to_sixteen/eight_to_sixteen.v
+set_global_assignment -name VERILOG_FILE ../DR/DR.v
+set_global_assignment -name VERILOG_FILE ../decoder/decoder.v
+set_global_assignment -name VERILOG_FILE ../data_selecter_controller/data_selecter_controller.v
+set_global_assignment -name VERILOG_FILE ../data_selecter/data_selecter.v
+set_global_assignment -name VERILOG_FILE ../control_unit/control_unit.v
+set_global_assignment -name VERILOG_FILE ../BR/BR.v
+set_global_assignment -name VERILOG_FILE ../AR/AR.v
+set_global_assignment -name VERILOG_FILE ../ALU/ALU.v
+set_global_assignment -name VERILOG_FILE ../adder_for_program_counter/adder_for_program_counter.v
+set_global_assignment -name BDF_FILE processor_HARAGUCHI.bdf
 set_global_assignment -name VERILOG_FILE PC+1register.v
 set_global_assignment -name VERILOG_FILE pc_regi.v
 set_global_assignment -name VERILOG_FILE code_regi.v
@@ -183,4 +184,8 @@ set_global_assignment -name VERILOG_FILE IDEX_regi.v
 set_global_assignment -name VERILOG_FILE EXMEM_regi.v
 set_global_assignment -name VERILOG_FILE MEMWB.v
 set_global_assignment -name VERILOG_FILE writeAddr.v
+set_global_assignment -name VERILOG_FILE sixteen_code_regi.v
+set_location_assignment PIN_E9 -to A
+set_location_assignment PIN_F9 -to B
+set_global_assignment -name VERILOG_FILE processor_HARAGUCHI.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
