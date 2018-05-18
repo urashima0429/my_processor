@@ -7,7 +7,7 @@ module pc_regi (
 	always @(posedge clock or negedge reset) begin
 		if (reset == 1'b0) begin
 			out <= 16'b0000000000000000;
-		end else if (clock == 1'b0) begin
+		end else if (clock == 1'b1) begin
 			out <= in;
 		end
 	end

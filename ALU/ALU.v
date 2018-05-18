@@ -217,8 +217,29 @@ module ALU (
 			C = C_value(in1, in2, d);
 			V = V_value(in1, in2, d);
 			HLT = HLT_value(opcode);
+		end else if(op1 == 2'b00) begin
+				out = in1 + in2;
+				S = S_in;
+				Z = Z_in;
+				C = C_in;
+				V = V_in;
+				HLT = 1'b0;
+		end else if(op1 == 2'b01) begin
+				out = in1 + in2;
+				S = S_in;
+				Z = Z_in;
+				C = C_in;
+				V = V_in;
+				HLT = 1'b0;
 		end else if(op1 == 2'b10) begin
-			if (op2 == 3'b001) begin
+			if (op2 == 3'b000) begin
+				out = in2;
+				S = S_in;
+				Z = Z_in;
+				C = C_in;
+				V = V_in;
+				HLT = 1'b0;
+			end else if (op2 == 3'b001) begin
 				out = in1 + in2;
 				S = plus_result[16];
 				Z = ((in1 + in2) == 16'b0000000000000000);
