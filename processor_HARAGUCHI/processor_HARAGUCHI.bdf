@@ -229,7 +229,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 3752 176 3928 192)
+	(rect 4040 176 4216 192)
 	(text "OUTPUT" (rect 1 0 41 9)(font "Arial" (font_size 6)))
 	(text "LED[31..0]" (rect 90 0 140 10)(font "Arial" ))
 	(pt 0 8)
@@ -2598,6 +2598,35 @@ refer to the applicable agreement for further details.
 		(rectangle (rect 16 16 296 192))
 	)
 )
+(symbol
+	(rect 3872 152 4040 232)
+	(text "LED_simple" (rect 5 0 64 10)(font "Arial" ))
+	(text "inst15" (rect 8 64 39 76)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "in[15..0]" (rect 0 0 37 10)(font "Arial" ))
+		(text "in[15..0]" (rect 21 27 58 37)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "out[31..0]" (rect 0 0 44 10)(font "Arial" ))
+		(text "out[31..0]" (rect 110 27 154 37)(font "Arial" ))
+		(line (pt 168 32)(pt 152 32)(line_width 3))
+	)
+	(port
+		(pt 168 48)
+		(output)
+		(text "selecter" (rect 0 0 38 10)(font "Arial" ))
+		(text "selecter" (rect 115 43 153 53)(font "Arial" ))
+		(line (pt 168 48)(pt 152 48))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 64))
+	)
+)
 (connector
 	(pt 3944 1280)
 	(pt 3976 1280)
@@ -3177,11 +3206,6 @@ refer to the applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 1856 808)
-	(pt 5400 808)
-	(bus)
-)
-(connector
 	(pt 1856 1472)
 	(pt 1896 1472)
 	(bus)
@@ -3462,11 +3486,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 3160 1232)
 	(pt 3176 1232)
-	(bus)
-)
-(connector
-	(pt 3736 184)
-	(pt 3752 184)
 	(bus)
 )
 (connector
@@ -4653,56 +4672,8 @@ refer to the applicable agreement for further details.
 	(pt 2784 2488)
 )
 (connector
-	(pt 3744 608)
-	(pt 3744 2744)
-)
-(connector
-	(pt 3744 2744)
-	(pt 2256 2744)
-)
-(connector
-	(pt 3136 608)
-	(pt 3744 608)
-)
-(connector
-	(pt 3744 608)
-	(pt 4368 608)
-)
-(connector
-	(pt 4464 536)
-	(pt 4464 2768)
-)
-(connector
-	(pt 4464 2768)
-	(pt 2176 2768)
-)
-(connector
-	(pt 4224 536)
-	(pt 4464 536)
-)
-(connector
-	(pt 4464 536)
-	(pt 4680 536)
-)
-(connector
-	(pt 2176 2768)
-	(pt 2176 2600)
-)
-(connector
-	(pt 5240 2784)
-	(pt 2064 2784)
-)
-(connector
 	(pt 5240 -72)
 	(pt 5240 544)
-)
-(connector
-	(pt 5240 544)
-	(pt 5240 2784)
-)
-(connector
-	(pt 2064 2784)
-	(pt 2064 2616)
 )
 (connector
 	(pt 1624 1752)
@@ -4732,6 +4703,34 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 2056 2584)
 	(pt 2472 2584)
+	(bus)
+)
+(connector
+	(pt 3136 608)
+	(pt 4368 608)
+)
+(connector
+	(pt 4224 536)
+	(pt 4680 536)
+)
+(connector
+	(pt 3872 184)
+	(pt 3800 184)
+	(bus)
+)
+(connector
+	(pt 3800 184)
+	(pt 3800 808)
+	(bus)
+)
+(connector
+	(pt 1856 808)
+	(pt 3800 808)
+	(bus)
+)
+(connector
+	(pt 3800 808)
+	(pt 5400 808)
 	(bus)
 )
 (junction (pt 1128 1608))
@@ -4814,15 +4813,13 @@ refer to the applicable agreement for further details.
 (junction (pt 4848 1584))
 (junction (pt 2928 2424))
 (junction (pt 2976 2464))
-(junction (pt 3744 608))
-(junction (pt 4464 536))
-(junction (pt 5240 544))
 (junction (pt 2136 1792))
+(junction (pt 3800 808))
 (rectangle (rect 160 40 5448 392)(fill (color 244 239 232)))
 (rectangle (rect 192 424 5480 696)(fill (color 231 241 241)))
 (rectangle (rect 544 744 1008 2136)(fill (color 228 255 251)))
 (rectangle (rect 1032 744 1720 2136)(fill (color 228 255 251)))
-(rectangle (rect 1752 760 2984 2152)(fill (color 228 255 251)))
+(rectangle (rect 1760 752 2992 2144)(fill (color 228 255 251)))
 (rectangle (rect 3016 728 4096 2128)(fill (color 228 255 251)))
 (rectangle (rect 4128 736 4984 2136)(fill (color 228 255 251)))
 (rectangle (rect 5016 736 5456 2136)(fill (color 228 255 251)))
