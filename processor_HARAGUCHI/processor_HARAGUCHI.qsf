@@ -152,6 +152,9 @@ set_location_assignment PIN_V10 -to LED[3]
 set_location_assignment PIN_AA9 -to LED[2]
 set_location_assignment PIN_U10 -to LED[1]
 set_location_assignment PIN_T9 -to LED[0]
+set_location_assignment PIN_E9 -to A
+set_location_assignment PIN_F9 -to B
+set_global_assignment -name VERILOG_FILE ../branch_prediction/branch_prediction.v
 set_global_assignment -name VERILOG_FILE ../fowarding_unit/fowarding_unit.v
 set_global_assignment -name VERILOG_FILE ../LED_simple/LED_simple.v
 set_global_assignment -name VERILOG_FILE ../write_address/write_address.v
@@ -185,7 +188,5 @@ set_global_assignment -name VERILOG_FILE EXMEM_regi.v
 set_global_assignment -name VERILOG_FILE MEMWB.v
 set_global_assignment -name VERILOG_FILE writeAddr.v
 set_global_assignment -name VERILOG_FILE sixteen_code_regi.v
-set_location_assignment PIN_E9 -to A
-set_location_assignment PIN_F9 -to B
 set_global_assignment -name VERILOG_FILE processor_HARAGUCHI.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

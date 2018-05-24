@@ -6,7 +6,8 @@ module ALU (
 	input S_in, Z_in, C_in, V_in, 
 	output reg [15:0] out, // out = in2 = Rd
 	output reg S, Z, C, V,
-	output reg HLT);
+	output reg HLT,
+	output reg flush);
 
 	wire [16:0] plus_result = {in1[15], in1} + {in2[15], in2};
 	wire [16:0] minus_result = {in1[15], in1} - {in2[15], in2};
@@ -217,6 +218,7 @@ module ALU (
 			C = C_value(in1, in2, d);
 			V = V_value(in1, in2, d);
 			HLT = HLT_value(opcode);
+			flush = 1'b0;
 		end else if(op1 == 2'b00) begin
 				out = in1 + in2;
 				S = S_in;
@@ -224,6 +226,7 @@ module ALU (
 				C = C_in;
 				V = V_in;
 				HLT = 1'b0;
+				flush = 1'b0;
 		end else if(op1 == 2'b01) begin
 				out = in1 + in2;
 				S = S_in;
@@ -231,6 +234,7 @@ module ALU (
 				C = C_in;
 				V = V_in;
 				HLT = 1'b0;
+				flush = 1'b0;
 		end else if(op1 == 2'b10) begin
 			if (op2 == 3'b000) begin
 				out = in2;
@@ -239,6 +243,7 @@ module ALU (
 				C = C_in;
 				V = V_in;
 				HLT = 1'b0;
+				flush = 1'b0;
 			end else if (op2 == 3'b001) begin
 				out = in1 + in2;
 				S = plus_result[16];
@@ -246,12 +251,14 @@ module ALU (
 				C = plus_result[16] ^ plus_result[15];
 				V = plus_result[16] ^ plus_result[15]; 
 				HLT = 1'b0;
+				flush = 1'b0;
 			end else if(op2 == 3'b010) begin
 				out = in1 - in2;
 				S = minus_result[16];
 				C = minus_result[16] ^ minus_result[15];
 				V = minus_result[16] ^ minus_result[15];
 				HLT = 1'b0;
+				flush = 1'b0;
 			end else if(op2 == 3'b100) begin
 				out = in1 + in2;
 				S = S_in;
@@ -259,6 +266,7 @@ module ALU (
 				C = C_in;
 				V = V_in;
 				HLT = 1'b0;
+				flush = 1'b1;
 			end else if(op2 == 3'b101) begin
 				out = in1;
 				S = S_in;
@@ -266,6 +274,7 @@ module ALU (
 				C = C_in;
 				V = V_in;
 				HLT = 1'b0;
+				flush = 1'b1;
 			end else if (op2 == 3'b110) begin
 				out = in1 + in2;
 				S = S_in;
@@ -273,6 +282,7 @@ module ALU (
 				C = C_in;
 				V = V_in;
 				HLT = 1'b0;
+				flush = 1'b1;
 			end else if(op2 == 3'b111) begin
 				if(cond == 3'b000) begin
 					if(Z_in == 1'b1) begin
@@ -282,6 +292,7 @@ module ALU (
 						C = C_in;
 						V = V_in;
 						HLT = 1'b0;
+						flush = 1'b1;
 					end else begin
 						out = in1;
 						S = S_in;
@@ -289,6 +300,7 @@ module ALU (
 						C = C_in;
 						V = V_in;
 						HLT = 1'b0;
+						flush = 1'b0;
 					end
 				end else if(cond == 3'b001) begin
 					if(S_in ^ Z_in == 1'b1) begin
@@ -298,6 +310,7 @@ module ALU (
 						C = C_in;
 						V = V_in;
 						HLT = 1'b0;
+						flush = 1'b1;
 					end else begin
 						out = in1;
 						S = S_in;
@@ -305,6 +318,7 @@ module ALU (
 						C = C_in;
 						V = V_in;
 						HLT = 1'b0;
+						flush = 1'b0;
 					end
 				end else if(cond == 3'b010) begin
 					if(Z_in || (S_in ^ V_in) == 1'b1) begin
@@ -314,6 +328,7 @@ module ALU (
 						C = C_in;
 						V = V_in;
 						HLT = 1'b0;
+						flush = 1'b1;
 					end else begin
 						out = in1;
 						S = S_in;
@@ -321,6 +336,7 @@ module ALU (
 						C = C_in;
 						V = V_in;
 						HLT = 1'b0;
+						flush = 1'b0;
 					end
 				end else begin
 					if(Z_in == 1'b0) begin
@@ -330,6 +346,7 @@ module ALU (
 						C = C_in;
 						V = V_in;
 						HLT = 1'b0;
+						flush = 1'b1;
 					end else begin
 						out = in1;
 						S = S_in;
@@ -337,6 +354,7 @@ module ALU (
 						C = C_in;
 						V = V_in;
 						HLT = 1'b0;
+						flush = 1'b0;
 					end
 				end
 			end else begin
@@ -345,7 +363,8 @@ module ALU (
 				Z = Z_in;
 				C = C_in;
 				V = V_in;
-				HLT = 1'b0; 
+				HLT = 1'b0;
+				flush = 1'b0;
 			end
 		end else begin
 			out = in1 + in2;
@@ -354,6 +373,7 @@ module ALU (
 			C = C_in;
 			V = V_in;
 			HLT = 1'b0;
+			flush = 1'b0;
 		end
 	end
 		

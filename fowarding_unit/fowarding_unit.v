@@ -10,7 +10,7 @@ module fowarding_unit(
 	output reg to_foward_or_not_A, to_foward_or_not_B
 	);
 	
-	always @(negedge clock) begin
+	always @* begin //@(negedge clock) begin
 		
 		if (read_addr_from_p2_A == write_addr_from_p3) begin
 			if (write_p3 == 1'b1) begin
