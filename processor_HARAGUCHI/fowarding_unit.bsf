@@ -20,9 +20,9 @@ refer to the applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 328 224)
+	(rect 16 16 328 256)
 	(text "fowarding_unit" (rect 5 0 61 12)(font "Arial" ))
-	(text "inst" (rect 8 192 20 204)(font "Arial" ))
+	(text "inst" (rect 8 224 20 236)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -89,9 +89,23 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 176)
 		(input)
-		(text "op1_p2[1..0]" (rect 0 0 47 12)(font "Arial" ))
-		(text "op1_p2[1..0]" (rect 21 171 68 183)(font "Arial" ))
-		(line (pt 0 176)(pt 16 176)(line_width 3))
+		(text "write_p3" (rect 0 0 33 12)(font "Arial" ))
+		(text "write_p3" (rect 21 171 54 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "write_p4" (rect 0 0 34 12)(font "Arial" ))
+		(text "write_p4" (rect 21 187 55 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "write_p5" (rect 0 0 33 12)(font "Arial" ))
+		(text "write_p5" (rect 21 203 54 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 1))
 	)
 	(port
 		(pt 312 32)
@@ -122,6 +136,6 @@ refer to the applicable agreement for further details.
 		(line (pt 312 80)(pt 296 80)(line_width 1))
 	)
 	(drawing
-		(rectangle (rect 16 16 296 192)(line_width 1))
+		(rectangle (rect 16 16 296 224)(line_width 1))
 	)
 )
