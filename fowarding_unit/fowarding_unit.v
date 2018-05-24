@@ -74,8 +74,9 @@ module fowarding_unit(
 	end*/
 	
 	
-	always @* begin // @(negedge clock) begin
+	always @(negedge clock) begin //@* begin 
 	
+	/*
 		if (op1_p2 == 2'b11) begin
 			if (op3_p2 == 4'b1101) begin
 				fowarding_data_A <= 16'b0000000000000000;	
@@ -83,7 +84,7 @@ module fowarding_unit(
 				to_foward_or_not_A <= 1'b0;
 				to_foward_or_not_B <= 1'b0;
 			end
-		end else begin
+		end else begin*/
 	
 			if(read_addr_from_p2_A == write_addr_from_p3) begin
 				fowarding_data_A <= data_from_p3;
@@ -167,7 +168,7 @@ module fowarding_unit(
 				to_foward_or_not_B <= 1'b0;
 			end
 			
-		end
+		//end
 		
 	end
 	

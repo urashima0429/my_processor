@@ -62,7 +62,7 @@ module ALU (
 			10: out_value = (Rs >> d); // SRL
 			11: out_value = SRR(Rs, d);//(Rs >> d) | {in2[15], 15'b000000000000000}; // SRR
 			12: out_value = 16'b0000000000000000; //don't care?
-			13: out_value = 16'b0000000000000000; // don't care?
+			13: out_value = Rs; //16'b0000000000000000; // don't care?
 			14: out_value = 16'b0000000000000000; // don't care!!
 			15: out_value = 16'b0000000000000000; // don't care?
 			default: out_value = 16'b0000000000000000;
