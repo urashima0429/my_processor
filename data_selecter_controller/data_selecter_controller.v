@@ -51,6 +51,14 @@ module data_selecter_controller(
 				switch5 <= 0;
 				switch6 <= 0;
 				switch7 <= 0;
+			end else if(op[13:11] == 3'b011) begin
+				switch1 <= 0;
+				switch2 <= 0; 
+				switch3 <= 1;
+				switch4 <= 0;
+				switch5 <= 0;
+				switch6 <= 0;
+				switch7 <= 0;	
 			end else if (op[13:11] == 3'b101) begin
 				switch1 <= 1;
 				switch2 <= 0; 
@@ -135,6 +143,8 @@ module data_selecter_controller(
 				writeOrder <= 1'b1;
 			end else if (op[13:11] == 3'b010) begin
 				writeOrder <= 1'b1;
+			end else if (op[13:11] == 3'b011) begin
+				writeOrder <= 1'b0;
 			end else if (op[13:11] == 3'b101) begin
 				writeOrder <= 1'b0;
 			end else if (op[13:11] == 3'b110) begin

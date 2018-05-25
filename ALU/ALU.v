@@ -257,6 +257,13 @@ module ALU (
 				V <= minus_result[16] ^ minus_result[15];
 				HLT <= 1'b0;
 				flush <= 1'b0;
+			end else if (op2 == 3'b011) begin
+				out <= in2;
+				S <= minus_result[16];
+				C <= minus_result[16] ^ minus_result[15];
+				V <= minus_result[16] ^ minus_result[15];
+				HLT <= 1'b0;
+				flush <= 1'b0;
 			end else if(op2 == 3'b100) begin
 				out <= in1 + in2;
 				S <= S_in;
