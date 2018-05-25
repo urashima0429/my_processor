@@ -208,174 +208,171 @@ module ALU (
 	end
 	endfunction
 	
-	
-	
 	always @* begin
 		if(op1 == 2'b11) begin
-			out = out_value(in1, in2, d);
-			S = S_value(in1, in2, d);
-			Z = Z_value(in1, in2, d);
-			C = C_value(in1, in2, d);
-			V = V_value(in1, in2, d);
-			HLT = HLT_value(opcode);
-			flush = 1'b0;
+			out <= out_value(in1, in2, d);
+			S <= S_value(in1, in2, d);
+			Z <= Z_value(in1, in2, d);
+			C <= C_value(in1, in2, d);
+			V <= V_value(in1, in2, d);
+			HLT <= HLT_value(opcode);
+			flush <= 1'b0;
 		end else if(op1 == 2'b00) begin
-				out = in1 + in2;
-				S = S_in;
-				Z = Z_in;
-				C = C_in;
-				V = V_in;
-				HLT = 1'b0;
-				flush = 1'b0;
+				out <= in1 + in2;
+				S <= S_in;
+				Z <= Z_in;
+				C <= C_in;
+				V <= V_in;
+				HLT <= 1'b0;
+				flush <= 1'b0;
 		end else if(op1 == 2'b01) begin
-				out = in1 + in2;
-				S = S_in;
-				Z = Z_in;
-				C = C_in;
-				V = V_in;
-				HLT = 1'b0;
-				flush = 1'b0;
+				out <= in1 + in2;
+				S <= S_in;
+				Z <= Z_in;
+				C <= C_in;
+				V <= V_in;
+				HLT <= 1'b0;
+				flush <= 1'b0;
 		end else if(op1 == 2'b10) begin
 			if (op2 == 3'b000) begin
-				out = in2;
-				S = S_in;
-				Z = Z_in;
-				C = C_in;
-				V = V_in;
-				HLT = 1'b0;
-				flush = 1'b0;
+				out <= in2;
+				S <= S_in;
+				Z <= Z_in;
+				C <= C_in;
+				V <= V_in;
+				HLT <= 1'b0;
+				flush <= 1'b0;
 			end else if (op2 == 3'b001) begin
-				out = in1 + in2;
-				S = plus_result[16];
-				Z = ((in1 + in2) == 16'b0000000000000000);
-				C = plus_result[16] ^ plus_result[15];
-				V = plus_result[16] ^ plus_result[15]; 
-				HLT = 1'b0;
-				flush = 1'b0;
+				out <= in1 + in2;
+				S <= plus_result[16];
+				Z <= ((in1 + in2) == 16'b0000000000000000);
+				C <= plus_result[16] ^ plus_result[15];
+				V <= plus_result[16] ^ plus_result[15]; 
+				HLT <= 1'b0;
+				flush <= 1'b0;
 			end else if(op2 == 3'b010) begin
-				out = in1 - in2;
-				S = minus_result[16];
-				C = minus_result[16] ^ minus_result[15];
-				V = minus_result[16] ^ minus_result[15];
-				HLT = 1'b0;
-				flush = 1'b0;
+				out <= in1 - in2;
+				S <= minus_result[16];
+				C <= minus_result[16] ^ minus_result[15];
+				V <= minus_result[16] ^ minus_result[15];
+				HLT <= 1'b0;
+				flush <= 1'b0;
 			end else if(op2 == 3'b100) begin
-				out = in1 + in2;
-				S = S_in;
-				Z = Z_in;
-				C = C_in;
-				V = V_in;
-				HLT = 1'b0;
-				flush = 1'b1;
+				out <= in1 + in2;
+				S <= S_in;
+				Z <= Z_in;
+				C <= C_in;
+				V <= V_in;
+				HLT <= 1'b0;
+				flush <= 1'b1;
 			end else if(op2 == 3'b101) begin
-				out = in1;
-				S = S_in;
-				Z = Z_in;
-				C = C_in;
-				V = V_in;
-				HLT = 1'b0;
-				flush = 1'b1;
+				out <= in1;
+				S <= S_in;
+				Z <= Z_in;
+				C <= C_in;
+				V <= V_in;
+				HLT <= 1'b0;
+				flush <= 1'b1;
 			end else if (op2 == 3'b110) begin
-				out = in1 + in2;
-				S = S_in;
-				Z = Z_in;
-				C = C_in;
-				V = V_in;
-				HLT = 1'b0;
-				flush = 1'b1;
+				out <= in1 + in2;
+				S <= S_in;
+				Z <= Z_in;
+				C <= C_in;
+				V <= V_in;
+				HLT <= 1'b0;
+				flush <= 1'b1;
 			end else if(op2 == 3'b111) begin
 				if(cond == 3'b000) begin
 					if(Z_in == 1'b1) begin
-						out = in1 + in2;
-						S = S_in;
-						Z = Z_in;
-						C = C_in;
-						V = V_in;
-						HLT = 1'b0;
-						flush = 1'b1;
+						out <= in1 + in2;
+						S <= S_in;
+						Z <= Z_in;
+						C <= C_in;
+						V <= V_in;
+						HLT <= 1'b0;
+						flush <= 1'b1;
 					end else begin
-						out = in1;
-						S = S_in;
-						Z = Z_in;
-						C = C_in;
-						V = V_in;
-						HLT = 1'b0;
-						flush = 1'b0;
+						out <= in1;
+						S <= S_in;
+						Z <= Z_in;
+						C <= C_in;
+						V <= V_in;
+						HLT <= 1'b0;
+						flush <= 1'b0;
 					end
 				end else if(cond == 3'b001) begin
 					if(S_in ^ Z_in == 1'b1) begin
-						out = in1 + in2;
-						S = S_in;
-						Z = Z_in;
-						C = C_in;
-						V = V_in;
-						HLT = 1'b0;
-						flush = 1'b1;
+						out <= in1 + in2;
+						S <= S_in;
+						Z <= Z_in;
+						C <= C_in;
+						V <= V_in;
+						HLT <= 1'b0;
+						flush <= 1'b1;
 					end else begin
-						out = in1;
-						S = S_in;
-						Z = Z_in;
-						C = C_in;
-						V = V_in;
-						HLT = 1'b0;
-						flush = 1'b0;
+						out <= in1;
+						S <= S_in;
+						Z <= Z_in;
+						C <= C_in;
+						V <= V_in;
+						HLT <= 1'b0;
+						flush <= 1'b0;
 					end
 				end else if(cond == 3'b010) begin
 					if(Z_in || (S_in ^ V_in) == 1'b1) begin
-						out = in1 + in2;
-						S = S_in;
-						Z = Z_in;
-						C = C_in;
-						V = V_in;
-						HLT = 1'b0;
-						flush = 1'b1;
+						out <= in1 + in2;
+						S <= S_in;
+						Z <= Z_in;
+						C <= C_in;
+						V <= V_in;
+						HLT <= 1'b0;
+						flush <= 1'b1;
 					end else begin
-						out = in1;
-						S = S_in;
-						Z = Z_in;
-						C = C_in;
-						V = V_in;
-						HLT = 1'b0;
-						flush = 1'b0;
+						out <= in1;
+						S <= S_in;
+						Z <= Z_in;
+						C <= C_in;
+						V <= V_in;
+						HLT <= 1'b0;
+						flush <= 1'b0;
 					end
 				end else begin
 					if(Z_in == 1'b0) begin
-						out = in1 + in2;
-						S = S_in;
-						Z = Z_in;
-						C = C_in;
-						V = V_in;
-						HLT = 1'b0;
-						flush = 1'b1;
+						out <= in1 + in2;
+						S <= S_in;
+						Z <= Z_in;
+						C <= C_in;
+						V <= V_in;
+						HLT <= 1'b0;
+						flush <= 1'b1;
 					end else begin
-						out = in1;
-						S = S_in;
-						Z = Z_in;
-						C = C_in;
-						V = V_in;
-						HLT = 1'b0;
-						flush = 1'b0;
+						out <= in1;
+						S <= S_in;
+						Z <= Z_in;
+						C <= C_in;
+						V <= V_in;
+						HLT <= 1'b0;
+						flush <= 1'b0;
 					end
 				end
 			end else begin
-				out = in2;//in1
-				S = S_in;
-				Z = Z_in;
-				C = C_in;
-				V = V_in;
-				HLT = 1'b0;
-				flush = 1'b0;
+				out <= in2;//in1
+				S <= S_in;
+				Z <= Z_in;
+				C <= C_in;
+				V <= V_in;
+				HLT <= 1'b0;
+				flush <= 1'b0;
 			end
 		end else begin
-			out = in1 + in2;
-			S = S_in;
-			Z = Z_in;
-			C = C_in;
-			V = V_in;
-			HLT = 1'b0;
-			flush = 1'b0;
+			out <= in1 + in2;
+			S <= S_in;
+			Z <= Z_in;
+			C <= C_in;
+			V <= V_in;
+			HLT <= 1'b0;
+			flush <= 1'b0;
 		end
-	end
-		
+	end	
 	
 endmodule

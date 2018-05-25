@@ -3,6 +3,7 @@ module IDEX_regi (
 	input reset, 
 	input sw1_in, sw2_in, sw3_in, sw4_in, sw5_in, sw6_in, sw7_in, writeOrder_in,
 	//input flush0, flush1, flush2,
+	input flush,
 	output reg sw1_out, sw2_out, sw3_out, sw4_out, sw5_out, sw6_out, sw7_out, writeOrder_out);
 	
 	always @(posedge clock or negedge reset) begin
@@ -15,7 +16,7 @@ module IDEX_regi (
 			sw6_out <= 1'b0;
 			sw7_out <= 1'b0; 
 			writeOrder_out <= 1'b0;
-		/*end else if (flush0 == 1'b1) begin
+		end else if (flush == 1'b1) begin
 			sw1_out <= 1'b0;
 			sw2_out <= 1'b0;
 			sw3_out <= 1'b0;
@@ -24,6 +25,7 @@ module IDEX_regi (
 			sw6_out <= 1'b0;
 			sw7_out <= 1'b0; 
 			writeOrder_out <= 1'b0;
+		/*
 		end else if (flush1 == 1'b1) begin
 			sw1_out <= 1'b0;
 			sw2_out <= 1'b0;

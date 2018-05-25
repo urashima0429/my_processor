@@ -7,8 +7,10 @@ module regfile (
 	reg [15:0] r [0:7]; // seven registers
 	
 	always @(negedge clock) begin
-		if (writeOrder == 1'b1) begin
-			r[writeAddr] <= writeData;
+		if (clock == 1'b0) begin
+			if (writeOrder == 1'b1) begin
+				r[writeAddr] <= writeData;
+			end
 		end
 	end
 	

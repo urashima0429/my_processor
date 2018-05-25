@@ -115,7 +115,7 @@ module data_selecter_controller(
 				2: writeOrder <= 1'b1;
 				3: writeOrder <= 1'b1;
 				4: writeOrder <= 1'b1;
-				5: writeOrder <= 1'b1;
+				5: writeOrder <= 1'b0;//1'b1;
 				6: writeOrder <= 1'b1;
 				7: writeOrder <= 1'b0;
 				8: writeOrder <= 1'b1;

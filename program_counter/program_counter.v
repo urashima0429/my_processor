@@ -12,7 +12,7 @@ module program_counter(
 		//store value on phase1 activated
 		end else if (p1 == 1'b1) begin
 			out <= in;
-		
+	
 		end
 	end
 	
