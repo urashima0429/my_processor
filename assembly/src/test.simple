@@ -31,47 +31,31 @@ bubble
 bubble                  
 MOV R5 R3
 SUBI R5 00000001
-OUT R5 //               =400=1024
-bubble //               jump  
-bubble
-CMP R4 R5
-BLT 00101000            38 => 78 40=00101000
+CMP R4 R5 //             jump
+BLT 00011000             35 => 59 24 =00011000
 LD R1 R5 00000000
 bubble
 bubble
-OUT R1 //               0
 SLR R1 R1 1111
-OUT R1 //               0
 CMPI R1 00000000
-BLT 00010110 //          46 => 68  b 22 00010110 if 0
+BLT 00010000 //          41 => 57  b 16 00010000
 MOV R6 R5
-bubble //                jump
-bubble
-CMP R6 R3 //             
-BLT 00001110 //          51 => 65 a 14=00001110 
-bubble
+CMP R6 R3 //             jump
+BLT 00001011 //          44 => 55 a 11=00001011 
 LD R0 R6 11111111
 bubble
 bubble
 SLR R0 R0 1111
 CMP R7 R0
-BLT 00000111 //          58 => 65 a 7=00000111
+BLT 00000101 //          50 => 55 a 5=00000101
 SLR R0 R0 0001
 ST R0 R6 00000000
-bubble
-bubble
 SUBI R6 00000001
-B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
-bubble //                a
-SLR R1 R1 0001
+B 11110101               back to jump 54 => 43 -11=11110101 (00001011)
+SLR R1 R1 0001 //        a
 ST R1 R6 00000000
-bubble //                b
-bubble
-bubble
-bubble
-ADDI R5 00000001
-OUT R5
-B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+ADDI R5 00000001 //      b
+B 11101000 //            back to jump 58 => 34 -24=11101000 (00011000) 
 bubble
 bubble
 bubble
