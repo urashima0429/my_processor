@@ -1,6 +1,967 @@
-LI R0 00000010
-LI R1 00000011
-ADD R0 R1
+LI R0 00000000
+LI R1 00000000
+LI R2 00000000
+LI R3 00000000
+LI R4 00000000
+LI R5 00000000
+LI R6 00000000
+LI R7 00000000
 OUT R0
-SUB R0 R1
-OUT R0
+LI R2 01111111
+SLL R2 R2 0011
+ADDI R2 00001000
+OUT R2 //                =3FF=1023
+LI R3 00000001
+SLR R3 R3 1010
+ADDI R3 00000001
+OUT R3 //                =401=1025
+LI R4 00001111
+OUT R4 //                =F
+MOV R4 R2
+ADD R4 R3
+SUBI R4 00000001
+OUT R0 //                =7FF=2047
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble                  
+MOV R5 R3
+SUBI R5 00000001
+OUT R5 //               =400=1024
+bubble //               jump  
+bubble
+CMP R4 R5
+BLT 00101000            38 => 78 40=00101000
+LD R1 R5 00000000
+bubble
+bubble
+OUT R1 //               0
+SLR R1 R1 1111
+OUT R1 //               0
+CMPI R1 00000000
+BLT 00010110 //          46 => 68  b 22 00010110 if 0
+MOV R6 R5
+bubble //                jump
+bubble
+CMP R6 R3 //             
+BLT 00001110 //          51 => 65 a 14=00001110 
+bubble
+LD R0 R6 11111111
+bubble
+bubble
+SLR R0 R0 1111
+CMP R7 R0
+BLT 00000111 //          58 => 65 a 7=00000111
+SLR R0 R0 0001
+ST R0 R6 00000000
+bubble
+bubble
+SUBI R6 00000001
+B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
+bubble //                a
+SLR R1 R1 0001
+ST R1 R6 00000000
+bubble //                b
+bubble
+bubble
+bubble
+ADDI R5 00000001
+OUT R5
+B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble                  
+MOV R5 R3
+SUBI R5 00000001
+OUT R5 //               =400=1024
+bubble //               jump  
+bubble
+CMP R4 R5
+BLT 00101000            38 => 78 40=00101000
+LD R1 R5 00000000
+bubble
+bubble
+OUT R1 //               0
+SLR R1 R1 1110
+OUT R1 //               0
+CMPI R1 00000000
+BLT 00010110 //          46 => 68  b 22 00010110 if 0
+MOV R6 R5
+bubble //                jump
+bubble
+CMP R6 R3 //             
+BLT 00001110 //          51 => 65 a 14=00001110 
+bubble
+LD R0 R6 11111111
+bubble
+bubble
+SLR R0 R0 1110
+CMP R7 R0
+BLT 00000111 //          58 => 65 a 7=00000111
+SLR R0 R0 0010
+ST R0 R6 00000000
+bubble
+bubble
+SUBI R6 00000001
+B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
+bubble //                a
+SLR R1 R1 0010
+ST R1 R6 00000000
+bubble //                b
+bubble
+bubble
+bubble
+ADDI R5 00000001
+OUT R5
+B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble                  
+MOV R5 R3
+SUBI R5 00000001
+OUT R5 //               =400=1024
+bubble //               jump  
+bubble
+CMP R4 R5
+BLT 00101000            38 => 78 40=00101000
+LD R1 R5 00000000
+bubble
+bubble
+OUT R1 //               0
+SLR R1 R1 1101
+OUT R1 //               0
+CMPI R1 00000000
+BLT 00010110 //          46 => 68  b 22 00010110 if 0
+MOV R6 R5
+bubble //                jump
+bubble
+CMP R6 R3 //             
+BLT 00001110 //          51 => 65 a 14=00001110 
+bubble
+LD R0 R6 11111111
+bubble
+bubble
+SLR R0 R0 1101
+CMP R7 R0
+BLT 00000111 //          58 => 65 a 7=00000111
+SLR R0 R0 0011
+ST R0 R6 00000000
+bubble
+bubble
+SUBI R6 00000001
+B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
+bubble //                a
+SLR R1 R1 0011
+ST R1 R6 00000000
+bubble //                b
+bubble
+bubble
+bubble
+ADDI R5 00000001
+OUT R5
+B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble                  
+MOV R5 R3
+SUBI R5 00000001
+OUT R5 //               =400=1024
+bubble //               jump  
+bubble
+CMP R4 R5
+BLT 00101000            38 => 78 40=00101000
+LD R1 R5 00000000
+bubble
+bubble
+OUT R1 //               0
+SLR R1 R1 1100
+OUT R1 //               0
+CMPI R1 00000000
+BLT 00010110 //          46 => 68  b 22 00010110 if 0
+MOV R6 R5
+bubble //                jump
+bubble
+CMP R6 R3 //             
+BLT 00001110 //          51 => 65 a 14=00001110 
+bubble
+LD R0 R6 11111111
+bubble
+bubble
+SLR R0 R0 1100
+CMP R7 R0
+BLT 00000111 //          58 => 65 a 7=00000111
+SLR R0 R0 0100
+ST R0 R6 00000000
+bubble
+bubble
+SUBI R6 00000001
+B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
+bubble //                a
+SLR R1 R1 0100
+ST R1 R6 00000000
+bubble //                b
+bubble
+bubble
+bubble
+ADDI R5 00000001
+OUT R5
+B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble                  
+MOV R5 R3
+SUBI R5 00000001
+OUT R5 //               =400=1024
+bubble //               jump  
+bubble
+CMP R4 R5
+BLT 00101000            38 => 78 40=00101000
+LD R1 R5 00000000
+bubble
+bubble
+OUT R1 //               0
+SLR R1 R1 1011
+OUT R1 //               0
+CMPI R1 00000000
+BLT 00010110 //          46 => 68  b 22 00010110 if 0
+MOV R6 R5
+bubble //                jump
+bubble
+CMP R6 R3 //             
+BLT 00001110 //          51 => 65 a 14=00001110 
+bubble
+LD R0 R6 11111111
+bubble
+bubble
+SLR R0 R0 1011
+CMP R7 R0
+BLT 00000111 //          58 => 65 a 7=00000111
+SLR R0 R0 0101
+ST R0 R6 00000000
+bubble
+bubble
+SUBI R6 00000001
+B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
+bubble //                a
+SLR R1 R1 0101
+ST R1 R6 00000000
+bubble //                b
+bubble
+bubble
+bubble
+ADDI R5 00000001
+OUT R5
+B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble                  
+MOV R5 R3
+SUBI R5 00000001
+OUT R5 //               =400=1024
+bubble //               jump  
+bubble
+CMP R4 R5
+BLT 00101000            38 => 78 40=00101000
+LD R1 R5 00000000
+bubble
+bubble
+OUT R1 //               0
+SLR R1 R1 1010
+OUT R1 //               0
+CMPI R1 00000000
+BLT 00010110 //          46 => 68  b 22 00010110 if 0
+MOV R6 R5
+bubble //                jump
+bubble
+CMP R6 R3 //             
+BLT 00001110 //          51 => 65 a 14=00001110 
+bubble
+LD R0 R6 11111111
+bubble
+bubble
+SLR R0 R0 1010
+CMP R7 R0
+BLT 00000111 //          58 => 65 a 7=00000111
+SLR R0 R0 0110
+ST R0 R6 00000000
+bubble
+bubble
+SUBI R6 00000001
+B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
+bubble //                a
+SLR R1 R1 0110
+ST R1 R6 00000000
+bubble //                b
+bubble
+bubble
+bubble
+ADDI R5 00000001
+OUT R5
+B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble                  
+MOV R5 R3
+SUBI R5 00000001
+OUT R5 //               =400=1024
+bubble //               jump  
+bubble
+CMP R4 R5
+BLT 00101000            38 => 78 40=00101000
+LD R1 R5 00000000
+bubble
+bubble
+OUT R1 //               0
+SLR R1 R1 1001
+OUT R1 //               0
+CMPI R1 00000000
+BLT 00010110 //          46 => 68  b 22 00010110 if 0
+MOV R6 R5
+bubble //                jump
+bubble
+CMP R6 R3 //             
+BLT 00001110 //          51 => 65 a 14=00001110 
+bubble
+LD R0 R6 11111111
+bubble
+bubble
+SLR R0 R0 1001
+CMP R7 R0
+BLT 00000111 //          58 => 65 a 7=00000111
+SLR R0 R0 0111
+ST R0 R6 00000000
+bubble
+bubble
+SUBI R6 00000001
+B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
+bubble //                a
+SLR R1 R1 0111
+ST R1 R6 00000000
+bubble //                b
+bubble
+bubble
+bubble
+ADDI R5 00000001
+OUT R5
+B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble                  
+MOV R5 R3
+SUBI R5 00000001
+OUT R5 //               =400=1024
+bubble //               jump  
+bubble
+CMP R4 R5
+BLT 00101000            38 => 78 40=00101000
+LD R1 R5 00000000
+bubble
+bubble
+OUT R1 //               0
+SLR R1 R1 1000
+OUT R1 //               0
+CMPI R1 00000000
+BLT 00010110 //          46 => 68  b 22 00010110 if 0
+MOV R6 R5
+bubble //                jump
+bubble
+CMP R6 R3 //             
+BLT 00001110 //          51 => 65 a 14=00001110 
+bubble
+LD R0 R6 11111111
+bubble
+bubble
+SLR R0 R0 1000
+CMP R7 R0
+BLT 00000111 //          58 => 65 a 7=00000111
+SLR R0 R0 1000
+ST R0 R6 00000000
+bubble
+bubble
+SUBI R6 00000001
+B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
+bubble //                a
+SLR R1 R1 1000
+ST R1 R6 00000000
+bubble //                b
+bubble
+bubble
+bubble
+ADDI R5 00000001
+OUT R5
+B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble                  
+MOV R5 R3
+SUBI R5 00000001
+OUT R5 //               =400=1024
+bubble //               jump  
+bubble
+CMP R4 R5
+BLT 00101000            38 => 78 40=00101000
+LD R1 R5 00000000
+bubble
+bubble
+OUT R1 //               0
+SLR R1 R1 0111
+OUT R1 //               0
+CMPI R1 00000000
+BLT 00010110 //          46 => 68  b 22 00010110 if 0
+MOV R6 R5
+bubble //                jump
+bubble
+CMP R6 R3 //             
+BLT 00001110 //          51 => 65 a 14=00001110 
+bubble
+LD R0 R6 11111111
+bubble
+bubble
+SLR R0 R0 0111
+CMP R7 R0
+BLT 00000111 //          58 => 65 a 7=00000111
+SLR R0 R0 1001
+ST R0 R6 00000000
+bubble
+bubble
+SUBI R6 00000001
+B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
+bubble //                a
+SLR R1 R1 1001
+ST R1 R6 00000000
+bubble //                b
+bubble
+bubble
+bubble
+ADDI R5 00000001
+OUT R5
+B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble                  
+MOV R5 R3
+SUBI R5 00000001
+OUT R5 //               =400=1024
+bubble //               jump  
+bubble
+CMP R4 R5
+BLT 00101000            38 => 78 40=00101000
+LD R1 R5 00000000
+bubble
+bubble
+OUT R1 //               0
+SLR R1 R1 0110
+OUT R1 //               0
+CMPI R1 00000000
+BLT 00010110 //          46 => 68  b 22 00010110 if 0
+MOV R6 R5
+bubble //                jump
+bubble
+CMP R6 R3 //             
+BLT 00001110 //          51 => 65 a 14=00001110 
+bubble
+LD R0 R6 11111111
+bubble
+bubble
+SLR R0 R0 0110
+CMP R7 R0
+BLT 00000111 //          58 => 65 a 7=00000111
+SLR R0 R0 1010
+ST R0 R6 00000000
+bubble
+bubble
+SUBI R6 00000001
+B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
+bubble //                a
+SLR R1 R1 1010
+ST R1 R6 00000000
+bubble //                b
+bubble
+bubble
+bubble
+ADDI R5 00000001
+OUT R5
+B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble                  
+MOV R5 R3
+SUBI R5 00000001
+OUT R5 //               =400=1024
+bubble //               jump  
+bubble
+CMP R4 R5
+BLT 00101000            38 => 78 40=00101000
+LD R1 R5 00000000
+bubble
+bubble
+OUT R1 //               0
+SLR R1 R1 0101
+OUT R1 //               0
+CMPI R1 00000000
+BLT 00010110 //          46 => 68  b 22 00010110 if 0
+MOV R6 R5
+bubble //                jump
+bubble
+CMP R6 R3 //             
+BLT 00001110 //          51 => 65 a 14=00001110 
+bubble
+LD R0 R6 11111111
+bubble
+bubble
+SLR R0 R0 0101
+CMP R7 R0
+BLT 00000111 //          58 => 65 a 7=00000111
+SLR R0 R0 1011
+ST R0 R6 00000000
+bubble
+bubble
+SUBI R6 00000001
+B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
+bubble //                a
+SLR R1 R1 1011
+ST R1 R6 00000000
+bubble //                b
+bubble
+bubble
+bubble
+ADDI R5 00000001
+OUT R5
+B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble                  
+MOV R5 R3
+SUBI R5 00000001
+OUT R5 //               =400=1024
+bubble //               jump  
+bubble
+CMP R4 R5
+BLT 00101000            38 => 78 40=00101000
+LD R1 R5 00000000
+bubble
+bubble
+OUT R1 //               0
+SLR R1 R1 0100
+OUT R1 //               0
+CMPI R1 00000000
+BLT 00010110 //          46 => 68  b 22 00010110 if 0
+MOV R6 R5
+bubble //                jump
+bubble
+CMP R6 R3 //             
+BLT 00001110 //          51 => 65 a 14=00001110 
+bubble
+LD R0 R6 11111111
+bubble
+bubble
+SLR R0 R0 0100
+CMP R7 R0
+BLT 00000111 //          58 => 65 a 7=00000111
+SLR R0 R0 1100
+ST R0 R6 00000000
+bubble
+bubble
+SUBI R6 00000001
+B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
+bubble //                a
+SLR R1 R1 1100
+ST R1 R6 00000000
+bubble //                b
+bubble
+bubble
+bubble
+ADDI R5 00000001
+OUT R5
+B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble                  
+MOV R5 R3
+SUBI R5 00000001
+OUT R5 //               =400=1024
+bubble //               jump  
+bubble
+CMP R4 R5
+BLT 00101000            38 => 78 40=00101000
+LD R1 R5 00000000
+bubble
+bubble
+OUT R1 //               0
+SLR R1 R1 0011
+OUT R1 //               0
+CMPI R1 00000000
+BLT 00010110 //          46 => 68  b 22 00010110 if 0
+MOV R6 R5
+bubble //                jump
+bubble
+CMP R6 R3 //             
+BLT 00001110 //          51 => 65 a 14=00001110 
+bubble
+LD R0 R6 11111111
+bubble
+bubble
+SLR R0 R0 0011
+CMP R7 R0
+BLT 00000111 //          58 => 65 a 7=00000111
+SLR R0 R0 1101
+ST R0 R6 00000000
+bubble
+bubble
+SUBI R6 00000001
+B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
+bubble //                a
+SLR R1 R1 1101
+ST R1 R6 00000000
+bubble //                b
+bubble
+bubble
+bubble
+ADDI R5 00000001
+OUT R5
+B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble                  
+MOV R5 R3
+SUBI R5 00000001
+OUT R5 //               =400=1024
+bubble //               jump  
+bubble
+CMP R4 R5
+BLT 00101000            38 => 78 40=00101000
+LD R1 R5 00000000
+bubble
+bubble
+OUT R1 //               0
+SLR R1 R1 0010
+OUT R1 //               0
+CMPI R1 00000000
+BLT 00010110 //          46 => 68  b 22 00010110 if 0
+MOV R6 R5
+bubble //                jump
+bubble
+CMP R6 R3 //             
+BLT 00001110 //          51 => 65 a 14=00001110 
+bubble
+LD R0 R6 11111111
+bubble
+bubble
+SLR R0 R0 0010
+CMP R7 R0
+BLT 00000111 //          58 => 65 a 7=00000111
+SLR R0 R0 1110
+ST R0 R6 00000000
+bubble
+bubble
+SUBI R6 00000001
+B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
+bubble //                a
+SLR R1 R1 1110
+ST R1 R6 00000000
+bubble //                b
+bubble
+bubble
+bubble
+ADDI R5 00000001
+OUT R5
+B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble                  
+MOV R5 R3
+SUBI R5 00000001
+OUT R5 //               =400=1024
+bubble //               jump  
+bubble
+CMP R4 R5
+BLT 00101000            38 => 78 40=00101000
+LD R1 R5 00000000
+bubble
+bubble
+OUT R1 //               0
+SLR R1 R1 0001
+OUT R1 //               0
+CMPI R1 00000000
+BLT 00010110 //          46 => 68  b 22 00010110 if 0
+MOV R6 R5
+bubble //                jump
+bubble
+CMP R6 R3 //             
+BLT 00001110 //          51 => 65 a 14=00001110 
+bubble
+LD R0 R6 11111111
+bubble
+bubble
+SLR R0 R0 0001
+CMP R7 R0
+BLT 00000111 //          58 => 65 a 7=00000111
+SLR R0 R0 1111
+ST R0 R6 00000000
+bubble
+bubble
+SUBI R6 00000001
+B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
+bubble //                a
+SLR R1 R1 1111
+ST R1 R6 00000000
+bubble //                b
+bubble
+bubble
+bubble
+ADDI R5 00000001
+OUT R5
+B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble                  
+MOV R5 R3
+SUBI R5 00000001
+OUT R5 //               =400=1024
+bubble //               jump  
+bubble
+CMP R4 R5
+BLT 00101000            38 => 78 40=00101000
+LD R1 R5 00000000
+bubble
+bubble
+OUT R1 //               0
+SLR R1 R1 0000
+OUT R1 //               0
+CMP R7 R1
+BLT 00010110 //          46 => 68  b 22 00010110 if 0
+MOV R6 R5
+bubble //                jump
+bubble
+CMP R6 R3 //             
+BLT 00001110 //          51 => 65 a 14=00001110 
+bubble
+LD R0 R6 11111111
+bubble
+bubble
+SLR R0 R0 0000
+CMPI R0 00000000
+BLT 00000111 //          58 => 65 a 7=00000111
+SLR R0 R0 0000
+ST R0 R6 00000000
+bubble
+bubble
+SUBI R6 00000001
+B 11110000               back to jump 64 => 48 -16=11110000 (00010000) 
+bubble //                a
+SLR R1 R1 0000
+ST R1 R6 00000000
+bubble //                b
+bubble
+bubble
+bubble
+ADDI R5 00000001
+OUT R5
+B 11011001 //            back to jump 74 => 35 -39=11011001 (00100111) 
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+bubble
+HLT

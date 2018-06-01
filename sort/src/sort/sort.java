@@ -41,24 +41,26 @@ public class sort {
 		 //R4 =! 0
 		 
 		 R2 = num;//1023
-		 R3 = address; //1025		 
-		 R4 = size - 1;//F
+		 R3 = address; //1025
+		 R4 = R2 + R3 -1; //2047
 
 		 
 		 //R4 == 15
-		 while (R4 == 15) {
-			 
-			 
+	
 			 R5 = address - 1;
-			 //address + num -1 < R5
-			 while(R5 < address + num - 1) {
+			 //R4 - R5 < 0
+			 while(R5 < R4) {
 				 
 				 int R1[] = data[R5];
-				 if (R1[R4] == 0) {
+				 //SRL R1 15 < 0
+				 if (R1[15] == 0) {
 					 
 					 R6 = R5;
 					 
-					 while (R6 > address -1 && data[R6-1][R4] == 1) {
+					 // R6 - R3 < 0 or
+					 // LD R0 R6 11111111
+					 // SLR R0 00001111
+					 while (R6 > address -1 && data[R6-1][15] == 1) {
 						 data[R6] = data[R6-1];
 						 R6--;
 					 }
@@ -67,24 +69,21 @@ public class sort {
 				 } 
 				 R5 = R5 + 1;
 			 }
-			 R4 = R4 - 1;
-		 }
+			 
+		 
 		 
 		 
 		 //R4 == 14
-		 while (R4 == 14) {
-			 
-			 
 			 R5 = address - 1;
 			 //address + num -1 < R5
-			 while(R5 < address + num - 1) {
+			 while(R5 < R4) {
 				 
 				 int R1[] = data[R5];
-				 if (R1[R4] == 0) {
+				 if (R1[14] == 0) {
 					 
 					 R6 = R5;
 					 
-					 while (R6 > address -1 && data[R6-1][R4] == 1) {
+					 while (R6 > address -1 && data[R6-1][14] == 1) {
 						 data[R6] = data[R6-1];
 						 R6--;
 					 }
@@ -93,22 +92,18 @@ public class sort {
 				 } 
 				 R5 = R5 + 1;
 			 }
-			 R4 = R4 - 1;
-		 }
-		 //R4 == 13
-		 while (R4 == 13) {
 			 
-			 
+		 //R4 == 13 
 			 R5 = address - 1;
 			 //address + num -1 < R5
-			 while(R5 < address + num - 1) {
+			 while(R5 < R4) {
 				 
 				 int R1[] = data[R5];
-				 if (R1[R4] == 0) {
+				 if (R1[13] == 0) {
 					 
 					 R6 = R5;
 					 
-					 while (R6 > address -1 && data[R6-1][R4] == 1) {
+					 while (R6 > address -1 && data[R6-1][13] == 1) {
 						 data[R6] = data[R6-1];
 						 R6--;
 					 }
@@ -117,23 +112,38 @@ public class sort {
 				 } 
 				 R5 = R5 + 1;
 			 }
-			 R4 = R4 - 1;
-		 }
+			 
+		 //R4 == 12			 
+			 R5 = address - 1;
+			 //address + num -1 < R5
+			 while(R5 < R4) {
+				 
+				 int R1[] = data[R5];
+				 if (R1[12] == 0) {
+					 
+					 R6 = R5;
+					 
+					 while (R6 > address -1 && data[R6-1][12] == 1) {
+						 data[R6] = data[R6-1];
+						 R6--;
+					 }
+					 
+					 data[R6] = R1;
+				 } 
+				 R5 = R5 + 1;
+			 }
 		 
-		 //R4 == 12
-		 while (R4 == 12) {
-			 
-			 
+		 //R4 == 11 
 			 R5 = address - 1;
 			 //address + num -1 < R5
-			 while(R5 < address + num - 1) {
+			 while(R5 < R4) {
 				 
 				 int R1[] = data[R5];
-				 if (R1[R4] == 0) {
+				 if (R1[11] == 0) {
 					 
 					 R6 = R5;
 					 
-					 while (R6 > address -1 && data[R6-1][R4] == 1) {
+					 while (R6 > address -1 && data[R6-1][11] == 1) {
 						 data[R6] = data[R6-1];
 						 R6--;
 					 }
@@ -143,22 +153,18 @@ public class sort {
 				 R5 = R5 + 1;
 			 }
 			 R4 = R4 - 1;
-		 }
 		 
-		 //R4 == 11
-		 while (R4 == 11) {
-			 
-			 
+		 //R4 == 10			 
 			 R5 = address - 1;
 			 //address + num -1 < R5
-			 while(R5 < address + num - 1) {
+			 while(R5 < R4) {
 				 
 				 int R1[] = data[R5];
-				 if (R1[R4] == 0) {
+				 if (R1[10] == 0) {
 					 
 					 R6 = R5;
 					 
-					 while (R6 > address -1 && data[R6-1][R4] == 1) {
+					 while (R6 > address -1 && data[R6-1][10] == 1) {
 						 data[R6] = data[R6-1];
 						 R6--;
 					 }
@@ -167,48 +173,18 @@ public class sort {
 				 } 
 				 R5 = R5 + 1;
 			 }
-			 R4 = R4 - 1;
-		 }
-		 
-		 //R4 == 10
-		 while (R4 == 10) {
-			 
-			 
-			 R5 = address - 1;
-			 //address + num -1 < R5
-			 while(R5 < address + num - 1) {
-				 
-				 int R1[] = data[R5];
-				 if (R1[R4] == 0) {
-					 
-					 R6 = R5;
-					 
-					 while (R6 > address -1 && data[R6-1][R4] == 1) {
-						 data[R6] = data[R6-1];
-						 R6--;
-					 }
-					 
-					 data[R6] = R1;
-				 } 
-				 R5 = R5 + 1;
-			 }
-			 R4 = R4 - 1;
-		 }
 		 
 		 //R4 == 9
-		 while (R4 == 9) {
-			 
-			 
 			 R5 = address - 1;
 			 //address + num -1 < R5
-			 while(R5 < address + num - 1) {
+			 while(R5 < R4) {
 				 
 				 int R1[] = data[R5];
-				 if (R1[R4] == 0) {
+				 if (R1[9] == 0) {
 					 
 					 R6 = R5;
 					 
-					 while (R6 > address -1 && data[R6-1][R4] == 1) {
+					 while (R6 > address -1 && data[R6-1][9] == 1) {
 						 data[R6] = data[R6-1];
 						 R6--;
 					 }
@@ -217,23 +193,18 @@ public class sort {
 				 } 
 				 R5 = R5 + 1;
 			 }
-			 R4 = R4 - 1;
-		 }
 		 
-		 //R4 == 8
-		 while (R4 == 8) {
-			 
-			 
+		 //R4 == 8			 
 			 R5 = address - 1;
 			 //address + num -1 < R5
-			 while(R5 < address + num - 1) {
+			 while(R5 < R4) {
 				 
 				 int R1[] = data[R5];
-				 if (R1[R4] == 0) {
+				 if (R1[8] == 0) {
 					 
 					 R6 = R5;
 					 
-					 while (R6 > address -1 && data[R6-1][R4] == 1) {
+					 while (R6 > address -1 && data[R6-1][8] == 1) {
 						 data[R6] = data[R6-1];
 						 R6--;
 					 }
@@ -242,23 +213,18 @@ public class sort {
 				 } 
 				 R5 = R5 + 1;
 			 }
-			 R4 = R4 - 1;
-		 }
 		 
-		 //R4 == 7
-		 while (R4 == 7) {
-			 
-			 
+		 //R4 == 7	 
 			 R5 = address - 1;
 			 //address + num -1 < R5
-			 while(R5 < address + num - 1) {
+			 while(R5 < R4) {
 				 
 				 int R1[] = data[R5];
-				 if (R1[R4] == 0) {
+				 if (R1[7] == 0) {
 					 
 					 R6 = R5;
 					 
-					 while (R6 > address -1 && data[R6-1][R4] == 1) {
+					 while (R6 > address -1 && data[R6-1][7] == 1) {
 						 data[R6] = data[R6-1];
 						 R6--;
 					 }
@@ -267,23 +233,18 @@ public class sort {
 				 } 
 				 R5 = R5 + 1;
 			 }
-			 R4 = R4 - 1;
-		 }
 		 
 		 //R4 == 6 
-		 while (R4 == 6) {
-			 
-			 
 			 R5 = address - 1;
 			 //address + num -1 < R5
-			 while(R5 < address + num - 1) {
+			 while(R5 < R4) {
 				 
 				 int R1[] = data[R5];
-				 if (R1[R4] == 0) {
+				 if (R1[6] == 0) {
 					 
 					 R6 = R5;
 					 
-					 while (R6 > address -1 && data[R6-1][R4] == 1) {
+					 while (R6 > address -1 && data[R6-1][6] == 1) {
 						 data[R6] = data[R6-1];
 						 R6--;
 					 }
@@ -292,23 +253,18 @@ public class sort {
 				 } 
 				 R5 = R5 + 1;
 			 }
-			 R4 = R4 - 1;
-		 }
-		 
+
 		 //R4 == 5
-		 while (R4 == 5) {
-			 
-			 
 			 R5 = address - 1;
 			 //address + num -1 < R5
-			 while(R5 < address + num - 1) {
+			 while(R5 < R4) {
 				 
 				 int R1[] = data[R5];
-				 if (R1[R4] == 0) {
+				 if (R1[5] == 0) {
 					 
 					 R6 = R5;
 					 
-					 while (R6 > address -1 && data[R6-1][R4] == 1) {
+					 while (R6 > address -1 && data[R6-1][5] == 1) {
 						 data[R6] = data[R6-1];
 						 R6--;
 					 }
@@ -317,23 +273,18 @@ public class sort {
 				 } 
 				 R5 = R5 + 1;
 			 }
-			 R4 = R4 - 1;
-		 }
 		 
 		 //R4 == 4 
-		 while (R4 == 4) {
-			 
-			 
 			 R5 = address - 1;
 			 //address + num -1 < R5
-			 while(R5 < address + num - 1) {
+			 while(R5 < R4) {
 				 
 				 int R1[] = data[R5];
-				 if (R1[R4] == 0) {
+				 if (R1[4] == 0) {
 					 
 					 R6 = R5;
 					 
-					 while (R6 > address -1 && data[R6-1][R4] == 1) {
+					 while (R6 > address -1 && data[R6-1][4] == 1) {
 						 data[R6] = data[R6-1];
 						 R6--;
 					 }
@@ -342,23 +293,18 @@ public class sort {
 				 } 
 				 R5 = R5 + 1;
 			 }
-			 R4 = R4 - 1;
-		 }
 		 
-		 //R4 == 3 
-		 while (R4 == 3) {
-			 
-			 
+		 //R4 == 3
 			 R5 = address - 1;
 			 //address + num -1 < R5
-			 while(R5 < address + num - 1) {
+			 while(R5 < R4) {
 				 
 				 int R1[] = data[R5];
-				 if (R1[R4] == 0) {
+				 if (R1[3] == 0) {
 					 
 					 R6 = R5;
 					 
-					 while (R6 > address -1 && data[R6-1][R4] == 1) {
+					 while (R6 > address -1 && data[R6-1][3] == 1) {
 						 data[R6] = data[R6-1];
 						 R6--;
 					 }
@@ -367,23 +313,18 @@ public class sort {
 				 } 
 				 R5 = R5 + 1;
 			 }
-			 R4 = R4 - 1;
-		 }
 		 
-		 //R4 == 2 
-		 while (R4 == 2) {
-			 
-			 
+		 //R4 == 2
 			 R5 = address - 1;
 			 //address + num -1 < R5
-			 while(R5 < address + num - 1) {
+			 while(R5 < R4) {
 				 
 				 int R1[] = data[R5];
-				 if (R1[R4] == 0) {
+				 if (R1[2] == 0) {
 					 
 					 R6 = R5;
 					 
-					 while (R6 > address -1 && data[R6-1][R4] == 1) {
+					 while (R6 > address -1 && data[R6-1][2] == 1) {
 						 data[R6] = data[R6-1];
 						 R6--;
 					 }
@@ -392,22 +333,18 @@ public class sort {
 				 } 
 				 R5 = R5 + 1;
 			 }
-			 R4 = R4 - 1;
-		 }
-		 //R4 == 1 
-		 while (R4 == 1) {
-			 
-			 
+			
+		 //R4 == 1
 			 R5 = address - 1;
 			 //address + num -1 < R5
-			 while(R5 < address + num - 1) {
+			 while(R5 < R4) {
 				 
 				 int R1[] = data[R5];
-				 if (R1[R4] == 0) {
+				 if (R1[1] == 0) {
 					 
 					 R6 = R5;
 					 
-					 while (R6 > address -1 && data[R6-1][R4] == 1) {
+					 while (R6 > address -1 && data[R6-1][1] == 1) {
 						 data[R6] = data[R6-1];
 						 R6--;
 					 }
@@ -416,20 +353,18 @@ public class sort {
 				 } 
 				 R5 = R5 + 1;
 			 }
-			 R4 = R4 - 1;
-		 }
-		 
+		
 		 //R4 == 0
 		 R5 = address - 1;
 		 while(R5 < address + num -1) {
 			 
 			 int R1[] = data[R5];
-			 if (R1[R4] == 1) {
+			 if (R1[0] == 1) {
 				 
 				 
 				 R6 = R5;
 				 
-				 while (R6 > address - 1 && data[R6-1][R4] == 0) {
+				 while (R6 > address - 1 && data[R6-1][0] == 0) {
 					 data[R6] = data[R6-1];
 					 R6--;
 				 }

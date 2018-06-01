@@ -97,3 +97,4 @@
 */timing/
 */testbench/
 */*_sim/
+/.recommenders/
